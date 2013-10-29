@@ -1,0 +1,27 @@
+.sudoku {
+  border-collapse: collapse;
+}
+.sudoku th {
+  width: 20px;
+  height: 24px;
+  text-align: center;
+}
+.sudoku td {
+  border: 1px solid black;
+  width: 20px;
+  height: 24px;
+}
+.sudoku .r {
+  border-right: 3px solid black;
+}
+.sudoku tr.b td {
+  border-bottom: 3px solid black;
+}
+.sudoku tr.t td {
+  border-top: 3px solid black;
+}
+.info th {
+  vertical-align: top;
+  text-align: right;
+  padding: 0px 20px;
+}

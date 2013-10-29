@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hunt</title>
+<link rel="stylesheet" type="text/css" href="top.css">
+</head>
+<body>
+team: {{ team.name }}<br>
+<ul>
+{% for round in rounds %}
+{% comment %}
+   each round object in rounds is a dictionary of two items:
+    "round": the actual round model
+    "puzzles": the puzzles in that round available to this team
+{% endcomment %}
+<li><a href="round/{{ round.round.url }}">{{ round.round.name }}</a>
+<ul>
+{% for puzzle in round.puzzles %}
+<li><a href="puzzle/{{ puzzle.url }}">{{ puzzle.name }}</a>
+{% endfor %}
+</ul>
+{% endfor %}
+</ul>
+</body>
+</html>

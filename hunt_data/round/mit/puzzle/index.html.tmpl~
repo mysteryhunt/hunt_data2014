@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ puzzle.name }} ({{ round.name }})</title>
+<link rel="stylesheet" type="text/css" href="puzzle.css">
+<link href="https://fonts.googleapis.com/css?family=Parisienne|Alice" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body class="mh-fancy">
+  <div id="mh-outer">
+    <div id="mh-controls">
+      <a id="mh-location" href="{{ root }}/round/{{ round.url }}">
+	Back to {{ round.name }}
+      </a>
+      <a id="mh-plain-toggle" href="javascript:mh.plain_toggle();">
+	Printable
+      </a>
+      <a id="mh-answer" href="javascript:void(0);">
+	Submit Answer
+      </a>
+    </div>
+    <div id="mh-page">
+      <div id="mh-banner">
+        <img id="mh-mit-card" src="card.png">
+	<div id="mh-title">
+	  {{ puzzle.name }}
+	</div>
+      </div>
+      <div id="mh-content">
+        {{ index_html|safe }}
+      </div>
+    </div>
+  </div>
+  <script src="puzzle.js"></script>
+</body>
+</html>

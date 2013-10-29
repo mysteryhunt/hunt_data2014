@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ round.name }}</title>
+<link rel="stylesheet" type="text/css" href="round.css">
+</head>
+<body>
+team: {{ team.name }}<br>
+round: {{ round.name }}<br>
+<a href="{{ root }}">Back</a><br>
+<ul>
+{% for puzzle in puzzles %}
+<li><a href="{{ root }}/puzzle/{{ puzzle.url }}">{{ puzzle.name }}</a>
+{% endfor %}
+</ul>
+</body>
+</html>
