@@ -30,7 +30,7 @@ table.mh-center {
 }
 
 @media screen {
-    body.mh-fancy {
+    body {
 	width: 100%;
 	margin: 0px;
 	text-align: center;
