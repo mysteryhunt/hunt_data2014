@@ -51,7 +51,7 @@
 		 "{{ puzzle.location }}"
 		 {% endif %}
 		 src=
-		 {% if puzzle.puzzle.solved %}
+		 {% if puzzle.solved %}
 		 "location_solved.png"
 		 {% else %}
 		 "location_unsolved.png"
@@ -62,7 +62,7 @@
 	<ul>
 	  {% for puzzle in puzzles %}
 	  <li class=
-	      {% if puzzle.puzzle.solved %}
+	      {% if puzzle.solved %}
 	      "mh-list-solved"
 	      {% else %}
 	      "mh-list-unsolved"

@@ -12,6 +12,7 @@ team: {{ team.name }}<br>
 <ul>
 {% for puzzle in round.puzzles %}
 <li><a href="puzzle/{{ puzzle.puzzle.url }}">{{ puzzle.puzzle.name }}</a>
+{% if puzzle.solved %}[SOLVED]{% endif %}
 {% endfor %}
 </ul>
 {% endfor %}
