@@ -1,0 +1,11 @@
+name	order	answer
+The Dormouse	10	MANCHEGO
+The Caterpillar	20	TOBACCO
+Tweedledee and Tweedledum	30	TWIN POPS
+The Tea Party	40	GIVE HIM A HAND
+The White Queen	50	CLEAN WITH IVORY SOAP
+The Mock Turtle	60	MAKE EDITS TO YOUR TABLE SCHEMA
+The Caucus Race	70	ALLERGIC TO DOWN
+Humpty Dumpty	80	EISOPTROPHOBIC
+The Red and White Knights	90	BORED TO PIECES BY GAMES
+Events	100	SOMETHING
