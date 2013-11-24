@@ -13,7 +13,7 @@
 	Back to ???
       </a>
       <a id="mh-answer" href="javascript:void(0);">
-	Submit Answer
+	Submit Bait
       </a>
     </div>
     <div id="mh-page">
@@ -21,16 +21,44 @@
 	<div id="mh-title">
 	  {{ round.name }}
 	</div>
+	<img class="mh-drink-me" style="right: 130px;" src="drunkme.png">
+	<img class="mh-drink-me" style="right: 70px;" src="drinkme10.png">
+	<img class="mh-drink-me" style="right: 10px;" src="drinkme05.png">
       </div>
       <div id="mh-content">
-	<div>
+	<div style="position: relative;">
 	  <img src="map.jpg" />
+	  {% for puzzle in puzzles %}
+	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
+	    <img class="mh-map-location" title="{{puzzle.puzzle.name}}" style=
+		 {% if puzzle.location.name == "Lobby 10" %}
+		 "top: 148px; left: 416px;"
+		 {% elif puzzle.location.name == "Strobe Alley" %}
+		 "top: 128px; left: 482px;"
+		 {% elif puzzle.location.name == "Building 6 Lobby" %}
+		 "top: 181px; left: 592px;"
+		 {% else %}
+		 "{{ puzzle.location }}"
+		 {% endif %}
+		 src=
+		 {% if puzzle.puzzle.solved %}
+		 "location_solved.png"
+		 {% else %}
+		 "location_unsolved.png"
+		 {% endif %} /></a>
+	  {% endfor %}
 	</div>
 
 	<ul>
 	  {% for puzzle in puzzles %}
-	  <li><a href="{{ root }}/puzzle/{{ puzzle.url }}">{{ puzzle.name }}</a>
-	    {% endfor %}
+	  <li class=
+	      {% if puzzle.puzzle.solved %}
+	      "mh-list-solved"
+	      {% else %}
+	      "mh-list-unsolved"
+	      {% endif %}
+	      ><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">{{ puzzle.puzzle.name }}</a>
+	  {% endfor %}
 	</ul>
 
       </div>
