@@ -10,24 +10,34 @@
     <div class="mh-log">
       {% for entry in log_entries %}
       {{ entry.entry.timestamp|date:'Y-m-d H:i:s' }}
-      {% if entry.entry.link %}
-      {% endif %}
       {% if entry.protected_message %}
       <span id="protected-{{ entry.entry.id }}">
+	{% if entry.entry.link %}
 	<a href="{{ root }}{{ entry.entry.link }}">
+	  {% endif %}
 	  {{ entry.protected_message }}
+	{% if entry.entry.link %}
 	</a>
+	{% endif %}
 	<a href="javascript:mh.unprotect('{{ entry.entry.id }}');">[reveal]</a>
       </span>
       <span id="unprotected-{{ entry.entry.id }}" class="mh-log-unprotected">
-	{{ entry.unprotected_message }}
+	{% if entry.entry.link %}
+	<a href="{{ root }}{{ entry.entry.link }}">
+	  {% endif %}
+	  {{ entry.unprotected_message }}
+	  {% if entry.entry.link %}
+	</a>
+	{% endif %}
       </span>
       {% else %}
+      {% if entry.entry.link %}
       <a href="{{ root }}{{ entry.entry.link }}">
+	{% endif %}
 	{{ entry.entry.message }}
+	{% if entry.entry.link %}
       </a>
       {% endif %}
-      {% if entry.entry.link %}
       {% endif %}
       <br />
       {% endfor %}
