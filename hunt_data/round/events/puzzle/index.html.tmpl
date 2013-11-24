@@ -15,9 +15,15 @@
       <a id="mh-plain-toggle" href="javascript:mh.plain_toggle();">
 	Printable
       </a>
+      {% if puzzle.solved %}
+      <span id="mh-answer">
+	Solved!
+      </span>
+      {% else %}
       <a id="mh-answer" href="javascript:void(0);">
 	Submit Answer
       </a>
+      {% endif %}
     </div>
     <div id="mh-page">
       <div id="mh-banner">
