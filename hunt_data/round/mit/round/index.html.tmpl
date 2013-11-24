@@ -21,9 +21,15 @@
 	<div id="mh-title">
 	  {{ round.round.name }}
 	</div>
-	<img class="mh-drink-me" style="right: 130px;" src="drunkme.png">
-	<img class="mh-drink-me" style="right: 70px;" src="drinkme10.png">
-	<img class="mh-drink-me" style="right: 10px;" src="drinkme05.png">
+	{% if vial1 > -1 %}
+	<img class="mh-drink-me" style="right: 130px;" src="drinkme{{ vial1|stringformat:"02d" }}.png">
+	{% endif %}
+	{% if vial2 > -1 %}
+	<img class="mh-drink-me" style="right: 70px;" src="drinkme{{ vial2|stringformat:"02d" }}.png">
+	{% endif %}
+	{% if vial3 > -1 %}
+	<img class="mh-drink-me" style="right: 10px;" src="drinkme{{ vial3|stringformat:"02d" }}.png">
+	{% endif %}
       </div>
       <div id="mh-content">
 	<div style="position: relative;">
