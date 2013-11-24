@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Team Log</title>
-<link rel="stylesheet" type="text/css" href="log.css">
-</head>
-<body>
-team: {{ team.name }}<br>
-<pre>
-{% for entry in log_entries %}{{ entry.timestamp|date:'Y-m-d H:i:s' }} {% if entry.link %}<a href="{{ root }}{{ entry.link }}">{% endif %}{{ entry.message }}{% if entry.link %}</a>{% endif %}
-{% endfor %}
-</pre>
-</body>
+  <head>
+    <title>Team Log</title>
+    <link rel="stylesheet" type="text/css" href="log.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    team: {{ team.name }}<br>
+    <div class="mh-log">
+      {% for entry in log_entries %}
+      {{ entry.entry.timestamp|date:'Y-m-d H:i:s' }}
+      {% if entry.entry.link %}
+      {% endif %}
+      {% if entry.protected_message %}
+      <span id="protected-{{ entry.entry.id }}">
+	<a href="{{ root }}{{ entry.entry.link }}">
+	  {{ entry.protected_message }}
+	</a>
+	<a href="javascript:mh.unprotect('{{ entry.entry.id }}');">[reveal]</a>
+      </span>
+      <span id="unprotected-{{ entry.entry.id }}" class="mh-log-unprotected">
+	{{ entry.unprotected_message }}
+      </span>
+      {% else %}
+      <a href="{{ root }}{{ entry.entry.link }}">
+	{{ entry.entry.message }}
+      </a>
+      {% endif %}
+      {% if entry.entry.link %}
+      {% endif %}
+      <br />
+      {% endfor %}
+    </div>
+    <script src="log.js"></script>
+  </body>
 </html>
