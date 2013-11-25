@@ -1,25 +1,25 @@
 name	order	start
-Lobby 10	10	yes
-Strobe Alley	20	yes
-Building 6 Lobby	30	yes
-Khipu knots	40	no
-Hack Pictures	50	no
-Killian Court	60	no
-Building 38 Athena Cluster	70	no
-Building 1	80	no
-Ship Museum	90	no
-Stata	100	no
-Building 35	110	no
-Faces in Stairwell	120	no
-Building 14 Hallway	130	no
-Green Building	140	no
-Student Center	150	no
-Walker	160	no
-Building 33	170	no
-Building 37	180	no
-Building 26	190	no
-Building 34	200	no
-Building 13	210	no
-Building 66 Point	220	no
-Building 2 Mural	230	no
-Building 12/14	240	no
+W20	10	yes
+32	20	yes
+14	30	yes
+W11	40	no
+33	50	no
+34	60	no
+66	70	no
+2	80	no
+50	90	no
+5	100	no
+1	110	no
+37	120	no
+12	130	no
+38	140	no
+56	150	no
+6	160	no
+Killian Court	170	no
+54	180	no
+10	190	no
+4	200	no
+8	210	no
+7	220	no
+26	230	no
+13	240	no

@@ -1,9 +1,9 @@
 url	card	location
-sneaky_fox	2_spades	Lobby 10
-build_your_own_sudoku	3_spades	Strobe Alley
-down_the_rabbit_hole_2	4_spades	Building 6 Lobby
-the_despair_of_cooking	5_spades	Khipu knots
-a_meta_puzzle	6_spades	Hack Pictures
-how_puzzling_all_these_changes_are	7_spades	Killian Court
-zoinks	8_spades	Building 38 Athena Cluster
-opposites_are_not_downbeats	9_spades	Ship Museum
+sneaky_fox	2_spades	W20
+build_your_own_sudoku	3_spades	32
+down_the_rabbit_hole_2	4_spades	14
+the_despair_of_cooking	5_spades	W11
+a_meta_puzzle	6_spades	33
+how_puzzling_all_these_changes_are	7_spades	34
+zoinks	8_spades	66
+opposites_are_not_downbeats	9_spades	2

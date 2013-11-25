@@ -1,4 +1,52 @@
 node1	node2
-Student Center	Building 35
-Student Center	Building 33
-Building 33	Building 37
+W20	W11
+W20	33
+32	34
+32	66
+14	2
+14	50
+W11	5
+W11	1
+33	5
+33	37
+34	12
+34	38
+66	12
+66	56
+2	6
+2	Killian Court
+50	6
+50	54
+5	7
+5	10
+1	10
+1	Killian Court
+1	4
+37	7
+37	13
+37	38
+12	13
+12	26
+38	13
+38	7
+56	26
+56	8
+56	54
+6	4
+6	8
+Killian Court	10
+Killian Court	4
+54	26
+54	8
+10	7
+10	13
+10	4
+10	8
+4	7
+4	8
+4	26
+8	26
+8	13
+26	13
+26	7
+13	7

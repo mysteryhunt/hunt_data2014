@@ -37,21 +37,37 @@
 	  {% for puzzle in puzzles %}
 	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
 	    <img class="mh-map-location" title="{{puzzle.puzzle.name}}" style=
-		 {% if puzzle.location.name == "Lobby 10" %}
+		 {% if puzzle.location.name == "W20" %}
+		 "top: 95px; left: 105px;"
+		 {% elif puzzle.location.name == "32" %}
+		 "top: 55px; left: 655px;"
+		 {% elif puzzle.location.name == "14" %}
+		 "top: 230px; left: 680px;"
+		 {% elif puzzle.location.name == "W11" %}
+		 "top: 179px; left: 135px;"
+		 {% elif puzzle.location.name == "33" %}
+		 "top: 71px; left: 268px;"
+		 {% elif puzzle.location.name == "34" %}
+		 "top: 52px; left: 482px;"
+		 {% elif puzzle.location.name == "66" %}
+		 "top: 157px; left: 863px;"
+		 {% elif puzzle.location.name == "2" %}
+		 "top: 219px; left: 608px;"
+		 {% elif puzzle.location.name == "10" %}
 		 "top: 148px; left: 416px;"
-		 {% elif puzzle.location.name == "Strobe Alley" %}
+		 {% elif puzzle.location.name == "4" %}
 		 "top: 128px; left: 482px;"
-		 {% elif puzzle.location.name == "Building 6 Lobby" %}
+		 {% elif puzzle.location.name == "6" %}
 		 "top: 181px; left: 592px;"
-		 {% elif puzzle.location.name == "Khipu knots" %}
+		 {% elif puzzle.location.name == "8" %}
 		 "top: 136px; left: 575px;"
-		 {% elif puzzle.location.name == "Hack Pictures" %}
+		 {% elif puzzle.location.name == "56" %}
 		 "top: 142px; left: 660px;"
 		 {% elif puzzle.location.name == "Killian Court" %}
 		 "top: 242px; left: 412px;"
-		 {% elif puzzle.location.name == "Building 38 Athena Cluster" %}
+		 {% elif puzzle.location.name == "38" %}
 		 "top: 45px; left: 454px;"
-		 {% elif puzzle.location.name == "Ship Museum" %}
+		 {% elif puzzle.location.name == "5" %}
 		 "top: 178px; left: 240px;"
 		 {% else %}
 		 "{{ puzzle.location }}"
