@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ round.round.name }} (Wonderland)</title>
+<link rel="stylesheet" type="text/css" href="round.css">
+<link href='https://fonts.googleapis.com/css?family=Parisienne|Alice' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body class="mh-fancy">
+  <div id="mh-outer">
+    <div id="mh-controls">
+      <a id="mh-back" href="javascript:void(0);">
+	Back to MIT
+      </a>
+      <a id="mh-plain-toggle" href="javascript:mh.plain_toggle();">
+	Printable
+      </a>
+      <a id="mh-answer" href="javascript:void(0);">
+	Submit Answer
+      </a>
+    </div>
+    <div id="mh-page">
+      <div id="mh-banner">
+	<div id="mh-title">
+	  {{ round.round.name }}
+	</div>
+      </div>
+      <div id="mh-content">
+	<div class="mh-flavortext">
+	  ...
+	</div>
+	<p>
+
+      </div>
+    </div>
+  </div>
+  <script src="round.js"></script>
+</body>
+</html>

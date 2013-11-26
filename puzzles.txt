@@ -7,5 +7,8 @@ mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	50
 mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	60
 mit	MISCHIEF	zoinks	Zoinks!	70
 mit	NEGATES	opposites_are_not_downbeats	Opposites are not Downbeats	80
-mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	10
-knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	10
+tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
+mock_turtle	LOCKS	common_bonds	Common Bonds	2010
+mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2020
+white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3010
+knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	5010
