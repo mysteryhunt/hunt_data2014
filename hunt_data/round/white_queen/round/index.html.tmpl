@@ -27,6 +27,24 @@
       </div>
       <div id="mh-content">
 	<div class="mh-flavortext">
+	  <p>
+	    As you arrive in Wonderland, you are greeted by the White Queen, who congratulates you on solving the meta puzzle.
+	  <p>
+	    "Solving the meta puzzle?" you ask. "But we haven't seen any of the puzzles in this round yet!"
+	  <p>
+	    "Yes, my dears," she explains to you, "That is the effect of living backwards. Rain falls up, 27 is 72, and you solve the meta puzzle and then you get the puzzles! Here is the solution:"
+	  <p>
+	    <div class="mh-queen-herring">
+	      ITS JUST A RED HERRING
+	    </div>
+	  <p>
+	    "Now," she continues, "pursuant to rule 7.08(i), I should give you gift of gratitude for solving the meta. However, experiencing things backwards, as I do, you should bring me a gift. Any sort of red herring would do nicely."
+	</div>
+	{% if herring_ok %}
+	<div class="mh-queen-acknowledgement">
+	  You brought the White Queen a red herring gift.
+	</div>
+	<div class="mh-flavortext">
 	  Upon visiting the Queen, teams discover that she's upset because everything is all red -- the beast has come through and painted all of her white things! Furthermore, her addled memory being what it is, she only remembers the answers to some of the puzzles, and she can't think far enough forward to remember the titles at all. Could you backsolve the rest of the answers and then solve for the titles of the puzzles? And perhaps figure out how to make everything white again, while you're at it? The Queen knows you will -- that's the effect of living backwards, after all -- she's just a little discombobulated and can't remember how you will do it.
 	</div>
 
@@ -91,6 +109,11 @@
 		  </div></div>
 		</div>
 	  </table>
+	  {% else %}
+	  <div class="mh-queen-command">
+	    Please come to HQ and bring the White Queen a red herring gift.
+	  </div>
+	  {% endif %}
       </div>
     </div>
   </div>

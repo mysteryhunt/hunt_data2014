@@ -3,7 +3,8 @@ The Dormouse	10	MANCHEGO
 The Caterpillar	20	TOBACCO
 Tweedledee and Tweedledum	30	TWIN POPS
 The Tea Party	40	GIVE HIM A HAND
-The White Queen	50	CLEAN WITH IVORY SOAP
+The White Queen (Gift)	50	ITS JUST A RED HERRING
+The White Queen	55	CLEAN WITH IVORY SOAP
 The Mock Turtle	60	MAKE EDITS TO YOUR TABLE SCHEMA
 The Caucus Race	70	ALLERGIC TO DOWN
 Humpty Dumpty	80	EISOPTROPHOBIC
