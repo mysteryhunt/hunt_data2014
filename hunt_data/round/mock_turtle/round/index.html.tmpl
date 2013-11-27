@@ -41,7 +41,17 @@
 	  could be with my friends again....&quot;
 	</div>
 	<p>
+	  <table class="mh-center">
+	    {% for puzzle in puzzles %}
+	    <tr><td>
+		<a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
+		  {{ puzzle.puzzle.name }}
+		</a>
+	    </td></tr>
+	    {% endfor %}
+	  </table>
 
+	<p>
 	  <table class="mh-center" style="white-space: nowrap"><tr><td>
 	      <span class="mh-blank"></span> creator and family (26,13)<br>
 	      <span class="mh-blank"></span>&#39;s airplane (in reality) (15,1)<br>
