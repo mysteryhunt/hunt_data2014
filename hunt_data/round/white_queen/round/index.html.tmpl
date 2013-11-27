@@ -53,60 +53,14 @@
 	    <tr><td>
 		<div class="mh-queen-grid">
 		  <img src="answers_background.jpg">
-		  <div class="mh-queen-r1"><div class="mh-queen-c1">
-		    I = WILLIAMS
+		  {% for cell in cells %}
+		  <div class="mh-queen-r mh-queen-r{{ cell.row }}"><div class="mh-queen-c mh-queen-c{{ cell.column }}">
+		    {{ cell.letter }}&nbsp;=&nbsp;{% if cell.url %}<a href="{{ root }}/puzzle/{{ cell.url }}">{{ cell.answer }}</a>
+		    {% else %}???<br>
+		    <a style="white-space: nowrap;" href="javascript:void(0);">Submit Title</a>
+		    {% endif %}
 		  </div></div>
-		  <div class="mh-queen-r1"><div class="mh-queen-c2">
-		    T = ???
-		  </div></div>
-		  <div class="mh-queen-r1"><div class="mh-queen-c3">
-		    S = LYNN
-		  </div></div>
-		  <div class="mh-queen-r2"><div class="mh-queen-c1">
-		    J = ???
-		  </div></div>
-		  <div class="mh-queen-r2"><div class="mh-queen-c2">
-		    U = ???
-		  </div></div>
-		  <div class="mh-queen-r2"><div class="mh-queen-c3">
-		    S = ???
-		  </div></div>
-		  <div class="mh-queen-r3"><div class="mh-queen-c1">
-		    T = ???
-		  </div></div>
-		  <div class="mh-queen-r3"><div class="mh-queen-c2">
-		    A = ???
-		  </div></div>
-		  <div class="mh-queen-r3"><div class="mh-queen-c3">
-		    R = SULLIVAN
-		  </div></div>
-		  <div class="mh-queen-r4"><div class="mh-queen-c1">
-		    E = ???
-		  </div></div>
-		  <div class="mh-queen-r4"><div class="mh-queen-c2">
-		    D = ???
-		  </div></div>
-		  <div class="mh-queen-r4"><div class="mh-queen-c3">
-		    H = ???
-		  </div></div>
-		  <div class="mh-queen-r5"><div class="mh-queen-c1">
-		    E = ???
-		  </div></div>
-		  <div class="mh-queen-r5"><div class="mh-queen-c2">
-		    R = ???
-		  </div></div>
-		  <div class="mh-queen-r5"><div class="mh-queen-c3">
-		    R = SULLIVAN
-		  </div></div>
-		  <div class="mh-queen-r6"><div class="mh-queen-c1">
-		    I = ???
-		  </div></div>
-		  <div class="mh-queen-r6"><div class="mh-queen-c2">
-		    N = ???
-		  </div></div>
-		  <div class="mh-queen-r6"><div class="mh-queen-c3">
-		    G = ???
-		  </div></div>
+		  {% endfor %}
 		</div>
 	  </table>
 	  {% else %}
