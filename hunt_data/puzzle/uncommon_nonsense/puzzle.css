@@ -1,0 +1,5 @@
+body {font-family: Georgia, Times New Roman;}
+table {margin-top: 25px;}
+table.clues td {padding: 5px}
+table.clues th {text-align: left}
+th.spacer {width: 50px}
