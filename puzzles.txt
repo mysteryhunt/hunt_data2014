@@ -23,4 +23,7 @@ white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	
 caucus_race	MILLSTONE	sat_iii	SAT III	5010
 caucus_race	DERRICK	crosswalks	Crosswalks	5020
 caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
+caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5040
+caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5050
+caucus_race	SPUR	venntersections	Venntersections	5060
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6010

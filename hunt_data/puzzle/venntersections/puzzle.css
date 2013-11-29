@@ -1,0 +1,47 @@
+._ {
+  font-family: "Courier New";
+  font-size: 15pt;
+  font-weight: bold;
+  width: 190px;
+  height: 40px;
+  vertical-align: top;
+  padding: 0px;
+}
+.b {
+  border: 2px solid black;
+  position: absolute;
+}
+.t {
+  border-collapse: collapse;
+  position: relative;
+  top: 12px;
+  left: 12px;
+}
+.d {
+  position: relative;
+  margin: 30px 0px;
+}
+._1 {
+  top:  0px;
+  left: 0px;
+  width: 752px;
+  height: 80px;
+}
+._2 {
+  top: 4px;
+  left: 4px;
+  width: 372px;
+  height: 160px;
+}
+._3 {
+  top: 40px;
+  left: 8px;
+  width: 752px;
+  height: 80px;
+}
+._4 {
+  top: 8px;
+  left: 190px;
+  width: 372px;
+  height: 160px;
+}
