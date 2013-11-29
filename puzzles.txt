@@ -20,4 +20,7 @@ mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2020
 white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3010
 white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
-knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	5010
+caucus_race	MILLSTONE	sat_iii	SAT III	5010
+caucus_race	DERRICK	crosswalks	Crosswalks	5020
+caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
+knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6010
