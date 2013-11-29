@@ -3,6 +3,7 @@ mit	MIT	10
 tea_party	The Tea Party	20
 mock_turtle	The Mock Turtle	30
 white_queen	The White Queen	40
-caucus_race	The Caucus Race	50
-knights	The Red and White Knights	60
+humpty_dumpty	Humpty Dumpty	50
+caucus_race	The Caucus Race	60
+knights	The Red and White Knights	70
 events	Events	80

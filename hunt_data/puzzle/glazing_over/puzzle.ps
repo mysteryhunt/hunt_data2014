@@ -1,0 +1,45 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 0 0 612 792
+%%LanguageLevel: 3
+%%Pages: 1
+%%DocumentData: Clean7Bit
+%%EndComments
+
+
+/Helvetica findfont
+24 scalefont setfont
+171 351 translate
+
+[3 9] {
+    dup 9 exch idiv dup setlinewidth
+    30 mul
+    0 1 3 index dup mul 1 sub {
+	newpath
+	dup 3 index idiv 2 index mul exch
+	3 index mod 2 index mul moveto
+	dup 0 rlineto
+	dup 0 exch rlineto
+	dup neg 0 rlineto
+	closepath stroke
+    } for pop pop
+} forall
+
+realtime srand
+[
+    0 0 9 / 7 0 5 0 / 0 7 0 / 8 0 0 1 0 8 0 / 5 0 2 0 0 4
+    0 0 8 0 0 0 4 / 0 4 6 0 0 9 0 0 2 1 0 / 1 0 0 0 3 0 0
+    9 0 0 7 0 6 / 0 5 / 5 0 0 4 0 / 3 0 / 0 6 0 5 / 2 0 0
+]
+0 1 80 {
+    newpath
+    dup 9 idiv 30 mul 8.5 add 1 index 9 mod 30 mul 6.5 add moveto
+    1 index exch get dup 0 eq {
+	pop rand 36 mod 1 add
+	dup 9 gt {pop /} if
+    } if
+    1 string cvs show
+} for pop
+
+showpage
+
+%%EOF
