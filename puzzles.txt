@@ -17,6 +17,8 @@ tea_party	CHRYSANTHEMUM	hedgehogs_and_flamingos	Hedgehogs and Flamingos	1040
 tea_party	OPERATOR TEST	operator_test	Operator Test	1050
 mock_turtle	LOCKS	common_bonds	Common Bonds	2010
 mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2020
+mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2030
+mock_turtle	LEVAR BURTON	introduction_to_collegiate_notetaking	Introduction to Collegiate Notetaking	2040
 white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3010
 white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
@@ -35,3 +37,4 @@ knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6010
 knights	HOSPITAL BEDS	marking_territory	Marking Territory	6020
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6030
 knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	6040
+knights	CAPS LOCK	filed_erector	Filed Erector	6050
