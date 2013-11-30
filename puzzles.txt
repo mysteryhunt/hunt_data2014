@@ -30,6 +30,8 @@ caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
 caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5040
 caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5050
 caucus_race	SPUR	venntersections	Venntersections	5060
+caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5070
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6010
 knights	HOSPITAL BEDS	marking_territory	Marking Territory	6020
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6030
+knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	6040
