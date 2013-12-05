@@ -1,20 +1,22 @@
 round	answer	url	name	order
-mit	SHREWDNESS	sneaky_fox	Sneaky Fox	10
+mit	MEMORY	intersecting_personalities	Intersecting Personalities	10
 mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	20
-mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	30
-mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	40
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	50
+mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	30
+mit	MISCHIEF	zoinks	Zoinks!	40
+mit	NEGATES	opposites_are_not_downbeats	Opposites are not Downbeats	50
 mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	60
-mit	MISCHIEF	zoinks	Zoinks!	70
-mit	NEGATES	opposites_are_not_downbeats	Opposites are not Downbeats	80
-mit	TROUBLING	ring_around_the_music	Ring Around the Music	90
-mit	MEMORY	intersecting_personalities	Intersecting Personalities	100
-mit	ICHABOD	local_shorts	Local Shorts	110
+mit	TROUBLING	ring_around_the_music	Ring Around the Music	70
+mit	ICHABOD	local_shorts	Local Shorts	80
+mit	SHREWDNESS	sneaky_fox	Sneaky Fox	90
+mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	100
+mit	ROOMING	across_the_hall	Across the Hall	110
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	120
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
 tea_party	CHRYSANTHEMUM	hedgehogs_and_flamingos	Hedgehogs and Flamingos	1040
 tea_party	OPERATOR TEST	operator_test	Operator Test	1050
+tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1060
 mock_turtle	LOCKS	common_bonds	Common Bonds	2010
 mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2020
 mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2030
@@ -38,3 +40,5 @@ knights	HOSPITAL BEDS	marking_territory	Marking Territory	6020
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6030
 knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	6040
 knights	CAPS LOCK	filed_erector	Filed Erector	6050
+knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
+knights	HOBO BOBO	kroskuro	Kroskuro	6070
