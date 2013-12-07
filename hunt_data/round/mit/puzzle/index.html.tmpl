@@ -20,7 +20,7 @@
 	Solved!
       </span>
       {% else %}
-      <a id="mh-answer" href="javascript:void(0);">
+      <a id="mh-answer" href="javascript:mh.submit_answer();">
 	Submit Answer
       </a>
       {% endif %}
@@ -34,6 +34,20 @@
       </div>
       <div id="mh-content">
         {{ index_html|safe }}
+      </div>
+      <div id="mh-submit-answer" style="display: none;">
+	<div id="mh-submit-answer-inner" style="white-space: nowrap; overflow-x: hidden;">
+	  Team: Spoiler Alert asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf<br>
+	  Puzzle: Sneaky Fox asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf<br>
+	  <input type="submit" value="Submit" style="float: right;">
+	  <input type="text" size="40">
+	  <div class="mh-recent-answers">
+	    ALPHA<br>
+	    BETA<br>
+      GAMMA<br>
+	    DELTA<br>
+	  </div>
+	</div>
       </div>
     </div>
   </div>
