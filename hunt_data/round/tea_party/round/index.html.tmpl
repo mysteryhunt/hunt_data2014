@@ -4,7 +4,7 @@
   <a id="mh-back" href="javascript:void(0);">
     Back to MIT
   </a>
-  <a id="mh-answer" href="javascript:void(0);">
+  <a id="mh-answer" href="javascript:mh.submit_answer();">
     Submit Answer
   </a>
 </div>
@@ -23,6 +23,9 @@
 	{% endfor %}
     </ul>
   </div>
+
+  {% include "submit-answer.html" %}
+
 </div>
 
 {% include "round-tail.html" %}

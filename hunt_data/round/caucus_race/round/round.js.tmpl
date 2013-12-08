@@ -1,22 +1,12 @@
-var mh = (function() {
-    $('#mh-controls > *').css('opacity',0).css('top',20).animate({
-	opacity: 1,
-	top: 0
-    }, 1000).mouseenter(function(e) {
-	$(e.target).animate({ top: -2 }, 100, 'linear').animate({ top: 0 }, 100, 'linear');
-    });
+{% include "common.js" %}
+{% include "round-meta.js" %}
+
+(function() {
     $('.mh-caucusrace-yes a, .mh-caucusrace-no a').mouseenter(function(e) {
 	$(e.target).parent().toggleClass('mh-caucusrace-hover');
     });
     $('.mh-caucusrace-yes a, .mh-caucusrace-no a').mouseleave(function(e) {
 	$(e.target).parent().toggleClass('mh-caucusrace-hover');
     });
-    return {
-	plain_toggle: function() {
-	    $(document.body).toggleClass('mh-plain mh-fancy');
-	    var b = $('#mh-plain-toggle');
-	    b.text(b.text() == 'Back' ? 'Printable' : 'Back');
-	}
-    };
 })();
 
