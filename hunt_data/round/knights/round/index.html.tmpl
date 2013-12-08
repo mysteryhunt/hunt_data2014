@@ -1,110 +1,106 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ round.round.name }} (Wonderland)</title>
-<link rel="stylesheet" type="text/css" href="round.css">
-<link href='https://fonts.googleapis.com/css?family=Parisienne|Alice' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
-<body class="mh-fancy">
-  <div id="mh-outer">
-    <div id="mh-controls">
-      <a id="mh-back" href="javascript:void(0);">
-	Back to MIT
-      </a>
-      <a id="mh-plain-toggle" href="javascript:mh.plain_toggle();">
-	Printable
-      </a>
-      <a id="mh-answer" href="javascript:void(0);">
-	Submit Answer
-      </a>
-    </div>
-    <div id="mh-page">
-      <div id="mh-banner">
-	<div id="mh-title">
-	  {{ round.round.name }}
-	</div>
-      </div>
-      <div id="mh-content">
-	<div class="mh-flavortext">
-	  You enter a clearing in the forest and find a giant chessboard.  On the board two knights are sparring, although most of the time seems to be spent falling off of their horses instead of actually dueling.  On the side of the board several cardboard cut-outs of various chess pieces are lined up.  The board itself looks like it was once covered in letters, but with all of the scuffling, falling and remounting, the vast majority are now illegible.<br><br>
+{% include "round-head.html" %}
 
-	  "The beast was just here!" says the white knight.<br><br>
-	  
-	  "Yes, and I think we now know how to defeat it!" says the red.<br><br>
+<div id="mh-controls">
+  <a id="mh-back" href="javascript:void(0);">
+    Back to MIT
+  </a>
+  <a id="mh-answer" href="javascript:void(0);">
+    Submit Answer
+  </a>
+</div>
 
-	  "How?!" says the white.<br><br>
-
-	  "Umm...I don't remember..." says the red.  "Perhaps if we retrace the steps of our latest sparring match, we can figure it out."<br><br>
-
-	  "Sure!  Great idea.  So let's see, you went first."<br><br>
-
-	  "Yes, I went first" says the red. "Do you remember where the other pieces were?" He glances over at the cutouts, now on the sides of the board.<br><br>
-
-	  "No. I don't even remember where we started! But we both were careful never to step on a square where we could have been captured by an enemy piece."<br><br>
-
-	  "Or a square we've been to before."<br><br>
-
-	  "Yes, and I think we both took exactly nine moves to capture all the pieces, ending with the enemy king."<br><br>
-
-	  "Indeed.  Well, that should be enough information.  Would you mind helping us?"<br><br>
-
-	  You're not sure how you can help, but then you see what appear to be puzzles written on the backs of all the cardboard pieces, as well as on the backs of the two dueling knights.<br>
-	</div>
-
-	<p>
-	  <table class="mh-center">
-	    <tr><td>
-		<img src="chessboard/chessboard.jpg"><br>
-		<div style="position: relative; top: -60px; left: 60px;">
-		The chessboard upon arriving at the clearing.
-		</div>
-	  </table>
-	  <table class="mh-center mh-knights-pieces">
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_pawn.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_pawn.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_pawn_2.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_pawn_2.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_knight.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_pawn_3.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_bishop.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_knight.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_rook.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_bishop.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_rook_2.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_rook.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_queen.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_queen.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	    <tr>
-	      <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	      <td class="mh-knights-piece"><img src="chessboard/white_king.png">
-	      <td class="mh-knights-piece"><img src="chessboard/red_king.png">
-	      <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	  </table>
-      </div>
+<div id="mh-page">
+  <div id="mh-banner">
+    <div id="mh-title">
+      {{ round.round.name }}
     </div>
   </div>
-  <script src="round.js"></script>
-</body>
-</html>
+
+  <div id="mh-content">
+    <div class="mh-flavortext">
+      You enter a clearing in the forest and find a giant chessboard.  On the board two knights are sparring, although most of the time seems to be spent falling off of their horses instead of actually dueling.  On the side of the board several cardboard cut-outs of various chess pieces are lined up.  The board itself looks like it was once covered in letters, but with all of the scuffling, falling and remounting, the vast majority are now illegible.<br><br>
+      
+      "The beast was just here!" says the white knight.<br><br>
+      
+      "Yes, and I think we now know how to defeat it!" says the red.<br><br>
+      
+      "How?!" says the white.<br><br>
+      
+      "Umm...I don't remember..." says the red.  "Perhaps if we retrace the steps of our latest sparring match, we can figure it out."<br><br>
+      
+      "Sure!  Great idea.  So let's see, you went first."<br><br>
+      
+      "Yes, I went first" says the red. "Do you remember where the other pieces were?" He glances over at the cutouts, now on the sides of the board.<br><br>
+      
+      "No. I don't even remember where we started! But we both were careful never to step on a square where we could have been captured by an enemy piece."<br><br>
+      
+      "Or a square we've been to before."<br><br>
+      
+      "Yes, and I think we both took exactly nine moves to capture all the pieces, ending with the enemy king."<br><br>
+      
+      "Indeed.  Well, that should be enough information.  Would you mind helping us?"<br><br>
+      
+      You're not sure how you can help, but then you see what appear to be puzzles written on the backs of all the cardboard pieces, as well as on the backs of the two dueling knights.<br>
+    </div>
+    
+    <p>
+      <table class="mh-center">
+	<tr><td>
+	    <img src="chessboard/chessboard.jpg"><br>
+	    <div style="position: relative; top: -60px; left: 60px;">
+	      The chessboard upon arriving at the clearing.
+	    </div>
+      </table>
+      <table class="mh-center mh-knights-pieces">
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_pawn.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_pawn.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	</tr>
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_pawn_2.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_pawn_2.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	</tr>
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_knight.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_pawn_3.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	</tr>
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_bishop.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_knight.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	</tr>
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_rook.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_bishop.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	</tr>
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_rook_2.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_rook.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	</tr>
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_queen.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_queen.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	</tr>
+	<tr>
+	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
+	  <td class="mh-knights-piece"><img src="chessboard/white_king.png">
+	  <td class="mh-knights-piece"><img src="chessboard/red_king.png">
+	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+      </table>
+  </div>
+</div>
+
+{% include "round-tail.html" %}

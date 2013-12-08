@@ -1,31 +1,9 @@
 {% include "common.css" %}
+{% include "puzzle.css" %}
 
 @media screen {
     body.mh-fancy {
 	background: #69b873 url('{{ root }}/round/{{ round.round.url }}/puzzle_background.jpg') no-repeat top center;
-    }
-}
-
-#mh-mit-card {
-}
-
-@media screen {
-    .mh-fancy #mh-mit-card {
-	float: left;
-	padding: 25px;
-    }
-    .mh-plain #mh-mit-card {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-    }
-}
-
-@media print {
-    #mh-mit-card {
-	position: absolute;
-	left: 10px;
-	top: 10px;
     }
 }
 

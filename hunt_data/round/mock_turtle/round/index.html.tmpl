@@ -1,86 +1,64 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ round.round.name }} (Wonderland)</title>
-<link rel="stylesheet" type="text/css" href="round.css">
-<link href='https://fonts.googleapis.com/css?family=Parisienne|Alice' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
-<body class="mh-fancy">
-  <div id="mh-outer">
-    <div id="mh-controls">
-      <a id="mh-back" href="javascript:void(0);">
-	Back to MIT
-      </a>
-      <a id="mh-plain-toggle" href="javascript:mh.plain_toggle();">
-	Printable
-      </a>
-      <a id="mh-answer" href="javascript:void(0);">
-	Submit Answer
-      </a>
-    </div>
-    <div id="mh-page">
-      <div id="mh-banner">
-	<div id="mh-title">
-	  {{ round.round.name }}
-	</div>
-      </div>
-      <div id="mh-content">
-	<div class="mh-flavortext">
-          Here you see a turtlelike animal that appears to be made of bits
-	  and pieces of other beings.  He looks at you sorrowfully.  &quot;I used
-	  to be sad about not being a real turtle,&quot; he says, &quot;but right now I
-	  have even more problems.  The others are always having their tea
-	  parties, but I haven&#39;t been able to join them since the monster
-	  came....you see, with all the craziness around here recently, and all
-	  of these outsiders&quot;--he looks at you, but more in sorrow than anything
-	  else--&quot;coming by, it&#39;s been very crowded, and there&#39;s just not enough
-	  room for everyone to fit anymore.  I try to pretend they're with me by using mock
-	  versions of them, but it's not the same.  If only there were a way to allow
-	  more people to fit comfortably around the table at tea-time, then I
-	  could be with my friends again....&quot;
-	</div>
-	<p>
-	  <table class="mh-center">
-	    {% for puzzle in puzzles %}
-	    <tr><td>
-		<a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
-		  {{ puzzle.puzzle.name }}
-		</a>
-	    </td></tr>
-	    {% endfor %}
-	  </table>
+{% include "round-head.html" %}
 
-	<p>
-	  <table class="mh-center" style="white-space: nowrap"><tr><td>
-	      <span class="mh-blank"></span> creator and family (26,13)<br>
-	      <span class="mh-blank"></span>&#39;s airplane (in reality) (15,1)<br>
-	      <span class="mh-blank"></span>&#39;s "very small" character (5,2)<br>
-	      Beverage endorsed by <span class="mh-blank"></span> (14,9)<br>
-	      Container for <span class="mh-blank"></span> product (10,25)<br>
-	      First word of <span class="mh-blank"></span>&#39;s children's TV show name (6,3)<br>
-	      Focus of <span class="mh-blank"></span> meme (17,8)<br>
-	      How <span class="mh-blank"></span> keep their hair (7,22)<br>
-	      Lancaster and <span class="mh-blank"></span>, for example (4,21)<br>
-	      Primary developer of the <span class="mh-blank"></span> library (20,24)<br>
-	      Send email to experts on the <span class="mh-blank"></span> (23,16)<br>
-	      Usin&#39; a <span class="mh-blank"></span>, perhaps? (12,11)<br>
-	      What <span class="mh-blank"></span> does, before being shot (18,19)<br>
-	  </td></tr></table>
-	  
-	  <p>
-	  <table class="mh-center" style="text-align: center">
-	    <tr id="mh-turtle-blanks">
-	      <td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
-	    </tr>
-	    <tr>
-	      <td>1<td>2<td>3<td>4<td>5<td>6<td>7<td>8<td>9<td>10<td>11<td>12<td>13<td>14<td>15<td>16<td>17<td>18<td>19<td>20<td>21<td>22<td>23<td>24<td>25<td>26
-	    </tr>
-	  </table>
+<div id="mh-controls">
+  <a id="mh-back" href="javascript:void(0);">
+    Back to MIT
+  </a>
+  <a id="mh-answer" href="javascript:void(0);">
+    Submit Answer
+  </a>
+</div>
 
-      </div>
+<div id="mh-page">
+  <div id="mh-banner">
+    <div id="mh-title">
+      {{ round.round.name }}
     </div>
   </div>
-  <script src="round.js"></script>
-</body>
-</html>
+
+  <div id="mh-content">
+    <div class="mh-flavortext">
+      Here you see a turtlelike animal that appears to be made of bits and pieces of other beings.  He looks at you sorrowfully.  &quot;I used to be sad about not being a real turtle,&quot; he says, &quot;but right now I have even more problems.  The others are always having their tea parties, but I haven&#39;t been able to join them since the monster came....you see, with all the craziness around here recently, and all of these outsiders&quot;--he looks at you, but more in sorrow than anything else--&quot;coming by, it&#39;s been very crowded, and there&#39;s just not enough room for everyone to fit anymore.  I try to pretend they're with me by using mock versions of them, but it's not the same.  If only there were a way to allow more people to fit comfortably around the table at tea-time, then I could be with my friends again....&quot;
+    </div>
+    <p>
+      <table class="mh-center">
+	{% for puzzle in puzzles %}
+	<tr><td>
+	    <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
+	      {{ puzzle.puzzle.name }}
+	    </a>
+	</td></tr>
+	{% endfor %}
+      </table>
+      
+    <p>
+      <table class="mh-center" style="white-space: nowrap"><tr><td>
+	    <span class="mh-blank"></span> creator and family (26,13)<br>
+	    <span class="mh-blank"></span>&#39;s airplane (in reality) (15,1)<br>
+	    <span class="mh-blank"></span>&#39;s "very small" character (5,2)<br>
+	    Beverage endorsed by <span class="mh-blank"></span> (14,9)<br>
+	    Container for <span class="mh-blank"></span> product (10,25)<br>
+	    First word of <span class="mh-blank"></span>&#39;s children's TV show name (6,3)<br>
+	    Focus of <span class="mh-blank"></span> meme (17,8)<br>
+	    How <span class="mh-blank"></span> keep their hair (7,22)<br>
+	    Lancaster and <span class="mh-blank"></span>, for example (4,21)<br>
+	    Primary developer of the <span class="mh-blank"></span> library (20,24)<br>
+	    Send email to experts on the <span class="mh-blank"></span> (23,16)<br>
+	    Usin&#39; a <span class="mh-blank"></span>, perhaps? (12,11)<br>
+	    What <span class="mh-blank"></span> does, before being shot (18,19)<br>
+      </td></tr></table>
+      
+    <p>
+      <table class="mh-center" style="text-align: center">
+	<tr id="mh-turtle-blanks">
+	  <td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td><td>
+	</tr>
+	<tr>
+	  <td>1<td>2<td>3<td>4<td>5<td>6<td>7<td>8<td>9<td>10<td>11<td>12<td>13<td>14<td>15<td>16<td>17<td>18<td>19<td>20<td>21<td>22<td>23<td>24<td>25<td>26
+	</tr>
+      </table>
+      
+  </div>
+</div>
+
+{% include "round-tail.html" %}

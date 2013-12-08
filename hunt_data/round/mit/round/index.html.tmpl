@@ -1,128 +1,117 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ round.round.name }}</title>
-<link rel="stylesheet" type="text/css" href="round.css">
-<link href='https://fonts.googleapis.com/css?family=Parisienne|Alice' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
-<body class="mh-fancy">
-  <div id="mh-outer">
-    <div id="mh-controls">
-      <a id="mh-back" href="{{ root }}">
-	Back to ???
-      </a>
-      {% if bait_ready < 3 %}
-      <a id="mh-answer" href="javascript:void(0);">
-	Submit Bait
-      </a>
-      {% endif %}
-    </div>
-    <div id="mh-page">
-      <div id="mh-banner">
-	<div id="mh-title">
-	  {{ round.round.name }}
-	</div>
-	{% if vial1 > -1 %}
-	<img class="mh-drink-me" style="right: 130px;" src="drinkme{{ vial1|stringformat:"02d" }}.png">
-	{% endif %}
-	{% if vial2 > -1 %}
-	<img class="mh-drink-me" style="right: 70px;" src="drinkme{{ vial2|stringformat:"02d" }}.png">
-	{% endif %}
-	{% if vial3 > -1 %}
-	<img class="mh-drink-me" style="right: 10px;" src="drinkme{{ vial3|stringformat:"02d" }}.png">
-	{% endif %}
-      </div>
-      <div id="mh-content">
-	<div style="position: relative;">
-	  <img src="map.jpg" />
-	  {% for puzzle in puzzles %}
-	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
-	    <img class="mh-map-location" title="{{puzzle.puzzle.name}}" style=
-		 {% if puzzle.location.name == "W20" %}
-		 "top: 203px; left: 158px;"
-		 {% elif puzzle.location.name == "32" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "14" %}
-		 "top: 294px; left: 668px;"
-		 {% elif puzzle.location.name == "W11" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "33" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "34" %}
-		 "top: 138px; left: 487px;"
-		 {% elif puzzle.location.name == "66" %}
-		 "top: 219px; left: 860px;"
-		 {% elif puzzle.location.name == "2" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "50" %}
-                 "top: 313px; left: 826px;"
-		 {% elif puzzle.location.name == "5" %}
-		 "top: 263px; left: 255px;"
-		 {% elif puzzle.location.name == "1" %}
-                 "top: 10px; left: 10px;"
-		 {% elif puzzle.location.name == "37" %}
-                 "top: 140px; left: 362px;"
-		 {% elif puzzle.location.name == "12" %}
-                 "top: 10px; left: 10px;"
-		 {% elif puzzle.location.name == "38" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "56" %}
-		 "top: 221px; left: 651px;"
-		 {% elif puzzle.location.name == "6" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "Killian Court" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "54" %}
-                 "top: 240px; left: 751px;"
-		 {% elif puzzle.location.name == "10" %}
-		 "top: 240px; left: 430px;"
-		 {% elif puzzle.location.name == "4" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "8" %}
-		 "top: 10px; left 10px;"
-		 {% elif puzzle.location.name == "7" %}
-                 "top: 219px; left: 272px;"
-		 {% elif puzzle.location.name == "26" %}
-                 "top: 10px; left: 10px;"
-		 {% elif puzzle.location.name == "13" %}
-                 "top: 185px; left: 381px;"
-		 {% else %}
-		 "{{ puzzle.location }}"
-		 {% endif %}
-		 src=
-		 {% if puzzle.solved %}
-		 "location_solved.png"
-		 {% else %}
-		 "location_unsolved.png"
-		 {% endif %} /></a>
-	  {% endfor %}
-	  {% if portal1 == "open" %}
-	  {% elif portal1 == "visible" %}
-	  {% endif %}
-	  {% if portal2 == "open" %}
-	  {% elif portal2 == "visible" %}
-	  {% endif %}
-	  {% if portal3 == "open" %}
-	  {% elif portal3 == "visible" %}
-	  {% endif %}
-	</div>
+{% include "round-head.html" %}
+<div id="mh-controls">
+  <a id="mh-back" href="{{ root }}">
+    Back to ???
+  </a>
+  {% if bait_ready < 3 %}
+  <a id="mh-answer" href="javascript:void(0);">
+    Submit Bait
+  </a>
+  {% endif %}
+</div>
 
-	<ul>
-	  {% for puzzle in puzzles %}
-	  <li class=
-	      {% if puzzle.solved %}
-	      "mh-list-solved"
-	      {% else %}
-	      "mh-list-unsolved"
-	      {% endif %}
-	      ><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">{{ puzzle.puzzle.name }}</a>
-	  {% endfor %}
-	</ul>
-
-      </div>
+<div id="mh-page">
+  <div id="mh-banner">
+    <div id="mh-title">
+      {{ round.round.name }}
     </div>
+    {% if vial1 > -1 %}
+    <img class="mh-drink-me" style="right: 130px;" src="drinkme{{ vial1|stringformat:"02d" }}.png">
+    {% endif %}
+    {% if vial2 > -1 %}
+    <img class="mh-drink-me" style="right: 70px;" src="drinkme{{ vial2|stringformat:"02d" }}.png">
+    {% endif %}
+    {% if vial3 > -1 %}
+    <img class="mh-drink-me" style="right: 10px;" src="drinkme{{ vial3|stringformat:"02d" }}.png">
+    {% endif %}
+</div>
+
+<div id="mh-content">
+  <div style="position: relative;">
+    <img src="map.jpg" />
+    {% for puzzle in puzzles %}
+    <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
+      <img class="mh-map-location" title="{{puzzle.puzzle.name}}" style=
+	   {% if puzzle.location.name == "W20" %}
+	   "top: 203px; left: 158px;"
+	   {% elif puzzle.location.name == "32" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "14" %}
+	   "top: 294px; left: 668px;"
+	   {% elif puzzle.location.name == "W11" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "33" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "34" %}
+	   "top: 138px; left: 487px;"
+	   {% elif puzzle.location.name == "66" %}
+	   "top: 219px; left: 860px;"
+	   {% elif puzzle.location.name == "2" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "50" %}
+           "top: 313px; left: 826px;"
+	   {% elif puzzle.location.name == "5" %}
+	   "top: 263px; left: 255px;"
+	   {% elif puzzle.location.name == "1" %}
+           "top: 10px; left: 10px;"
+	   {% elif puzzle.location.name == "37" %}
+           "top: 140px; left: 362px;"
+	   {% elif puzzle.location.name == "12" %}
+           "top: 10px; left: 10px;"
+	   {% elif puzzle.location.name == "38" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "56" %}
+	   "top: 221px; left: 651px;"
+	   {% elif puzzle.location.name == "6" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "Killian Court" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "54" %}
+           "top: 240px; left: 751px;"
+	   {% elif puzzle.location.name == "10" %}
+	   "top: 240px; left: 430px;"
+	   {% elif puzzle.location.name == "4" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "8" %}
+	   "top: 10px; left 10px;"
+	   {% elif puzzle.location.name == "7" %}
+           "top: 219px; left: 272px;"
+	   {% elif puzzle.location.name == "26" %}
+           "top: 10px; left: 10px;"
+	   {% elif puzzle.location.name == "13" %}
+           "top: 185px; left: 381px;"
+	   {% else %}
+	   "{{ puzzle.location }}"
+	   {% endif %}
+	   src=
+	   {% if puzzle.solved %}
+	   "location_solved.png"
+	   {% else %}
+	   "location_unsolved.png"
+	   {% endif %} /></a>
+    {% endfor %}
+    {% if portal1 == "open" %}
+    {% elif portal1 == "visible" %}
+    {% endif %}
+    {% if portal2 == "open" %}
+    {% elif portal2 == "visible" %}
+    {% endif %}
+    {% if portal3 == "open" %}
+    {% elif portal3 == "visible" %}
+    {% endif %}
   </div>
-  <script src="round.js"></script>
-</body>
-</html>
+  
+  <ul>
+    {% for puzzle in puzzles %}
+    <li class=
+	{% if puzzle.solved %}
+	"mh-list-solved"
+	{% else %}
+	"mh-list-unsolved"
+	{% endif %}
+	><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">{{ puzzle.puzzle.name }}</a>
+      {% endfor %}
+  </ul>
+</div>
+
+{% include "round-tail.html" %}

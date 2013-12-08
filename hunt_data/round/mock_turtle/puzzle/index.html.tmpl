@@ -1,42 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>{{ puzzle.puzzle.name }} ({{ round.round.name }})</title>
-<link rel="stylesheet" type="text/css" href="puzzle.css">
-<link href="https://fonts.googleapis.com/css?family=Parisienne|Alice" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
-<body class="mh-fancy">
-  <div id="mh-outer">
-    <div id="mh-controls">
-      <a id="mh-back" href="{{ root }}/round/{{ round.round.url }}">
-	Back to {{ round.round.name }}
-      </a>
-      <a id="mh-plain-toggle" href="javascript:mh.plain_toggle();">
-	Printable
-      </a>
-      {% if puzzle.solved %}
-      <span id="mh-answer">
-	Solved!
-      </span>
-      {% else %}
-      <a id="mh-answer" href="javascript:void(0);">
-	Submit Answer
-      </a>
-      {% endif %}
-    </div>
-    <div id="mh-page">
-      <div id="mh-banner">
-        <img id="mh-turtle" src="{{ root }}/round/{{ round.round.url }}/turtle.png">
-	<div id="mh-title">
-	  {{ puzzle.puzzle.name }}
-	</div>
-      </div>
-      <div id="mh-content">
-        {{ index_html|safe }}
-      </div>
-    </div>
+{% include "puzzle-head.html" %}
+
+<div id="mh-banner">
+  <img id="mh-turtle" src="{{ root }}/round/{{ round.round.url }}/turtle.png">
+  <div id="mh-title">
+    {{ puzzle.puzzle.name }}
   </div>
-  <script src="puzzle.js"></script>
-</body>
-</html>
+</div>
+
+<div id="mh-content">
+  {{ index_html|safe }}
+</div>
+
+{% include "puzzle-tail.html" %}
