@@ -21,76 +21,24 @@
     </div>
     <p>
       <div id="mh-caucusrace-area">
-        <div class="mh-caucusrace-bird">
-          <img class="mh-caucusrace-bird-image" src="bird.png" />
-          <img class="mh-caucusrace-points" src="points.png" />
-          <div class="mh-caucusrace-yes">
-            YES! <a href="javascript:void(0);">Let's Meet in the Middle</a>!
-	  </div>
-          <div class="mh-caucusrace-no" href="javascript:void(0);">
-            NO! <a href="javascript:void(0);">You've Got Some Nerve</a>!
-	  </div>
-        </div>
+	{% for bird in birds %}
         <div class="mh-caucusrace-bird">
           <img class="mh-caucusrace-bird-image" src="bird.png" />
           <img class="mh-caucusrace-points" src="points.png" />
           <div class="mh-caucusrace-yes">
             YES!
+	    {% if bird.yes %}
+	    <a href="{{ root }}/puzzle/{{ bird.yes.url }}/">{{ bird.yes.name }}</a>!
+	    {% endif %}
 	  </div>
-          <div class="mh-caucusrace-no" href="javascript:void(0);">
+          <div class="mh-caucusrace-no">
             NO!
+	    {% if bird.no %}
+	    <a href="{{ root }}/puzzle/{{ bird.no.url }}/">{{ bird.no.name }}</a>!
+	    {% endif %}
 	  </div>
         </div>
-        <div class="mh-caucusrace-bird">
-          <img class="mh-caucusrace-bird-image" src="bird.png" />
-          <img class="mh-caucusrace-points" src="points.png" />
-          <div class="mh-caucusrace-yes">
-            YES! <a href="javascript:void(0);">Let's Meet in the Middle</a>!
-	  </div>
-          <div class="mh-caucusrace-no" href="javascript:void(0);">
-            NO! <a href="javascript:void(0);">You've Got Some Nerve</a>!
-	  </div>
-        </div>
-        <div class="mh-caucusrace-bird">
-          <img class="mh-caucusrace-bird-image" src="bird.png" />
-          <img class="mh-caucusrace-points" src="points.png" />
-          <div class="mh-caucusrace-yes">
-            YES!
-	  </div>
-          <div class="mh-caucusrace-no" href="javascript:void(0);">
-            NO!
-	  </div>
-        </div>
-        <div class="mh-caucusrace-bird">
-          <img class="mh-caucusrace-bird-image" src="bird.png" />
-          <img class="mh-caucusrace-points" src="points.png" />
-          <div class="mh-caucusrace-yes">
-            YES! <a href="javascript:void(0);">Let's Meet in the Middle</a>!
-	  </div>
-          <div class="mh-caucusrace-no" href="javascript:void(0);">
-            NO! <a href="javascript:void(0);">You've Got Some Nerve</a>!
-	  </div>
-        </div>
-        <div class="mh-caucusrace-bird">
-          <img class="mh-caucusrace-bird-image" src="bird.png" />
-          <img class="mh-caucusrace-points" src="points.png" />
-          <div class="mh-caucusrace-yes">
-            YES! <a href="javascript:void(0);">Let's Meet in the Middle</a>!
-	  </div>
-          <div class="mh-caucusrace-no" href="javascript:void(0);">
-            NO! <a href="javascript:void(0);">You've Got Some Nerve</a>!
-	  </div>
-        </div>
-        <div class="mh-caucusrace-bird">
-          <img class="mh-caucusrace-bird-image" src="bird.png" />
-          <img class="mh-caucusrace-points" src="points.png" />
-          <div class="mh-caucusrace-yes">
-            YES! <a href="javascript:void(0);">Let's Meet in the Middle</a>!
-	  </div>
-          <div class="mh-caucusrace-no" href="javascript:void(0);">
-            NO! <a href="javascript:void(0);">You've Got Some Nerve</a>!
-	  </div>
-        </div>
+	{% endfor %}
       </div>
       <div id="mh-caucusrace-ballot-div">
 	<img id="mh-caucusrace-ballot" src="ballot.png">
