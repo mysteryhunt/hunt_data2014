@@ -7,7 +7,7 @@ mh.submit_answer = function() {
             inner.html('');
         });
     } else {
-        inner.html('<iframe src="{{ root }}/dynamic/submit/puzzle/{{ puzzle.puzzle.url }}" id="mh-submit-answer-iframe"></iframe>');
+        inner.html('<iframe src="{{ root }}/dynamic/submit/puzzle/{{ puzzle.puzzle.url }}/" id="mh-submit-answer-iframe"></iframe>');
         outer.fadeToggle('slow');
     }
 };

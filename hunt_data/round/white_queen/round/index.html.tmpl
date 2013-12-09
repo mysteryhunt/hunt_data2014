@@ -48,7 +48,7 @@
 	    <img src="answers_background.jpg">
 	    {% for cell in cells %}
 	    <div class="mh-queen-r mh-queen-r{{ cell.row }}"><div id="{{ cell.meta_url }}" class="mh-queen-c mh-queen-c{{ cell.column }}">
-		{{ cell.letter }}&nbsp;=&nbsp;{% if cell.url %}<a href="{{ root }}/puzzle/{{ cell.url }}">{{ cell.answer }}</a>
+		{{ cell.letter }}&nbsp;=&nbsp;{% if cell.url %}<a href="{{ root }}/puzzle/{{ cell.url }}/">{{ cell.answer }}</a>
 		{% else %}???<br>
 		<a style="white-space: nowrap;" href="javascript:mh.submit_title('{{ cell.meta_url }}', {% if cell.row > 3 %}true{% else %}false{% endif %});">Submit Title</a>
 		{% endif %}

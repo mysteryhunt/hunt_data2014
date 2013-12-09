@@ -30,7 +30,7 @@
     <div style="position: relative;">
       <img src="map.jpg" />
       {% for puzzle in puzzles %}
-      <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">
+      <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
 	<img class="mh-map-location" title="{{puzzle.puzzle.name}}" style=
 	     {% if puzzle.location.name == "W20" %}
 	     "top: 203px; left: 158px;"
@@ -109,7 +109,7 @@
 	  {% else %}
 	  "mh-list-unsolved"
 	  {% endif %}
-	  ><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}">{{ puzzle.puzzle.name }}</a>
+	  ><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
 	{% endfor %}
     </ul>
   </div>
