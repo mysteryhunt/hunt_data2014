@@ -10,12 +10,13 @@ Welcome to Wonderland!<br>
 <a href="/">Back to MIT</a><br>
 <ul>
 {% for round in rounds %}
-{% if round.round.order != 10 %}
+{% if round.round.order >= 20 %}
+<!-- code goes here for drawing of map.  for now just list rounds/urls -->
 <li><a href="round/{{ round.round.url }}/">{{ round.round.name }}</a></li>
 {% endif %}
 {% endfor %}
-</ul>
-
+<!-- events link on wonderland page goes somewhere off the map? -->
+<li><a href="round/events">Events</a></br></li>
 </ul>
 </body>
 </html>
