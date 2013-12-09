@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wonderland</title>
+<link rel="stylesheet" type="text/css" href="stage2.css">
+</head>
+<body>
+team: {{ team.name }}<br>
+Welcome to Wonderland!<br>
+<a href="/">Back to MIT</a><br>
+<ul>
+{% for round in rounds %}
+{% if round.round.order != 10 %}
+<li><a href="round/{{ round.round.url }}/">{{ round.round.name }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
+</ul>
+</body>
+</html>

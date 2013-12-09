@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hunt</title>
+<title>Lobby 7</title>
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 team: {{ team.name }}<br>
 <a href="log.html">TEAM LOG</a><br>
+<a href="teamoverview.html">TEAM OVERVIEW</a><br>
+<br>Mystery hunt front page, lobby 7 graphic, etc.
+<br>
 <ul>
-{% for round in rounds %}
-<li><a href="round/{{ round.round.url }}/">{{ round.round.name }}</a>
-<ul>
-{% for puzzle in round.puzzles %}
-<li><a href="puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-{% if puzzle.solved %}[SOLVED]{% endif %}
-{% endfor %}
+<li> <a href="/round/mit">To MIT</a> </li>
+
+{% if has_wl_access %}
+<li> <a href="wonderland.html">To Wonderland</a></li>
+{% endif %}
+
 </ul>
-{% endfor %}
 </ul>
 </body>
 </html>
