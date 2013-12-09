@@ -1,2 +1,26 @@
-{% include "common.css" %}
-{% include "round-meta.css" %}
+{% include "common.js" %}
+{% include "round-meta.js" %}
+
+mh.submit_title = function(cell_id, above) {
+    var outer = $('#mh-submit-title');
+    var inner = $('#mh-submit-title-inner');
+    outer.stop(true, true);
+    if (outer.is(':visible')) {
+        outer.fadeToggle('slow', function() {
+            inner.html('');
+        });
+    } else {
+	var c = $('#'+cell_id).offset();
+	var t;
+        if (above)
+            t = c.top - 450;
+        else
+            t = c.top + 50;
+	var l = c.left - 165;
+	outer.css('top', t+'px');
+	outer.css('left', l+'px');
+	$('body').append(outer);
+        inner.html('<iframe src="{{ root }}/dynamic/submit/metapuzzle/' + cell_id + '" id="mh-submit-title-iframe"></iframe>');
+        outer.fadeToggle('slow');
+    }
+};
