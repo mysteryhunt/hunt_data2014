@@ -51,55 +51,24 @@
 	      The chessboard upon arriving at the clearing.
 	    </div>
       </table>
-      <table class="mh-center mh-knights-pieces">
+      {% for piece in pieces %}
+      <table class="mh-knights-pieces">
 	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_pawn.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_pawn.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
+	  {% for puzzle in piece %}
+	  <td>
+	    <table class="mh-knights-puzzle">
+	      <tr>
+		<td class="mh-knights-piece"><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/"><img src="chessboard/{{ puzzle.color }}_{{ puzzle.piece }}.png"></a></td>
+	      </tr>
+	      <tr>
+		<td class="mh-knights-caption"><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a></td>
+	      </tr>
+	    </table>
+	    {% endfor %}
+	  </td>
 	</tr>
-	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_pawn_2.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_pawn_2.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	</tr>
-	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_knight.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_pawn_3.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	</tr>
-	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_bishop.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_knight.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	</tr>
-	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_rook.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_bishop.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	</tr>
-	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_rook_2.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_rook.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	</tr>
-	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_queen.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_queen.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
-	</tr>
-	<tr>
-	  <td class="mh-knights-l"><a href="javascript:void(0)">A Puzzle!</a>
-	  <td class="mh-knights-piece"><img src="chessboard/white_king.png">
-	  <td class="mh-knights-piece"><img src="chessboard/red_king.png">
-	  <td class="mh-knights-r"><a href="javascript:void(0)">A Puzzle!</a>
       </table>
+      {% endfor %}
   </div>
 
   {% include "submit-answer.html" %}
