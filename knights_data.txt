@@ -1,0 +1,17 @@
+piece	color	order	answer
+pawn	white	1	DARK OMEN
+pawn	white	2	HOBO BOBO
+pawn	red	3	ACTIVE USER
+pawn	red	4	DEN CHAI
+pawn	red	5	ED WYNN
+bishop	white	1	ARCHDUKE OTTO
+bishop	red	2	HOSPITAL BEDS
+knight	white	1	CAPS LOCK
+knight	red	2	BABY WIPE
+rook	white	1	BAD BOYS
+rook	white	2	GLUTEN FREE
+rook	red	3	G RING
+queen	white	1	FLU SHOT
+queen	red	2	CUTTING EDGE
+king	white	1	ENERGY BEAM
+king	red	2	FIRE HOSE
