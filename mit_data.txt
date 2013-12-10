@@ -1,5 +1,6 @@
 url	card	location
 intersecting_personalities	7_spades	W20
+safety_first	J_clubs	32
 build_your_own_sudoku	5_spades	14
 bumblebee_tune_a	5_clubs	33
 the_despair_of_cooking	6_spades	34
@@ -11,4 +12,5 @@ local_shorts	9_clubs	56
 sneaky_fox	3_spades	54
 down_the_rabbit_hole_2	10_diamonds	10
 across_the_hall	2_diamonds	7
+dressing_down	8_diamonds	26
 a_meta_puzzle	2_clubs	13
