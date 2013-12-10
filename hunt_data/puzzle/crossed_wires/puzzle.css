@@ -1,0 +1,5 @@
+body {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+div.clues {padding: 0px; width: 600px; background-color: #efc789; border: solid 2px #bf9759}
+div.clues img {margin-top: 20px; margin-bottom: 20px;}
+div.clues p {padding-left: 40px; padding-right: 40px; padding-top: 0px; padding-bottom: 0px;}
+div.clues p:last-child {padding-bottom: 20px;}

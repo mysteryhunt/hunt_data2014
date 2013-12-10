@@ -1,16 +1,17 @@
 round	answer	url	name	order
 mit	MEMORY	intersecting_personalities	Intersecting Personalities	10
 mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	20
-mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	30
-mit	MISCHIEF	zoinks	Zoinks!	40
-mit	NEGATES	opposites_are_not_downbeats	Opposites are not Downbeats	50
-mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	60
-mit	TROUBLING	ring_around_the_music	Ring Around the Music	70
-mit	ICHABOD	local_shorts	Local Shorts	80
-mit	SHREWDNESS	sneaky_fox	Sneaky Fox	90
-mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	100
-mit	ROOMING	across_the_hall	Across the Hall	110
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	120
+mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	30
+mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	40
+mit	MISCHIEF	zoinks	Zoinks!	50
+mit	NEGATES	opposites_are_not_downbeats	Opposites are not Downbeats	60
+mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	70
+mit	TROUBLING	ring_around_the_music	Ring Around the Music	80
+mit	ICHABOD	local_shorts	Local Shorts	90
+mit	SHREWDNESS	sneaky_fox	Sneaky Fox	100
+mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	110
+mit	ROOMING	across_the_hall	Across the Hall	120
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	130
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
@@ -35,6 +36,8 @@ caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5040
 caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5050
 caucus_race	SPUR	venntersections	Venntersections	5060
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5070
+caucus_race	ECHO	crossed_wires	Crossed Wires	5080
+caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5090
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6010
 knights	HOSPITAL BEDS	marking_territory	Marking Territory	6020
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6030

@@ -1,6 +1,7 @@
 url	card	location
 intersecting_personalities	7_spades	W20
 build_your_own_sudoku	5_spades	14
+bumblebee_tune_a	5_clubs	33
 the_despair_of_cooking	6_spades	34
 zoinks	2_spades	66
 opposites_are_not_downbeats	J_diamonds	50
