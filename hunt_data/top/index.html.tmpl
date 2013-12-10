@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Lobby 7</title>
-<link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-team: {{ team.name }}<br>
-<a href="log.html">TEAM LOG</a><br>
-<a href="teamoverview.html">TEAM OVERVIEW</a><br>
-<br>Mystery hunt front page, lobby 7 graphic, etc.
-<br>
-<ul>
-<li> <a href="/round/mit">To MIT</a> </li>
-
-{% if has_wl_access %}
-<li> <a href="wonderland.html">To Wonderland</a></li>
-{% endif %}
-
-<li> <a href="/round/events">Events</a></li>
-
-</ul>
-</ul>
-</body>
+  <head>
+    <title>Lobby</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Parisienne|Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body class="mh-fancy">
+    <div id="mh-outer">
+      <div id="mh-page">
+	<div id="mh-banner">
+	  <div id="mh-title">
+	    TNUH 2014
+	  </div>
+	</div>
+	<div id="mh-content">
+	  team: {{ team.name }}<br>
+	  <a href="log.html">TEAM LOG</a><br>
+	  <a href="overview.html">TEAM OVERVIEW</a><br>
+	  <br>Mystery hunt front page, lobby 7 graphic, etc.
+	  <br>
+	  <ul>
+	    <li> <a href="{{ root }}/round/mit/">To MIT</a> </li>
+	    
+	    {% if has_wl_access %}
+	    <li> <a href="wonderland.html">To Wonderland</a></li>
+	    {% endif %}
+	    
+	    <li> <a href="{{ root }}/round/events/">Events</a></li>
+	    
+	  </ul>
+	</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>

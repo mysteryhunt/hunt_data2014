@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Overview</title>
+    <link rel="stylesheet" type="text/css" href="overview.css">
+    <link href='https://fonts.googleapis.com/css?family=Parisienne|Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body class="mh-fancy">
+    <div id="mh-outer">
+      <div id="mh-page">
+	<div id="mh-banner">
+	  <div id="mh-title">
+	    Team Overview
+	  </div>
+	</div>
+	<div id="mh-content">
+	  team: {{ team.name }}<br>
+	  <ul>
+	    {% for round in rounds %}
+	    <li><a href="round/{{ round.round.url }}/">{{ round.round.name }}</a>
+	      <ul>
+		{% for puzzle in round.puzzles %}
+		<li><a href="puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
+		  {% if puzzle.solved %}[SOLVED]{% endif %}
+		  {% endfor %}
+	      </ul>
+	      {% endfor %}
+	  </ul>
+	</div>
+      </div>
+    </div>
+    <script src="overview.js"></script>
+  </body>
+</html>
