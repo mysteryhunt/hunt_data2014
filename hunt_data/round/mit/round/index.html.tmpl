@@ -33,61 +33,59 @@
       <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
 	<img class="mh-map-location" title="{{puzzle.puzzle.name}}" style=
 	     {% if puzzle.location.name == "W20" %}
-	     "top: 123px; left: 158px;"
+	     "top: 118px; left: 153px;"
 	     {% elif puzzle.location.name == "32" %}
-	     "top: 42px; left: 687px;"
+	     "top: 37px; left: 682px;"
 	     {% elif puzzle.location.name == "14" %}
-	     "top: 214px; left: 668px;"
+	     "top: 209px; left: 663px;"
 	     {% elif puzzle.location.name == "W11" %}
 	     "top: 10px; left 10px;"
 	     {% elif puzzle.location.name == "33" %}
-	     "top: 86px; left: 293px;"
+	     "top: 81px; left: 288px;"
 	     {% elif puzzle.location.name == "34" %}
-	     "top: 58px; left: 487px;"
+	     "top: 53px; left: 482px;"
 	     {% elif puzzle.location.name == "66" %}
-	     "top: 139px; left: 860px;"
+	     "top: 134px; left: 842px;"
 	     {% elif puzzle.location.name == "2" %}
 	     "top: 10px; left 10px;"
 	     {% elif puzzle.location.name == "50" %}
-             "top: 233px; left: 826px;"
+             "top: 228px; left: 821px;"
 	     {% elif puzzle.location.name == "5" %}
-	     "top: 183px; left: 255px;"
+	     "top: 173px; left: 250px;"
 	     {% elif puzzle.location.name == "1" %}
              "top: 10px; left: 10px;"
 	     {% elif puzzle.location.name == "37" %}
-             "top: 60px; left: 362px;"
+             "top: 55px; left: 357px;"
 	     {% elif puzzle.location.name == "12" %}
              "top: 10px; left: 10px;"
 	     {% elif puzzle.location.name == "38" %}
 	     "top: 10px; left 10px;"
 	     {% elif puzzle.location.name == "56" %}
-	     "top: 141px; left: 651px;"
+	     "top: 136px; left: 646px;"
 	     {% elif puzzle.location.name == "6" %}
 	     "top: 10px; left 10px;"
 	     {% elif puzzle.location.name == "Killian Court" %}
 	     "top: 10px; left 10px;"
 	     {% elif puzzle.location.name == "54" %}
-             "top: 180px; left: 751px;"
+             "top: 158px; left: 746px;"
 	     {% elif puzzle.location.name == "10" %}
-	     "top: 180px; left: 430px;"
+	     "top: 153px; left: 425px;"
 	     {% elif puzzle.location.name == "4" %}
 	     "top: 10px; left 10px;"
 	     {% elif puzzle.location.name == "8" %}
 	     "top: 10px; left 10px;"
 	     {% elif puzzle.location.name == "7" %}
-             "top: 139px; left: 272px;"
+             "top: 128px; left: 267px;"
 	     {% elif puzzle.location.name == "26" %}
-             "top: 104px; left: 557px;"
+             "top: 99px; left: 552px;"
 	     {% elif puzzle.location.name == "13" %}
-             "top: 105px; left: 381px;"
+             "top: 100px; left: 376px;"
 	     {% else %}
 	     "{{ puzzle.location }}"
 	     {% endif %}
-	     src=
+	     src="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/card.png"
 	     {% if puzzle.solved %}
-	     "location_solved.png"
 	     {% else %}
-	     "location_unsolved.png"
 	     {% endif %} /></a>
       {% endfor %}
       {% if portal1 == "open" %}
