@@ -1,7 +1,14 @@
+#mh-submit-answer-bg {
+    position: fixed;
+    background: #888;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
 #mh-submit-answer {
     position: absolute;
-    top: 55px;
-    right: 20px;
     width: 470px;
     height: 400px;
     background: aliceblue;
