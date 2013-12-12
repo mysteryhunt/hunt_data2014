@@ -20,7 +20,7 @@ mh.submit_title = function(cell_id, above) {
 	outer.css('top', t+'px');
 	outer.css('left', l+'px');
 	$('body').append(outer);
-        inner.html('<iframe src="{{ root }}/dynamic/submit/metapuzzle/' + cell_id + '" id="mh-submit-title-iframe"></iframe>');
+        inner.html('<iframe src="{{ root }}/dynamic/submit/meta/' + cell_id + '" id="mh-submit-title-iframe"></iframe>');
         outer.fadeToggle('slow');
     }
 };
