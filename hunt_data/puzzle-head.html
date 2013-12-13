@@ -15,14 +15,12 @@
 	<a id="mh-plain-toggle" href="javascript:mh.plain_toggle();">
 	  Printable
 	</a>
-	{% if puzzle.solved %}
-	<span id="mh-answer">
-	  Solved!
-	</span>
-	{% else %}
 	<a id="mh-answer" href="javascript:mh.submit_answer();">
+	{% if puzzle.solved %}
+	  Solved!
+	{% else %}
 	  Submit {% if round.round.url == "white_queen" %}Title{% else %}Answer{% endif %}
-	</a>
 	{% endif %}
+	</a>
       </div>
       <div id="mh-page">
