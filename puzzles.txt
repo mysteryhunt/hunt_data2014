@@ -29,6 +29,7 @@ white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHER
 white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
 white_queen	MIAMI	puzzle_with_answer_youkilis	A Puzzle with the Answer YOUKILIS	3040
+white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3050
 humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4010
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4020
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4030
