@@ -7,4 +7,30 @@
     }
 }
 
+@media screen {
+    .mh-fancy #mh-knights-piece {
+	float: left;
+	padding: 25px;
+    }
+    .mh-plain #mh-knights-piece {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+    }
+    .mh-plain #mh-banner {
+        height: 120px;
+    }
+}
+
+@media print {
+    #mh-banner {
+        height: 120px;
+    }
+    #mh-knights-piece {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+    }
+}
+
 {{ puzzle_css|safe }}
