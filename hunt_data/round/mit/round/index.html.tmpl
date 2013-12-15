@@ -3,11 +3,13 @@
   <a id="mh-back" href="{{ root }}">
     Back to Lobby
   </a>
-  {% if bait_ready < 3 %}
   <a id="mh-answer" href="javascript:mh.submit_answer();">
+    {% if bait_ready < 3 %}
     Submit Bait
+    {% else %}
+    Creatures Baited!
+    {% endif %}
   </a>
-  {% endif %}
 </div>
 
 <div id="mh-page">

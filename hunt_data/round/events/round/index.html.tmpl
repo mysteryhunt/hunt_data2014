@@ -5,7 +5,11 @@
     Back to Lobby
   </a>
   <a id="mh-answer" href="javascript:mh.submit_answer();">
+    {% if round.solved %}
+    Solved!
+    {% else %}
     Submit Answer
+    {% endif %}
   </a>
 </div>
 
