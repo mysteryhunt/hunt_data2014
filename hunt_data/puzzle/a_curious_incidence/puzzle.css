@@ -1,0 +1,51 @@
+#mh-page
+{
+font-family: Arial, sans-serif;
+}
+
+.a
+{
+-moz-transform: scaleX(-1); /* Gecko */
+-o-transform: scaleX(-1); /* Opera */
+-webkit-transform: scaleX(-1); /* webkit */
+transform: scaleX(-1); /* standard */
+filter: FlipH; /* IE 6/7/8 */
+color: #808080;
+float: right;
+padding-left: 220px
+}
+
+.b
+{
+float: right;
+padding-right: 20px
+}
+
+.c
+{
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+color: #808080;
+float: right;
+padding-left: 220px
+}
+
+.d
+{
+-moz-transform: scaleY(-1);
+-o-transform: scaleY(-1);
+-webkit-transform: scaleY(-1);
+transform: scaleY(-1);
+filter: FlipV;
+color: #808080;
+float: right;
+padding-right: 20px
+}
+
+.e
+{
+clear: both;
+}

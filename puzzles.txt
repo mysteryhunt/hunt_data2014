@@ -32,6 +32,7 @@ humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4020
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4030
 humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4040
 humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4050
+humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4060
 caucus_race	MILLSTONE	sat_iii	SAT III	5010
 caucus_race	DERRICK	crosswalks	Crosswalks	5020
 caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
