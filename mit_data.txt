@@ -11,6 +11,7 @@ ring_around_the_music	8_spades	37
 local_shorts	9_clubs	56
 sneaky_fox	3_spades	54
 down_the_rabbit_hole_2	10_diamonds	10
+feed_your_head	9_spades	4
 across_the_hall	2_diamonds	7
 dressing_down	8_diamonds	26
 a_meta_puzzle	2_clubs	13
