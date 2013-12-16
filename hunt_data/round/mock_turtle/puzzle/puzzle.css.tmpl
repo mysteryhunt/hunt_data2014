@@ -7,30 +7,9 @@
     }
 }
 
-@media screen {
-    .mh-fancy #mh-turtle {
-	float: left;
-	padding: 10px;
-    }
-    .mh-plain #mh-turtle {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-    }
-    .mh-plain #mh-banner {
-        height: 160px;
-    }
-}
-
-@media print {
-    #mh-banner {
-        height: 160px;
-    }
-    #mh-turtle {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-    }
+#mh-turtle {
+    float: left;
+    padding: 10px;
 }
 
 {{ puzzle_css|safe }}
