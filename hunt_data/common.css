@@ -17,6 +17,7 @@ td {
 #mh-content {
     padding: 10px;
     text-align: justify;
+    clear: both;
 }
 #mh-outer {
     width: 900px;
