@@ -31,6 +31,7 @@
 	    <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
 	      {{ puzzle.puzzle.name }}
 	    </a>
+	    {% if puzzle.solved %}[SOLVED]{% endif %}
 	</td></tr>
 	{% endfor %}
       </table>
