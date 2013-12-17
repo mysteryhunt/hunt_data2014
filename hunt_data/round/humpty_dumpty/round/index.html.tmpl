@@ -28,31 +28,9 @@
 	  {% endfor %}
       </ul>
     </div>
+    {% if jigsaw >= 1 %}
     <div>
       <table id="mh-humpty-table">
-	<tr>
-	  <td>
-	    {% if jigsaw >= 12 %}
-	    <a href="jigsaw/12.png">
-	      <img src="jigsaw/12-thumb.png" />
-	    </a>
-	    {% endif %}
-	  </td>
-	  <td>
-	    {% if jigsaw >= 11 %}
-	    <a href="jigsaw/11.png">
-	      <img src="jigsaw/11-thumb.png" />
-	    </a>
-	    {% endif %}
-	  </td>
-	  <td>
-	    {% if jigsaw >= 8 %}
-	    <a href="jigsaw/08.png">
-	      <img src="jigsaw/08-thumb.png" />
-	    </a>
-	    {% endif %}
-	  </td>
-	</tr>
 	<tr>
 	  <td>
 	    {% if jigsaw >= 1 %}
@@ -69,13 +47,14 @@
 	    {% endif %}
 	  </td>
 	  <td>
-	    {% if jigsaw >= 10 %}
-	    <a href="jigsaw/10.png">
-	      <img src="jigsaw/10-thumb.png" />
+	    {% if jigsaw >= 3 %}
+	    <a href="jigsaw/03.png">
+	      <img src="jigsaw/03-thumb.png" />
 	    </a>
 	    {% endif %}
 	  </td>
 	</tr>
+	{% if jigsaw >= 4 %}
 	<tr>
 	  <td>
 	    {% if jigsaw >= 4 %}
@@ -85,9 +64,9 @@
 	    {% endif %}
 	  </td>
 	  <td>
-	    {% if jigsaw >= 9 %}
-	    <a href="jigsaw/09.png">
-	      <img src="jigsaw/09-thumb.png" />
+	    {% if jigsaw >= 5 %}
+	    <a href="jigsaw/05.png">
+	      <img src="jigsaw/05-thumb.png" />
 	    </a>
 	    {% endif %}
 	  </td>
@@ -99,14 +78,9 @@
 	    {% endif %}
 	  </td>
 	</tr>
+	{% endif %}
+	{% if jigsaw >= 7 %}
 	<tr>
-	  <td>
-	    {% if jigsaw >= 3 %}
-	    <a href="jigsaw/03.png">
-	      <img src="jigsaw/03-thumb.png" />
-	    </a>
-	    {% endif %}
-	  </td>
 	  <td>
 	    {% if jigsaw >= 7 %}
 	    <a href="jigsaw/07.png">
@@ -115,15 +89,49 @@
 	    {% endif %}
 	  </td>
 	  <td>
-	    {% if jigsaw >= 5 %}
-	    <a href="jigsaw/05.png">
-	      <img src="jigsaw/05-thumb.png" />
+	    {% if jigsaw >= 8 %}
+	    <a href="jigsaw/08.png">
+	      <img src="jigsaw/08-thumb.png" />
+	    </a>
+	    {% endif %}
+	  </td>
+	  <td>
+	    {% if jigsaw >= 9 %}
+	    <a href="jigsaw/09.png">
+	      <img src="jigsaw/09-thumb.png" />
 	    </a>
 	    {% endif %}
 	  </td>
 	</tr>
+	{% endif %}
+	{% if jigsaw >= 10 %}
+	<tr>
+	  <td>
+	    {% if jigsaw >= 10 %}
+	    <a href="jigsaw/10.png">
+	      <img src="jigsaw/10-thumb.png" />
+	    </a>
+	    {% endif %}
+	  </td>
+	  <td>
+	    {% if jigsaw >= 11 %}
+	    <a href="jigsaw/11.png">
+	      <img src="jigsaw/11-thumb.png" />
+	    </a>
+	    {% endif %}
+	  </td>
+	  <td>
+	    {% if jigsaw >= 12 %}
+	    <a href="jigsaw/12.png">
+	      <img src="jigsaw/12-thumb.png" />
+	    </a>
+	    {% endif %}
+	  </td>
+	</tr>
+	{% endif %}
       </table>
     </div>
+    {% endif %}
   </div>
 
 </div>
