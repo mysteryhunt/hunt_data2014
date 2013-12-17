@@ -1,0 +1,9 @@
+.t {
+    border-collapse: collapse;
+}
+.t td {
+    padding: 1px;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 15px;
+}

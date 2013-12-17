@@ -8,6 +8,7 @@ zoinks	2_spades	66
 opposites_are_not_downbeats	J_diamonds	50
 how_puzzling_all_these_changes_are	4_spades	5
 ring_around_the_music	8_spades	37
+find_your_way_across	3_diamonds	12
 local_shorts	9_clubs	56
 sneaky_fox	3_spades	54
 down_the_rabbit_hole_2	10_diamonds	10
