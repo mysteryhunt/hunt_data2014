@@ -30,13 +30,13 @@ white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
 white_queen	MIAMI	puzzle_with_answer_youkilis	A Puzzle with the Answer YOUKILIS	3040
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3050
-humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4010
-humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4020
-humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4030
-humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4040
-humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4050
-humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4060
+humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
+humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
+humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
 humpty_dumpty	APPLE	time_flies	Time Flies	4070
+humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
+humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
+humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
 caucus_race	MILLSTONE	sat_iii	SAT III	5010
 caucus_race	DERRICK	crosswalks	Crosswalks	5020
 caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
