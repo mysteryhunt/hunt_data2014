@@ -20,3 +20,8 @@ mh.plain_toggle = function() {
     b.text(b.text() == 'Back' ? 'Printable' : 'Back');
 };
 $('#mh-controls, #mh-controls > *').disableSelection();
+mh.set_iframe_location = function(id, location) {
+    var iframe = $('#'+id)[0];
+    var iframe_window = iframe.contentWindow || iframe.contentDocument.defaultView;
+    iframe_window.location.replace(location);
+};

@@ -54,7 +54,7 @@
 	    <div class="mh-queen-r mh-queen-r{{ cell.row }}"><div id="{{ cell.meta_url }}" class="mh-queen-c mh-queen-c{{ cell.column }}">
 		{{ cell.letter }}&nbsp;=&nbsp;{% if cell.url %}<a href="{{ root }}/puzzle/{{ cell.url }}/">{{ cell.answer }}</a>
 		{% else %}???<br>
-		<a style="white-space: nowrap;" href="javascript:mh.submit_title('{{ cell.meta_url }}', {% if cell.row > 3 %}true{% else %}false{% endif %});">Submit Answer</a>
+		<a style="white-space: nowrap;" href="javascript:mh.submit_answer2('{{ cell.meta_url }}', {% if cell.row > 3 %}true{% else %}false{% endif %});">Submit Answer</a>
 		{% endif %}
 	    </div></div>
 	    {% endfor %}
@@ -72,9 +72,9 @@
 
 </div>
 
-<div id="mh-submit-title-bg" style="display: none;"></div>
-<div id="mh-submit-title" style="display: none;">
-  <div id="mh-submit-title-inner" style="white-space: nowrap; overflow-x: hidden;">
+<div id="mh-submit-answer2-bg" style="display: none;"></div>
+<div id="mh-submit-answer2" style="display: none;">
+  <div id="mh-submit-answer2-inner" style="white-space: nowrap; overflow-x: hidden;">
   </div>
 </div>
 

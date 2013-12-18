@@ -12,10 +12,10 @@ mh.submit_answer = function() {
 	    bg.hide();
         });
         outer.fadeToggle('slow', function() {
-            inner.html('');
+	    mh.set_iframe_location('mh-submit-answer-iframe', 'javascript: void 0;');
         });
     } else {
-        inner.html('<iframe src="{{ root }}/dynamic/submit/puzzle/{{ puzzle.puzzle.url }}/" id="mh-submit-answer-iframe"></iframe>');
+	mh.set_iframe_location('mh-submit-answer-iframe', '{{ root }}/dynamic/submit/puzzle/{{ puzzle.puzzle.url }}/');
 	bg.fadeTo('slow', 0.5);
         outer.fadeToggle('slow');
     }

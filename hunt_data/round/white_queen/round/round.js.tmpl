@@ -1,10 +1,10 @@
 {% include "common.js" %}
 {% include "round-meta.js" %}
 
-mh.submit_title = function(cell_id, above) {
-    var outer = $('#mh-submit-title');
-    var bg = $('#mh-submit-title-bg');
-    var inner = $('#mh-submit-title-inner');
+mh.submit_answer2 = function(cell_id, above) {
+    var outer = $('#mh-submit-answer2');
+    var bg = $('#mh-submit-answer2-bg');
+    var inner = $('#mh-submit-answer2-inner');
     bg.stop(true, true);
     outer.stop(true, true);
     if (outer.is(':visible')) {
@@ -12,7 +12,7 @@ mh.submit_title = function(cell_id, above) {
 	    bg.hide();
         });
         outer.fadeToggle('slow', function() {
-            inner.html('');
+	    mh.set_iframe_location('mh-submit-answer2-iframe', 'javascript: void 0;');
         });
     } else {
 	var c = $('#'+cell_id).offset();
@@ -25,9 +25,9 @@ mh.submit_title = function(cell_id, above) {
 	outer.css('top', t+'px');
 	outer.css('left', l+'px');
 	$('body').append(outer);
-        inner.html('<iframe src="{{ root }}/dynamic/submit/meta/' + cell_id + '" id="mh-submit-title-iframe"></iframe>');
+	mh.set_iframe_location('mh-submit-answer2-iframe', '{{ root }}/dynamic/submit/meta/' + cell_id);
 	bg.fadeTo('slow', 0.5);
         outer.fadeToggle('slow');
     }
 };
-$('#mh-submit-title-bg').click(mh.submit_title);
+$('#mh-submit-answer2-bg').click(mh.submit_answer2);
