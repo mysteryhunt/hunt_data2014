@@ -25,6 +25,6 @@ white_queen_a18	The White Queen (Answer 18)	518	CANT BUY ME LOVE
 white_queen	The White Queen	599	CLEAN WITH IVORY SOAP
 mock_turtle	The Mock Turtle	600	MAKE EDITS TO YOUR TABLE SCHEMA
 caucus_race	The Caucus Race	700	ALLERGIC TO DOWN
-humpty_dumpty	Humpty Dumpty	800	EISOPTROPHOBIC
-knights	The Red and White Knights	900	BORED TO PIECES BY GAMES
+knights	The Red and White Knights	800	BORED TO PIECES BY GAMES
+humpty_dumpty	Humpty Dumpty	900	EISOPTROPHOBIC
 events	Events	1000	SOMETHING

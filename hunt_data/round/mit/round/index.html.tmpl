@@ -18,13 +18,25 @@
       {{ round.round.name }}
     </div>
     {% if vial1 > -1 %}
-    <img class="mh-drink-me" style="right: 130px;" src="drinkme{{ vial1|stringformat:"02d" }}.png" />
+    <div class="mh-drink-me-div" style="right: 130px;">
+      <img class="mh-drink-me" src="drinkme{{ vial1x|stringformat:"02d" }}.png" />
+      <div class="mh-drink-me-num">{{ vial1 }}</div>
+      <div class="mh-drink-me-den">{{ vial1t }}</div>
+    </div>
     {% endif %}
     {% if vial2 > -1 %}
-    <img class="mh-drink-me" style="right: 70px;" src="drinkme{{ vial2|stringformat:"02d" }}.png" />
+    <div class="mh-drink-me-div" style="right: 70px;">
+      <img class="mh-drink-me" src="drinkme{{ vial2x|stringformat:"02d" }}.png" />
+      <div class="mh-drink-me-num">{{ vial2 }}</div>
+      <div class="mh-drink-me-den">{{ vial2t }}</div>
+    </div>
     {% endif %}
     {% if vial3 > -1 %}
-    <img class="mh-drink-me" style="right: 10px;" src="drinkme{{ vial3|stringformat:"02d" }}.png" />
+    <div class="mh-drink-me-div" style="right: 10px;">
+      <img class="mh-drink-me" src="drinkme{{ vial3x|stringformat:"02d" }}.png" />
+      <div class="mh-drink-me-num">{{ vial3 }}</div>
+      <div class="mh-drink-me-den">{{ vial3t }}</div>
+    </div>
     {% endif %}
   </div>
 
