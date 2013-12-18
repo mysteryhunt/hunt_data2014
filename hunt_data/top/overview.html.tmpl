@@ -25,26 +25,26 @@
 	  <ul>
 	    {% for round in rounds %}
 	    {% if round.round.url == "mit" %}
-	    <li><a href="round/{{ round.round.url }}/">{{ round.round.name }}</a>
+	    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
 	      <ul>
 		{% for puzzle in round.puzzles %}
-		<li><a href="puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
+		<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
 		  {% if puzzle.solved %}[SOLVED]{% endif %}
 		  {% endfor %}
 	      </ul>
 	      {% endif %}
 	      {% endfor %}
 	      {% if has_wl_access %}
-	    <li><a href="wonderland.html">Wonderland</a>
+	    <li><a href="{{ root }}/wonderland/">Wonderland</a>
 	      <ul>
 		{% for round in rounds %}
 		{% if round.round.url == "mit" %}
 		{% elif round.round.url == "events" %}
 		{% else %}
-		<li><a href="round/{{ round.round.url }}/">{{ round.round.name }}</a>
+		<li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
 		  <ul>
 		    {% for puzzle in round.puzzles %}
-		    <li><a href="puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
+		    <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
 		      {% if puzzle.solved %}[SOLVED]{% endif %}
 		      {% endfor %}
 		  </ul>
@@ -54,10 +54,10 @@
 	      {% endif %}
 	      {% for round in rounds %}
 	      {% if round.round.url == "events" %}
-	    <li><a href="round/{{ round.round.url }}/">{{ round.round.name }}</a>
+	    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
 	      <ul>
 		{% for puzzle in round.puzzles %}
-		<li><a href="puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
+		<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
 		  {% if puzzle.solved %}[SOLVED]{% endif %}
 		  {% endfor %}
 	      </ul>
