@@ -8,7 +8,7 @@ mh.submit_answer = function() {
     bg.stop(true, true);
     outer.stop(true, true);
     if (outer.is(':visible')) {
-	bg.fadeTo('slow', 0, function() {
+	bg.fadeTo('fast', 0, function() {
 	    bg.hide();
         });
         outer.fadeToggle('slow', function() {
