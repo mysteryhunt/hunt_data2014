@@ -23,19 +23,26 @@ tea_party	CHRYSANTHEMUM	hedgehogs_and_flamingos	Hedgehogs and Flamingos	1040
 tea_party	OPERATOR TEST	operator_test	Operator Test	1050
 tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1060
 tea_party	BELGIAN FAWN	can_tab_rig_ian	Can + Tab + Rig + Ian	1070
+tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1080
 mock_turtle	LOCKS	common_bonds	Common Bonds	2020
 mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2080
 mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2090
 mock_turtle	LEVAR BURTON	introduction_to_collegiate_notetaking	Introduction to Collegiate Notetaking	2100
+mock_turtle	WORMTONGUE	stronghold_fire	Stronghold Fire	2120
 white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3010
 white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
 white_queen	MIAMI	puzzle_with_answer_youkilis	A Puzzle with the Answer YOUKILIS	3040
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3050
+white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer EIGHT DAYS A WEEK	3060
+white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	3070
+white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the Answer I WANT TO HOLD YOUR HAND	3080
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
 humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
 humpty_dumpty	APPLE	time_flies	Time Flies	4070
+humpty_dumpty	OVOID	the_great_collapse	The Great Collapse	4090
+humpty_dumpty	MOUNTAINEER	ski_trees	SKI Trees	4100
 humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
 humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
 humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
