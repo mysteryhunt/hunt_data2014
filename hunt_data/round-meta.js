@@ -1,3 +1,4 @@
+{% include "nav.js" %}
 mh.submit_answer = function() {
     var page = $('#mh-page');
     var outer = $('#mh-submit-answer');

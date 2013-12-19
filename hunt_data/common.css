@@ -56,6 +56,10 @@ table.mh-center {
 	position: relative;
 	left: 20px;
     }
+    .mh-fancy #mh-elsewhere {
+	position: relative;
+	left: 40px;
+    }
     .mh-fancy #mh-plain-toggle {
 	position: absolute;
 	right: 160px;
