@@ -3,25 +3,34 @@
 
 @media screen {
     body.mh-fancy {
-	background: #d0ceca url('{{ root }}/round/{{ round.round.url }}/puzzle_background.jpg') no-repeat top center;
+	background: #d0ceca url('{{ root }}/round/{{ round.round.url }}/background.jpg') no-repeat top center;
     }
+}
+
+.mh-mit-card-solved {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 
 @media screen {
     .mh-fancy #mh-mit-card {
 	float: left;
-	padding: 25px;
+	position: relative;
+	margin: 25px;
     }
     .mh-plain #mh-mit-card {
 	float: left;
-	padding: 10px;
+	position: relative;
+	margin: 10px;
     }
 }
 
 @media print {
     #mh-mit-card {
 	float: left;
-	padding: 10px;
+	position: relative;
+	margin: 10px;
     }
 }
 
