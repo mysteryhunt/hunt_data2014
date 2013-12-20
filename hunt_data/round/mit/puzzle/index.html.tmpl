@@ -1,7 +1,12 @@
 {% include "puzzle-head.html" %}
 
 <div id="mh-banner">
-  <img id="mh-mit-card" src="card.png">
+  <div id="mh-mit-card">
+    <img src="card.png" />
+    {% if puzzle.solved %}
+    <img class="mh-mit-card-solved" src="{{ root }}/round/{{ round.round.url }}/solved.png" />
+    {% endif %}
+  </div>
   <div id="mh-title">
     {{ puzzle.puzzle.name }}
   </div>
