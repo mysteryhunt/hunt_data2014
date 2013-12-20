@@ -8,29 +8,23 @@
   </head>
   <body class="mh-fancy">
     <div id="mh-outer">
-      <div id="mh-page">
-	<div id="mh-banner">
-	  <div id="mh-title">
-	    TNUH 2014
-	  </div>
-	</div>
-	<div id="mh-content">
-	  team: {{ team.name }}<br>
-	  <img src="lobby.jpg" /><br>
-	  <a href="log.html">TEAM LOG</a><br>
-	  <a href="overview.html">TEAM OVERVIEW</a><br>
-	  <br>
-	  <ul>
-	    <li> <a href="round/mit/">To MIT</a> </li>
-	    
-	    {% if has_wl_access %}
-	    <li> <a href="wonderland/">To Wonderland</a></li>
-	    {% endif %}
-	    
-	    <li> <a href="round/events/">Events</a></li>
-	    
-	  </ul>
-	</div>
+      <div id="mh-conf">
+	<h2>Some Kind of Conference 2014</h2>
+	<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat leo sed odio tincidunt, vel ornare tellus porttitor. Nunc auctor eleifend purus, ut congue nisl convallis eu. Curabitur viverra venenatis adipiscing. Sed sodales tristique mattis. Cras nec augue lacinia, congue nisi nec, tempus quam. Duis mollis mattis erat ut gravida. Suspendisse rutrum id justo sed fringilla. Maecenas interdum aliquet lectus, eget consectetur turpis. Aenean in enim rutrum purus elementum posuere. Duis sollicitudin placerat posuere. Vestibulum vel leo facilisis, lacinia urna at, sodales mauris. Phasellus eget cursus magna. Praesent in ipsum dictum nulla dignissim consectetur. Nam rutrum scelerisque neque, ultricies dapibus nunc consectetur sed.
+	<p>
+	<a href="log.html">TEAM LOG</a><br>
+	<a href="overview.html">TEAM OVERVIEW</a><br>
+	<br>
+	<ul>
+	  <li> <a href="round/mit/">To MIT</a> </li>
+	  
+	  {% if has_wl_access %}
+	  <li> <a href="wonderland/">To Wonderland</a></li>
+	  {% endif %}
+	  
+	  <li> <a href="round/events/">Events</a></li>
+	</ul>
       </div>
     </div>
     <script src="index.js"></script>
