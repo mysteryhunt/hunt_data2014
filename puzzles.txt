@@ -5,7 +5,7 @@ mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	30
 mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	40
 mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	50
 mit	MISCHIEF	zoinks	Zoinks!	60
-mit	NEGATES	opposites_are_not_downbeats	Opposites are not Downbeats	70
+mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	70
 mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	80
 mit	TROUBLING	ring_around_the_music	Ring Around the Music	90
 mit	DOWNPAT	find_your_way_across	Find Your Way Across	100
