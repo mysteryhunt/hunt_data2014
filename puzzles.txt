@@ -38,6 +38,7 @@ white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer
 white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	3070
 white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the Answer I WANT TO HOLD YOUR HAND	3080
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
+humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
 humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
 humpty_dumpty	APPLE	time_flies	Time Flies	4070
