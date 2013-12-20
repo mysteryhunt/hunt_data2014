@@ -1,9 +1,14 @@
 .t {
     border-collapse: collapse;
+    margin: 0px auto;
+}
+#mh-outer {
+    width: 940px !important;
 }
 .t td {
-    padding: 1px;
+    padding: 1px 0px;
     text-align: center;
     font-family: arial, sans-serif;
     font-size: 15px;
+    width: 17px;
 }
