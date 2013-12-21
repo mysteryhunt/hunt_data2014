@@ -16,6 +16,7 @@ mit	WOBBLE	feed_your_head	Feed Your Head	140
 mit	ROOMING	across_the_hall	Across the Hall	150
 mit	PERIDOT	dressing_down	Dressing Down	160
 mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	170
+mit	BODY SIZE	black_and_white	Black and White	180
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
