@@ -4,6 +4,9 @@
     width: 300px;
     height: 300px;
 }
+.r {
+    text-align: center;
+}
 .s {
     position: absolute;
     top: 50%;
