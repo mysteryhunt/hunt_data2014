@@ -124,6 +124,9 @@ table.mh-center {
     #mh-back {
 	display: none;
     }
+    #mh-elsewhere {
+	display: none;
+    }
     #mh-answer, #mh-plain-toggle {
 	display: none;
     }
