@@ -42,7 +42,7 @@ white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE M
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
-humpty_dumpty	AZIMUTH	directions_in_writing  Directions in Writing	4050
+humpty_dumpty	AZIMUTH	directions_in_writing	Directions in Writing	4050
 humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
 humpty_dumpty	APPLE	time_flies	Time Flies	4070
 humpty_dumpty	OVOID	the_great_collapse	The Great Collapse	4090
