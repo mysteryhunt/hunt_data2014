@@ -1,0 +1,163 @@
+<style>
+.regex {
+  font-family: "Courier New";
+  white-space: nowrap;
+}
+</style>
+<h2>Solution to Venntersections</h2>
+<i>Author: James Clark</i>
+
+<p>
+This puzzle consists of four separate four-set Venn diagrams, rendered as a four-by-four grid with the sets drawn as rectangles.  Each cell in the four-by-four grid has a word in it, except for the "center" of the diagram, where all four sets intersect.
+
+<p>
+All of the words come from the "113,809 official crosswords" word list placed in the public domain as part of the <a href="http://icon.shef.ac.uk/Moby/mwords.html">Moby Words</a> project by Grady Ward.  In some downloads the filename is "113809of.fic", in others is it "CROSSWD.TXT".  Wikipedia <a href="http://en.wikipedia.org/wiki/Moby_Project#Words">seems to claim</a> this word list is the same as the words found in the first edition of the Official Scrabble Players Dictionary, but I did not verify that.
+
+<p>
+Each set represents some way of classifying words from that word list, and there are seven words shown in the set and eight words shown outside of the set.  The missing word is the only word in the word list that meets all four criteria.  The word's length is provided, and for each word one letter is indicated for inclusion in the puzzle's answer, along with its index into the answer.
+
+<p>
+I'll identify the sets by number as follows:
+<ul>
+<li>Set 1: the top horizontal rectangle (containing PARADISE in the first diagram)
+<li>Set 2: the bottom horizontal rectangle (containing TRIUMPH in the first diagram)
+<li>Set 3: the left vertical rectangle (containing LENGTHS in the first diagram)
+<li>Set 4: the right vertical rectangle (containing CAROUSEL in the first diagram)
+</ul>
+
+<h3>Diagram 1, Set 1 (containing PARADISE)</h3>
+
+Each word in this set uses alternating vowel and consonant letters
+
+<h3>Diagram 1, Set 2 (containing TRIUMPH)</h3>
+
+Each word in this set has a Scrabble score of 14.  The diagrammed words outside this set each have a score of 11.
+
+<h3>Diagram 1, Set 3 (containing LENGTHS)</h3>
+
+Each word in this set starts with an L.
+
+<h3>Diagram 1, Set 4 (containing CAROUSELS)</h3>
+
+Each word in this set has a consonant that occurs twice.
+
+<h3>Diagram 1 Solution</h3>
+
+The center word is marked as having nine letters.  The only word in the word list that matches these criteria is <b>LAKESIDES</b>.  One way to find this word is first to filter the word list using the following perl regular expressions:
+
+<ul>
+<li class="regex">^.{9}$
+<li class="regex">^(?!.*([aeiou]{2}|[^aeiou]{2}))
+<li class="regex">([^aeiou]).*\1
+<li class="regex">^l
+</ul>
+
+That leaves thirty-seven words.  A program like the following (written in perl) can compute the scrabble scores for those words and find the only one with a score of 14:
+<pre>
+foreach my $word (<STDIN>) {
+    my $score = 0;
+    foreach $_ (split(//, $word)) {
+	$score += 1  if /[eaionrtlsu]/i;
+	$score += 2  if /[dg]/i;
+	$score += 3  if /[bcmp]/i;
+	$score += 4  if /[fhvwy]/i;
+	$score += 5  if /[k]/i;
+	$score += 8  if /[jx]/i;
+	$score += 10 if /[qz]/i;
+    }
+    print "$word" if $score == 14;
+}
+</pre>
+
+<h3>Diagram 2, Set 1 (containing EARTHWARD)</h3>
+
+Each word in this set can be constructed by concatenating two other words from the word list (e.g. AUTHENTIC + ATE = AUTHENTICATE).
+
+<h3>Diagram 2, Set 2 (containing SEQUOIA)</h3>
+
+Each word in this set contains all five of the common vowel letters (A, E, I, O, U).
+
+<h3>Diagram 2, Set 3 (containing CHRYSALIS)</h3>
+
+Each word in this set has an A in the fourth-from-last position.
+
+<h3>Diagram 2, Set 4 (containing CELLOPHANE)</h3>
+
+Each word in this set has a doubled consonant.
+
+<h3>Diagram 2 Solution</h3>
+
+The center word is marked as having 13 letters.  The only word in the word list that matches these criteria is <b>INSUPPORTABLE</b>.  One way to find this word is first to filter the word list using the following perl regular expressions:
+
+<ul>
+<li class="regex">^.{13}$
+<li class="regex">a
+<li class="regex">e
+<li class="regex">i
+<li class="regex">o
+<li class="regex">u
+<li class="regex">a...$
+<li class="regex">([^aeiou])\1
+</ul>
+
+That leaves three words (unequivocally, insupportable, questionnaire).  Only "insupportable" can be composed of two other words from the word list.
+
+<h3>Diagram 3, Set 1 (containing STATUESQUE)</h3>
+
+Each word in this set contains the three-letter abbreviation of the name of a day (e.g. SUN, MON, TUE, WED, THU, FRI, SAT).
+
+<h3>Diagram 3, Set 2 (containing ANXIOUS)</h3>
+
+The vowels in these words are all in alphabetical order.  To help make this clear, every word in this diagram has at least two vowels.
+
+<h3>Diagram 3, Set 3 (containing TRAMPOLINE)</h3>
+
+Each word in this set contains an M.
+
+<h3>Diagram 3, Set 4 (containing CONSTITUTE)</h3>
+
+Each word in this set has a letter repeated three times, separated by only one letter (e.g. meteOrOlOgy).
+
+<h3>Diagram 3 Solution</h3>
+
+The center word is marked as having 10 letters.  The only word in the word list that matches these criteria is <b>MONOTONOUS</b>.  One way to find this word is to filter the word list using the following perl regular expressions:
+
+<ul>
+<li class="regex">^.{10}$
+<li class="regex">(sun|mon|tue|wed|thu|fri|sat)
+<li class="regex">^[^eiou]*[^aiou]*[^aeou]*[^aeiu]*[^aeio]*$
+<li class="regex">m
+<li class="regex">(.).\1.\1
+</ul>
+
+<h3>Diagram 4, Set 1 (containing RESTAURANT)</h3>
+
+Each word in this set contains the english name for a greek letter (alpha, beta, gamma, delta, etc.).
+
+<h3>Diagram 4, Set 2 (containing KNEELING)</h3>
+
+Each word in this set has a doubled vowel.
+
+<h3>Diagram 4, Set 3 (containing ALCOHOLIC)</h3>
+
+The fifth letter of every word in this set is an H.
+
+<h3>Diagram 4, Set 4 (containing CHROMOSOME)</h3>
+
+Each word in this set has three consonants in a row.
+
+<h3>Diagram 4 Solution</h3>
+
+The center word is marked as having 12 letters.  The only word in the word list that matches these criteria is <b>NEIGHBORHOOD</b>.  One way to find this word is to filter the word list using the following perl regular expressions:
+
+<ul>
+<li class="regex">^.{12}$
+<li class="regex">(alpha|(b|z|th|)eta|gamma|delta|[eu]psilon|iota|kappa|lambda|mu|nu|xi|omicron|pi|rho|sigma|tau|phi|chi|psi|omega)
+<li class="regex">([aeiou])\1
+<li class="regex">^.{4}h
+<li class="regex">[^aeiou]{3}
+</ul>
+
+<h3>Final Solution</h3>
+
+Extracting the marked letters from the diagram solutions gives <b>SPUR</b>.
