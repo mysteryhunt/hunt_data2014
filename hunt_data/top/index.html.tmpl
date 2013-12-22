@@ -3,29 +3,33 @@
   <head>
     <title>Lobby</title>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link href='https://fonts.googleapis.com/css?family=Parisienne|Alice' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
-  <body class="mh-fancy">
+  <body> 
     <div id="mh-outer">
-      <div id="mh-conf">
-	<h2>Some Kind of Conference 2014</h2>
-	<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat leo sed odio tincidunt, vel ornare tellus porttitor. Nunc auctor eleifend purus, ut congue nisl convallis eu. Curabitur viverra venenatis adipiscing. Sed sodales tristique mattis. Cras nec augue lacinia, congue nisi nec, tempus quam. Duis mollis mattis erat ut gravida. Suspendisse rutrum id justo sed fringilla. Maecenas interdum aliquet lectus, eget consectetur turpis. Aenean in enim rutrum purus elementum posuere. Duis sollicitudin placerat posuere. Vestibulum vel leo facilisis, lacinia urna at, sodales mauris. Phasellus eget cursus magna. Praesent in ipsum dictum nulla dignissim consectetur. Nam rutrum scelerisque neque, ultricies dapibus nunc consectetur sed.
-	<p>
-	<a href="log.html">TEAM LOG</a><br>
-	<a href="overview.html">TEAM OVERVIEW</a><br>
-	<br>
-	<ul>
-	  <li> <a href="round/mit/">To MIT</a> </li>
-	  
-	  {% if has_wl_access %}
-	  <li> <a href="wonderland/">To Wonderland</a></li>
-	  {% endif %}
-	  
-	  <li> <a href="round/events/">Events</a></li>
-	</ul>
-      </div>
+    <div id="mh-image">
+      <img src="image.jpg" />
+      <a id="mh-door" href="{{ root }}/round/mit/" style="opacity: 0;"><img src="door.png" /></a>
+    </div>
+    <table id="mh-links">
+      <tr>
+	<td>
+	  <a href="{{ root }}/round/mit/">To MIT</a>
+	</td>
+	{% if has_wl_access %}
+	<td>
+	  <a href="{{ root }}/wonderland/">To Wonderland</a>
+	</td>
+	{% endif %}
+	<td>
+	  <a href="{{ root }}/round/events/">To Events</a>
+	</td>
+      </tr>
+    </table>
+    <div class="mh-flavortext">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat leo sed odio tincidunt, vel ornare tellus porttitor. Nunc auctor eleifend purus, ut congue nisl convallis eu. Curabitur viverra venenatis adipiscing. Sed sodales tristique mattis. Cras nec augue lacinia, congue nisi nec, tempus quam. Duis mollis mattis erat ut gravida. Suspendisse rutrum id justo sed fringilla. Maecenas interdum aliquet lectus, eget consectetur turpis. Aenean in enim rutrum purus elementum posuere. Duis sollicitudin placerat posuere. Vestibulum vel leo facilisis, lacinia urna at, sodales mauris. Phasellus eget cursus magna. Praesent in ipsum dictum nulla dignissim consectetur. Nam rutrum scelerisque neque, ultricies dapibus nunc consectetur sed.
+    </div>
     </div>
     <script src="index.js"></script>
   </body>
