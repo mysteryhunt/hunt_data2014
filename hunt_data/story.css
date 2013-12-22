@@ -23,9 +23,12 @@ body, td, input {
 #mh-outer {
     width: 900px;
 }
-#mh-image {
+#mh-image-outer {
     margin: 0px auto;
     position: relative;
+}
+#mh-image {
+    border: 3px solid black;
 }
 
 @media screen {
