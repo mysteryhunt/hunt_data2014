@@ -7,16 +7,16 @@ mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	50
 mit	MISCHIEF	zoinks	Zoinks!	60
 mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	70
 mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	80
-mit	TROUBLING	ring_around_the_music	Ring Around the Music	90
-mit	DOWNPAT	find_your_way_across	Find Your Way Across	100
-mit	ICHABOD	local_shorts	Local Shorts	110
-mit	SHREWDNESS	sneaky_fox	Sneaky Fox	120
-mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	130
-mit	WOBBLE	feed_your_head	Feed Your Head	140
-mit	ROOMING	across_the_hall	Across the Hall	150
-mit	PERIDOT	dressing_down	Dressing Down	160
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	170
-mit	BODY SIZE	black_and_white	Black and White	180
+mit	BODY SIZE	black_and_white	Black and White	90
+mit	TROUBLING	ring_around_the_music	Ring Around the Music	100
+mit	DOWNPAT	find_your_way_across	Find Your Way Across	110
+mit	ICHABOD	local_shorts	Local Shorts	120
+mit	SHREWDNESS	sneaky_fox	Sneaky Fox	130
+mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	140
+mit	WOBBLE	feed_your_head	Feed Your Head	150
+mit	ROOMING	across_the_hall	Across the Hall	160
+mit	PERIDOT	dressing_down	Dressing Down	170
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	180
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030

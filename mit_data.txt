@@ -7,6 +7,7 @@ the_despair_of_cooking	6_spades	34
 zoinks	2_spades	66
 opposites_are_not_downbeats	J_diamonds	50
 how_puzzling_all_these_changes_are	4_spades	5
+black_and_white	4_clubs	1
 ring_around_the_music	8_spades	37
 find_your_way_across	3_diamonds	12
 local_shorts	9_clubs	56
