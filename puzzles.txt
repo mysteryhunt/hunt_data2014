@@ -38,6 +38,7 @@ white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer C
 white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer EIGHT DAYS A WEEK	3060
 white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	3070
 white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the Answer I WANT TO HOLD YOUR HAND	3080
+white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE ME DO	3090
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
