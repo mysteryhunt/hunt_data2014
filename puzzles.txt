@@ -7,16 +7,16 @@ mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	50
 mit	MISCHIEF	zoinks	Zoinks!	60
 mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	70
 mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	80
-mit	TROUBLING	ring_around_the_music	Ring Around the Music	90
-mit	DOWNPAT	find_your_way_across	Find Your Way Across	100
-mit	ICHABOD	local_shorts	Local Shorts	110
-mit	SHREWDNESS	sneaky_fox	Sneaky Fox	120
-mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	130
-mit	WOBBLE	feed_your_head	Feed Your Head	140
-mit	ROOMING	across_the_hall	Across the Hall	150
-mit	PERIDOT	dressing_down	Dressing Down	160
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	170
-mit	BODY SIZE	black_and_white	Black and White	180
+mit	BODY SIZE	black_and_white	Black and White	90
+mit	TROUBLING	ring_around_the_music	Ring Around the Music	100
+mit	DOWNPAT	find_your_way_across	Find Your Way Across	110
+mit	ICHABOD	local_shorts	Local Shorts	120
+mit	SHREWDNESS	sneaky_fox	Sneaky Fox	130
+mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	140
+mit	WOBBLE	feed_your_head	Feed Your Head	150
+mit	ROOMING	across_the_hall	Across the Hall	160
+mit	PERIDOT	dressing_down	Dressing Down	170
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	180
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
@@ -42,6 +42,7 @@ white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE M
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
+humpty_dumpty	AZIMUTH	directions_in_writing	Directions in Writing	4050
 humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
 humpty_dumpty	APPLE	time_flies	Time Flies	4070
 humpty_dumpty	OVOID	the_great_collapse	The Great Collapse	4090
@@ -49,7 +50,6 @@ humpty_dumpty	MOUNTAINEER	ski_trees	SKI Trees	4100
 humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
 humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
 humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
-humpty_dumpty	AZIMUTH		directions_in_writing  Directions in Writing	4140
 caucus_race	MILLSTONE	sat_iii	SAT III	5010
 caucus_race	DERRICK	crosswalks	Crosswalks	5020
 caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
@@ -67,4 +67,4 @@ knights	CAPS LOCK	filed_erector	Filed Erector	6080
 knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	6090
 knights	G RING	wandering_stars	Wandering Stars	6120
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6140
-knights ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	6150
+knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	6150
