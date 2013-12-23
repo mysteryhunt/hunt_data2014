@@ -10,14 +10,14 @@ mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!
 mit	BODY SIZE	black_and_white	Black and White	90
 mit	TROUBLING	ring_around_the_music	Ring Around the Music	100
 mit	DOWNPAT	find_your_way_across	Find Your Way Across	110
-mit	ICHABOD	local_shorts	Local Shorts	120
-mit	SHREWDNESS	sneaky_fox	Sneaky Fox	130
-mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	140
-mit	WOBBLE	feed_your_head	Feed Your Head	150
-mit	ROOMING	across_the_hall	Across the Hall	160
-mit	PERIDOT	dressing_down	Dressing Down	170
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	180
-mit	STOP CODON	blast_from_the_past	BLAST from the Past	190
+mit	STOP CODON	blast_from_the_past	BLAST from the Past	120
+mit	ICHABOD	local_shorts	Local Shorts	130
+mit	SHREWDNESS	sneaky_fox	Sneaky Fox	140
+mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	150
+mit	WOBBLE	feed_your_head	Feed Your Head	160
+mit	ROOMING	across_the_hall	Across the Hall	170
+mit	PERIDOT	dressing_down	Dressing Down	180
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	190
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030

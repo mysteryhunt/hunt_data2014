@@ -10,6 +10,7 @@ how_puzzling_all_these_changes_are	4_spades	5
 black_and_white	4_clubs	1
 ring_around_the_music	8_spades	37
 find_your_way_across	3_diamonds	12
+blast_from_the_past	K_clubs	38
 local_shorts	9_clubs	56
 sneaky_fox	3_spades	54
 down_the_rabbit_hole_2	10_diamonds	10
