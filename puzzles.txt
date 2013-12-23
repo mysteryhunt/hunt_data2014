@@ -60,6 +60,7 @@ caucus_race	SPUR	venntersections	Venntersections	5060
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5070
 caucus_race	ECHO	crossed_wires	Crossed Wires	5080
 caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5090
+caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5100
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
 knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
