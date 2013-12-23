@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>Assemble Me: Helpful Tips</title>
+<body>
+<h1 style="font-family:courier new,courier,monospace;">Assemble Me: Helpful Tips</h1>
+
+<p style="font-family:times new roman;">
+<i>NOTE: The following is helpful guide and is NOT part of the puzzle.</i><br>
+<br>
+The first digits are decimal (as presented in the puzzle); 0x and 0y are representation of hex values<br>
+</p>
+<p style="font-family:courier new,courier,monospace;">
+24:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLC - clear carry flag<br>
+30,0x,0y:&nbsp;&nbsp;&nbsp;ASL $0y0x,X - bitwise shift memory location ($0y0x + .X) left;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;put the left most bit into the carry flag<br>
+32,210,255: JSR $FFD2 - output the character whose value is in register A<br>
+96:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RTS - equivalent of end<br>
+121,0x,0y:&nbsp;&nbsp;ADC $0y0x,Y - add with carry the value of memory location<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;($0y0x + .Y) to register A<br>
+144,0x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCC (offset) - branch #$0x signed bytes from the end of this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instruction if the carry is clear (ie. carry == 0)<br>
+152:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TYA - copy the value of register Y to register A<br>
+153,0x,0y:&nbsp;&nbsp;STA $0y0x,Y - store register A in memeory location ($0y0x + .Y)<br>
+160,0x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LDY #$0x - load register Y with the value #$0x<br>
+162,0x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LDX #$0x - load register X with the value #$0x<br>
+169,0x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LDA #$0x - load register A with the value #$0x<br>
+185,0x,0y:&nbsp;&nbsp;LDA $0y0x,Y - load register A with the value of memory location ($0y0x + .Y)<br>
+192,0x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPY #$0x - compare the value of register Y with #$0x<br>
+200:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INY - increase register Y by 1<br>
+208,0x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BNE (offset) - if last compare is not equal, branch #$0x signed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bytes from the end of this instruction<br>
+224,0x:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPX #$0x - compare the value of register X with #$0x<br>
+232:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INX - increase register X by 1<br>
+</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<p>
+<i>Help! I just found this program in an unpublished issue of</i> RUN <i>magazine, but I can't seem to get it to work! I think the editors may have mixed up some of the data lines. I guess that's why the issue never made it to print!</i>
+</p>
+
+<p class="code">
+10 X=0<br>
+20 READ Y<br>
+30 IF Y=256 GOTO 70<br>
+40 POKE 49152+X,Y<br>
+50 X=X+1<br>
+60 GOTO 20<br>
+70 SYS 49152<br>
+80 END<br>
+90 REM ASSEMBLE ME DATA<br>
+??? DATA 121,96,192,153,0,193,200,192,35,208,240<br>
+??? DATA 144,2,169,42,32,210,255,200<br>
+??? DATA 162,0,160,0,169,32,24,30,0,193<br>
+??? DATA 162,0,185,64,192,32,210,255,200,192,32<br>
+??? DATA 192,8,208,238,232,224,35<br>
+??? DATA 208,231,169,13,32,210,255,96<br>
+??? DATA 208,245,160,0,24,152,121,129,235<br>
+170 DATA 147,13,84,72,69,32,65,78,83,87,69,82,32,84,79,32<br>
+180 DATA 84,72,69,32,80,85,90,90,76,69,32,73,83,58,13,13<br>
+190 DATA 234,240,225,241,117,133,131,232,71,32,197,209,154<br>
+200 DATA 34,45,0,203,155,38,179,185,181,150,19,179,158,175<br>
+210 DATA 173,36,157,157,137,167,18,144<br>
+220 DATA 256<br>
+</p>
+
+<p>
+<a href="http://www.viceteam.org/">VICE emulator</a>: a useful resource for this puzzle<br>
+<a href="tips.html">Click here</a> for some additional helpful tips.<br>
+</p>
+
+</body>
+</html>
