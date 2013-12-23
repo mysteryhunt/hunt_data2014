@@ -31,6 +31,7 @@ mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2080
 mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2090
 mock_turtle	LEVAR BURTON	introduction_to_collegiate_notetaking	Introduction to Collegiate Notetaking	2100
 mock_turtle	WORMTONGUE	stronghold_fire	Stronghold Fire	2120
+mock_turtle	TI-85	assemble_me	Assemble Me	2130
 white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3010
 white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
