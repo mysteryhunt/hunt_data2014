@@ -17,6 +17,7 @@ mit	WOBBLE	feed_your_head	Feed Your Head	150
 mit	ROOMING	across_the_hall	Across the Hall	160
 mit	PERIDOT	dressing_down	Dressing Down	170
 mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	180
+mit	STOP CODON	blast_from_the_past	BLAST from the Past	190
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
