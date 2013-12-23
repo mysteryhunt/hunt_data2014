@@ -1,0 +1,108 @@
+<h2>Round Tripper (SOLUTION)</h2>
+
+<p>
+<i>Authors: Jason Juang, Erin Rhode, Harvey Jones</i>
+</p>
+
+<p>Each image represents a Major League Baseball player. The players on the left are batters, and the players on the right are pitchers. The numbers are decimal ASCII values that encode, respectively, the player's batting average or earned run average. The pie chart shows which teams the player played for, with pie slices proportional to the number of seasons he played for that team. (Seasons in which the player played for multiple teams are split evenly, regardless of the number of games played.) Each player is uniquely identifiable from this information.</p>
+
+<p>The images are laid out in pairs. Each batter/pitcher pair never faced each other in the regular season or postseason, but faced each other in exactly one All-Star Game.</p>
+
+<p>Find the year of the All-Star Game in which the players met. Take the last two digits, and convert that value to an ASCII character to spell RIPSEWELL1946HR.</p>
+
+<p>In the 1946 All-Star Game, the only player to hit a home run off of Rip Sewell was <b>TED WILLIAMS</b>, in what turned out to be his only career plate appearance versus Sewell.</p>
+
+<table>
+<tr><th colspan="3">Batter</th><th colspan="3">Pitcher</th><th rowspan="2">Year</th><th rowspan="2">Letter</th></tr>
+<tr><th>Teams</th><th>Player</th><th>BA</th><th>Teams</th><th>Player</th><th>ERA</th></tr>
+<tr>
+<td><img src="images/left1.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/p/penato01.shtml">Tony Pena</a></td><td>.260</td>
+<td><img src="images/right1.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/f/fingero01.shtml">Rollie Fingers</a></td><td>2.90</td>
+<td>1982</td>
+<td>R</td>
+</tr>
+<tr>
+<td><img src="images/left2.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/m/mayswi01.shtml">Willie Mays</a></td><td>.302</td>
+<td><img src="images/right2.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/l/lylesp01.shtml">Sparky Lyle</a></td><td>2.88</td>
+<td>1973</td>
+<td>I</td>
+</tr>
+<tr>
+<td><img src="images/left3.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/h/henderi01.shtml">Rickey Henderson</a></td><td>.279</td>
+<td><img src="images/right3.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/s/suttebr01.shtml">Bruce Sutter</a></td><td>2.83</td>
+<td>1980</td>
+<td>P</td>
+</tr>
+<tr>
+<td><img src="images/left4.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/c/carewro01.shtml">Rod Carew</a></td><td>.328</td>
+<td><img src="images/right4.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/h/hammaat01.shtml">Atlee Hammaker</a></td><td>3.66</td>
+<td>1983</td>
+<td>S</td>
+</tr>
+<tr>
+<td><img src="images/left5.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/k/killeha01.shtml">Harmon Killebrew</a></td><td>.256</td>
+<td><img src="images/right5.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/c/carltst01.shtml">Steve Carlton</a></td><td>3.22</td>
+<td>1969</td>
+<td>E</td>
+</tr>
+<tr>
+<td><img src="images/left6.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/b/brookhu01.shtml">Hubie Brooks</a></td><td>.269</td>
+<td><img src="images/right6.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/h/henketo01.shtml">Tom Henke</a></td><td>2.67</td>
+<td>1987</td>
+<td>W</td>
+</tr>
+<tr>
+<td><img src="images/left7.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/m/mayca01.shtml">Carlos May</a></td><td>.274</td>
+<td><img src="images/right7.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/n/niekrph01.shtml">Phil Niekro</a></td><td>3.35</td>
+<td>1969</td>
+<td>E</td>
+</tr>
+<tr>
+<td><img src="images/left8.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/m/morgajo02.shtml">Joe Morgan</a></td><td>.271</td>
+<td><img src="images/right8.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/f/fidryma01.shtml">Mark Fidrych</a></td><td>3.10</td>
+<td>1976</td>
+<td>L</td>
+</tr>
+<tr>
+<td><img src="images/left9.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/f/fiskca01.shtml">Carlton Fisk</a></td><td>.269</td>
+<td><img src="images/right9.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/m/montejo01.shtml">John Montefusco</a></td><td>3.54</td>
+<td>1976</td>
+<td>L</td>
+</tr>
+<tr>
+<td><img src="images/left10.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/m/musiast01.shtml">Stan Musial</a></td><td>.331</td>
+<td><img src="images/right10.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/p/parneme01.shtml">Mel Parnell</a></td><td>3.50</td>
+<td>1949</td>
+<td>1</td>
+</tr>
+<tr>
+<td><img src="images/left11.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/b/berrayo01.shtml">Yogi Berra</a></td><td>.285</td>
+<td><img src="images/right11.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/j/jacksla01.shtml">Larry Jackson</a></td><td>3.40</td>
+<td>1957</td>
+<td>9</td>
+</tr>
+<tr>
+<td><img src="images/left12.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/r/reesepe01.shtml">Pee Wee Reese</a></td><td>.269</td>
+<td><img src="images/right12.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/l/lemonbo01.shtml">Bob Lemon</a></td><td>3.23</td>
+<td>1952</td>
+<td>4</td>
+</tr>
+<tr>
+<td><img src="images/left13.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/r/robinja02.shtml">Jackie Robinson</a></td><td>.311</td>
+<td><img src="images/right13.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/c/consusa01.shtml">Sandy Consuegra</a></td><td>3.37</td>
+<td>1954</td>
+<td>6</td>
+</tr>
+<tr>
+<td><img src="images/left14.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/j/jacksre01.shtml">Reggie Jackson</a></td><td>.262</td>
+<td><img src="images/right14.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/g/gibsobo01.shtml">Bob Gibson</a></td><td>2.91</td>
+<td>1972</td>
+<td>H</td>
+</tr>
+<tr>
+<td><img src="images/left15.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/w/wilsowi02.shtml">Willie Wilson</a></td><td>.285</td>
+<td><img src="images/right15.png" width="60" height="60"></td><td class="pn"><a href="http://www.baseball-reference.com/players/s/sotoma01.shtml">Mario Soto</a></td><td>3.47</td>
+<td>1982</td>
+<td>R</td>
+</tr>
+</table>
