@@ -1,0 +1,10 @@
+{% include "common.css" %}
+{% include "solution.css" %}
+
+@media screen {
+    body.mh-fancy {
+	background: #74b87d url('{{ root }}/round/{{ round.round.url }}/background.jpg') no-repeat top center;
+    }
+}
+
+{{ solution_css|safe }}
