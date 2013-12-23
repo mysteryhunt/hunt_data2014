@@ -1,0 +1,16 @@
+.rt {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.solimg {
+  vertical-align: middle;
+}
+.ans {
+  font-weight: bold;
+  padding: 16px;
+}
+HR {
+  margin: 24px 0 24px 0;
+}
