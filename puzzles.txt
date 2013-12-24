@@ -18,6 +18,7 @@ mit	WOBBLE	feed_your_head	Feed Your Head	160
 mit	ROOMING	across_the_hall	Across the Hall	170
 mit	PERIDOT	dressing_down	Dressing Down	180
 mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	190
+mit	TOYOTAS	i_came_across_a_japanese_rose_garden	I Came Across a Japanese Rose Garden	200
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
