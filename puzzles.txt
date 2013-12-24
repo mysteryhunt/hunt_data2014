@@ -42,6 +42,7 @@ white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	
 white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the Answer I WANT TO HOLD YOUR HAND	3080
 white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE ME DO	3090
 white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3100
+white_queen	BRAVO	puzzle_with_answer_norwegian_wood	A Puzzle with the Answer NORWEGIAN WOOD	3110
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
