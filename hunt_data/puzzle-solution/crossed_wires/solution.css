@@ -1,0 +1,6 @@
+table.grid {border-spacing:0;}
+table.grid td.hword {padding-left: 20px; height: 33px; text-align:left; vertical-align: middle;}
+table.grid td.vword {padding-top: 20px; width: 30px; height: 100px; text-align: center; vertical-align: top;}
+table.clues {border-spacing:0;}
+table.clues td {padding: 5px;}
+table.clues td.spacer {height: 25px;}
