@@ -1,0 +1,12 @@
+.t {
+  padding: 10px;
+}
+.t td, .t th {
+  text-align: left;
+  font-family: monospace;
+  padding: 0px 5px;
+}
+.g {
+  padding-top: 10px !important;
+  border-bottom: 1px solid black;
+}
