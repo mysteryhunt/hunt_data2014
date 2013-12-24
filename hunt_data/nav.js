@@ -5,6 +5,9 @@ mh.nav = function() {
     outer.css('left', page.offset().left + 20);
     var bg = $('#mh-nav-bg');
     $('#mh-nav-inner').html($('#mh-nav-iframe').contents().find('body').html());
+    $('#mh-nav-inner a').each(function() {
+	$(this).attr('src', '{{ root }}/' + $(this).attr('src'));
+    });
     bg.stop(true, true);
     outer.stop(true, true);
     if (outer.is(':visible')) {

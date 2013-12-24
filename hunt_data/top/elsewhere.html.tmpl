@@ -1,18 +1,18 @@
 Places:<br>
-&nbsp;&nbsp;<a href="{{ root }}/">Lobby 7</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ root }}/round/mit/">MIT</a><br>
+&nbsp;&nbsp;<a href="">Lobby 7</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="round/mit/">MIT</a><br>
 {% if has_wl_access %}
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ root }}/wonderland/">Wonderland</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="wonderland/">Wonderland</a><br>
 {% for round in rounds %}
 {% if round.round.url == "mit" %}
 {% elif round.round.url == "events" %}
 {% else %}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="round/{{ round.round.url }}/">{{ round.round.name }}</a><br>
 {% endif %}
 {% endfor %}
 {% endif %}
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ root }}/round/events/">Events</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="round/events/">Events</a><br>
 <br>
 Utilities:<br>
-&nbsp;&nbsp;<a href="{{ root }}/overview.html">Team Overview</a><br>
-&nbsp;&nbsp;<a href="{{ root }}/log.html">Team Log</a><br>
+&nbsp;&nbsp;<a href="overview.html">Team Overview</a><br>
+&nbsp;&nbsp;<a href="log.html">Team Log</a><br>
