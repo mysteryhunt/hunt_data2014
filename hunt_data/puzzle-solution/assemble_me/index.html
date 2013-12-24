@@ -1,0 +1,131 @@
+<link rel="stylesheet" href="solution.css">
+<h2>Solution to Assemble Me</h2>
+
+<p>
+<i>Author: Robert L. Rucinski '99</i>
+</p>
+
+<p>The flavortext (as well as the included link to the emulator) hints that this is a program for the Commodore 64 (also confirmed by the BASIC program with the command <span class="code">SYS 49152</span>, which is a common command for the C64 to execute a user-defined machine language program).</p>
+ 
+<p>The DATA statements are told to be mixed up, thus requiring them to be "assembled" (jigsaw puzzle-like) correctly to form a working program.</p>
+ 
+<p>To solve this part of the puzzle, you can reference any number of works on the internet such as: <a href="http://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-05-basic_to_machine_language.pdf">http://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-05-basic_to_machine_language.pdf</a></p>
+
+<p>First, determine what instructions each line of DATA represents.<br>
+The first line of DATA represents the instructions: <span class="code">ADC $C060,Y; STA $C100,Y; INY; CPY #$23; BNE (-16)</span><br>
+The second line represents the instructions: <span class="code">BCC (+2); LDA #$2A; JSR $FFD2; INY</span><br>
+Etc.</p>
+
+<p>By understanding what the different pieces of code do, it is possible to reconstruct the program (shown below). Input the program, with the DATA lines in the correct order into a C64 emulator (see <a href="ASSEMBLE.D64">ASSEMBLE.D64</a> for a working copy of the final program: mount the disc image in the VICE emulator, then <span class="code">LOAD "ASSEMBLE",8</a> and <span class="code">RUN</span>).</p>
+ 
+<p>The correct order of the DATA statements to make a working program is as follows:</p>
+
+<p class="code">
+100 DATA 162,0,185,64,192,32,210,255,200,192,32<br>
+110 DATA 208,245,160,0,24,152,121,129,235<br>
+120 DATA 121,96,192,153,0,193,200,192,35,208,240<br>
+130 DATA 162,0,160,0,169,32,24,30,0,193<br>
+140 DATA 144,2,169,42,32,210,255,200<br>
+150 DATA 192,8,208,238,232,224,35<br>
+160 DATA 208,231,169,13,32,210,255,96<br>
+170 DATA 147,13,84,72,69,32,65,78,83,87,69,82,32,84,79,32<br>
+180 DATA 84,72,69,32,80,85,90,90,76,69,32,73,83,58,13,13<br>
+190 DATA 234,240,225,241,117,133,131,232,71,32,197,209,154<br>
+200 DATA 34,45,0,203,155,38,179,185,181,150,19,179,158,175<br>
+210 DATA 173,36,157,157,137,167,18,144<br>
+220 DATA 256
+</p>
+ 
+<p>
+When the program is run, the program gives: 
+<pre>
+THE ANSWER TO THE PUZZLE IS: 
+ 
+******* *******          *****  ******* 
+   *       *            *     * * 
+   *       *            *     * * 
+   *       *    *******  *****  ****** 
+   *       *            *     *       * 
+   *       *            *     *       * 
+   *    *******          *****  ******
+</pre>
+</p>
+
+<h3>C64 Program for ASSEMBLE ME</h3>
+
+<p><a href="ASSEMBLE.D64">C64 disc image with program</a> (mount in the VICE emulator)</p>
+
+<pre>
+;main program
+           *= $C000 ;assemble at $C000
+
+;clear screen and print “THE ANSWER TO THE PUZZLE IS: ”
+
+           LDY #$00
+prloop1    LDA $data1,Y
+           JSR $FFD2
+           INY
+           CPY #$20        ;print all 32 characters
+           BNE $prloop1
+
+;change the 35 bytes of data in lines 190-210 into the graphical output
+
+;Those 35 bytes are essentially a coded way to produce the graphical output.
+;This section essentially decodes it into the correct bytes needed to print
+;the graphic (see below for how that happens). The encoding uses the C64
+;keyboard table at $EB81. Essentially, add the byte position, the C64
+;keyboard table value, and the byte to decode it. This has all been done
+;so as to encode the solution to the puzzle in the DATA and make it
+;impossible to determine the solution from the DATA alone.
+
+           LDY #$00        ;initialize loop counter
+chgnxtbyte CLC
+           TYA             ;.A = counter (ie. 0th byte, 1st byte, etc)
+           ADC $EB81,Y     ;.A = .A + keyboard table value
+           ADC $offsets1,Y ;.A = .A + data byte
+           STA $C100,Y     ;store decoded byte in $C100+.Y
+           INY
+           CPY #$23        ;there are 35 bytes of data
+           BNE $chgnxtbyte
+
+;print the graphical output
+
+;$C100-$C122 now has decoded data such that each bit tells this routine
+;which character to print. If the bit is 0, print a space; if the bit is 1,
+;print an asterisk.
+
+           LDX #$00        ;initialize loop counter X
+nextchar   LDY #$00        ;initialize loop counter Y
+
+nextbit    LDA #$20        ;prepare to print a space
+           CLC
+           ASL $inputs1,X  ;check bit
+           BCC $prchar     ;if 0, branch
+           LDA #$A2        ;if 1, prepare to print an asterisk
+           JSR $FFD2       ;print a space or the character
+           INY
+           CPY #$08        ;have we done all 8 bits?
+           BNE $nextbit    ;if not, do the next bit
+
+           INX  CPX #$23   ;correct graphic takes 35 characters
+                           ;have we done all 35 characters?
+           BNE $nextchar   ;if not, do the next character
+
+           LDA #$0D        ;print a carriage return
+           JSR $FFD2
+           RTS             ;end
+
+data1      .byte $93,$0D,$54,$48,$45,$20
+           .byte $41,$4E,$53,$57,$45,$52,$20
+           .byte $54,$4F,$20,$54,$48,$45,$20
+           .byte $50,$55,$5A,$5A,$4C,$45,$20
+           .byte $49,$53,$3A,$0D,$0D
+
+offsets1   .byte $EA,$F0,$E1,$F1,$75
+           .byte $85,$83,$E8,$47,$20
+           .byte $C5,$D1,$9A,$22,$2D
+           .byte $00,$CB,$9B,$26,$B3
+           .byte $B9,$B5,$96,$13,$B3
+           .byte $9E,$AF,$AD,$24,$9D
+           .byte $9D,$89,$A7,$12,$90
+</pre>
