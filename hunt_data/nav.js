@@ -6,7 +6,7 @@ mh.nav = function() {
     var bg = $('#mh-nav-bg');
     $('#mh-nav-inner').html($('#mh-nav-iframe').contents().find('body').html());
     $('#mh-nav-inner a').each(function() {
-	$(this).attr('src', '{{ root }}/' + $(this).attr('src'));
+	$(this).attr('href', '{{ root }}/' + $(this).attr('href'));
     });
     bg.stop(true, true);
     outer.stop(true, true);
