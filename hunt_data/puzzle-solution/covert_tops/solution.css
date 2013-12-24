@@ -1,0 +1,6 @@
+body {-webkit-print-color-adjust:exact;}
+table.all td.faces {padding-bottom:20px}
+table.all td.moves {padding:20px; text-align: right;}
+table.face {border-spacing:0; border-collapse:collapse;border:2px solid black; width: 96px; height: 96px;}
+td.shaded, td.unshaded {width: 30px; height: 30px; padding: 0px; border-collapse:collapse; text-align: center; border: 1px solid black}
+td.shaded {background-color: #999999;}
