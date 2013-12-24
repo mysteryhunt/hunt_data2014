@@ -1,6 +1,7 @@
 .t TH, .t TD {
   padding-left: 12px;
   padding-right: 12px;
+  text-align: left;
 }
 .ans:first-letter {
   color: red;
