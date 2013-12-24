@@ -31,6 +31,7 @@ mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2080
 mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2090
 mock_turtle	LEVAR BURTON	introduction_to_collegiate_notetaking	Introduction to Collegiate Notetaking	2100
 mock_turtle	WORMTONGUE	stronghold_fire	Stronghold Fire	2120
+mock_turtle	TI-85	assemble_me	Assemble Me	2130
 white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3010
 white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
@@ -40,6 +41,7 @@ white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer
 white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	3070
 white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the Answer I WANT TO HOLD YOUR HAND	3080
 white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE ME DO	3090
+white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3100
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
@@ -60,6 +62,7 @@ caucus_race	SPUR	venntersections	Venntersections	5060
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5070
 caucus_race	ECHO	crossed_wires	Crossed Wires	5080
 caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5090
+caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5100
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
 knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
