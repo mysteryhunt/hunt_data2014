@@ -1,6 +1,35 @@
 <h2>Solution to Time Flies</h2>
 <i>Author: Chieu Nguyen</i>
 
-<p>The full detailed solution is <a href="solution.pdf">here</a> (PDF).</p>
+
+<p>This puzzle is in the form of a phrase structure grammar having a set of phrase structure rules and a lexicon specifying the syntactic categories of 64 words.</p>
+
+<p>Some of the words may be familiar from famous example sentences in linguistics. Indeed, all of the words are in a set of 10 more-or-less classic sentences, given here without capitalization or punctuation to facilitate parsing and because capitalization and punctuation disambiguate some of these sentences.</p>
+
+<ul>
+<li><i>an american flag was hanging in front of every building</i></li>
+<li><i>buffalo buffalo buffalo buffalo buffalo buffalo buffalo buffalo</i></li>
+<li><i>colorless green ideas sleep furiously</i></li>
+<li><i>daddy what did you bring that book that i don’t want to be read to out of up for</i></li>
+<li><i>every farmer who owns a donkey beats it</i></li>
+<li><i>flying planes can be dangerous</i></li>
+<li><i>the gostak distims the doshes</i></li>
+<li><i>the horse raced past the barn fell</i></li>
+<li><i>i saw the man with the binoculars</i></li>
+<li><i>james while john had had had had had had had had had had had a better effect on the teacher</i></li>
+</ul>
+
+<p>The title refers to another famous sentence: <i>Time flies like an arrow; fruit flies like a banana.</i> Indeed, there are a lot of arrows in the rules; this is the standard notation, but it fits thematically.</p>
+
+<p>Many of the sentences are examples of syntactic ambiguity with multiple parses or are difficult to parse due to repetition of words or garden-path effects. Other sentences illustrate the possibility of syntactic well-formedness without semantic coherence, or difficulties in mapping between syntax and semantics.</p>
+
+<p>Since parsing is a theme in most of the sentences, this suggests parsing the sentences using the given grammar. Although the grammar is junk and doesn't match the actual structure of English at all, it does generate all of these sentences, and in many cases, it should be clear that the grammar generates multiple possible parses for sentences. Each sentence uses exactly one of the top-level rules uniquely, and as a confirmation, the first letter of the first non-article word in the sentence matches the phrasal category (for example, <i>flying planes can be dangerous</i> matches the rule <tt>S &#8594; FP VP</tt> rule); the sentences are also ordered from A through J, as a check that you have the right version of each sentence.</p>
+
+
+<p>To solve the puzzle, count the number of parses the grammar produces for each sentence (details are provided in the full solution linked below) and map this to a letter (1 parse &#8594; <b>A</b>, 2 parses &#8594; <b>B</b>, etc.). These can be ordered by sorting the sentences in alphabetical order. Doing this yields the clue phrase <b>GALA OR FUJI</b>. These are two common varieties of apples, so the final answer is <b>APPLE</b>. The fruit flies in the sentence referenced by the title may prefer a banana, but if one is not available, an apple would probably do just as well. Also, apples seem to be popular fruits to shoot arrows at. Sometimes this involves placing an apple on someone's head. We do not advise engaging in this activity.</p>
+
+<br/>
+
+<p>The full detailed solution (featuring lots of trees, footnotes, and formulas) is located <a href="solution.pdf">here</a> in PDF.</p>
 
 <p>An example of a working parser, written in Python, is <a href="parser.py">here</a>.</p>
