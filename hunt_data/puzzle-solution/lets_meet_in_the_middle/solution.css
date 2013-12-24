@@ -1,0 +1,19 @@
+.tl1 { float: left; border-collapse: collapse; }
+.tr1 { position: relative; left: 50px; border-collapse: collapse; }
+.tl2 { float: left; border-collapse: collapse; }
+.tr2 { position: relative; left: 50px; border-collapse: collapse; }
+.tl2 th { padding: 0px 4px; }
+.tr2 th { padding: 0px 4px; }
+.tl2 td { font-family: monospace; text-align: center; }
+.tr2 td { font-family: monospace; text-align: center; }
+.tl3 { float: left; border-collapse: collapse; }
+.tr3 { position: relative; left: 50px; border-collapse: collapse; }
+.tl3 th { padding: 0px 8px 0px 0px; }
+.tr3 th { padding: 0px 8px 0px 0px; }
+.tl3 td { font-family: monospace; }
+.tr3 td { font-family: monospace; }
+.t4 { border-collapse: collapse; }
+.t4 th { padding: 0px 8px 0px 0px; }
+.t4 td { font-family: monospace; }
+.cr { text-align: right; }
+.a { padding: 0px 5px 5px; color: #008; font-family: monospace; }
