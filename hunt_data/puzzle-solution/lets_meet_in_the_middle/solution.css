@@ -1,5 +1,6 @@
 .tl1 { float: left; border-collapse: collapse; }
 .tr1 { position: relative; left: 50px; border-collapse: collapse; }
+.tl1 TD, .tr1 TD { font-size: 14px; }
 .tl2 { float: left; border-collapse: collapse; }
 .tr2 { position: relative; left: 50px; border-collapse: collapse; }
 .tl2 th { padding: 0px 4px; }
