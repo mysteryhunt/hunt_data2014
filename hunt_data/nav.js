@@ -4,7 +4,10 @@ mh.nav = function() {
     outer.css('top', page.offset().top + 20);
     outer.css('left', page.offset().left + 20);
     var bg = $('#mh-nav-bg');
-    var inner = $('#mh-nav-inner');
+    $('#mh-nav-inner').html($('#mh-nav-iframe').contents().find('body').html());
+    $('#mh-nav-inner a').each(function() {
+	$(this).attr('href', '{{ root }}/' + $(this).attr('href'));
+    });
     bg.stop(true, true);
     outer.stop(true, true);
     if (outer.is(':visible')) {
