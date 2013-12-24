@@ -1,0 +1,5 @@
+table {width: 80%; margin-left: 10%; margin-right: 10%; border-spacing: 0px;}
+td {max-width: 100px;}
+td, th {text-align: left; padding: 5px; margin: 0px;}
+tr.odd {background-color: #ddddee;}
+td:last-child {font-weight: bold;}
