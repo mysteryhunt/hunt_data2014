@@ -1,0 +1,15 @@
+body {-webkit-print-color-adjust:exact;}
+#mh-outer {width: 950px !important;}
+table.t {border-spacing:0; border-collapse:collapse; margin: 0px auto;}
+table.t th {padding: 2px 0px; border-collapse:collapse;}
+table.t td {padding: 2px 0px;}
+table.pairing td {padding: 5px}
+table.clues td {padding: 5px}
+table.clues th {text-align: left}
+table.t th.spacer {width: 50px}
+table.t td.empty {border: 0px solid gray; width: 26px; height: 22px; text-align: center; vertical-align: middle; border-collapse:collapse;}
+table.t td.square {border: 1px solid black; width: 26px; height: 22px; text-align: center; vertical-align: middle; border-collapse:collapse;}
+table.t td.rightborder {border-right: 2px dashed red;}
+table.t td.leftborder {border-left: 2px dashed red;}
+table.t td.bottomborder {border-bottom: 2px dashed red;}
+table.t td.highlite {background-color: #CCFFCC;}
