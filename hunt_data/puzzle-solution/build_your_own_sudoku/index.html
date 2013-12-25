@@ -1,0 +1,48 @@
+<link rel=stylesheet href=solution.css>
+<link href="https://fonts.googleapis.com/css?family=Parisienne|Alice" rel="stylesheet" type="text/css">
+<body class="mh-fancy">
+    <div id="mh-outer">
+      <div id="mh-content">
+
+<h2>Solution to Build Your Own Sudoku</h2>
+
+<p>
+<i>Author: Robbie Buckingham</i>
+</p>
+
+<p>Using the clues in approximately the order</p>
+
+<p>Center &ndash; Column 5 &ndash; Column 8 &ndash; Northeast &ndash; Column 6 &ndash; Column 7 &ndash; Column 4 &ndash; Row H &ndash; Row E &ndash; Row D &ndash; Column 1 &ndash; Row I &ndash; South &ndash; West &ndash; East &ndash; Row F &ndash; Southeast &ndash; Row G &ndash; Northwest &ndash; Row C &ndash; Column 3 &ndash; Column 9 &ndash; Southwest &ndash; Row B &ndash; Row A &ndash; North &ndash; Column 2</p>
+
+<p>yields the unsolved grid</p>
+
+<table class="sudoku">
+<tr><th><th>1<th>2<th>3<th>4<th>5<th>6<th>7<th>8<th>9
+<tr class="t"><th class="r">A<td><td><td class="r">2<td><td><td class="r"><td><td>6<td class="r">5
+<tr><th class="r">B<td><td>6<td class="r"><td><td><td class="r">7<td>1<td><td class="r">
+<tr class="b"><th class="r">C<td>1<td><td class="r">4<td><td><td class="r">6<td><td><td class="r">
+<tr><th class="r">D<td>9<td><td class="r"><td><td><td class="r">1<td><td>8<td class="r">2
+<tr><th class="r">E<td><td><td class="r">3<td><td>9<td class="r"><td>6<td><td class="r">
+<tr class="b"><th class="r">F<td>7<td>8<td class="r"><td>2<td><td class="r"><td><td><td class="r">3
+<tr><th class="r">G<td><td><td class="r"><td>7<td><td class="r"><td>8<td><td class="r">6
+<tr><th class="r">H<td><td><td class="r">8<td>9<td><td class="r"><td><td>3<td class="r">
+<tr class="b"><th class="r">I<td>5<td>1<td class="r"><td><td><td class="r"><td>2<td><td class="r">
+</table>
+
+<p>The solved grid is</p>
+
+<table class="sudoku">
+<tr><th><th>1<th>2<th>3<th>4<th>5<th>6<th>7<th>8<th>9
+<tr class="t"><th class="r">A<td>8<td>7<td class="r">2<td>1<td>3<td class="r">9<td>4<td>6<td class="r">5
+<tr><th class="r">B<td>3<td>6<td class="r">5<td>8<td>4<td class="r">7<td>1<td>2<td class="r">9
+<tr class="b"><th class="r">C<td>1<td>9<td class="r">4<td>5<td>2<td class="r">6<td>3<td>7<td class="r">8
+<tr><th class="r">D<td>9<td>4<td class="r">6<td>3<td>7<td class="r">1<td>5<td>8<td class="r">2
+<tr><th class="r">E<td>2<td>5<td class="r">3<td>4<td>9<td class="r">8<td>6<td>1<td class="r">7
+<tr class="b"><th class="r">F<td>7<td>8<td class="r">1<td>2<td>6<td class="r">5<td>9<td>4<td class="r">3
+<tr><th class="r">G<td>4<td>3<td class="r">9<td>7<td>1<td class="r">2<td>8<td>5<td class="r">6
+<tr><th class="r">H<td>6<td>2<td class="r">8<td>9<td>5<td class="r">4<td>7<td>3<td class="r">1
+<tr class="b"><th class="r">I<td>5<td>1<td class="r">7<td>6<td>8<td class="r">3<td>2<td>9<td class="r">4
+</table>
+
+<p>Using the numbers from the solved grid, the number clues yield 
+9-14-20-18-21-19-9-15-14, or <b>INTRUSION</b>.</p>
