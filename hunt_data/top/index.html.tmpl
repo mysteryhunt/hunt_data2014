@@ -8,29 +8,30 @@
   </head>
   <body> 
     <div id="mh-outer">
-    <div id="mh-image-outer">
-      <img id="mh-image" src="image.jpg" />
-      <a id="mh-door" title="MIT" href="{{ root }}/round/mit/" style="opacity: 0;"><img src="door.png" /></a>
-      <a id="mh-mushroom" title="Events" href="{{ root }}/round/events/"><img src="mushroom.gif" /></a>
-    </div>
-    <table id="mh-links">
-      <tr>
-	<td>
-	  <a href="{{ root }}/round/mit/">To MIT</a>
-	</td>
-	{% if has_wl_access %}
-	<td>
-	  <a href="{{ root }}/wonderland/">To Wonderland</a>
-	</td>
-	{% endif %}
-	<td>
-	  <a href="{{ root }}/round/events/">To Events</a>
-	</td>
-      </tr>
-    </table>
-    <div class="mh-flavortext">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat leo sed odio tincidunt, vel ornare tellus porttitor. Nunc auctor eleifend purus, ut congue nisl convallis eu. Curabitur viverra venenatis adipiscing. Sed sodales tristique mattis. Cras nec augue lacinia, congue nisi nec, tempus quam. Duis mollis mattis erat ut gravida. Suspendisse rutrum id justo sed fringilla. Maecenas interdum aliquet lectus, eget consectetur turpis. Aenean in enim rutrum purus elementum posuere. Duis sollicitudin placerat posuere. Vestibulum vel leo facilisis, lacinia urna at, sodales mauris. Phasellus eget cursus magna. Praesent in ipsum dictum nulla dignissim consectetur. Nam rutrum scelerisque neque, ultricies dapibus nunc consectetur sed.
-    </div>
+      <div id="mh-image-outer">
+	<img id="mh-image" src="image.jpg" />
+	<a id="mh-door" title="MIT" href="{{ root }}/round/mit/" style="opacity: 0;"><img src="door.png" /></a>
+	<a id="mh-mushroom" title="Events" href="{{ root }}/round/events/"><img src="mushroom.gif" /></a>
+      </div>
+      <table id="mh-links">
+	<tr>
+	  <td>
+	    <a href="{{ root }}/round/mit/">To MIT</a>
+	  </td>
+	  {% if has_wl_access %}
+	  <td>
+	    <a href="{{ root }}/wonderland/">To Wonderland</a>
+	  </td>
+	  {% endif %}
+	  <td>
+	    <a href="{{ root }}/round/events/">To Events</a>
+	  </td>
+	</tr>
+      </table>
+      <div class="mh-flavortext">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat leo sed odio tincidunt, vel ornare tellus porttitor. Nunc auctor eleifend purus, ut congue nisl convallis eu. Curabitur viverra venenatis adipiscing. Sed sodales tristique mattis. Cras nec augue lacinia, congue nisi nec, tempus quam. Duis mollis mattis erat ut gravida. Suspendisse rutrum id justo sed fringilla. Maecenas interdum aliquet lectus, eget consectetur turpis. Aenean in enim rutrum purus elementum posuere. Duis sollicitudin placerat posuere. Vestibulum vel leo facilisis, lacinia urna at, sodales mauris. Phasellus eget cursus magna. Praesent in ipsum dictum nulla dignissim consectetur. Nam rutrum scelerisque neque, ultricies dapibus nunc consectetur sed.
+      </div>
+      <br/><br/>
     </div>
     <script src="index.js"></script>
   </body>
