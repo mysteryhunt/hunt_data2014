@@ -21,8 +21,3 @@
 .sudoku tr.t td {
   border-top: 3px solid black;
 }
-.info th {
-  vertical-align: top;
-  text-align: right;
-  padding: 0px 20px;
-}
