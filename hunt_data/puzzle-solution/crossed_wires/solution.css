@@ -1,22 +1,3 @@
-table.grid {
-    border-spacing:0;
-}
-table.grid td {
-    padding: 0px;
-}
-table.grid td.hword {
-    padding: 0px 0px 0px 20px;
-    height: 33px;
-    text-align:left;
-    vertical-align: middle;
-}
-table.grid td.vword {
-    padding: 20px 0px 0px 0px;
-    width: 30px;
-    height: 100px;
-    text-align: center;
-    vertical-align: top;
-}
 table.clues {
     border-spacing:0;
 }
