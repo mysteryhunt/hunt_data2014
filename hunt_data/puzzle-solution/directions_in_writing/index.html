@@ -1,0 +1,68 @@
+<h2>Solution to Directions in Writing</h2>
+
+<p>
+<i>Author: Chieu Nguyen</i>
+</p>
+
+<p>As suggested by the format, this is a criss-cross or fill-in crossword,
+where you are given a blank grid and words to fill it in with. A few features
+are unconventional however. The puzzle says to fill in words only 
+horizontally (despite the appearance of vertical words in the grid), though the
+specified lengths (which match the spaces in the grid) don't correspond
+to the lengths of the given words.</p>
+
+<p>The trick is that the grid must be rotated to accommodate all the
+words, and intersecting cells actually contain different letters that look
+the same when rotated. While this is not practical to do using the Latin
+alphabet and is largely dependent on case and font choice, there are 
+writing systems which make systematic use of rotational symmetry
+(with phonetic correspondences!). Two of
+them are Hangul and Canadian Aboriginal Syllabics, which are showcased
+in this puzzle.</p>
+
+<p>Looking up some of these names reveals that they are the com-
+mon English names for municipal-level places in four regions: Nunavut,
+Qu&eacute;bec, North Korea, and South Korea. These include cities, towns,
+villages, hamlets, counties, and districts. The English names are usually
+transcriptions of a native name in Korean (North Korea and South Korea,
+which have slightly different transcription systems), Inuktitut (Nunavut
+and Qu&eacute;bec), or Cree (Qu&eacute;bec),
+though several of the names in Canada
+are not standard transcriptions and many of the places in Nunavut have
+entirely different names in English.</p>
+
+<p>The native names, when written in their common non-Latin-based
+writing systems (Hangul for Korean and Canadian Aboriginal Syllabics for 
+Inuktitut and Cree), match the specified lengths, if the Hangul jamo (letters) are written out separately rather than in blocks as is normally done
+(this would be impossible to use in a word grid), and the Syllabics char-
+acters are counted based on how many characters they are in Unicode
+(digraphs and diacritics not counted separately).</p>
+
+<p>Then the task is just to fill in the grid with these names. Some of
+the intersecting letters look slightly different in different orientations, 
+depending on your font, but this is only a matter of scaling and the similarity
+reflects rotational symmetry inherent to the writing systems, so it is not
+just a coincidence that they happen to look similar when rotated. The grid
+is uniquely solvable, with the technical exception of &#334;rang
+ (&#12615;&#12627;&#12601;&#12623;&#12615;),
+which can be filled in in two possible directions; but since it's rotationally
+symmetric, this doesn't matter!</p>
+
+<p>Though realizing this fact is not necessary for solving, the grid is
+roughly divided into four regions associated with the four geographic 
+regions. The top left is Nunavut, the bottom left is Qu&eacute;bec,
+ the top right is
+North Korea, and the bottom right is South Korea, reflecting the relative
+geographical position of the regions (as seen with the Prime Meridian at
+the center).</p>
+
+<p>When the grid is filled out, the highlighted squares, in the original
+orientation, contain the following rotated characters:</p>
+
+<img src="callinazimuth.png" alt="CALL IN AZIMUTH" />
+
+<p>This is supposed to resemble Latin characters spelling out CALL IN AZIMUTH. The answer is <b>AZIMUTH</b>.</p>
+
+<br/>
+
+<p>The full solution, with the completed grid and a table showing the Syllabics and Hangul names for each place, is posted <a href="solution.pdf">here</a>.</p>
