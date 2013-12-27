@@ -1,0 +1,29 @@
+.vid {
+  border: 1px solid black;
+  height: 72px;
+  padding: 8px;
+  text-align: center;
+}
+.v {
+  margin-top: 18px;
+  margin-bototm: 18px;
+}
+.vname {
+  font-weight: bold;
+}
+.vdesc {
+  margin-left: 24px;
+}
+.vsid, .vsd, .vjs {
+  display: inline;
+  margin-left: 24px;
+}
+.vjs IMG {
+  vertical-align: middle;
+}
+.rebus TD {
+  text-align: center;
+}
+.rebus .rimg {
+  font-size: 54px;
+}
