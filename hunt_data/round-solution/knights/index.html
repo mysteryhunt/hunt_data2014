@@ -1,0 +1,48 @@
+<h2>Solution to The Red and White Knights Meta</h2>
+<i>Author: Aaron Bader</i>
+
+<p>There are 16 puzzles, corresponding to 16 chess pieces: 8 red pieces and 8 white pieces.  Each puzzle answer is a two word phrase.  The first word stars with a letter from A to H and is 1 to 8 letters long.  There is one clue for each letter A through H for the 8 chess pieces of each color.  All the second words are 4 letters long.  Each clue tells you two things: the position on the chess board for that piece (first letter indicates column, length indicates row) and the letters that should be written into the like colored squares of that column.  A few of these letters are given initially to help confirm the letter placement.</p>
+
+<p>The solvers reconstruct the duel according to the instructions given in the flavortext and then read off the letters corresponding to the squares that the knights visited to get the answer, <b>BORED TO PIECES BY GAMES</b>, a weakness of the beast.</p>
+
+<table>
+<tr><th>Chess Piece</th><th>Answer</th><th>Initial board position</th></tr>
+<tr><td>White Pawn</td><td>DARK OMEN</td><td>D4</td></tr>
+<tr><td>White Pawn</td><td>HOBO BOBO</td><td>H4</td></tr>
+<tr><td>Red Pawn</td><td>ACTIVE USER</td><td>A6</td></tr>
+<tr><td>Red Pawn</td><td>DEN CHAI</td><td>D3</td></tr>
+<tr><td>Red Pawn</td><td>ED WYNN</td><td>E2</td></tr>
+<tr><td>White Knight</td><td>ARCHDUKE OTTO</td><td>A8</td></tr>
+<tr><td>Red Knight</td><td>HOSPITAL BEDS</td><td>H8</td></tr>
+<tr><td>White Bishop</td><td>CAPS LOCK</td><td>C4</td></tr>
+<tr><td>Red Bishop</td><td>BABY WIPE</td><td>B4</td></tr>
+<tr><td>White Rook</td><td>BAD BOYS</td><td>B3</td></tr>
+<tr><td>White Rook</td><td>GLUTEN FREE</td><td>G6</td></tr>
+<tr><td>Red Rook</td><td>G RING</td><td>G1</td></tr>
+<tr><td>White Queen</td><td>FLU SHOT</td><td>F3</td></tr>
+<tr><td>Red Queen</td><td>CUTTING EDGE</td><td>C7</td></tr>
+<tr><td>White King</td><td>ENERGY BEAM</td><td>E6</td></tr>
+<tr><td>Red King</td><td>FIRE HOSE</td><td>F4</td></tr>
+</table>
+
+<table>
+<tr><td><img src="initial-piece-layout.png"></td></tr>
+<tr><td><center><b>Positions of the pieces on the board</b></center></td></tr>
+</table>
+
+<p>Following the instructions to recreate the duel gives the following paths for each knight.</p>
+
+<table>
+<tr><td><img src="knight-moves.png"></td></tr>
+<tr><td><center><b>Paths for each knight.  The 9th move lands on the 10th square.</b></center></td></tr>
+</table>
+
+<p>Finally, you need to fill in the squares with the proper letters.  The second word of each answer fills in the 4 squares on each column.  White pieces fill the light squares, red pieces fill the dark squares.  The initial letters in the picture should help solvers fill in the letters correctly.</p>
+
+<table>
+<tr><td><img src="knight-moves-and-letters.png"></td></tr>
+<tr><td><center><b>Chessboard with letters and knight moves entered</b></center></td></tr>
+</table>
+
+<p>Reading the letters in the squares in the order they were traversed (R1, W1, R2, W2, R3, etc.) gives the final answer, <b>BORED TO PIECES BY GAMES</b>.  The beast was watching the knights spar and got so bored by the spectacle that she left.</p>
+
