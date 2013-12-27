@@ -1,0 +1,85 @@
+<h2>Solution to The White Queen Meta</h2>
+<i>Erin Rhode and Harvey Jones</i>
+
+<p>The White Queen experiences everything backwards.  In her round, you "solve" the answers to puzzles before receiving the puzzles.  Once you open a puzzle, while you can find the answer hiding somewhere in the puzzle, often trivially, you don't know the title of the puzzle and you must fully solve the puzzle to find the title.  But how do you find the answers?  A time tested Mystery Hunt tradition -- backsolving.</p>
+
+<p>Solvers are initially told that the answers combine to form a meta puzzle with the solution "IT'S JUST A RED HERRING."  Four answers on dark red squares are initially given in a grid (looking like a chess board because this is the White Queen, after all), indicating that a single letter is pulled out of each answer word to form the phrase.  In addition, the location on the grid of the letter determined by each word is also given.</p>  
+
+
+<table class="answers" border=1>
+<tr><td class="pink">I=WILLIAMS</td><td class="red">T=??</td><td class="pink">S=LYNN</td></tr>
+
+<tr><td class="red">J=??</td><td class="pink">U=??</td><td class="red">S=??</td></tr>
+
+<tr><td class="pink">T=??</td><td class="red">A=??</td><td class="pink">R=SULLIVAN</td></tr>
+
+<tr><td class="red">E=??</td><td class="pink">D=??</td><td class="red">H=??</td></tr>
+
+<tr><td class="pink">E=??</td><td class="red">R=??</td><td class="pink">R=SULLIVAN</td></tr>
+
+<tr><td class="red">I=??</td><td class="pink">N=RICE</td><td class="red">G=??</td></tr>
+</table>
+
+<p>The "answers" on the dark red squares are all the last names of famous Boston Red Sox players.  The player's jersey number, when indexed into the alphabet, gives the letter in the answer phrase.  The player who wore the number the longest (and/or is a member of the Red Sox Hall of Fame in the case of Frank Sullivan over Glenn Hoffman for jersey #18) is always the player used in the puzzle.  Deducing the remaining players gives the answers for the remaining puzzles on the dark red squares and "unlocks" those puzzles.</p>
+
+<table class="answers" border=1>
+<tr><td class="pink">I=(9 Ted) WILLIAMS</td><td class="red">T=??</td><td class="pink">S=(19 Fred) LYNN</td></tr>
+
+<tr><td class="red">J=??</td><td class="pink">U=(21 Roger) CLEMENS</td><td class="red">S=??</td></tr>
+
+<tr><td class="pink">T=(20 Kevin) YOUKILIS</td><td class="red">A=??</td><td class="pink">R=(18 Frank) SULLIVAN</td></tr>
+
+<tr><td class="red">E=??</td><td class="pink">D=(4 Joe) CRONIN</td><td class="red">H=??</td></tr>
+
+<tr><td class="pink">E=(5 Nomar) GARCIAPARRA</td><td class="red">R=??</td><td class="pink">R=(18 Frank) SULLIVAN</td></tr>
+
+<tr><td class="red">I=??</td><td class="pink">N=(14 Jim) RICE</td><td class="red">G=??</td></tr>
+</table>
+
+<p>After solving and thus determining the title for six of the nine puzzles which can be opened up in this way (or time release), three more "answers" are revealed to teams on the light right squares, which have nothing to do with the Red Sox, but are related to something else red.</p>
+
+<table class="answers" border=1>
+<tr><td class="pink">I=WILLIAMS</td><td class="red">T=??</td><td class="pink">S=LYNN</td></tr>
+
+<tr><td class="red">J=EIGHT DAYS A WEEK</td><td class="pink">U=CLEMENS</td><td class="red">S=NORWEGIAN WOOD</td></tr>
+
+<tr><td class="pink">T=YOUKILIS</td><td class="red">A=LOVE ME DO</td><td class="pink">R=SULLIVAN</td></tr>
+
+<tr><td class="red">E=??</td><td class="pink">D=CRONIN</td><td class="red">H=??</td></tr>
+
+<tr><td class="pink">E= GARCIAPARRA</td><td class="red">R=??</td><td class="pink">R=SULLIVAN</td></tr>
+
+<tr><td class="red">I=??</td><td class="pink">N=RICE</td><td class="red">G=??</td></tr>
+</table>
+
+<p>The answers on the light red squares are all Beatles tracks, specifically tracks on the Red Album (officially known as <i>1962-1966</i>).  Indexing the track number on that album into the alphabet gives the letter in the answer phrase.  Using this information, solvers can deduce the remaining answers on the light red squares and unlock all puzzles in the round.</p>
+
+<table class="answers" border=1>
+<tr><td class="pink">I=WILLIAMS</td><td class="red">T=(20) NOWHERE MAN</td><td class="pink">S=LYNN</td></tr>
+
+<tr><td class="red">J=(10) EIGHT DAYS A WEEK</td><td class="pink">U=CLEMENS</td><td class="red">S=(19) NORWEGIAN WOOD</td></tr>
+
+<tr><td class="pink">T=YOUKILIS</td><td class="red">A=(1) LOVE ME DO</td><td class="pink">R=SULLIVAN</td></tr>
+
+<tr><td class="red">E=(5) I WANT TO HOLD YOUR HAND</td><td class="pink">D=CRONIN</td><td class="red">H=(8) A HARD DAY'S NIGHT</td></tr>
+
+<tr><td class="pink">E= GARCIAPARRA</td><td class="red">R=(18) DRIVE MY CAR</td><td class="pink">R=SULLIVAN</td></tr>
+
+<tr><td class="red">I=(9) AND I LOVE HER</td><td class="pink">N=RICE</td><td class="red">G=(7) CAN'T BUY ME LOVE</td></tr>
+</table>
+
+<p>After unlocking all the puzzles, one solves the puzzles to determine the "title" of each puzzle.  The White Queen is upset because the Red Queen has painted all of her things red -- i.e. all of the answers are related to either the Red Sox or the Red Album.  The titles for each puzzle are all related to the white version of those things: the Chicago White Sox and The Beatles' White Album.  Each Red Sox answered puzzle has a "title" which appears in exactly one song on the White Album and each Red Album answered puzzle has a title which is the last name of a Chicago White Sox player.  Doing in reverse what was done to "solve" the red herring meta (i.e. taking the track number or jersey number and indexing into the alphabet) gives the following grid with the titles.  Reading vertically (from top to bottom and snaking around) gives the way to fix what the Red Queen has done: CLEAN WITH IVORY SOAP.</p>
+
+<table class="answers" border=1>
+<tr><td class="pink">SLIDE (Helter Skelter, 23 = W)</td><td class="red">CATER (9 = I)</td><td class="pink">LIFETIME (I Will, 16 = P)</td></tr>
+
+<tr><td class="red">FRANCO (14 = N)</td><td class="pink">DAISIES (Mother Nature's Son, 20 = T)</td><td class="red">BRAVO (1 = A)</td></tr>
+
+<tr><td class="pink">MIAMI (Back in the USSR, 1 = A)</td><td class="red">BOSTON (8 = H)</td><td class="pink">WATCHING (Why Don't We Do It In The Road?, 15 = O)</td></tr>
+
+<tr><td class="red">SHARP (5 = E)</td><td class="pink">SILLY (Martha My Dear, 9 = I)</td><td class="red">ROCK (19=S)</td></tr>
+
+<tr><td class="pink">BACON (Piggies, 12 = L)</td><td class="red">FARMER (22 = V)</td><td class="pink">CONSTITUTION (Revolution 1, 25 = Y)</td></tr>
+
+<tr><td class="red">YORK (3 = C)</td><td class="pink">ROAD (Why Don't We Do It In The Road?, 15 = O)</td><td class="red">SCORE (18 = R)</td></tr>
+</table>
