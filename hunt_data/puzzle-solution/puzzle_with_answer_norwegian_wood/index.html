@@ -1,0 +1,47 @@
+<h2>Solution to A Puzzle with the answer NORWEGIAN WOOD</h2>
+
+<p>
+<i>Authors: Cinjon Resnick, Kevin Der, Michael Pihulic</i>
+</p>
+
+<p>The puzzle is a webcrawl through <a href="http://www.quora.com/">Quora</a>, though not entirely a traditional one, since all of the relevant pages are accessible at once, and the challenge is to organize them. A quick web search should bring up several topics on the Quora site where Oriyan Remsis asks a question and Oscar Rippling posts an answer.</p>
+
+<p>The a-ha is to figure out that in the text of each of Oscar's answers, the word "or" appears only once (and the word "and" does not appear at all). The slightly strange names (Oriyan Remsis and Oscar Rippling) also point in this direction, as both of their initials are OR.</p>
+
+<p>For each question, one of the following is true: (1) both of the words surrounding "or" is a topic for another question asked by Oriyan; or (2) neither of the words is a topic. The disjunctions where (2) is true all point to topics that are leaves.</p>
+
+<p>The topics can be combined into a balanced binary tree with the given topic of "Carrots" as the root (since carrots are root vegetables), and the terminal topics, which are leaves:</p>
+
+<table border="1" class="tree">
+<tbody><tr>
+<td colspan="8">"<b>C</b>arrots"</td>
+</tr>
+<tr>
+<td colspan="8"><a href="http://www.quora.com/Carrots/How-can-I-build-a-computer-with-primarily-just-carrots">Carrots</a><br>"<b>H</b>omer or <b>O</b>vid"</td>
+</tr>
+<tr>
+<td colspan="4"><a href="http://www.quora.com/Homer/How-much-of-an-influence-did-Homer-have-on-the-biblical-story-of-Genesis">Homer</a><br>"<b>A</b>dam or <b>E</b>ve"</td>
+<td colspan="4"><a href="http://www.quora.com/Ovid/What-is-the-strangest-transformation-in-Ovid%E2%80%99s-Metamorphoses">Ovid</a><br>"<b>r</b>eed or <b>c</b>onstellation"</td>
+</tr>
+<tr>
+<td colspan="2"><a href="http://www.quora.com/What-did-Adam-think-of-Eve%E2%80%99s-decision-to-eat-the-apple">Adam (bible)</a><br>"<b>r</b>eligion or <b>e</b>thics"</td>
+<td colspan="2"><a href="http://www.quora.com/Eve/How-did-Eve%E2%80%99s-decision-to-eat-the-apple-influence-snake-development">Eve</a><br>"<b>d</b>esign or <b>e</b>volution"</td>
+<td colspan="2"><a href="http://www.quora.com/Reed-College/Which-Greek-gods-would-most-likely-be-associated-with-Reed-College-today">Reed College</a><br>"<b>A</b>pollo or <b>A</b>thena"</td>
+<td colspan="2"><a href="http://www.quora.com/Constellation/If-the-sky-were-remapped-to-more-modern-constellations-what-would-be-some-good-candidates">Constellations</a><br>"<b>C</b>ontra or <b>S</b>tarfox"</td>
+</tr>
+<tr>
+<td colspan="1"><a href="http://www.quora.com/Religion/What-religious-practices-incorporate-plants">Religion</a><br>"<b>l</b>ettuce or <b>i</b>vy"</td>
+<td colspan="1"><a href="http://www.quora.com/Ethics/Is-it-ethical-for-California-residents-to-smoke-weed-in-public-places-now-that-they-can%E2%80%99t-smoke-tobacco">Ethics</a><br>"<b>p</b>ot or <b>r</b>eefer"</td>
+<td colspan="1"><a href="http://www.quora.com/Design/What-high-quality-design-options-do-I-have-for-a-green-dining-set">Design</a><br>"<b>e</b>lm or <b>c</b>abbage"</td>
+<td colspan="1"><a href="http://www.quora.com/Evolution-process/Could-evolution-re-align-divergent-paths">Evolution (process)</a><br>"<b>s</b>pinach or <b>s</b>ycamore"</td>
+<td colspan="1"><a href="http://www.quora.com/What-would-have-been-the-best-meal-to-serve-for-the-last-Apollo-mission">Apollo Program</a><br>"<b>l</b>ettuce or <b>f</b>ennel"</td>
+<td colspan="1"><a href="http://www.quora.com/Athena/What%E2%80%99s-the-most-interesting-thing-you%E2%80%99ve-ever-found-in-an-Athena-cluster">Athena</a><br>"<b>s</b>umac or <b>u</b>mbrella"</td>
+<td colspan="1"><a href="https://www.quora.com/Contra-series/What-types-of-foliage-can-be-found-in-Contra">Contra (series)</a><br>"<b>e</b>ucalyptus or <b>s</b>alvia"</td>
+<td colspan="1"><a href="https://www.quora.com/Starfox/Were-any-Starfox-missions-based-in-California">Starfox</a><br>"<b>o</b>ak or <b>r</b>edwood"</td>
+</tr></tbody></table>
+
+<p>Taking the first letter of each the topics in a pre-order traversal yields the string CHARLIEPREDECESSORALFASUCCESSOR. This ordering is clued in the tree's middle two levels. The Homer and Ovid questions both reference "pre-order" and the Adam, Eve, Reed College, and Constellations questions all reference "traverse".</p>
+
+<p>Joining the two halves with "or" as with all the pairs of topics in the puzzle, we have the cluephrase "charlie predecessor or alfa successor", which clues the title <b>BRAVO</b>.</p>
+
+<p>(And the answer, <b>NORWEGIAN WOOD</b>, is hidden in the text of the answer to the "Carrots" question.)</p>
