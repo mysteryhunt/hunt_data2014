@@ -1,0 +1,51 @@
+# Solution for SKI Trees in Unlambda
+
+# This program goes through each of the 11 SKI expressions and applies
+# it to a function that prints out an asterisk. The number of asterisks
+# displayed is the number represented by each SKI tree.
+
+
+``r``
+     # Canyons
+     ``s```i`is`ksk``s```is`kski  
+ .*i
+``r``
+     # Okemo
+     ``s``s`ksk``s``s`ks`ik````kkii`ii
+ .*i
+``r``
+     # Panorama
+     ```is```is`ksk```is``s`ksk``s``s`kski
+ .*i
+``r``
+     # Steamboat
+     ```si`ii``s``s`ksk``k`i`i`i`ii`s`ki
+ .*i
+``r``
+     # Sugarloaf
+     ``s``s`ksk```sii``s``s`k`is`ik`ii
+ .*i
+``r``
+     # Sun Valley
+     ````si``ik``is`i``s`ksk`ii`ii
+ .*i
+``r``
+     # Telluride
+     ````s``ii`i`ksk``s``s`ks`i`i`ik`kii
+ .*i
+``r``
+     # Tremblant
+     ```s``s`ksk``s``s`kski``s``s`kski
+ .*i
+``r``
+     # Vail
+     ``s``s`ksk```kii`i`i`i``s`i``s`kski
+ .*i
+``r``
+     # Waterville Valley
+     ```si`k```is``s`kski```isii
+ .*i
+ `r``
+     # Whistler Blackcomb
+     ```s````kskii`ii``i`ii````ksi``s`kski
+ .*i

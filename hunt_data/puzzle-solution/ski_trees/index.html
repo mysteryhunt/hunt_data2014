@@ -1,0 +1,36 @@
+<h2>Solution to SKI Trees</h2>
+
+<p>
+<i>Author: Chieu Nguyen</i>
+</p>
+
+<p>This puzzle consists of 11 binary-branching trees, each with a list of names marked as S, K, or I. For each one, the names are those of ski trails from a particular ski resort in North America, and the tree can be superimposed on the official trail map of that resort such that every path from root to terminal corresponds to a skiable path in the resort. There are the same number of terminal points in the tree as given ski trail names, and each terminal point lies on a unique ski trail in the set.</p>
+
+<p>The trees are actually representations of expressions in the <a href="http://en.wikipedia.org/wiki/SKI_combinator_calculus">SKI combinator calculus</a>, where each terminal node represents one of the basic combinators S, K, or I, and each nonterminal node represents the functional application of the left child expression to the right child expression.</p>
+
+<p>Each expression reduces to a <a href="http://en.wikipedia.org/wiki/Church_encoding">Church numeral</a>, which is either I (representing 1) or the result of applying a successor function S(S(KS)K) to I repeatedly. Each application increases the value by 1.</p>
+
+<p>One can figure out which Church numeral is represented by reducing the SKI expression (applying the definitions of the three basic combinators to subtrees repeatedly) and counting how many times the successor function appears, adding that to 1. The value can also be computed by applying the SKI expression to a natural number successor function (one that adds 1 to its argument and returns the result), and applying the result of that to 0: this should yield the natural number corresponding to the Church numeral. Alternatively, the SKI expression can be applied to an arbitrary function X and an arbitrary function Y: the number of X's in the result is the integer.</p>
+
+<p>The following table lists the SKI expressions represented by each tree, in Lisp-style notation because that (and Unlambda notation) is easily transcribable from the tree and easily embedded in code.</p>
+
+<table>
+<tr><td><b>Resort</b></td><td><b>Location</b></td><td><b>SKI expression</b></td><td><b>Number</b></td><td><b>Indexed letter</b></td></tr>
+<tr><td>Canyons</td><td>Park City, UT</td><td class="ski"><tt>((s (((i (i s)) (k s)) k)) ((s (((i s) (k s)) k)) i))</tt></td><td>3</td><td>N</td></tr>
+<tr><td>Okemo</td><td>Ludlow, VT</td><td class="ski"><tt>((s ((s (k s)) k)) ((s ((s (k s)) (i k))) ((((k k) i) i) (i i))))</tt></td><td>3</td><td>E</td></tr>
+<tr><td>Panorama</td><td>Panorama, BC</td><td class="ski"><tt>(((i s) (((i s) (k s)) k)) (((i s) ((s (k s)) k)) ((s ((s (k s)) k)) i)))</tt></td><td>4</td><td>O</td></tr>
+<tr><td>Steamboat</td><td>Steamboat Springs, CO</td><td class="ski"><tt>(((s i) (i i)) ((s ((s (k s)) k)) ((k (i (i (i (i i))))) (s (k i)))))</tt></td><td>4</td><td>A</td></tr>
+<tr><td>Sugarloaf</td><td>Carrabassett Valley, ME</td><td class="ski"><tt>((s ((s (k s)) k)) (((s i) i) ((s ((s (k (i s))) (i k))) (i i))))</tt></td><td>5</td><td>R</td></tr>
+<tr><td>Sun Valley</td><td>Sun Valley, ID</td><td class="ski"><tt>((((s i) ((i k) ((i s) (i ((s (k s)) k))))) (i i)) (i i))</tt></td><td>2</td><td>U</td></tr>
+<tr><td>Telluride</td><td>Telluride, CO</td><td class="ski"><tt>((((s ((i i) (i (k s)))) k) ((s ((s (k s)) (i (i (i k))))) (k i))) i)</tt></td><td>1</td><td>T</td></tr>
+<tr><td>Tremblant</td><td>Mont-Tremblant, QC</td><td class="ski"><tt>(((s ((s (k s)) k)) ((s ((s (k s)) k)) i)) ((s ((s (k s)) k)) i))</tt></td><td>8</td><td>N</td></tr>
+<tr><td>Vail</td><td>Vail, CO</td><td class="ski"><tt>((s ((s (k s)) k)) (((k i) i) (i (i (i ((s (i ((s (k s)) k))) i))))))</tt></td><td>3</td><td>I</td></tr>
+<tr><td>Waterville Valley</td><td>Waterville Valley, NH</td><td class="ski"><tt>(((s i) (k (((i s) ((s (k s)) k)) i))) (((i s) i) i))</tt></td><td>4</td><td>E</td></tr>
+<tr><td>Whistler Blackcomb</td><td>Whistler, BC</td><td class="ski"><tt>(((s ((((k s) k) i) i)) (i i)) ((i (i i)) ((((k s) i) ((s (k s)) k)) i)))</tt></td><td>16</td><td>M</td></tr>
+</table>
+
+<p>Use the number as an index into the short name of the ski resort. Since the resorts are given in alphabetical order by their name, the indexed letters must be reordered. Arrange the letters by the physical location of the ski resort, and reading from west to east, they spell out the answer <b>MOUNTAINEER</b>.</p>
+
+<p><a href="ski.scm">This file</a> is a solution in Scheme that interprets SKI calculus in terms of lambda calculus. It also embeds the SKI expressions of the trees and prints out the numbers represented.</p>
+
+<p>Of course, there is no need to resort to lambdas if your language already has SKI combinators built in. <a href="ski.unl">Here</a> is another solution in Unlambda, an esoteric programming language based on the SKI calculus. Each SKI expression is directly embedded and applied to a function that prints out an asterisk.</p>
