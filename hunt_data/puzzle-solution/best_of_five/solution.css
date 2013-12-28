@@ -1,0 +1,17 @@
+TABLE.t { border-collapse: collapse; }
+.t TH, .t TD { border: 1px solid black; }
+.blank { background: #EEE; font-weight: bold; }
+.hl { background: #FF0; }
+.match { display: inline-block; }
+.match TD { font-size: 12px; text-align: center; width: 16px; }
+.pname { min-width: 70px; }
+.points { background: #EEE; }
+.rrrow { margin-bottom: 4px; white-space: nowrap; }
+.stats TH, .stats TD {
+    padding: 0 8px 0 8px;
+    text-align: center;
+    font-size: 12px;
+}
+TD.yp { padding: 1px; }
+TD.yr { padding: 1px; }
+.total TD { font-size: 15px; font-weight: bold; }
