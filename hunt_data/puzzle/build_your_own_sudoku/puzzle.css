@@ -25,3 +25,11 @@
   text-align: right;
   padding: 0px 20px;
 }
+.eq th {
+  vertical-align: top;
+  text-align: right;
+  padding: 0px 6px 0px 20px;
+}
+.eq td {
+  text-align: center;
+}
