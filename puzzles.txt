@@ -28,6 +28,7 @@ tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1060
 tea_party	BELGIAN FAWN	can_tab_rig_ian	Can + Tab + Rig + Ian	1070
 tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1080
 tea_party	STRAIGHT SETS	best_of_five	Best of Five	1090
+tea_party	SUZANNE CROUGH	monster_potatoes	Monster Potatoes	1100
 mock_turtle	LOCKS	common_bonds	Common Bonds	2020
 mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2080
 mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2090
