@@ -6,6 +6,9 @@ body, td, input {
     font-family: 'Alice', sans-serif;
     font-size: 18px;
 }
+table {
+    text-align: left;
+}
 td {
     padding: 2px 4px;
 }

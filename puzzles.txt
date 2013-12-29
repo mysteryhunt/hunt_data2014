@@ -28,6 +28,7 @@ tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1060
 tea_party	BELGIAN FAWN	can_tab_rig_ian	Can + Tab + Rig + Ian	1070
 tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1080
 tea_party	STRAIGHT SETS	best_of_five	Best of Five	1090
+tea_party	SUZANNE CROUGH	monster_potatoes	Monster Potatoes	1100
 mock_turtle	LOCKS	common_bonds	Common Bonds	2020
 mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2080
 mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2090
@@ -46,6 +47,7 @@ white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE M
 white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3100
 white_queen	BRAVO	puzzle_with_answer_norwegian_wood	A Puzzle with the Answer NORWEGIAN WOOD	3110
 white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3120
+white_queen	CONSTITUTION	another_puzzle_with_answer_sullivan	Another Puzzle with the Answer SULLIVAN	3130
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
