@@ -1,0 +1,7 @@
+table.clues {border-spacing:0; border-collapse:collapse;}
+table.clues td {padding: 5px; vertical-align: top;}
+table.clues th {text-align: left}
+th.spacer {width: 50px}
+td.hword {padding-left: 20px; height: 33px; text-align:left; vertical-align: middle; border-collapse:collapse;}
+td.vword {padding-top: 20px; width: 30px; height: 100px; text-align: center; vertical-align: top; border-collapse:collapse;}
+

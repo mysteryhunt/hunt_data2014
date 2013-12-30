@@ -1,5 +1,10 @@
-body {font-family: Georgia, Times New Roman;}
-table {margin-top: 25px;}
-table.clues td {padding: 5px}
-table.clues th {text-align: left}
-th.spacer {width: 50px}
+.ccol td {
+    vertical-align: top;
+}
+table.clues td.ccol {
+    padding: 20px;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+}
+.chead {font-weight: bold}
