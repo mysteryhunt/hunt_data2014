@@ -22,10 +22,16 @@
 	  <div id="mh-title">
 	    Wonderland
 	  </div>
+	  <div class="mh-ticket-div" style="right: 130px;">
+	    <img class="mh-ticket" src="ticket{{ ticketx|stringformat:"02d" }}.png" />
+	    <div class="mh-drink-me-num">{{ ticket }}</div>
+	    <div class="mh-drink-me-den">{{ tickett }}</div>
+	  </div>
 	</div>
 	<div id="mh-content">
-	  team: {{ team.name }}<br>
-	  Welcome to Wonderland!<br>
+	  <div style="position: relative;">
+	    <img src="map.jpg" />
+	  </div>
 	  <ul>
 	    {% for round in rounds %}
 	    {% if round.round.order >= 20 %}
