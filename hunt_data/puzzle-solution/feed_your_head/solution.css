@@ -1,0 +1,88 @@
+p.no_pad_bottom {
+  margin: 0px;
+  padding-bottom: 0px;
+}
+
+div.container {
+  text-align: center;
+}
+
+table.trivia_clues {
+  border-collapse: collapse;
+  margin: -15px 40px 25px 40px;
+  padding: 0px;
+}
+
+td.trivia_clue, td.answer {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+td.answer {
+  font-weight: bold;
+}
+
+div.one_group {
+  margin: 30px auto;
+  padding: 20px;
+  border: 4px solid #BBBBBB;
+  display: inline-block;
+  text-align: center;
+}
+
+div.one_prompt {
+  margin: 0px auto;
+  padding: 5px;
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+span.answer_atom {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+div.prompt_spacer {
+  color: white;
+  height: 1px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+span.span_red {
+  color: #FF3333;
+}
+
+img.img_default {
+  max-height: 250px;
+}
+
+img.img_01 {
+  max-width: 360px;
+}
+
+img.img_03 {
+  max-height: 320px;
+}
+
+img.img_04 {
+  max-width: 360px;
+}
+
+img.img_05 {
+  max-height: 350px;
+}
+
+img.img_07 {
+  max-width: 400px;
+}
+
+img.img_10 {
+  max-height: 300px;
+}
+
+img.img_12_14 {
+  max-width: 330px;
+}
