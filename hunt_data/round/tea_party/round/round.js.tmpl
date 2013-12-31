@@ -1,2 +1,25 @@
 {% include "common.js" %}
 {% include "round-meta.js" %}
+
+(function() {
+    var cur = document.cookie.replace(/(?:(?:^|.*;\s*)tea-party-local-state\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    if ((''+cur).length != 1 || "0123".indexOf(cur) < 0)
+       cur = Math.floor(Math.random()*4);
+    function update() {
+       $('#mh-party-table').attr('src', 'table_'+'nesw'[cur]+'.jpg');
+    }
+    $('#mh-party-spill').click(function() {
+        $('#mh-party-spill').attr('disabled', 'disabled');
+        $('#mh-party-message').fadeIn('fast', function() {
+            setTimeout(function() {
+                cur = (cur + 1) % 4;
+                document.cookie = "tea-party-local-state="+cur+"; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                update();
+                $('#mh-party-message').fadeOut('fast', function() {
+                    $('#mh-party-spill').removeAttr('disabled');
+                });
+            }, 2000);
+        });
+    });
+    update();
+})();
