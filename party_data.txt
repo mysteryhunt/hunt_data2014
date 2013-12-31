@@ -1,0 +1,17 @@
+answer	type1	type2	level
+TESTOSTERONE	chair	s	0
+STRAIGHT SETS	chair	e	0
+OPERATOR TEST	chair	w	0
+POTATO BEETLE	chair	n	0
+BUDDY RICH	cup	yule	1
+CHRYSANTHEMUM	cup	moon	1
+BELGIAN FAWN	cup	oolong	1
+SUZANNE CROUGH	cup	yule	2
+PEARL HOMINY	cup	moon	2
+CHANTICLEER	cup	oolong	2
+COQ AU VIN	cup	yule	3
+ALECIA MOORE	cup	moon	3
+GERMAN SHEPHERD	cup	oolong	3
+NATALIE PORTMAN	cup	yule	4
+NOREASTER BLIZZARD	cup	moon	4
+RHINOCEROS VIPER	cup	oolong	4
