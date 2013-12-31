@@ -1,0 +1,113 @@
+.grid {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid TD {
+  border: 1px solid black;
+  font-size: 18px;
+  height: 36px;
+  padding: 0px;
+  text-align: center;
+  width: 36px;
+}
+TD.t {
+  border-top-width: 3px;
+}
+TD.b {
+  border-bottom-width: 3px;
+}
+TD.l {
+  border-left-width: 3px;
+}
+TD.r {
+  border-right-width: 3px;
+}
+.qtab {
+  border-collapse: collapse;
+}
+.qtab TD {
+  border: 1px solid black;
+  padding: 12px;
+  vertical-align: top;
+  width: 33%;
+}
+.qq {
+  margin-top: 8px;
+  padding: 0 4px 0 4px;
+}
+.qr {
+  color: #606060;
+  font-style: italic;
+  margin-bottom: 8px;
+  padding: 0 4px 0 4px;
+  text-align: right;
+}
+.qa {
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding: 0 4px 0 4px;
+  text-align: right;
+}
+.sx {
+  background-image: url('images/X.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+}
+.so {
+  background-image: url('images/O.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 36px 36px;
+}
+TD.b0 {
+  background-color: #ffbbbb;
+}
+TD.b1 {
+  background-color: #ffbb66;
+}
+TD.b2 {
+  background-color: #eeee99;
+}
+TD.b3 {
+  background-color: #ccff99;
+}
+TD.b4 {
+  background-color: #99dd99;
+}
+TD.b5 {
+  background-color: #66ffbb;
+}
+TD.b6 {
+  background-color: #66cccc;
+}
+TD.b7 {
+  background-color: #99ddff;
+}
+TD.b8 {
+  background-color: #9999ff;
+}
+TD.b9 {
+  background-color: #dd99ff;
+}
+.qa {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: right;
+}
+.tx {
+  color: #0000cc;
+  font-weight: bold;
+}
+.to {
+  color: #cc0000;
+  font-weight: bold;
+}
+.rm {
+  text-decoration: underline;
+}
+.caption {
+  font-size: 14px;
+  font-style: italic;
+}
