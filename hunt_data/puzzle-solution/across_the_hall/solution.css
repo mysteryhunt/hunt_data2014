@@ -1,0 +1,13 @@
+.clue {
+    margin: 18px 0px;
+}
+.line {
+    font-family: Courier, monospace;
+    padding-left: 18px;
+    text-align: left;
+    text-indent: -18px;
+    word-wrap: break-word;
+}
+.ans {
+    font-family: Courier, monospace;
+}
