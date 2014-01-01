@@ -1,0 +1,38 @@
+<h2>Solution to Falling Into Place</h2>
+<i>Authors: Kevin Der and Roger Hanna Morash</i>
+
+<p>The puzzle is presented as a game of Tetris with the following changes:<br>
+<ul>
+<li>each block in a tetris piece contains either a letter or a black square<br>
+<li>in addition to the standard game controls, the letters within the tetris piece can be rotated without changing the piece’s orientation</li>
+<li>a crossword-style clue and a graphical representation of an answer word are shown. the length and horizontal orientation of the word is displayed.>/li> occasionally, one or more of the letter spaces will be highlighted.
+Correctly spelling the current answer word within the tetris board, bounded by either empty
+space, the board walls, or black squares, will advance to the next clue. Simultaneously, a
+vertical entry with its clue is revealed, but the answer is not given. Completing all the horizontal
+answer words will end the game.</li>
+</ul>
+
+<p>The horizontal answer words are given alphabetically by clue. Dying will revert backwards one
+horizontal answer word. Completing a tetris will reveal the next letter in the graphical
+representation of the answer word to be spelled, starting at the beginning.
+After the game ends, the solver must realize the answer words can be used to rebuild a
+crossword. The answer words and their clues are shown below in final output order, with newest
+at the top.
+
+<p>Determining the vertical answers and reassembling the crossword using the highlighted
+squares as a guide yields the result below. Each of the standard 7 tetris pieces appears
+twice as black square groups. The entries from tetris must be placed in the grid according
+to their original orientation, i.e. horizontally or vertically. The highlighted letters (top right,
+middle, and bottom left) spell <b>PRIME CLUE HEADS</b>.
+
+<p> <b>PRIME CLUE HEADS</b> instructs the solver to look at the clues with prime numbers and
+read the first letters. The numbers to the clues can be obtained with standard crossword
+square numbering.
+The first letters of the prime numbered clues, when read in the standard crossword order (across clues, then
+down clues), spell <b>LETTERS THAT TOUCH 2 PIECES</b>.
+
+<p>Following those instructions, find those letters touching two tetris pieces in the
+crossword grid.  Those letters, when read in order, spell <b>SKYFALL OO AGENT</b>, so the answer is
+<b>JAMES BOND</b>
+
+<p>The full solution with the resulting clues and grids is <a href=full_solution.pdf>here</a>.
