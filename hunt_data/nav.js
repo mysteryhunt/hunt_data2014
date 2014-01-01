@@ -6,7 +6,9 @@ mh.nav = function() {
     var bg = $('#mh-nav-bg');
     $('#mh-nav-inner').html($('#mh-nav-iframe').contents().find('body').html());
     $('#mh-nav-inner a').each(function() {
-	$(this).attr('href', '{{ root }}/' + $(this).attr('href'));
+	var href = $(this).attr('href');
+	if (href.indexOf('http://') != 0)
+	    $(this).attr('href', '{{ root }}/' + href);
     });
     bg.stop(true, true);
     outer.stop(true, true);
