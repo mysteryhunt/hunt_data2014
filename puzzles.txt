@@ -20,6 +20,7 @@ mit	ICE CREAM SANDWICH	stage_select	Stage Select	180
 mit	ROOMING	across_the_hall	Across the Hall	190
 mit	PERIDOT	dressing_down	Dressing Down	200
 mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	210
+mit	PADAWAN	i_stumbled_across_a_recording	I Stumbled Across a Recording	220
 tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
 tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
