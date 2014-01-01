@@ -1,0 +1,55 @@
+
+      .content {
+        width: 900px;
+        margin: auto;
+      }
+      .background {
+        position: absolute;
+        z-index: -1;
+        top: 280px;
+        left: 50%;
+      }
+      .background_inner {
+        position: relative;
+        left: -50%;
+      }
+      .preload {
+        position: absolute;
+        overflow: hidden;
+        left: -9999px;
+        top: -9999px;
+        height: 1px;
+        width: 1px;
+      }
+      .row {
+        margin: 20px 0 20px 0;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .thumb {
+        display: inline-block;
+        height: 30px;
+        width: 70px;
+        margin: 2px;
+        background-color: #555555;
+        color: #111111;
+
+        font-size: 16px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 34px;
+      }
+      .thumb:hover {
+        background-color: #DDDDDD;
+        cursor: pointer;
+      }
+      .thumb[lastclicked] {
+        background-color: #E5B13A;
+      }
+
+      .closed {
+        padding-top: 984px;
+      }
+      .opened {
+        padding-top: 600px;
+      }
