@@ -2,7 +2,7 @@ round	answer	url	name	order
 mit	MEMORY	intersecting_personalities	Intersecting Personalities	10
 mit	MALPRACTICE	safety_first	Safety First	20
 mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	30
-mit	DON'T WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	40
+mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	40
 mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	50
 mit	MISCHIEF	zoinks	Zoinks!	60
 mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	70
