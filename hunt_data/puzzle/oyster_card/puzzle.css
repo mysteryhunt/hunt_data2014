@@ -1,0 +1,8 @@
+.endtable {
+  border-collapse: collapse;
+}
+.endtable TD, .endtable TH {
+  border: 1px solid black;
+  min-width: 24px;
+  padding: 5px;
+}

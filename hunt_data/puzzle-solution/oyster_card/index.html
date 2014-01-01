@@ -1,0 +1,110 @@
+<h2>Solution to Oyster Card</h2>
+
+<p>
+<i>Author: Jason Juang</i>
+</p>
+
+<p>Each of the four Routes is a Masyu puzzle, a logic puzzle type popularized by <a href="http://www.nikoli.com/">Nikoli</a>. Deduce the rules of Subway Masyu, which are an extension of standard Masyu rules:
+<ul>
+<li>Make a closed loop that visits all the given circles and does not visit the same station twice.
+<li>At a black circle, you must transfer to a different-colored line, and must <i>not</i> transfer at either the station before or the station after.
+<li>At a white circle, you must <i>not</i> transfer, but must transfer at either or both of the neighboring stations.
+</ul>
+</p>
+
+<p>Any stations that are connected together on the standard Tube map are treated as a single station. For example, Bank and Monument are labeled separately, but the stations are interlinked, and are drawn as such on the map. (The puzzle also makes clear that they are considered a single station by giving the name of the station as "Bank/Monument".)</p>
+
+<p>For each listed pair of stations, determine how many of the stations (0, 1, or 2) each route visits. Read the resulting three-digits number as a ternary number and convert each to a letter to get the answer <b>PEARL HOMINY</b>.</p>
+
+<h2>Masyu Solutions</h2>
+
+<a href="images/alpha.png">Alpha</a> <a href="images/beta.png">Beta</a> <a href="images/gamma.png">Gamma</a>
+
+<h2>Itinerary</h2>
+
+<table class="endtable">
+  <tr>
+    <th>Stations
+    <th>&alpha;
+    <th>&beta;
+    <th>&gamma;
+    <th>Answer Letter
+  </tr>
+  <tr>
+    <td>Gospel Oak, Oxford Circus
+    <td>0+1
+    <td>1+1
+    <td>0+1
+    <td>121 = P
+  </tr>
+  <tr>
+    <td>Imperial Wharf, Stepney Green
+    <td>0+0
+    <td>0+1
+    <td>1+1
+    <td>012 = E
+  </tr>
+  <tr>
+    <td>Bethnal Green, Knightsbridge
+    <td>0+0
+    <td>0+0
+    <td>0+1
+    <td>001 = A
+  </tr>
+  <tr>
+    <td>South Hampstead, St. James's Park
+    <td>1+1
+    <td>0+0
+    <td>0+0
+    <td>200 = R
+  </tr>
+  <tr>
+    <td>Angel, Euston Square
+    <td>1+0
+    <td>0+1
+    <td>0+0
+    <td>110 = L
+  </tr>
+  <tr>
+    <td>Tower Hill, Waterloo
+    <td>0+0
+    <td>1+1
+    <td>1+1
+    <td>022 = H
+  </tr>
+  <tr>
+    <td>Euston Square, Paddington
+    <td>0+1
+    <td>1+1
+    <td>0+0
+    <td>120 = O
+  </tr>
+  <tr>
+    <td>Covent Garden, Maida Vale
+    <td>0+1
+    <td>1+0
+    <td>1+0
+    <td>111 = M
+  </tr>
+  <tr>
+    <td>Earl's Court, Russell Square
+    <td>1+0
+    <td>0+0
+    <td>0+0
+    <td>100 = I
+  </tr>
+  <tr>
+    <td>Barking, Victoria
+    <td>0+1
+    <td>1+0
+    <td>1+1
+    <td>112 = N
+  </tr>
+  <tr>
+    <td>Ladbroke Grove, St. Paul's
+    <td>1+1
+    <td>1+1
+    <td>0+1
+    <td>221 = Y
+  </tr>
+</table>
