@@ -22,15 +22,42 @@
 	  <div id="mh-title">
 	    Wonderland
 	  </div>
-	  <div class="mh-ticket-div" style="right: 130px;">
+	  {% if tickett %}
+	  <div class="mh-ticket-div">
 	    <img class="mh-ticket" src="ticket{{ ticketx|stringformat:"02d" }}.png" />
-	    <div class="mh-drink-me-num">{{ ticket }}</div>
-	    <div class="mh-drink-me-den">{{ tickett }}</div>
+	    <div class="mh-ticket-num">{{ ticket }}</div>
+	    <div class="mh-ticket-den">{{ tickett }}</div>
 	  </div>
+	  {% endif %}
 	</div>
 	<div id="mh-content">
 	  <div style="position: relative;">
 	    <img src="map.jpg" />
+	    {% for round in rounds %}
+	    {% if round.round.order >= 20 %}
+	    <div class="mh-map-location" style=
+		 {% if round.round.url == "mock_turtle" %}
+		 "top: 420px; left: 476px;"
+		 {% elif round.round.url == "tea_party" %}
+		 "top: 352px; left: 620px;"
+		 {% elif round.round.url == "white_queen" %}
+		 "top: 92px; left: 207px;"
+		 {% elif round.round.url == "caucus_race" %}
+		 "top: 188px; left: 341px;"
+		 {% elif round.round.url == "knights" %}
+		 "top: 176px; left: 623px;"
+		 {% elif round.round.url == "humpty_dumpty" %}
+		 "top: 167px; left: 19px;"
+		 {% else %}
+		 "{{ puzzle.location }}"
+		 {% endif %}
+		 >
+	      <a href="{{ root }}/round/{{ round.round.url }}/">
+		<img class="mh-map-piece" title="{{ round.round.name }}" src="{{ root }}/round/{{ round.round.url }}/map_piece.png" />
+	      </a>
+	    </div>
+	    {% endif %}
+	    {% endfor %}
 	  </div>
 	  <ul>
 	    {% for round in rounds %}
