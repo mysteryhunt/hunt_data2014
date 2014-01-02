@@ -55,7 +55,7 @@
 	    <img src="answers_background.jpg">
 	    {% for cell in cells %}
 	    <div class="mh-queen-r mh-queen-r{{ cell.row }}"><div{% if cell.meta_url %} id="{{ cell.meta_url }}"{% endif %} class="mh-queen-c mh-queen-c{{ cell.column }}">
-		{{ cell.letter }}&nbsp;=&nbsp;{% if cell.url %}<a href="{{ root }}/puzzle/{{ cell.url }}/">{{ cell.answer }}</a>
+		{{ cell.letter }}&nbsp;=&nbsp;{% if cell.url %}<a href="{{ root }}/puzzle/{{ cell.url }}/">{{ cell.answer }}</a>{% if cell.solved %} [SOLVED]{% endif %}
 		{% elif cell.meta_url %}???<br>
 		<a style="white-space: nowrap;" href="javascript:mh.submit_answer2('{{ cell.meta_url }}', {% if cell.row > 3 %}true{% else %}false{% endif %});">Submit Answer</a>
 		{% else %}(puzzle missing)
