@@ -17,10 +17,10 @@ mit	TOYOTAS	i_came_across_a_japanese_rose_garden	I Came Across a Japanese Rose G
 mit	SHREWDNESS	sneaky_fox	Sneaky Fox	160
 mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	170
 mit	ICE CREAM SANDWICH	stage_select	Stage Select	180
-mit	ROOMING	across_the_hall	Across the Hall	190
-mit	PERIDOT	dressing_down	Dressing Down	200
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	210
-mit	PADAWAN	i_stumbled_across_a_recording	I Stumbled Across a Recording	220
+mit	PADAWAN	i_stumbled_across_a_recording	I Stumbled Across a Recording	190
+mit	ROOMING	across_the_hall	Across the Hall	200
+mit	PERIDOT	dressing_down	Dressing Down	210
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	220
 tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1010
 tea_party	STRAIGHT SETS	best_of_five	Best of Five	1020
 tea_party	OPERATOR TEST	operator_test	Operator Test	1030
