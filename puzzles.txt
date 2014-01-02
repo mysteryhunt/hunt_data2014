@@ -67,6 +67,7 @@ humpty_dumpty	MOUNTAINEER	ski_trees	SKI Trees	4100
 humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
 humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
 humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
+humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	4140
 caucus_race	MILLSTONE	sat_iii	SAT III	5010
 caucus_race	DERRICK	crosswalks	Crosswalks	5020
 caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
