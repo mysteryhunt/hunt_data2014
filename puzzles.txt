@@ -17,22 +17,22 @@ mit	TOYOTAS	i_came_across_a_japanese_rose_garden	I Came Across a Japanese Rose G
 mit	SHREWDNESS	sneaky_fox	Sneaky Fox	160
 mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	170
 mit	ICE CREAM SANDWICH	stage_select	Stage Select	180
-mit	ROOMING	across_the_hall	Across the Hall	190
-mit	PERIDOT	dressing_down	Dressing Down	200
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	210
-mit	PADAWAN	i_stumbled_across_a_recording	I Stumbled Across a Recording	220
-tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1010
-tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1020
-tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1030
-tea_party	CHRYSANTHEMUM	hedgehogs_and_flamingos	Hedgehogs and Flamingos	1040
-tea_party	OPERATOR TEST	operator_test	Operator Test	1050
-tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1060
+mit	PADAWAN	i_stumbled_across_a_recording	I Stumbled Across a Recording	190
+mit	ROOMING	across_the_hall	Across the Hall	200
+mit	PERIDOT	dressing_down	Dressing Down	210
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	220
+tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1010
+tea_party	STRAIGHT SETS	best_of_five	Best of Five	1020
+tea_party	OPERATOR TEST	operator_test	Operator Test	1030
+tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1040
+tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1050
+tea_party	CHRYSANTHEMUM	hedgehogs_and_flamingos	Hedgehogs and Flamingos	1060
 tea_party	BELGIAN FAWN	can_tab_rig_ian	Can + Tab + Rig + Ian	1070
-tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1080
-tea_party	STRAIGHT SETS	best_of_five	Best of Five	1090
-tea_party	SUZANNE CROUGH	monster_potatoes	Monster Potatoes	1100
-tea_party	NOREASTER BLIZZARD	guess_what_im_thinking	Guess What I'm Thinking	1110
-tea_party	PEARL HOMINY	oyster_card	Oyster Card	1120
+tea_party	SUZANNE CROUGH	monster_potatoes	Monster Potatoes	1080
+tea_party	PEARL HOMINY	oyster_card	Oyster Card	1090
+tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1100
+tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1130
+tea_party	NOREASTER BLIZZARD	guess_what_im_thinking	Guess What I'm Thinking	1150
 mock_turtle	LOCKS	common_bonds	Common Bonds	2020
 mock_turtle	TI85	assemble_me	Assemble Me	2050
 mock_turtle	TORAH	safer_sephiroth	Safer Sephiroth	2060
