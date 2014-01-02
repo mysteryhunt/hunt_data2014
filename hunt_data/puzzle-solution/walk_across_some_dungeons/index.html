@@ -1,0 +1,228 @@
+<h2>Solution to Walk Across Some Dungeons</h2>
+<i>Author: James Clark</i>
+
+<p>
+This is a video game.  You just have to beat it.
+
+<p>
+There are 17 levels, the last of which reveals the answer.
+The goal of each level (but the last) is to reach the exit.
+The mechanics of the game are explained by example in the
+first seven levels.  Levels 8 through 16 are the challenge
+levels.
+
+<p>
+The source code for the game is <a href="game.zip">here</a>.  It is written
+for Python 3, and runs as its own web server listening on port 8080.  Just run it as <code>python server.py</code> and then visit <code>http://localhost:8080/main</code> in your browser.
+
+<p>
+Each level has a hash code that allows players to share their progress.  The hash code for the last level is <code>648148aa7791befdf90fc3a3e2b9f864</code>.  If you paste that over the hash as you're playing it will warp you to the last level and give you the ability to visit any level.
+
+<h3>Legend</h3>
+
+<dl>
+<dt>@
+<dd>You.  The player.
+<dt>+ - |
+<dd>Walls.  You can't walk through them.
+<dt>z
+<dd>A zombie.  Moves half as often as the player.  Only moves if it can get closer to the player (as the crow flies, using <a href="http://en.wikipedia.org/wiki/Taxicab_geometry">taxicab geometry</a>).  When it has two equally good moves, it prefers to move horizontally.
+<dt>g
+<dd>A goblin.  Same as the zombie, but moves at the same speed as the player.
+<dt>i
+<dd>An imp.  Same as the zombie and goblin, but moves twice for each player move.
+<dt>G
+<dd>A golem.  Moves slowly and mindlessly in one direction.
+<dt>A
+<dd>An archer.  Does not move, but fires arrows in a single direction at a certain rate.
+<dt>a
+<dd>An arrow.  Moves in a single direction until it hits something, then vanishes.
+<dt>O
+<dd>A boulder.  Can be pushed by the player, unless something solid is in the way.  Pushing it into a pit seals the pit.
+<dt>#
+<dd>A pit.  Can be sealed with a boulder.
+<dt>:
+<dd>A locked door.  Opens when all of the coins on a level are picked up.
+<dt>$
+<dd>A coin.  Pick them up to open the doors.
+<dt>) (
+<dd>Conveyer belts.  Anything that ends a turn on them (other than arrows) is pushed one space, unless something solid is in the way.
+<dt>%
+<dd>A portal.  Standing on one of these is equivalent to standing on any other matching portal.  You can push boulders through them.
+<dt>&gt;
+<dd>The exit in level 16.  The other levels use a corridor as their exit, but for level 16 the exit is in the middle and marked with this symbol.
+</dl>
+
+<h3>Level 1</h3>
+
+To pass the zombie you must dodge it at just the right moment, so that it is directly over you when you are on the left side of the room.
+
+<h3>Level 2</h3>
+
+You have to get the top boulder out of the way by pushing it into the middle of the bottom room, then you can move the boulders into the pits.
+
+<h3>Level 3</h3>
+
+You have to run past the first golem, then backtrack in the space between them.
+
+<h3>Level 4</h3>
+
+This is all about timing.  For each row, you have to move into a space that an arrow vacated on the previous turn.  If the row above isn't ready, you'll need to follow the arrows until you find a space that works.
+
+<h3>Level 5</h3>
+
+You can't get to the exit the first time on the belt, because you don't get the option of sitting still.  Even walking into a wall doesn't cause time to pass and thus have the conveyer push you one space.  So, you can move zero or two spaces when on a conveyer (until you bump into something at the end of it).  So you have to go around and push the boulder.
+
+<h3>Level 6</h3>
+
+You have to pick up the two coins, but the timing of when you pick up the last one is important.  If you do it too soon, the zombies will block both routes to the exit.
+
+<h3>Level 7</h3>
+
+Push the first boulder through the portal and into a pit.  Then go back through the portal to push the second one up, then back again to push it into the last pit.
+
+<a href="WASD 01-07.mp4">[video walkthrough of levels 1-7]</a>
+
+<h3>Enough coddling</h3>
+
+Ok, those were the training levels.  Now things get tricky.  This walkthrough won't explain step-by-step how to beat the challenge levels, for that see the videos.  Instead I'll just try to hit the major points in the text here.
+
+<h3>Level 8</h3>
+
+The golem on this level is a timer.  You have to get the two boulders into
+the pits and escape before the golem closes the passage.  Getting the
+boulders in is pretty straightforward, but there are a few timing issues
+with the arrows.  In particular, before you push the last boulder in
+you'll need to backtrack one step so that you aren't hit by a new arrow
+the moment you push it in.
+
+<a href="WASD 08.mp4">[video walkthrough of level 8]</a>
+
+<h3>Level 9</h3>
+
+For this level, the goblins are "released" by your moving to certain spots,
+if you don't release them in the right order, or aren't prepared for their
+release, then you won't make it.
+<p>
+Before you push the first boulder in, you need to block some passages so
+you can survive the rest of the run.  By the time you pick up the coin,
+one goblin should have jumped into a hole, the imp should be heading for
+a dead-end, and the other goblin will be right behind you the rest of the
+way to the exit.
+
+<a href="WASD 09.mp4">[video walkthrough of level 9]</a>
+
+<h3>Level 10</h3>
+
+You need to follow a particular path to avoid being clobbered by these
+golems, see the video.
+
+<a href="WASD 10.mp4">[video walkthrough of level 10]</a>
+
+<h3>Level 11</h3>
+
+Because the top two archers fire on every other turn, you have to block
+their arrows with a boulder to go back and forth across their firing path.
+The top-right archer is phase-shifted such that you can't actually push
+a block in its path until you've shifted yourself by stepping on the lone
+conveyer belt.  Pushing boulders past the south archer is just a matter of
+timing.
+
+<a href="WASD 11.mp4">[video walkthrough of level 11]</a>
+
+<h3>Level 12</h3>
+
+You need to pick up exactly one coin per turn inside the room, and end up
+next to the door, to escape before the golem closes the path.  There are a
+few ways to do that, but only one (that I know of) also avoids the zombie.
+This diagram describes the path:
+<pre>
+ DDDDS
+ WAAAS
+@DDDWS
+ SAAAA
+ DDDSD>
+ SAAAW
+ DDDDW
+</pre>
+The diagram shows what direction (W/A/S/D) to push on each space.
+
+<a href="WASD 12.mp4">[video walkthrough of level 12]</a>
+
+<h3>Level 13</h3>
+
+Push the top-most boulder down to the first portal (but not through it),
+then go around and use the other side of the portal to push it left until
+you get access to the coin.  Get the coin, then go through the top-most
+portal so that you can push the bottom-right boulder left, through
+the portal and into the main vertical corridor.  From there go around
+to get it up and then into a pit.  This clears enough of a path that the
+rest should be straightforward, if you remember which portals go where.
+
+<a href="WASD 13.mp4">[video walkthrough of level 13]</a>
+
+<h3>Level 14</h3>
+
+The way the arrows are going, you can't move up past them without blocking
+nearly every other one with boulders.  Since you still need one boulder to
+fill the pit, you don't have many boulders to spare, and you'll need to
+use the golem as well to block arrows.  So first pust the second boulder
+up to stop the golem as soon as possible.  Now two lanes are blocked.
+Work the remaining boulders up to block every other lane of arrows.  You
+need to think ahead to make sure you don't end up surrounded.
+
+<a href="WASD 14.mp4">[video walkthrough of level 14]</a>
+
+<h3>Level 15</h3>
+
+You have to herd the zombies to avoid getting surrounded and leave enough
+space that you can reach the coin and then the exit.  Going straight for
+the coin won't work.  Head far right for a bit, then come around and down,
+pulling the zombies to the left before running for the coin and then the
+exit.
+
+<a href="WASD 15.mp4">[video walkthrough of level 15]</a>
+
+<h3>Level 16</h3>
+
+This level is based on the board game Clue.  You need to get the coin from
+every room before you can escape through the center.  You won't be able to
+just run from room to room, you'll need to lure the goblins toward one
+corner then jump through the portal and run out to get a coin while they're
+far away.
+
+<p>
+First grab the northwest coin, go through the portal and grab the southeast
+coin.  Move back and forth there to lure the goblins to the southeast, then
+jump through the portal.  Go to the north room, but before you get the coin
+you'll need to hug the east wall there to delay the goblins getting in until
+you're right next to the coin.  Flee for the portal and wait again in the
+southeast until they're all down there.  Portal back to northwest and run
+through the western rooms to the southwest (getting coins).
+
+<p>
+Portal to the northeast, get the coin, and lure the goblins toward that
+corner.  Portal to southwest and run for the southern coin.  Now you may
+need to lure the goblins northeast again and then southeast before they're
+in a good position for you to make a run for the eastern coin.
+
+<p>
+The trick to the last coin is to pick it up when most of the goblins are
+caught on the other side of the center block.  I have seen other ways
+to get the coin cleanly, but they are hard to reproduce.  Luring them
+into the west-southwest room has worked for me, such that only one goblin
+ends up nearby and is easily escaped.
+
+<p>
+You may be able to make it to the center after that coin, or you may need
+to go back to the portal and herd the goblins until you have a way to the
+middle.
+
+<a href="WASD 16.mp4">[video walkthrough of level 16]</a>
+
+<h3>Level 17</h3>
+
+Pushing the boulders out of the way reveals the phrase: <b>DEN CHAI</b>
+
+<a href="WASD 17.mp4">[video walkthrough of level 17]</a>
+
