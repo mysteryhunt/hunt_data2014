@@ -3,23 +3,18 @@ dormouse	The Dormouse	100	MANCHEGO
 caterpillar	The Caterpillar	200	TOBACCO
 tweedles	Tweedledee and Tweedledum	300	TWIN POPS
 tea_party	The Tea Party	400	GIVE HIM A HAND
-white_queen_a01	The White Queen (Answer 1)	501	WILLIAMS
 white_queen_a02	The White Queen (Answer 2)	502	NOWHERE MAN
-white_queen_a03	The White Queen (Answer 3)	503	LYNN
 white_queen_a04	The White Queen (Answer 4)	504	EIGHT DAYS A WEEK
 white_queen_a05	The White Queen (Answer 5)	505	CLEMENS
 white_queen_a06	The White Queen (Answer 6)	506	NORWEGIAN WOOD
 white_queen_a07	The White Queen (Answer 7)	507	YOUKILIS
 white_queen_a08	The White Queen (Answer 8)	508	LOVE ME DO
-white_queen_a09	The White Queen (Answer 9)	509	SULLIVAN
 white_queen_a10	The White Queen (Answer 10)	510	I WANT TO HOLD YOUR HAND
 white_queen_a11	The White Queen (Answer 11)	511	CRONIN
 white_queen_a12	The White Queen (Answer 12)	512	A HARD DAYS NIGHT
 white_queen_a13	The White Queen (Answer 13)	513	GARCIAPARRA
 white_queen_a14	The White Queen (Answer 14)	514	DRIVE MY CAR
-white_queen_a15	The White Queen (Answer 15)	515	SULLIVAN
 white_queen_a16	The White Queen (Answer 16)	516	AND I LOVE HER
-white_queen_a17	The White Queen (Answer 17)	517	RICE
 white_queen_a18	The White Queen (Answer 18)	518	CANT BUY ME LOVE
 white_queen	The White Queen	599	CLEAN WITH IVORY SOAP
 mock_turtle	The Mock Turtle	600	MAKE EDITS TO YOUR TABLE SCHEMA
