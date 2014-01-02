@@ -97,3 +97,11 @@ TD.b9 {
 .qxo {
   border: 2px solid #ff6666;
 }
+.blki {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: 50px;
+}
+.blko {
+  white-space: nowrap;
+}

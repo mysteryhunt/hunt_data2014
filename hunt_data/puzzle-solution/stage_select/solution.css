@@ -111,3 +111,11 @@ TD.b9 {
   font-size: 14px;
   font-style: italic;
 }
+.blki {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: 50px;
+}
+.blko {
+  white-space: nowrap;
+}
