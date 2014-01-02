@@ -1,0 +1,37 @@
+.c {
+  width: 1020px;
+  text-align: center;
+}
+.a {
+}
+._ {
+  position: relative;
+  width: 1020px;
+  height: 310px;
+  border: 2px solid black;
+  background: #444;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.l {
+  border: 0px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 500px;
+  height: 300px;
+}
+.r {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 500px;
+  height: 300px;
+}
+.x {
+  width: 500px;
+  height: 275px;
+}
+.y {
+  text-align: center;
+}

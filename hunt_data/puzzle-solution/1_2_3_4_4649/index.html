@@ -1,0 +1,36 @@
+<h2>Solution to 1! 2! 3! 4! 4649!</h2>
+<i>Author: Chieu Nguyen</i><br>
+
+<p>This puzzle involves 3 things: (1) some massive and massively popular Japanese pop idol groups based in three Japanese cities; (2) the subway systems in those cities; and (3) a numeral encoding that links them together.</p>
+
+<p>The section on the left (<i>The Lineups</i>) consists of three rows, each of which is divided into three labeled columns. A quick search for the column labels will bring up three related idol groups: NMB48, AKB48, and SKE48. The labels designate teams within each group. (There are a few other groups in the same family, but none of them have three full teams yet, so they are not included in this puzzle.) The bullet points are names of members in each team, albeit in encrypted form, with names either initialized or represented as digit sequences. The names follow Western order (given name preceding family name); this is how the group members' romanized names are given on the groups' official web sites. Names are listed in alphabetical order by family name.</p>
+
+<p>The section on the right (<i>The Lines Down ... Under the Ground</i>) consists of a fictional subway map with various stations; three of them are named and the others are in encrypted form. The named stations are Namba, Akihabara, and Sakae, which are respectively the neighborhoods the three pop groups are named after.
+
+<p>The subway map is arranged so that the stations fall into three horizontal rows; the stations in each row are part of the subway system (or systems in the case of Tokyo, which has two) of the same city as the pop group whose teams are listed to the left. From top to bottom, the rows in both sections correspond to Osaka, Tokyo, and Nagoya. The station icons on the map are of the same design as actual station icons in most subway systems in Japan (technically, Osaka uses solid rectangular icons, but since their official subway maps use a different circular style, we've gone with the majority and standardized all of the stations to the same thing, so as to avoid unnecessary confusion). Each features a line symbol (a single letter) and a station number (two digits). See <a href="http://www.tokyometro.jp/en/subwaymap/">this guide</a> from the Tokyo Metro for a brief explanation of station icons. A single station can have multiple icons if it lies on multiple lines, but only one icon is shown for each station in this puzzle.</p>
+
+<p>The task is to identify the encoding used to represent group members' names as digits and to apply this encoding to figure out the unknown stations on the map. Some names can be determined exactly given a list of group members, and from these it is possible to observe some ways in which segments of names can be represented as digits.</p>
+
+<p>The encoding in question is goroawase, a form of numeral wordplay based on various possible readings of numerals in Japanese. This puzzle is limited to the readings listed below; other readings are possible but may be uncommon or not included in many lists accessible online, or just happen not to fit the names in this puzzle.</p>
+
+<table border=2>
+  <tr><td><b>Number</b></td><td><b>Readings</b></td></tr>
+  <tr><td><b>0</b></td><td><i>ma</i>, <i>o</i>, <i>re</i>, <i>rei</i></td></tr>
+  <tr><td><b>1</b></td><td><i>i</i></td></tr>
+  <tr><td><b>2</b></td><td><i>tsu</i></td></tr>
+  <tr><td><b>3</b></td><td><i>mi</i>, <i>sa</i>, <i>san</i></td></tr>
+  <tr><td><b>4</b></td><td><i>shi</i>, <i>yo</i></td></tr>
+  <tr><td><b>5</b></td><td><i>go</i>, <i>ko</i></td></tr>
+  <tr><td><b>6</b></td><td><i>mu</i>, <i>ro</i></td></tr>
+  <tr><td><b>7</b></td><td><i>na</i>, <i>nana</i></td></tr>
+  <tr><td><b>8</b></td><td><i>ba</i>, <i>ha</i>, <i>ya</i></td></tr>
+  <tr><td><b>9</b></td><td><i>ku</i></td></tr>
+  <tr><td><b>10</b></td><td><i>to</i></td></tr>
+</table>
+
+<p>The encoding may be applied to the subway map to identify the unknown stations, though note that the same digit may be read different ways in different instances. Some stations may have multiple icons if they are on more than one line; the numbering will be sufficient to disambiguate the line symbol in the icon given.</p>
+
+<p>To extract the answer, follow the arrows going out from the named station on each line and read the subsequent stations' line symbols. In order from top to bottom (Namba, Akihabara, Sakae), these spell out S&ndash;M, A&ndash;S&ndash;H, H&ndash;I&ndash;T. Together, they spell <b>SMASH HIT</b>, an apt descriptor of most of the three groups' releases in the last few years, including the one referenced in the title: SKE48's 2010 single "<a href="http://www.youtube.com/watch?v=uZfjrnhTT4U">1! 2! 3! 4! Yoroshiku!</a>'', where <i>yoroshiku</i> has a goroawase numbering of 4649, which is one of the most common goroawase expressions.</p>
+
+<p><a href="solution.pdf">Here</a> is the solution showing all of the group members and stations and the digits represented by the blue letters.</a></p>
+

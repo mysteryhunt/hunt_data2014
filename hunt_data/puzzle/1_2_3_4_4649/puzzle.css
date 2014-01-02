@@ -1,0 +1,31 @@
+.blue
+{
+  color: #8080FF
+}
+.team
+{
+  font-size: 14pt;
+  font-weight:bold;
+}
+.lines
+{
+  vertical-align: top;
+  text-align: center;
+}
+
+.row
+{
+  height: 225px;
+}
+
+.section
+{
+  vertical-align: top;
+  width: 100px;
+  padding-top:25px;
+}
+
+.right
+{
+  vertical-align: top;
+}
