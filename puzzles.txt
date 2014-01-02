@@ -78,6 +78,7 @@ caucus_race	ECHO	crossed_wires	Crossed Wires	5080
 caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5090
 caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5100
 caucus_race	SMASH HIT	1_2_3_4_4649	1! 2! 3! 4! 4649!	5110
+caucus_race	CONFRONT	wat	Wat?	5120
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
 knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
