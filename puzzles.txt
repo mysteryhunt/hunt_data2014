@@ -57,6 +57,7 @@ white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the 
 white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3160
 white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180
+white_queen	ROCK	puzzle_with_answer_a_hard_days_night	A Puzzle with the Answer A HARD DAYS NIGHT	3190
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
