@@ -67,7 +67,7 @@
     <table id="mh-party-puzzle-table">
       {% for chair in chairs %}
       {% if chair %}
-      <tr><td class="mh-party-puzzle-image">
+      <tr><td>
 	  <a href="{{ root }}/puzzle/{{ chair.puzzle.url }}/">
 	    <img src="chair_beast.png" />
 	  </a>
@@ -80,9 +80,9 @@
       {% endfor %}
       {% for puzzle in puzzles %}
       {% if puzzle.cup %}
-      <tr><td class="mh-party-puzzle-image">
+      <tr><td>
 	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
-	    <img src="cup_{{ puzzle.cup }}.png" />
+	    <img class="mh-party-cup" src="cup_{{ puzzle.cup }}.png" />
 	  </a>
 	</td><td class="mh-party-puzzle-name">
 	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
