@@ -68,18 +68,18 @@ humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
 humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
 humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
 humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	4140
-caucus_race	MILLSTONE	sat_iii	SAT III	5010
-caucus_race	DERRICK	crosswalks	Crosswalks	5020
-caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5030
-caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5040
-caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5050
-caucus_race	SPUR	venntersections	Venntersections	5060
-caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5070
-caucus_race	ECHO	crossed_wires	Crossed Wires	5080
-caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5090
-caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5100
-caucus_race	SMASH HIT	1_2_3_4_4649	1! 2! 3! 4! 4649!	5110
-caucus_race	CONFRONT	wat	Wat?	5120
+caucus_race	ECHO	crossed_wires	Crossed Wires	5010
+caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020
+caucus_race	MILLSTONE	sat_iii	SAT III	5030
+caucus_race	SMASH HIT	1_2_3_4_4649	1! 2! 3! 4! 4649!	5040
+caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5060
+caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5070
+caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5090
+caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5100
+caucus_race	SPUR	venntersections	Venntersections	5110
+caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120
+caucus_race	DERRICK	crosswalks	Crosswalks	5130
+caucus_race	CONFRONT	wat	Wat?	5140
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
 knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
