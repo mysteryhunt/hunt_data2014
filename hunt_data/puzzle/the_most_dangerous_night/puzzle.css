@@ -1,0 +1,11 @@
+td, h1 {
+  font-family: 'Alice', serif;
+  padding-bottom: 10px;
+}
+.r {
+  text-align: right;
+  padding-right: 10px;
+}
+.s {
+  padding-left: 20px;
+}
