@@ -69,7 +69,7 @@ caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5100
 caucus_race	SPUR	venntersections	Venntersections	5110
 caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120
 caucus_race	DERRICK	crosswalks	Crosswalks	5130
-caucus_race	CONFRONT	wat	Wat?	5140
+caucus_race	CONFRONT	wat	WAT?	5140
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
 knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
