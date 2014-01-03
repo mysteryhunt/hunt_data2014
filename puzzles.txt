@@ -56,18 +56,6 @@ white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the 
 white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3160
 white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180
-humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
-humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
-humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
-humpty_dumpty	AZIMUTH	directions_in_writing	Directions in Writing	4050
-humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
-humpty_dumpty	APPLE	time_flies	Time Flies	4070
-humpty_dumpty	OVOID	the_great_collapse	The Great Collapse	4090
-humpty_dumpty	MOUNTAINEER	ski_trees	SKI Trees	4100
-humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
-humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
-humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
-humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	4140
 caucus_race	ECHO	crossed_wires	Crossed Wires	5010
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020
 caucus_race	MILLSTONE	sat_iii	SAT III	5030
@@ -86,7 +74,19 @@ knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
 knights	HOSPITAL BEDS	marking_territory	Marking Territory	6070
 knights	CAPS LOCK	filed_erector	Filed Erector	6080
 knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	6090
+knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Too Much Pepper	6100
 knights	G RING	wandering_stars	Wandering Stars	6120
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6140
 knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	6150
-knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Too Much Pepper	6160
+humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
+humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
+humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
+humpty_dumpty	AZIMUTH	directions_in_writing	Directions in Writing	4050
+humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
+humpty_dumpty	APPLE	time_flies	Time Flies	4070
+humpty_dumpty	OVOID	the_great_collapse	The Great Collapse	4090
+humpty_dumpty	MOUNTAINEER	ski_trees	SKI Trees	4100
+humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
+humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
+humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
+humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	4140
