@@ -1,0 +1,382 @@
+<h2>Solution to Top Shelf</h2>
+
+<p>
+<i>Authors: Laura Martini, Kyle Buza</i>
+</p>
+
+<p>The solver receives a puzzle with two parts:</p>
+<ol>
+<li>An image with 32 unique bourbon bottles lined up on a counter, with their
+labels easily legible, and two empty shelves behind the counter.
+<li>A set of 31 short narrative descriptions that contain two things: enough
+information to uniquely identify one of the bottles (or, in a couple of cases,
+two bottles from the same distiller), and enough information to determine a
+number to use to index into the name of the bourbon. The format is a discussion
+between a bartender and a customer.
+</ol>
+
+<p>How to solve:</p>
+<ol>
+<li>Identify the bottles on the shelf.
+<li>Map each bottle to one narrative description. One company has two bottles in
+the set (Sazerac), and both bottles share a single narrative description,
+meaning that there are 31clue phrases for 32 bottles.
+<li>Determine the proper name for the bourbon by using the enumeration written
+below each bottle in the enlarged version of the image.  This version is
+viewable by clicking on the row of bourbons in the original "thumbnail" image on
+the main page of the photo.
+<li>Extract the correct number from the description by taking the length, in
+words, of the customer's response to the bartender's description.  Use this
+number to index into the bourbon's name. This will give you a single letter.
+<li>After performing this step, you will have the phrase:
+"BASOMURUBGONWISTOUDMEMPOICSTRATO".
+<li>Have the "aha" that you need to separate the bourbons into top shelf
+(expensive) and bottom shelf (inexpensive) groups. This is clued by the name of
+the puzzle being "Top Shelf."
+<li>Determine whether the bourbon is a "top shelf" bourbon or a "bottom shelf"
+bourbon.
+<li>The top shelf bourbons spell: BOURBON IS TO DEMOCRAT and the bottom shelf
+answers spell: AS MUGWUMP IS TO.
+<li>Dust off your memory of American history, or Google to determine the answer:
+<b>REPUBLICAN</b>.
+</ol>
+
+<table class="clues">
+<tr>
+  <th>Bourbon</th>
+  <th>Enumeration</th>
+  <th>Shelf</th>
+  <th>Phrase </th>
+  <th>Letter Index</th>
+  <th>Clue</th>
+  <th>Order in Photo</th>
+  <th>Order in Final Clue Phrase</th>
+</tr>
+<tr>
+  <td>Blanton's</td>
+  <td>8</td>
+  <td>top</td>
+  <td class="top">B</td>
+  <td>1</td>
+  <td>For instance, this bourbon comes only from barrels aged at the center section of warehouse 'H'.</td>
+  <td>1</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>Old Heaven Hill</td>
+  <td>3 6 4</td>
+  <td>bottom</td>
+  <td class="bot">A</td>
+  <td>6</td>
+  <td>Would you believe that this bourbon is made by the only remaining family-owned distillery in Kentucky? You'd think after all these years they'd know how to make better bourbon than this.</td>
+  <td>2</td>
+  <td>20</td>
+</tr>
+<tr>
+  <td>Cabin Still</td>
+  <td>5 5</td>
+  <td>bottom</td>
+  <td class="bot">S</td>
+  <td>6</td>
+  <td>This 80-proof bourbon was a good brand before the current company bought the name.</td>
+  <td>3</td>
+  <td>21</td>
+</tr>
+<tr>
+  <td>Jefferson's Presidential Select 21</td>
+  <td>10 12 6 2</td>
+  <td>top</td>
+  <td class="top">O</td>
+  <td>8</td>
+  <td>This one is good, but I actually prefer the younger 18-year-old variety.</td>
+  <td>4</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>Jeremiah Weed</td>
+  <td>8 4</td>
+  <td>bottom</td>
+  <td class="bot">M</td>
+  <td>5</td>
+  <td>Not one of my favorites, but named after a Kentucky recluse.</td>
+  <td>5</td>
+  <td>22</td>
+</tr>
+<tr>
+  <td>William Larue Weller</td>
+  <td>7 5 6</td>
+  <td>top</td>
+  <td class="top">U</td>
+  <td>11</td>
+  <td>This wheated bourbon is the fifth and final bottle in the Antique Collection.</td>
+  <td>6</td>
+  <td>3</td>
+</tr>
+<tr>
+  <td>Willett Straight Kentucky Rye 24 Year</td>
+  <td>7 8 8 3 2 4</td>
+  <td>top</td>
+  <td class="top">R</td>
+  <td>10</td>
+  <td>If you're familiar with the Velvet Glove, this is very similar, just a year older.</td>
+  <td>7</td>
+  <td>4</td>
+</tr>
+<tr>
+  <td>Ten High Kentucky Bourbon Whiskey</td>
+  <td>3 4 8 7 7</td>
+  <td>bottom</td>
+  <td class="bot">U</td>
+  <td>12</td>
+  <td>The name of this bourbon supposedly comes from a poker hand, in reference to a type of straight. I wouldn't bet on it if you're trying to impress a date, however.</td>
+  <td>8</td>
+  <td>23</td>
+</tr>
+<tr>
+  <td>Bulleit Bourbon</td>
+  <td>7 7</td>
+  <td>top</td>
+  <td class="top">B</td>
+  <td>1</td>
+  <td>And this one – after a century-long hiatus,this family returned to making whiskey using the original recipes.</td>
+  <td>9</td>
+  <td>5</td>
+</tr>
+<tr>
+  <td>Old Grand-Dad Whiskey</td>
+  <td>3 5 3 7</td>
+  <td>bottom</td>
+  <td class="bot">G</td>
+  <td>4</td>
+  <td>I was pretty surprised when I learned that this one here was Harry Truman's favorite bourbon, given the type of clientele who want to drink it.</td>
+  <td>10</td>
+  <td>24</td>
+</tr>
+<tr>
+  <td>Four Roses Single Barrel Limited Edition</td>
+  <td>4 5 6 6 7 7</td>
+  <td>top</td>
+  <td class="top">O</td>
+  <td>2</td>
+  <td>For a long time the distiller behind this bottle was known to produce a lot of rot gut whiskey. It's really turned itself around. I think being purchased by a company from the Far East helped.</td>
+  <td>11</td>
+  <td>6</td>
+</tr>
+<tr>
+  <td>Van Winkle Special Reserve 12 Years Old</td>
+  <td>3 6 7 7 2 5 3</td>
+  <td>top</td>
+  <td class="top">N</td>
+  <td>3</td>
+  <td>Some people think this is Pappy, but it's really just a Van Winkle.</td>
+  <td>12</td>
+  <td>7</td>
+</tr>
+<tr>
+  <td>Evan Williams</td>
+  <td>4 8</td>
+  <td>bottom</td>
+  <td class="bot">W</td>
+  <td>5</td>
+  <td>They also make honey, cherry and cinnamon versions of this guy, but I think it's terrible to do that to a bourbon. I stick with this label.</td>
+  <td>13</td>
+  <td>25</td>
+</tr>
+<tr>
+  <td>Willett 21 Year</td>
+  <td>7 2 4</td>
+  <td>top</td>
+  <td class="top">I</td>
+  <td>2</td>
+  <td>Would you believe me if I told you that a limited number of bottles of this vintage of Willett actually came from the Stitzel Weller mashbill?</td>
+  <td>14</td>
+  <td>8</td>
+</tr>
+<tr>
+  <td>Sazerac 18</td>
+  <td>7 2</td>
+  <td>top</td>
+  <td class="top">S</td>
+  <td>1</td>
+  <td>Did you know that these two are made by a company named after a mixed drink that included absinthe? They're both part of the Buffalo Trace Antique Collection.</td>
+  <td>15</td>
+  <td>9</td>
+</tr>
+<tr>
+  <td>Colonel E.H. Taylor, Warehouse C Tornado Surviving</td>
+  <td>7 1 1 6 9 1 7 9</td>
+  <td>top</td>
+  <td class="top">T</td>
+  <td>10</td>
+  <td>You could say that this is as rare as it gets. Only an act of God could produce something like this.</td>
+  <td>16</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>George T. Stagg</td>
+  <td>6 1 5</td>
+  <td>top</td>
+  <td class="top">O</td>
+  <td>3</td>
+  <td>This is another from the Buffalo Trace Antique Collection. It ages for no less than 15 years.</td>
+  <td>17</td>
+  <td>11</td>
+</tr>
+<tr>
+  <td>Wild Turkey 81</td>
+  <td>4 6 2</td>
+  <td>bottom</td>
+  <td class="bot">U</td>
+  <td>6</td>
+  <td>Rumor has it that a groove metal band from the early eighties named an album after this bourbon.</td>
+  <td>18</td>
+  <td>26</td>
+</tr>
+<tr>
+  <td>Old Forester Birthday Bourbon</td>
+  <td>3 8 8 7</td>
+  <td>top</td>
+  <td class="top">D</td>
+  <td>3</td>
+  <td>They release this once a year to celebrate an event in early September.</td>
+  <td>19</td>
+  <td>12</td>
+</tr>
+<tr>
+  <td>Mellow Corn</td>
+  <td>6 4</td>
+  <td>bottom</td>
+  <td class="bot">M</td>
+  <td>1</td>
+  <td>Don't judge a whiskey by its color. This stuff isn't fancy, but it's aged at least four years.</td>
+  <td>20</td>
+  <td>27</td>
+</tr>
+<tr>
+  <td>Eagle Rare 17 Year-Old</td>
+  <td>5 4 2 4 3</td>
+  <td>top</td>
+  <td class="top">E</td>
+  <td>1</td>
+  <td>I see the younger version of this in liquor stores all the time, but this version is part of the Antique Collection, and is much harder to find.</td>
+  <td>21</td>
+  <td>13</td>
+</tr>
+<tr>
+  <td>Van Winkle Family Reserve Rye</td>
+  <td>3 6 6 7 3</td>
+  <td>top</td>
+  <td class="top">M</td>
+  <td>12</td>
+  <td>Rumor has it, the rye in this bottle is much older than the label indicates. The age listed on the bottle refers to the youngest of the whiskies inside.</td>
+  <td>22</td>
+  <td>14</td>
+</tr>
+<tr>
+  <td>Penny Packer</td>
+  <td>5 6</td>
+  <td>bottom</td>
+  <td class="bot">P</td>
+  <td>1</td>
+  <td>The funny thing about this Kentucky bourbon is that it's shipped over to Germany for bottling.</td>
+  <td>23</td>
+  <td>28</td>
+</tr>
+<tr>
+  <td>Hirsch Selection Small Batch Reserve</td>
+  <td>6 9 5 5 7</td>
+  <td>bottom</td>
+  <td class="bot">I</td>
+  <td>2</td>
+  <td>This one is only semi related to the superior 'A.H.' variety.</td>
+  <td>25</td>
+  <td>29</td>
+</tr>
+<tr>
+  <td>Rock Hill Farms</td>
+  <td>4 4 5</td>
+  <td>top</td>
+  <td class="top">O</td>
+  <td>2</td>
+  <td>I actually had a chance to visit the Kentucky land that this whiskey was named after. It's a beautiful spot along a river.</td>
+  <td>24</td>
+  <td>15</td>
+</tr>
+<tr>
+  <td>Michter's</td>
+  <td>8</td>
+  <td>top</td>
+  <td class="top">C</td>
+  <td>3</td>
+  <td>I personally prefer the rye of the same name and age from this distiller.</td>
+  <td>26</td>
+  <td>16</td>
+</tr>
+<tr>
+  <td>Jack Daniel's</td>
+  <td>4 7</td>
+  <td>bottom</td>
+  <td class="bot">S</td>
+  <td>11</td>
+  <td>You'll see this one on t-shirts over at MIT a lot. It's the alter ego of a floor in the East Campus dormitory.</td>
+  <td>27</td>
+  <td>30</td>
+</tr>
+<tr>
+  <td>Kentucky Gentleman</td>
+  <td>8 9</td>
+  <td>bottom</td>
+  <td class="bot">T</td>
+  <td>4</td>
+  <td>I had to stock this when I read the reviews: "It tastes like the sweat of a hobo who got drunk on bourbon."</td>
+  <td>28</td>
+  <td>31</td>
+</tr>
+<tr>
+  <td>Parker's Heritage Collection</td>
+  <td>7 8 10</td>
+  <td>top</td>
+  <td class="top">R</td>
+  <td>3</td>
+  <td>The previous year's release of this bourbon is still one of my favorites - finished off in cognac casks.</td>
+  <td>29</td>
+  <td>17</td>
+</tr>
+<tr>
+  <td>Pappy Van Winkle 23 Year</td>
+  <td>5 3 6 2 4</td>
+  <td>top</td>
+  <td class="top">A</td>
+  <td>2</td>
+  <td>This one's so popular even billionaires can't find an unopened bottle of it to buy.</td>
+  <td>30</td>
+  <td>18</td>
+</tr>
+<tr>
+  <td>Thomas H. Handy Sazerac</td>
+  <td>6 1 5 7</td>
+  <td>top</td>
+  <td class="top">T</td>
+  <td>1</td>
+  <td>(see Sazerac 18)</td>
+  <td>31</td>
+  <td>19</td>
+</tr>
+<tr>
+  <td>Old Crow</td>
+  <td>3 4</td>
+  <td>bottom</td>
+  <td class="bot">O</td>
+  <td>1</td>
+  <td>This bourbon was reportedly a favorite of Ulysses S Grant. It seems the quality has deteriorated somewhat since his day.</td>
+  <td>32</td>
+  <td>32</td>
+</tr>
+</table>
+
+<h3>CREDITS</h3>
+
+<p>Laura Martini and Kyle Buza could not have created this puzzle without
+patient help from key solvers and editors, including Chris "Scooby" Lyon and his
+"puzzling juice", Jason Juang, Aaron Bader, Chieu V Nguyen, Roger Hanna Morash
+and Teasha Feldman-Fitzthum.</p>
