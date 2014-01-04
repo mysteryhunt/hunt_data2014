@@ -1,0 +1,237 @@
+<style type="text/css">
+.left {color: #0000BB;}
+.right {color: #EE6600;}
+</style>
+
+<h2>Solution to Some Nutty Lines</h2>
+<i>Authors: Aaron Bader and Harvey Jones</i>
+
+<p>This puzzle has 9 dialogues from famous Saturday Night Live skits, arranged chronologically. The dialogues are ciphered in the following way, using part of the first skit as an example.</p>
+
+<p>1) The alphabet is split with half the letters designated as "left-hand side" letters and the other half designated as "right-hand side" letters.</p>
+
+<pre>
+<b>Left-hand side       Right-hand side</b>
+<span class="left">wxgtankvuoszj</span>        <span class="right">biremplqfhdyc</span>
+</pre>
+
+<p>2) Each word is rearranged, so that all the left hand letters are on the left side of the new word, and all the right hand letters are on the right side.</p>
+
+<p>My brother and I are from Czechoslovakia</p>
+
+<p>
+<span class="right">My</span>
+<span class="left">ot</span><span class="right">brher</span>
+<span class="left">an</span><span class="right">d</span>
+<span class="right">I</span>
+<span class="left">a</span><span class="right">re</span>
+<span class="left">o</span><span class="right">frm</span>
+<span class="left">zosovaka</span><span class="right">Cechli</span>
+</p>
+
+<p>3) Each right hand side, and each left hand side letter are mapped to one of the letters in A-M.</p>
+
+<pre>
+<b>Left-hand side       Right-hand side</b>
+<span class="left">wxgtankvuoszj</span>        <span class="right">biremplqfhdyc</span>
+<span class="left">ABCDEFGHIJKLM</span>        <span class="right">ABCDEFGHIJKLM</span>
+
+<span class="right">MY</span> <span class="left">OT</span><span class="right">BRHER</span> <span class="left">AN</span><span class="right">D</span> <span class="right">I</span> <span class="left">A</span><span class="right">RE</span> <span class="left">O</span><span class="right">FRM</span> <span class="left">ZOSOVAKA</span><span class="right">CECHLI</span>
+<span class="right">EL</span> <span class="left">JD</span><span class="right">ACJDC</span> <span class="left">EF</span><span class="right">K</span> <span class="right">B</span> <span class="left">E</span><span class="right">CD</span> <span class="left">J</span><span class="right">ICE</span> <span class="left">LJKJHEGE</span><span class="right">MDMJGB</span>
+</pre>
+
+<p>4) A separator letter, taken from N-Z is placed in between the two halves.</p>
+
+<pre>
+<span class="right">EL</span> <span class="left">JD</span>Y<span class="right">ACJDC</span> <span class="left">EF</span>Y<span class="right">K</span> <span class="right">B</span> <span class="left">E</span>Y<span class="right">CD</span> <span class="left">J</span>Y<span class="right">ICE</span> <span class="left">LJKEHEGE</span>Y<span class="right">MDMJGB</span>
+</pre>
+
+<p>As a helpful hint, each encrypted paragraph is preceded by a short descriptive phrase in an intermediate step. The letters have been split between right and left, and the separator has been added in, but they have not been ciphered.  This gives clues as to whether some letters appear on the left or the right and should help determine the structure of the encryption.  It might also help identify the piece in question.
+
+<p>In each dialogue, one of the words is replaced by ???? (or in one case, a five letter word, it is replaced by ?????). Each of these missing words maps to consecutive letters in the left-hand side letters for that dialogue. To solve the puzzle, you must figure out the right hand side letters that correspond to each of these words.</p>
+
+<pre>
+Missing word:          <span class="left">TANK</span>
+Ciphered letters:      DEFG
+Corresponding letters: <span class="right">EMPL</span>
+</pre>
+
+<p>Note that the separator letters are unique, spanning from R-Z inclusive. Arranging the corresponding letters in order of the separators:</p>
+
+<pre>
+Separator:               R    S    T     U    V    W    X    Y    Z
+Missing word:          <span class="left">JUNK LICK AWFUL WHAT WORD KEPT DAWN TANK WRAP</span>
+Ciphered letters:      ABCD EFGH IJKLM ABCD EFGH IJKL MABC DEFG HIJK
+Corresponding letters: <span class="right">THIR TYRO CKEPI SODE FEAT URIN GMRT EMPL ETON</span>
+</pre>
+
+<p>This spells out the answer phrase, "THIRTY ROCK EPISODE FEATURING MR TEMPLETON", which is <b>FLU SHOT</b>.</p>
+
+<p>Notes on punctuation:  All apostrophes have been moved to the end of the word.  Hyphens have been removed and the two words have been treated as separate words.  This was deemed to be the least confusing option for hyphenated words.  Punctuation that appears at the beginning or end of the word is preserved in the correct place.  This includes quotation marks, commas, periods, colons, question marks and exclamation points.
+
+<p>Complete details for all the SNL skits, in the order presented, are below.</p>
+
+<hr>
+
+<b>Festrunk Brothers</b> (Fox Hunting)<br>
+September 24, 1977<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+wxgtankvuoszj         Y        biremplqfhdyc
+
+Missing word:          TANK
+Ciphered letters:      DEFG
+Corresponding letters: EMPL
+</pre>
+
+<p>My brother and I are from Czechoslovakia, even though no one can tell. We escaped during the seventy five riots, by throwing many rocks at a Russian ????(TANK). We ran from it to come to America, but, boy, we gave up many things. Back there, we have a nice, groovy apartment, three cars and a summer house, which the government now owns! Back there, we have medical degrees, but here in America we must be salesmen for decorative bathroom fixtures. There, we are brain surgeons!</p>
+
+<hr>
+
+<b>Mr Robinson's Neighborhood</b> (Life lessons)<br>
+Oct 17, 1981<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+vibhwordyqzmc        V         jnlkfeatpgsux
+
+Missing word:          WORD
+Ciphered letters:      EFGH
+Corresponding letters: FEAT
+</pre>
+
+<p>Oh, look! An eviction notice brought by Mister Landlord.  Can you say
+Scumbucket? That's our special ????(WORD) for today, boys and girls. Do you know
+any scumbuckets? I bet you do. You know, I did have the money to pay this
+rent, and then all of a sudden it mysteriously disappeared. And then my wife
+showed up with a new dress on. Want to see that dress now, boys and girls? See
+the footprints on it? I ain't take it off when I do that, neither. You know
+what we gonna do? Visit the President, and find out why I'm so poor. Who wants
+to go to the Magical Land of Make Believe?
+
+<hr>
+<b>Happy Fun Ball</b> (Batteries not Included)<br>
+Feb 16, 1991<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+yfhwblxckeptg        W         mzqadohvurins
+
+Missing word:          KEPT
+Ciphered letters:      IJKL
+Corresponding letters: URIN
+</pre>
+
+<p>When not in use, Happy Fun Ball should be returned to its special container
+and ????(KEPT) under refrigeration. Failure to do so relieves the makers of Happy
+Fun Ball, Wacky Products Incorporated, and its parent company, Global Chemical
+Unlimited, of any and all liability.
+
+<hr>
+<b>Down by the River</b> (Banks of the River Charles)<br>
+May 08, 1993<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+glsxvyhwrapid        Z         cbfzmkuetonqj
+
+Missing word:          WRAP
+Ciphered letters:      HIJK
+Corresponding letters: ETON
+</pre>
+
+<p>Now, let's get started by letting me give you a little bit of a scenario of
+   what my life is all about! First off, I am thirty five years old, I am
+   divorced, and I live in a van down by the river! Now, you kids are probably
+   saying to yourself, hey, I'm gonna go out, and I'm gonna get the world by
+   the tail, and ????(WRAP) it around and pull it down and put it in my pocket!
+   Well, I'm here to tell you that you're probably gonna find out, as you go
+   out there, that you're not going to amount to jack squat! You're gonna end
+   up eating a steady diet of government cheese, and living in a van down by
+   the river!
+   
+<hr>
+<b>Brian Fellow's Safari Planet</b> (Check Out These Pythons)<br>
+May 10, 2003<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+dmvplickawzxg        S         bfhstyroeqjun
+
+Missing word:          LICK
+Ciphered letters:      EFGH
+Corresponding letters: TYRO
+</pre>
+
+<p>Good evening and welcome to Brian Fellow's Safari Planet. I'm Brian Fellow. Tonight we're gonna meet some animals that are very weird. And that scares me. But it also excites me. So lets get going. Our first guest likes to take naps and ????(LICK) himself. Please welcome a kitty cat.
+
+<hr>
+<b>Celebrity Jeopardy</b> (Negative Seventy Billion)<br>
+May 14, 2005<br>
+<pre>
+</b>Left-hand side    Separator    Right-hand side</b>
+dtyjrmzgawful        T         qshvbxonckepi
+
+Missing word:          AWFUL
+Ciphered letters:      IJKLM
+Corresponding letters: CKEPI
+</pre>
+
+<p>I'm sorry, that's Japan US relations. That's just ?????(AWFUL) and you know it. Look, why don't we just go to Final Jeopardy? The category is "First Grade Math" and the question is: write a math problem a first grader would know. Two plus two. one plus one. You don't have to answer it, just write it. Write "two plus two equals twelve," I really don't care. Just write any numbers in a row. And let's see what kind of mess you've made of this one shall we?
+
+<hr>
+<b>Dick in a Box</b> (Holiday Presents)<br>
+December 16, 2006<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+junkmosxedpwl        R         thirbfczygavq
+
+Missing word:          JUNK
+Ciphered letters:      ABCD
+Corresponding letters: THIR
+</pre>
+
+<p> See, I'm wise enough to know when a gift needs giving, girl<br>
+And I've got just the one<br>
+Something to show you that you are second to none.</p>
+
+<p>To all the fellas out there, with ladies to impress<br>
+It's easy to do, just follow these steps.</p>
+
+<p>One: Cut a hole in a box.</p>
+
+<p>Two: Put your ????(JUNK) in that box.</p>
+
+<p>Three: Make her open the box.</p>
+
+<p>And that's the way you do it.</p>
+
+<hr>   
+<b>Tina Fey as Sarah Palin</b> (Binders Full of Ciphers)<br>
+October 4, 2008<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+ayszwpkbqeond        X         mrtufvlhjxcig
+
+Missing word:          DAYS
+Ciphered letters:      MABC
+Corresponding letters: GMRT
+</pre> 
+
+<p>Gwen, we don't know if this climate change whosie whatsit is man made or
+  if it's just a natural part of the End of ????(DAYS). But I'm not gonna talk about
+  that I would like to talk about taxes, because with Barack Obama, you're
+  gonna be paying higher taxes. But not with me and my fellow maverick. We are
+  not afraid to get mavericky in there and ruffle feathers and not got to
+  allow that. And also, too, the great Ronald Reagan.
+  
+<hr>   
+<b>Girl You Wish You Hadn't Started a Conversation With at a Party</b> (Enough Already)<br>
+November 3, 2012<br>
+<pre>
+<b>Left-hand side    Separator    Right-hand side</b>
+whatjuviznlqf        U         sodergpmcxbky
+
+Missing word:          WHAT
+Ciphered letters:      ABCD
+Corresponding letters: SODE
+</pre>
+
+<p> The election Seth. Okay, take off your blindfold and listen to what I'm saying. You are so afraid, Seth. Like, you are so afraid of ????(WHAT) everyone thinks of you, and you're judging them? You should be ashamed.
+
