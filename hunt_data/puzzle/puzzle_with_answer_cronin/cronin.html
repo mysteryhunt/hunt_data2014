@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="animation.js"></script>
+<script type="text/javascript">
+function start()
+{
+	initialize(32); // Initialize 32 stars
+	$.ajax({url: "data.txt", success: begin_animation}); // Load the data file, begin animation
+}
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body onLoad="start();">
+<div class="container"><div class="cat">
+<img onmouseover="this.src='grin.gif';" onmouseout="this.src='cat.gif';" src="cat.gif" />
+</div></div>
+<audio autoplay loop>
+<source src="cronin.mp3" type="audio/mp3" />
+<source src="cronin.ogg" type="audio/ogg" />
+</audio>
+<!--[if lt IE 9]>
+<bgsound src="cronin.mp3" autostart="true" loop="-1" />
+<![endif]-->
+</body>
+</html>
