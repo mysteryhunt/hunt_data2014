@@ -1,23 +1,23 @@
-url	card	location
-intersecting_personalities	7_spades	W20
-safety_first	J_clubs	32
-build_your_own_sudoku	5_spades	14
-bumblebee_tune_a	5_clubs	33
-the_despair_of_cooking	6_spades	34
-zoinks	2_spades	66
-opposites_are_not_downbeats	J_diamonds	50
-how_puzzling_all_these_changes_are	4_spades	5
-black_and_white	4_clubs	1
-ring_around_the_music	8_spades	37
-find_your_way_across	3_diamonds	12
-blast_from_the_past	K_clubs	38
-local_shorts	9_clubs	56
-feed_your_head	9_spades	6
-i_came_across_a_japanese_rose_garden	4_diamonds	Killian Court
-sneaky_fox	3_spades	54
-down_the_rabbit_hole_2	10_diamonds	10
-stage_select	7_clubs	4
-i_stumbled_across_a_recording	A_diamonds	8
-across_the_hall	2_diamonds	7
-dressing_down	8_diamonds	26
-a_meta_puzzle	2_clubs	13
+url	card
+build_your_own_sudoku	5_spades
+intersecting_personalities	7_spades
+safety_first	J_clubs
+bumblebee_tune_a	5_clubs
+opposites_are_not_downbeats	J_diamonds
+zoinks	2_spades
+the_despair_of_cooking	6_spades
+sneaky_fox	3_spades
+feed_your_head	9_spades
+i_came_across_a_japanese_rose_garden	4_diamonds
+how_puzzling_all_these_changes_are	4_spades
+ring_around_the_music	8_spades
+black_and_white	4_clubs
+find_your_way_across	3_diamonds
+local_shorts	9_clubs
+blast_from_the_past	K_clubs
+i_stumbled_across_a_recording	A_diamonds
+stage_select	7_clubs
+down_the_rabbit_hole_2	10_diamonds
+across_the_hall	2_diamonds
+a_meta_puzzle	2_clubs
+dressing_down	8_diamonds
