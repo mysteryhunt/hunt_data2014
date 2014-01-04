@@ -81,6 +81,7 @@ knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Wa
 knights	G RING	wandering_stars	Wandering Stars	6120
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6140
 knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	6150
+knights	ACTIVE USER	callooh_callay_world	Calloh Callay, World!	6160
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
