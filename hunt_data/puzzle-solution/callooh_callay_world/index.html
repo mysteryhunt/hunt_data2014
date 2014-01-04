@@ -1,0 +1,196 @@
+<h2>Solution to Callooh Callay, World!</h2>
+<i>Author: James Clark</i>
+
+<p>
+This is a program written in Wonderlang, a silly language.  The challenge
+is to run it.  To do so, solvers must reverse engineer the
+mechanics of the language and the meanings of the symbols and
+identifiers.
+
+<p>
+Figuring those things out should require only analyzing the
+"include" files (burble, chortle, deficious, grabe, and slithy).
+Each of those defines one or two small functions
+which should be recognizable once the basics of the language
+are gleaned, and each helps to confirm some of the trickier
+parts of the language.
+
+<p>
+Once those are resolved, the final task is to evaluate the
+runme file.  This is possible either by analyzing it
+in parts and porting it to another language, or by writing
+an interpreter for Wonderlang and running the program
+directly.
+
+<h3>The Basics</h3>
+
+This is a stack-oriented language which uses postfix notation.
+For the most part, each token pushes a value onto the stack, but some
+reserved symbols and identifiers perform other operations.  In addition
+to the stack, values can be stored in scoped variables.  '&#x2039;' and
+'&#x203A;' are used to push the names of variables (as opposed to the
+values) onto the stack.  '&#x00AB;' and '&#x00BB;' denote blocks of
+code, which are pushed onto the stack as well.  The number system is
+base 14, using the digits 0A23456789TJQK.  Arrays are zero-indexed.
+Reserved identifiers are rendered in italics to help distinguish them
+from variable names.
+
+<p>
+Here are some example expressions and their meanings:
+
+<table>
+<tr><td><b>Expression</b><td><b>Meaning</b>
+<tr><td>46KJ<td>12345
+<tr><td>A 5 &#x2660;<td>1 + 5
+<tr><td>5 A &#x2663;<td>5 - 1
+<tr><td>2 5 <span style="color:red">&#x2665;</span><td>2 * 5
+<tr><td>A 2 &#x260A;<td>1 < 2
+<tr><td>A 2 &#x260B;<td>1 > 2
+<tr><td>A 2 &#x263A;<td>1 == 2
+<tr><td>J 3 &#x2601;<td>11 modulo 3
+<tr><td>&#x2039;sword&#x203A;<td>The name 'sword'
+<tr><td>&#x2039;&#x2659;&#x203A;<td>The name '&#x2659;' (chess pieces are also identifiers)
+<tr><td>sword<td>The value of the variable 'sword'
+<tr><td>{name} callay<td>Declare a variable
+<tr><td>{value} {name} uff<td>Assign a value to a variable
+<tr><td>{block} mome<td>Run {block}
+<tr><td>{blockA} {blockB} {value} gyre<td>If {value} is true, run {blockA} else run {blockB}
+<tr><td>&#x2205<td>An empty list
+<tr><td>{array} {value} gimble<td>An array like {array} but with {value} appended to it
+<tr><td>{array} {start} {count} munch<td>The subarray of {array} starting at {start} and having {count} values
+<tr><td>{arrayA} {arrayB} whiffle<td>An array consisting of the values of {arrayA} followed by the values of {arrayB}
+<tr><td>{array} frabjion<td>The length of {array}
+<tr><td>{array} {index} grend<td>The value at position {index} in {array}
+<tr><td>{name} plead<td>"Import" the named file, evaluating it immediately
+<tr><td>&#x261E; blah blah &#x261C;<td>A comment
+</table>
+
+<h3>slithy.wl</h3>
+
+<p>
+This is a recursive algorithm for computing the Nth fibonacci
+number.
+
+<h3>grabe.wl</h3>
+
+<p>
+This is <a href="http://en.wikipedia.org/wiki/Euclidean_algorithm">
+the Euclidian algorithm</a> for computing the greatest common
+divisor.
+
+<h3>deficious.wl</h3>
+
+<p>
+This is a
+<a href="http://en.wikipedia.org/wiki/Linear_congruential_generator">
+linear congruential generator</a> using the formula:
+<pre>
+  X[n+1] = (10001 * X[n] + 12345) mod 65536
+</pre>
+
+<h3>chortle.wl</h3>
+
+<p>
+This implements a looping mechanism.  It pops two "arguments",
+a code block B and a number N.  It first calls B with N-1 (that is,
+N-1 will be the top value of the stack
+when B is called).  Then it calls B again with N-2, then
+again with N-3, and so on until finally calling B with 0.
+
+<h3>burble.wl</h3>
+
+<p>
+This is an implementation of
+<a href="http://en.wikipedia.org/wiki/Quicksort">quicksort</a>.
+It pops an array of numbers and pushes a sorted version of
+that array.
+
+<h3>runme.wl</h3>
+
+This is a set of functions that generate the answer phrase from
+a hard-coded array of "ciphertext".  It is designed so that it
+is possible to see the lengths of the words in the phrase in
+advance, and so each word of the answer phrase requires a little
+more to be figured out.  The idea being that if the solver
+is porting the code and introduces a bug, they should have only
+a limited piece of code to debug.
+
+<p>
+Here are explanations for the variable names:
+<table>
+<tr><td><b>Variable</b><td><b>Purpose</b>
+<tr><td>jabberwock<td>The data array which is manipulated to produce the answer phrase
+<tr><td>sword<td>An array of pseudo-randomly-generated numbers, used by frolick to shift the jabberwock data
+<tr><td>muchness<td>Sums all the elements of an array, used to help check progress
+<tr><td>snack<td>Function that produces the words of the answer phrase, by taking the first N values off the jabberwock array and pushing them onto the stack as an array
+<tr><td>tweedle<td>Reverses the jabberwock array
+<tr><td>frolick<td>Shifts each number in the jabberwock array by a corresponding entry in the sword array, using modulo to keep every element in the range 1-26
+<tr><td>modge<td>"Unzips" the jabberwock array, moving every odd element to the first half and every even element to the second half
+<tr><td>priot<td>Starting at the end, in-place, subtracts from each element the element before it, and then adds 26 if the result is less than one
+</table>
+
+<p>
+The jabberwock array starts:
+<pre>
+[20, 8, 5, 3, 25, 18, 16, 5, 5, 10, 17, 19, 24, 24, 5, 5, 11, 4, 9, 25, 2]
+</pre>
+
+<p>
+The sword array is:
+<pre>
+[233, 4461, 7992, 9223, 16764, 21775, 22004, 22885, 24890, 31507, 33518, 39171, 42416, 48818, 51953, 52844, 62326, 63499]
+</pre>
+
+<p>
+First the jabberwock array is summed (using the muchness function).  If the sum is not 260, the program returns [5, 18, 18, 15, 18] ("ERROR").   Then the sword array is summed.  If the sum is not 556279, the program returns ERROR.  These checks are to help check mistakes in those arrays.
+
+<p>
+The first three numbers are pulled:
+<pre>
+[20, 8, 5] -> 'THE'
+</pre>
+
+<p>
+The remainder is then reversed (tweedled), and then shifted by the values in the sword array (frolicked):
+<pre>
+tweedled: [2, 25, 9, 4, 11, 5, 5, 24, 24, 19, 17, 10, 5, 5, 16, 18, 25, 3]
+frolicked: [1, 14, 19, 23, 5, 18, 13, 3, 6, 14, 21, 25, 15, 21, 21, 4, 3, 10]
+</pre>
+
+<p>
+The first six numbers are pulled:
+<pre>
+[1, 14, 19, 23, 5, 18] -> 'ANSWER'
+</pre>
+
+<p>
+The remainder is tweedled, then "unzipped" (modged), and then frolicked:
+<pre>
+tweedled: [10, 3, 4, 21, 21, 15, 25, 21, 14, 6, 3, 13]
+modged: [10, 4, 21, 25, 14, 3, 3, 21, 15, 21, 6, 13]
+frolicked: [9, 19, 5, 18, 8, 16, 11, 26, 23, 16, 10, 2]
+</pre>
+
+<p>
+The first two numbers are pulled:
+<pre>
+[9, 19] -> 'IS'
+</pre>
+
+<p>
+The remainder is tweedled, modged, prioted, and frolicked, and all ten numbers are pulled revealing the answer:
+<pre>
+tweedled: [2, 10, 16, 23, 26, 11, 16, 8, 18, 5]
+modged: [2, 16, 26, 16, 18, 10, 23, 11, 8, 5]
+prioted: [2, 14, 10, 16, 2, 18, 13, 14, 23, 23]
+frolicked: [1, 5, 20, 9, 22, 5, 21, 19, 5, 18] -> '<b>ACTIVEUSER</b>'
+</pre>
+
+<p>
+<a href="wlang.py">Here is a python implementation of a Wonderlang interpreter</a>, which can run the runme.wl.html file directly.
+
+<p>
+<a href="wlang-postscript.zip">Here is a Wonderlang-to-PostScript converter</a> (written by Chieu Nguyen).
+
+<p>
+<a href="runme.py">Here is a python implementation of runme.wl</a>.
