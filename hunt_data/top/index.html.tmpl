@@ -7,6 +7,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
   <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/round/mit/">
+	MIT
+      </a>
+      {% if has_wl_access %}
+      <a href="{{ root }}/wonderland/">
+	Wonderland
+      </a>
+      {% endif %}
+      <a href="{{ root }}/round/events/">
+	Events
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
     <div id="mh-surface">
       <div id="mh-book">
 	<div id="mh-col1">
@@ -42,6 +58,8 @@
 	</div>
       </div>
     </div>
+{% include "nav.html" %}
+    <script src="index.js"></script>
   </body>
 </html>
 <!--

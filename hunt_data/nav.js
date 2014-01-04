@@ -1,5 +1,5 @@
 mh.nav = function() {
-    var page = $('#mh-page');
+    var page = $('#mh-page, #mh-surface');
     var outer = $('#mh-nav');
     outer.css('top', page.offset().top + 20);
     outer.css('left', page.offset().left + 20);
