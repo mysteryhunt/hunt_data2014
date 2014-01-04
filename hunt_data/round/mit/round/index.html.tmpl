@@ -48,56 +48,56 @@
       <img src="map.jpg" />
       {% for puzzle in puzzles %}
       <div class="mh-map-location" style=
-	   {% if puzzle.location.name == "W20" %}
-	   "top: 118px; left: 153px;"
-	   {% elif puzzle.location.name == "32" %}
-	   "top: 37px; left: 682px;"
-	   {% elif puzzle.location.name == "14" %}
-	   "top: 209px; left: 663px;"
-	   {% elif puzzle.location.name == "W11" %}
-	   "top: 10px; left 10px;"
-	   {% elif puzzle.location.name == "33" %}
-	   "top: 81px; left: 288px;"
-	   {% elif puzzle.location.name == "34" %}
-	   "top: 41px; left: 482px;"
-	   {% elif puzzle.location.name == "66" %}
-	   "top: 134px; left: 842px;"
-	   {% elif puzzle.location.name == "2" %}
-	   "top: 10px; left 10px;"
-	   {% elif puzzle.location.name == "50" %}
-           "top: 228px; left: 821px;"
-	   {% elif puzzle.location.name == "5" %}
-	   "top: 173px; left: 250px;"
-	   {% elif puzzle.location.name == "1" %}
-           "top: 214px; left: 290px;"
-	   {% elif puzzle.location.name == "37" %}
-           "top: 55px; left: 357px;"
-	   {% elif puzzle.location.name == "12" %}
-           "top: 80px; left: 489px;"
-	   {% elif puzzle.location.name == "38" %}
-	   "top: 41px; left: 441px;"
-	   {% elif puzzle.location.name == "56" %}
-	   "top: 136px; left: 646px;"
-	   {% elif puzzle.location.name == "6" %}
-	   "top: 160px; left: 585px;"
-	   {% elif puzzle.location.name == "Killian Court" %}
-	   "top: 238px; left: 423px;"
-	   {% elif puzzle.location.name == "54" %}
-           "top: 158px; left: 746px;"
-	   {% elif puzzle.location.name == "10" %}
-	   "top: 153px; left: 425px;"
-	   {% elif puzzle.location.name == "4" %}
-	   "top: 138px; left: 479px;"
-	   {% elif puzzle.location.name == "8" %}
-	   "top: 122px; left: 569px;"
-	   {% elif puzzle.location.name == "7" %}
-           "top: 128px; left: 267px;"
-	   {% elif puzzle.location.name == "26" %}
-           "top: 87px; left: 542px;"
-	   {% elif puzzle.location.name == "13" %}
-           "top: 100px; left: 376px;"
+	   {% if puzzle.card.name == "J_diamonds" %}
+	   "top: 116px; left: 152px;"
+	   {% elif puzzle.card.name == "5_spades" %}
+	   "top: 65px; left: 289px;"
+	   {% elif puzzle.card.name == "Q_clubs" %}
+	   "top: 39px; left: 362px;"
+	   {% elif puzzle.card.name == "4_diamonds" %}
+	   "top: 28px; left: 437px;"
+	   {% elif puzzle.card.name == "4_clubs" %}
+	   "top: 28px; left: 491px;"
+	   {% elif puzzle.card.name == "9_diamonds" %}
+	   "top: 29px; left: 587px;"
+	   {% elif puzzle.card.name == "7_spades" %}
+	   "top: 24px; left: 680px;"
+	   {% elif puzzle.card.name == "9_spades" %}
+	   "top: 122px; left: 269px;"
+	   {% elif puzzle.card.name == "7_clubs" %}
+	   "top: 92px; left: 385px;"
+	   {% elif puzzle.card.name == "10_diamonds" %}
+	   "top: 69px; left: 483px;"
+	   {% elif puzzle.card.name == "4_spades" %}
+	   "top: 72px; left: 551px;"
+	   {% elif puzzle.card.name == "2_diamonds" %}
+	   "top: 108px; left: 586px;"
+	   {% elif puzzle.card.name == "2_clubs" %}
+	   "top: 138px; left: 644px;"
+	   {% elif puzzle.card.name == "8_spades" %}
+	   "top: 158px; left: 748px;"
+	   {% elif puzzle.card.name == "5_clubs" %}
+	   "top: 133px; left: 843px;"
+	   {% elif puzzle.card.name == "3_spades" %}
+	   "top: 172px; left: 247px;"
+	   {% elif puzzle.card.name == "9_clubs" %}
+	   "top: 207px; left: 309px;"
+	   {% elif puzzle.card.name == "A_diamonds" %}
+	   "top: 154px; left: 424px;"
+	   {% elif puzzle.card.name == "8_diamonds" %}
+	   "top: 144px; left: 486px;"
+	   {% elif puzzle.card.name == "3_diamonds" %}
+	   "top: 159px; left: 590px;"
+	   {% elif puzzle.card.name == "6_spades" %}
+	   "top: 204px; left: 663px;"
+	   {% elif puzzle.card.name == "K_clubs" %}
+	   "top: 221px; left: 824px;"
+	   {% elif puzzle.card.name == "2_spades" %}
+	   "top: 221px; left: 425px;"
+	   {% elif puzzle.card.name == "J_clubs" %}
+	   "top: 203px; left: 606px;"
 	   {% else %}
-	   "{{ puzzle.location }}"
+	   "{{ puzzle.card }}"
 	   {% endif %}
 	   >
 	<a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">

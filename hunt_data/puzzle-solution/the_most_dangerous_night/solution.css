@@ -1,0 +1,18 @@
+.mt td.clue {
+  text-align: right;
+}
+.mt P {
+  margin: 0px;
+}
+.ans {
+  color: #c5000b;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.r {
+  text-align: right;
+  padding-right: 10px;
+}
+.s {
+  padding-left: 20px;
+}
