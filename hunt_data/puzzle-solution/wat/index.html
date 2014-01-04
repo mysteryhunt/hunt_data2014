@@ -1,0 +1,191 @@
+<h2>Solution to WAT?</h2>
+<i>Author: James Clark</i>
+
+<style>
+.t {
+  font-family: monospace;
+  padding: 10px;
+}
+</style>
+
+<p>This is a series of cryptograms of translated song lyrics.
+
+<p>
+Song lyrics were selected from eight songs that can be hard to understand.  One word in each was replaced with a number word.  The lyrics were then "translated" into a different kind of language game (e.g. pig latin).  Finally a random letter substitution was applied to each one.
+
+<p>
+For example, the sixth song is "Burnin' Down the House" by Talking Heads.  The fifth line corresponds to "All wet.  Hey, you might need a raincoat.".  The word "raincoat" was replaced with "five", then the lyrics were translated into Swedish Chef to get "Ell vet. Hey, yuoo meeght need a feefe-a.".  Finally that string was encrypted.
+
+<p>
+Here are the data for each cryptogram:
+<table class="t">
+<tr><th>Key<th>Language<th>Song<th>Word<th>Number<th>Letter
+<tr><td>KQILJXAWHCGOYZUVFERPMSDTBN<td><a href="http://knowyourmeme.com/memes/lolspeak-chanspeak">Lolspeak</a><td>Here and Now / Letters To Cleo<td>COMFORT<td>4<td>F
+<tr><td>LONGTESMQFDKJRXHYCAUVWZIPB<td><a href="http://en.wikipedia.org/wiki/Tutnese">Tutnese</a><td>Smells Like Teen Spirit / Nirvana<td>CONTAGIOUS<td>3<td>N
+<tr><td>QRYEPLHGAUZWNDCVTSMKJOXIFB<td><a href="http://en.wikipedia.org/wiki/Pig_Latin">Pig Latin</a><td>One Week / Barenaked Ladies<td>FLAVORS<td>5<td>O
+<tr><td>IAYMGEVJCKUHTSXWZLQNDFRBPO<td><a href="http://en.wikipedia.org/wiki/Ubbi_dubbi">Ubbi Dubbi</a><td>Down on the Corner / Creedence Clearwater Revival<td>NICKEL<td>1<td>N
+<tr><td>FQOTXANZSHLBIVDRMGCPWEUYJK<td><a href="http://en.wikipedia.org/wiki/SMS_language">Textese</a><td>Let's Go Crazy / Prince<td>PURPLE<td>3<td>R
+<tr><td>IYZLUACWDSXGVBFTJOKHMEPRNQ<td><a href="http://en.wikipedia.org/wiki/Encheferizer">Swedish Chef</a><td>Burnin' Down the House / Talking Heads<td>RAINCOAT<td>5<td>C
+<tr><td>RTIJDUFKZSNWXYQCGPLMOAEHVB<td><a href="http://en.wikipedia.org/wiki/Gibberish_(language_game)">Gibberish</a><td>Come On Eileen / Dexy's Midnight Runners<td>SMOKE<td>3<td>O
+<tr><td>SHTLPECBFVGYWIJNKADXZQROMU<td><a href="http://knowyourmeme.com/memes/ermahgerd">Ermahgerd</a><td>What's the Frequency, Kenneth / R.E.M.<td>VIOLENT<td>7<td>T
+</table>
+
+<p>
+These have been ordered by the replaced word.  Ordering alphabetically by song title and using the number to index into the word it replaces gives the answer <b>CONFRONT</b>.
+
+<p>
+Here are the lyrics before and after the translation step:
+<pre>
+All the things to get and keep getting,
+never enough not enough and never ending.
+I just thought I'd think about.
+And it might be
+the four of a knowledge
+of a rise above the sky
+but could never parallel
+the challenge of an acquisition in the
+here and now, here and now.
+      to lolspeak (using <a href="http://speaklolcat.com/">this site</a> with some adjustments)
+ALL TEH THINGS 2 GIT AN KEEP GETTIN,
+NEVR ENUF NOT ENUF AN NEVR ENDIN.
+I JUS THOT ID FINKZ BOUT.
+AN IT MITE BE
+TEH 4 OV A KNOWLEDGE
+OV A RIZE ABOV TEH SKY
+BUT CUD NEVR PARALLEL
+TEH CHALLENGE OV AN ACQUIZISHUN IN DA
+HER AN NAO, HER AN NAO.
+</pre>
+<hr>
+<pre>
+Hello.  Hello.  Hello.
+With the lights out, it's less dangerous.
+Here we are now, entertain us.
+I feel stupid and three.
+Here we are now, entertain us.
+A mulatto,
+an albino,
+a mosquito,
+my libido.
+      to tutnese (using <a href="tutnese.py">this python script</a>)
+Hashesqualulo.  Hashesqualulo.  Hashesqualulo.
+Wackituthash tuthashe luligughashtutsus outut, itut'sus lulesquasus dudanungugerugousus.
+Hasheruge wacke aruge nunowack, enuntuterugtutainun usus.
+I fufeelul sustutupubidud anundud tuthashrugsquatee.
+Hasheruge wacke aruge nunowack, enuntuterugtutainun usus.
+A mumululasquatuto,
+anun alulbubinuno,
+a mumosusquackuituto,
+mumyub lulibubidudo.
+</pre>
+<hr>
+<pre>
+Gonna make a break and take a fake.
+I'd like a stinkin achin shake.
+I like vanilla, it's the finest of the five.
+Gotta see the show, cause then you'll know
+the vertigo is gonna grow,
+'cause it's so dangerous you'll have to sign a waiver.
+      to pig latin (using <a href="http://www.snowcrest.net/donnelly/piglatin.html">this site</a>)
+Onnagay akemay away eakbray andway aketay away akefay.
+I'dway ikelay away inkinstay achinway akeshay.
+Iway ikelay anillavay, it'sway ethay inestfay ofway ethay ivefay.
+Ottagay eesay ethay owshay, ausecay enthay ou'llyay owknay
+ethay ertigovay isway onnagay owgray,
+'ausecay it'sway osay angerousday ou'llyay avehay otay ignsay away aiverway.
+</pre>
+<hr>
+<pre>
+Four kids on the corner trying to bring you up. 
+Willy picks a tune out and he blows it on the harp. 
+Down on the corner, out in the street, 
+Willy and the Poorboys are playin'.
+Bring a one; tap your feet. 
+      to ubbi dubbi (<a href="http://pbskids.org/cgi-registry/zoom/ubbidubbi.cgi">this site</a>)
+Fubour kubids ubon thube cubornuber trubyubing tubo brubing yubou ubup. 
+Wubilluby pubicks uba tubune ubout uband hube blubows ubit ubon thube hubarp. 
+Dubown ubon thube cubornuber, ubout ubin thube strubeet, 
+Wubilluby uband thube Puboorbuboys ubare plubayubin'.
+Brubing uba ubone; tubap yubour fubeet. 
+</pre>
+<hr>
+<pre>
+All excited but we don't know why.
+Maybe it's 'cause we're all gonna die.
+And when we do, what's it all for?
+Better live now before the grim reaper
+come knocking on your door.
+Are we gonna let the elevator
+bring us down?  Oh no, let's go!
+Let's go crazy.  Let's get nuts.
+Let's look for the three banana
+'til they put us in the truck, let's go!
+      to textese (manually)
+all xcited but we don't no y
+mayb it's cuz we're all gonna die
+& when we do, what's it all 4
+betr live now b4 the grim reaper
+come knocking on ur door.
+r we gonna let the levator
+bring us down  o no let's go
+let's go crazy  let's get nuts
+look 4 the 3 banana
+til they put us n the truck let's go
+</pre>
+<hr>
+<pre>
+Here's your ticket, pack your bags, time for jumpin' overboard.
+Transportation is here.
+Close enough but not too far, maybe you know where you are.
+Fightin' fire with fire.
+All wet.  Hey, you might need a five.
+Shakedown.  Dreams walking in broad daylight.
+Three hundred sixty-five degrees.
+Burning down the house.
+      to swedish chef (using <a href="http://www.rinkworks.com/dialect/dialectt.cgi">this site</a> and then taking out extraneous "Um de hur de hur"s)
+Here's yuoor teecket, peck yuoor begs, teeme-a fur joompeen' ooferbuerd.
+Trunspurteshun is here-a.
+Cluse-a inuoogh boot nut tuu fer, meybe-a yuoo knoo vhere-a yuoo ere-a. 
+Feeghtin' fure-a veet fure-a. 
+Ell vet. Hey, yuoo meeght need a feefe-a. 
+Shekedoon. Dreems velkeeng in brued deyleeght.
+Three-a hoondred seexty-feefe-a degrees.
+Boorneeng doon zee huoose-a.
+Bork bork bork!
+</pre>
+<hr>
+<pre>
+These people round here
+wear beaten down
+eyes sunk in
+three dried faces,
+so resigned to what their fate is.
+But not us (no never),
+no not us (no never).
+We are far too young and clever.
+      to gibberish (manually)
+Thidigese pidigeopidigle ridigound hidigere
+widigear bidigeatidigen didigown
+idigeyes sidigunk idigin
+thridigee dridigied fidigacidiges,
+sidigo ridigesidigigned tidigo whidigat thidigeir fidigate idigis.
+Bidigut nidigot idigus (nidigo nidigevidiger),
+nidigo nidigot idigus (nidigo nidigever).
+Widige idigare fidigar tidigoo yidigoung idigand clidigevidiger.
+</pre>
+<hr>
+<pre>
+I'd studied your cartoons, radio, music, TV, movies, magazines.
+Richard said, "Withdrawal in disgust is not the same as apathy."
+A smile like the cartoon, tooth for a tooth.
+You said that irony was the shackles of youth.
+You wore a shirt of seven green, uh-huh.
+I never understood the frequency, uh-huh.
+      to ermahgerd (using <a href="http://ermahgerd.jmillerdesign.com/#!/translate">this site</a>, then fixing errors)
+ERD STERDERD YER CERTERNS, RERDER, MAHSERC, TERVER, MAHVERS, MAHGERZERNS.
+RERCHERD SERD, "WERTHDRERL ERN DERSGERST ERS NERT DA SERM ERS ERPERTHER."
+A SMAHL LERK DA CERTERN, TERTH FER A TERTH.
+U SERD THERT ERERNER WERS DA SHERCKLES ERF YERTH.
+U WER A SHERT ERF SERVERN GRERN, ERHER.
+I NERVER ERNDERSTERD DA FRERQUERNCER, ERHER.
+</pre>
