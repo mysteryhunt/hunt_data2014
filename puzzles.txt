@@ -85,6 +85,7 @@ knights	CUTTING EDGE	hole_wizard	Hole Wizard	6140
 knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	6150
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
+humpty_dumpty	HAND TOOL	sledgehammered	Sledgehammered	4030
 humpty_dumpty	CERAMICS	glazing_over	Glazing Over	4040
 humpty_dumpty	AZIMUTH	directions_in_writing	Directions in Writing	4050
 humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	4060
