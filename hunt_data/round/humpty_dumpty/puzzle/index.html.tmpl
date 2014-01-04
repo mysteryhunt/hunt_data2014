@@ -2,9 +2,22 @@
 
 <div id="mh-banner">
   <img id="mh-humpty" src="{{ root }}/round/{{ round.round.url }}/humpty.png">
-  <div id="mh-title">
+  <div id="mh-title">{% if puzzle.puzzle.url == 'a_curious_incidence' %}
+    <table>
+      <tr><td class="mh-aci-x">
+	  A Curious
+	</td>
+	<td class="mh-aci mh-aci-b">INCIDENCE</td>
+	<td class="mh-aci mh-aci-a">ECNEDICNI</td>
+      </tr>
+      <tr><td></td>
+	<td class="mh-aci mh-aci-d">INCIDENCE</td>
+	<td class="mh-aci mh-aci-c">ECNEDICNI</td>
+      </tr>
+    </table>
+  {% else %}
     {{ puzzle.puzzle.name }}
-  </div>
+  {% endif %}</div>
 </div>
 
 <div id="mh-content">
