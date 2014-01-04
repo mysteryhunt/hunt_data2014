@@ -1,5 +1,50 @@
 {% include "common.css" %}
 {% include "puzzle.css" %}
+{% if puzzle.puzzle.url == 'a_curious_incidence' %}
+
+.mh-aci-x {
+font-size: 45px;
+}
+
+.mh-aci {
+font-family: Arial, sans-serif;
+font-size: 45px;
+}
+
+.mh-aci-a
+{
+-moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+filter: FlipH;
+color: #808080;
+}
+
+.mh-aci-b
+{
+}
+
+.mh-aci-c
+{
+-moz-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+color: #808080;
+}
+
+.mh-aci-d
+{
+-moz-transform: scaleY(-1);
+-o-transform: scaleY(-1);
+-webkit-transform: scaleY(-1);
+transform: scaleY(-1);
+filter: FlipV;
+color: #808080;
+}
+{% endif %}
 
 @media screen {
     body.mh-fancy {

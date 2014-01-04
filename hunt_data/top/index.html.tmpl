@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lobby</title>
+    <title>Lobby 7</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
   <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/round/mit/">
+	MIT
+      </a>
+      {% if has_wl_access %}
+      <a href="{{ root }}/wonderland/">
+	Wonderland
+      </a>
+      {% endif %}
+      <a href="{{ root }}/round/events/">
+	Events
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-surface">
+      <div id="mh-book">
+	<div id="mh-col1">
+	  <div id="mh-title">Lobby 7</div>
+	  <div id="mh-image"><img src="lobby.jpg" /></div>
+	  <p>
+	    A large grin fades into existence, followed by the rest of a lavender smiling cat.  "Why, hello there!" the cat purrs.  "I'm the Cheshire Cat.  I know a few things about what's been going on here.  Maybe I'll tell them to you..."
+	    
+	  <p>
+	    The cat pauses for a laboriously long time, stopping to groom himself, then fading out and back into existence on a tree branch before continuing.  
+	    
+	  <p>
+	    "You might have seen a few puzzling things happening around this... campus, is it?  The truth is, I'm not the only one from my world here.  A few more of us have come through three rabbit-holes.
+	</div>
+	<div id="mh-col2">
+	  <p>
+	    We don't mean any trouble, I assure you, and we don't really want to be here (your world is dreadfully boring), but we haven't had much choice."
+	    
+	  <p>
+	    The cat's grin dampens a bit as he continues: "There's a problem in Wonderland... a terrible beast!  It's loose, and it's wreaking havoc throughout Wonderland.  Some of us have fled through the rabbit-holes here.  
+	    
+	  <p>
+	    "But all beasts can be defeated, if you know the right tricks.
+	    
+	  <p>
+	    "If you can find the others hiding about campus, they'll tell you how to get to Wonderland so you can clean things up.  They might even tell you where the beast is, if you ask nicely enough.  Perhaps they'll even bring you to a vorpal sword, should you find that you have a use for it.
+	    
+	  <p>
+	    "To find a Wonderlandian, you only need to put out some bait... but it must be the right bait.  What is the right bait you ask?  Oh, that's easy enough... it's in the map as plain as day.  Just look over that way... or that way... or maybe..." *POOF*
+
+	  <p>
+	    And with that, the cat vanishes and all you are left with are some puzzles scattered about campus.
+	</div>
+      </div>
+    </div>
+{% include "nav.html" %}
+    <script src="index.js"></script>
+  </body>
+</html>
+<!--
     <div id="mh-outer">
       <div id="mh-image-outer">
 	<img id="mh-image" src="image.jpg" />
@@ -36,3 +92,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+-->

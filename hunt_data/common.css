@@ -70,7 +70,7 @@ table.mh-center {
 	position: absolute;
 	right: 160px;
     }
-    .mh-fancy #mh-answer {
+    .mh-fancy #mh-answer, .mh-fancy #mh-contact {
 	position: absolute;
 	right: 20px;
     }
@@ -107,7 +107,7 @@ table.mh-center {
 	position: absolute;
 	right: 0px;
     }
-    .mh-plain #mh-answer {
+    .mh-plain #mh-answer, .mh-plain #mh-contact {
 	display: none;
     }
     .mh-plain #mh-title {
@@ -129,7 +129,7 @@ table.mh-center {
     #mh-elsewhere {
 	display: none;
     }
-    #mh-answer, #mh-plain-toggle {
+    #mh-answer, #mh-plain-toggle, #mh-contact {
 	display: none;
     }
     #mh-title {

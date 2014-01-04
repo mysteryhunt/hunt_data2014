@@ -15,6 +15,9 @@
 	<a id="mh-elsewhere" href="javascript:mh.nav();">
 	  Elsewhere
 	</a>
+	<a id="mh-contact" href="javascript:mh.submit_contact();">
+	  Contact HQ
+	</a>
       </div>
 
       <div id="mh-page">
@@ -26,24 +29,39 @@
 	<div id="mh-content">
 	  Team: {{ team.name }}<br>
 	  <ul>
-	    {% for round in rounds %}
-	    {% if round.round.url == "mit" %}
-	    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
-	      <ul>
-		{% for puzzle in round.puzzles %}
-		<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-		  {% if puzzle.solved %}[SOLVED]{% endif %}
-		  {% endfor %}
-	      </ul>
-	      {% endif %}
-	      {% endfor %}
-	      {% if has_wl_access %}
-	    <li><a href="{{ root }}/wonderland/">Wonderland</a>
+	    <li><a href="{{ root }}/">Lobby 7</a>
 	      <ul>
 		{% for round in rounds %}
 		{% if round.round.url == "mit" %}
-		{% elif round.round.url == "events" %}
-		{% else %}
+		<li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
+		  <ul>
+		    {% for puzzle in round.puzzles %}
+		    <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
+		      {% if puzzle.solved %}[SOLVED]{% endif %}
+		      {% endfor %}
+		  </ul>
+		  {% endif %}
+		  {% endfor %}
+		  {% if has_wl_access %}
+		<li><a href="{{ root }}/wonderland/">Wonderland</a>
+		  <ul>
+		    {% for round in rounds %}
+		    {% if round.round.url == "mit" %}
+		    {% elif round.round.url == "events" %}
+		    {% else %}
+		    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
+		      <ul>
+			{% for puzzle in round.puzzles %}
+			<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
+			  {% if puzzle.solved %}[SOLVED]{% endif %}
+			  {% endfor %}
+		      </ul>
+		      {% endif %}
+		      {% endfor %}
+		  </ul>
+		  {% endif %}
+		  {% for round in rounds %}
+		  {% if round.round.url == "events" %}
 		<li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
 		  <ul>
 		    {% for puzzle in round.puzzles %}
@@ -54,23 +72,12 @@
 		  {% endif %}
 		  {% endfor %}
 	      </ul>
-	      {% endif %}
-	      {% for round in rounds %}
-	      {% if round.round.url == "events" %}
-	    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
-	      <ul>
-		{% for puzzle in round.puzzles %}
-		<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-		  {% if puzzle.solved %}[SOLVED]{% endif %}
-		  {% endfor %}
-	      </ul>
-	      {% endif %}
-	      {% endfor %}
 	  </ul>
 	</div>
       </div>
     </div>
 {% include "nav.html" %}
+{% include "contact.html" %}
     <script src="overview.js"></script>
   </body>
 </html>

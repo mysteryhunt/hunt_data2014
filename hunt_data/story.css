@@ -2,46 +2,65 @@ html {
     min-height: 100%
 }
 
-body, td, input {
+body {
+    background: darkgray;
     font-family: 'Alice', sans-serif;
     font-size: 18px;
 }
-.mh-flavortext {
-    text-align: justify;
-    margin: 10px 50px;
-}
-#mh-links {
+
+#mh-surface {
+    background: #eee;
+    box-shadow: 0px 0px 6px #000;
     margin: 0px auto;
-}
-#mh-links a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    color: #000;
-    padding: 0px 40px;
-}
-#mh-outer {
-    width: 900px;
-}
-#mh-image-outer {
-    margin: 0px auto;
-    position: relative;
-}
-#mh-image {
-    border: 3px solid black;
+    width: 976px;
+    height: 716px;
+    padding: 10px 40px;
 }
 
-@media screen {
-    body {
-	width: 100%;
-	margin: 0px;
-	text-align: center;
-        background: #d0ceca
-    }
-    #mh-outer {
-	padding-top: 10px;
-	display: inline-block;
-	text-align: left;
-        position: relative;
-    }
+#mh-book {
+    text-align: justify;
+    position: relative;
+    width: 976px;
+    height: 716px;
+    background: #e4c3a0 url('{{ root }}/book.jpg') no-repeat top center;
+}
+
+#mh-col1 {
+    position: absolute;
+    left: 31px;
+    top: 9px;
+    width: 426px;
+    height: 665px;
+    padding: 10px
+}
+
+#mh-col2 {
+    position: absolute;
+    left: 495px;
+    top: 9px;
+    width: 426px;
+    height: 665px;
+    padding: 10px
+}
+
+#mh-title {
+    text-align: center;
+    font-size: 50px;
+}
+
+#mh-controls {
+    position: relative;
+    padding-bottom: 5px;
+    overflow: hidden;
+    margin: 0px auto;
+    width: 976px;
+}
+
+#mh-controls a {
+    position: relative;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000, 0px 2px 4px #000;
+    font-size: 90%;
+    text-decoration: none;
+    margin: 0px 20px;
 }
