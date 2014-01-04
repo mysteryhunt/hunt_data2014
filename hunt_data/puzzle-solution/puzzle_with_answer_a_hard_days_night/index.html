@@ -1,0 +1,133 @@
+<h2>The Puzzle with the answer A HARD DAY'S NIGHT</h2>
+
+<p><i>Author: Erin Rhode</i></p>
+
+<p>The first thing you might notice is that there are bolded words.  Reading in order gives you A HARD DAY'S NIGHT.  But you already know this is the answer, so it is not helpful and you must continue on with the puzzle to find the title.</p>
+
+<p>First use the constraints to determine which player was on which team and in which position.  There are eight players (the names of pawn characters mentioned in Dramatis Personae of Through The Looking Glass) and four positions (lead [1], second [2], vice [3], and skip [4]) on each of the two curling teams (red [R] and yellow [Y]).  Using the fact that red threw in alphabetical order (first constraint), you can eliminate some possible position assignments.</p>
+
+<center><table border="1">
+<tbody><tr><td>&nbsp;</td><td>1<sub>Y</sub></td><td>2<sub>Y</sub></td><td>3<sub>Y</sub></td><td>4<sub>Y</sub></td><td>1<sub>R</sub></td><td>2<sub>R</sub></td><td>3<sub>R</sub></td><td>4<sub>R</sub></td></tr>
+<tr><td>Fawn</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Frog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td></tr>
+<tr><td>Haigha</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td></tr>
+<tr><td>Hatta</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>Lily</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>Oyster</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>Rose</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>Tiger-Lily</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td><td>&nbsp;</td></tr>
+</tbody></table></center>
+
+<p>Fawn's constraint tells you that she did not play lead.  By the alphabetical constraint, if she was on the red team, her only possible position was lead.  Therefore, Fawn was on the yellow team.  In addition, you know from Fawn's constraints that the lead on the yellow team always hit T line weight.  Reading the descriptions of where the stones went, this is only possible for Haigha and Rose.  From Frog's description, Frog was not a skip.  Haigha's constraint tells you that the sum of the stones are one less than a perfect square.  This is only possible if Haigha threw lead (1+2=3) or skip (7+8=15).  At this point, you can use the alphabetical order of the red team to elimate Frog as red second, which allows you to eliminate Hatta as red vice or skip and Lily as red skip.</p>
+
+<center><table border="1">
+<tbody><tr><td>&nbsp;</td><td>1<sub>Y</sub></td><td>2<sub>Y</sub></td><td>3<sub>Y</sub></td><td>4<sub>Y</sub></td><td>1<sub>R</sub></td><td>2<sub>R</sub></td><td>3<sub>R</sub></td><td>4<sub>R</sub></td></tr>
+<tr><td>Fawn</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Frog</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Haigha</td><td>&nbsp;</td><td>X</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Hatta</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td></tr>
+<tr><td>Lily</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td></tr>
+<tr><td>Oyster</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>Rose</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>Tiger-Lily</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td><td>&nbsp;</td></tr>
+</tbody></table></center>
+
+<p>Rose refuses to yell, and therefore must have played lead or second.  (The vice stands in the house when the skip throws.)  This means Rose was on the yellow team (with Fawn).  Lily was on the winning team, which means Lily was on Frog's team (Frog's shot wound up counting).  Oyster was on the losing team, and thus an opponent of Lily and Frog.  If Oyster skipped for the red team, this would force Lily to be the vice of the red team (by the alphabetical rule), which puts Oyster and Lily on the same team, which can't be.  Therefore, Tiger-Lily was the skip of the red team.  Building off the alphabetical rule again, Lily cannot play lead for red and Oyster cannot play second.  Lily cannot play second for red, because this would force Oyster to vice on the same team, and we know they are opponents.  This leaves Hatta as the only available second for red.  Since Oyster only skipped if on Hatta's team, Oyster cannot be the yellow skip.</p>
+
+
+<center><table border="1">
+<tbody><tr><td>&nbsp;</td><td>1<sub>Y</sub></td><td>2<sub>Y</sub></td><td>3<sub>Y</sub></td><td>4<sub>Y</sub></td><td>1<sub>R</sub></td><td>2<sub>R</sub></td><td>3<sub>R</sub></td><td>4<sub>R</sub></td></tr>
+<tr><td>Fawn</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Frog</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Haigha</td><td>&nbsp;</td><td>X</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Hatta</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td><font color="red">&#9823;</font></td><td>X</td><td>X</td></tr>
+<tr><td>Lily</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>&nbsp;</td><td>X</td></tr>
+<tr><td>Oyster</td><td>X</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td><td>&nbsp;</td><td>X</td></tr>
+<tr><td>Rose</td><td>&nbsp;</td><td>&nbsp;</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Tiger-Lily</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td><font color="red">&#9823;</font></td></tr>
+</tbody></table></center>
+
+<p>Assume Rose plays lead for yellow.  Because Rose's first shot was a come-around, it could not have been the very first shot of the game, meaning that Rose must have been on the team that had hammer.  Since the end was not stolen, Rose must have been on the winning team in this scenario, with Frog.  This means Haigha must have played lead for red and that his first stone was an in-turn aimed at the center of the house, and thus (after looking up the physics of an in-turn) must have wound up on the right side of the house.  (In-turns spin clockwise and curl to the right.)  We know that the yellow lead threw stones exactly on the T line (from Fawn's constraint).  If Rose threw the rock directly behind Haigha's stone and landed on the T line, we can use some triangle geometry to deduce where Haigha's red stone must have been.</p>
+
+<center><img src="./Rose-contradiction.png"></center>
+
+<p>Note that Rose's rock (yellow) is shot rock in this situation, which is a contradiction.  Therefore, Rose cannot play lead for yellow and must play second.  From here, and including the fact that Frog and Lily are team mates, all of the positions fall out.</p>
+
+<center><table border="1">
+<tbody><tr><td>&nbsp;</td><td>1<sub>Y</sub></td><td>2<sub>Y</sub></td><td>3<sub>Y</sub></td><td>4<sub>Y</sub></td><td>1<sub>R</sub></td><td>2<sub>R</sub></td><td>3<sub>R</sub></td><td>4<sub>R</sub></td></tr>
+<tr><td>Fawn</td><td>X</td><td>X</td><td>X</td><td><div style="background-color:#ffff00">&#9817;</div></td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Frog</td><td>X</td><td>X</td><td>X</td><td>X</td><td><font color="red">&#9823;</font></td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Haigha</td><td><div style="background-color:#ffff00">&#9817;</div></td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Hatta</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td><font color="red">&#9823;</font></td><td>X</td><td>X</td></tr>
+<tr><td>Lily</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td><font color="red">&#9823;</font></td><td>X</td></tr>
+<tr><td>Oyster</td><td>X</td><td>X</td><td><div style="background-color:#ffff00">&#9817;</div></td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Rose</td><td>X</td><td><div style="background-color:#ffff00">&#9817;</div></td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td></tr>
+<tr><td>Tiger-Lily</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td><td><font color="red">&#9823;</font></td></tr>
+</tbody></table></center>
+
+<p>Because red won (Frog and Lily's team) and the end was not stolen, red had the hammer and the throwing order was therefore:</p>
+<ul>
+<li>Haigha (Y1)
+</li><li>Frog (R1)
+</li><li>Haigha (Y2)
+</li><li>Frog (R2)
+</li><li>Rose (Y3)
+</li><li>Hatta (R3)
+</li><li>Rose (Y4)
+</li><li>Hatta (R4)
+</li><li>Oyster (Y5)
+</li><li>Lily (R5)
+</li><li>Oyster (Y6)
+</li><li>Lily (R6)
+</li><li>Fawn (Y7)
+</li><li>Tiger-Lily (R7)
+</li><li>Fawn (Y8)
+</li><li>Tiger-Lily (R8)
+</li></ul>
+
+<p>Using the correct throwing order and the descriptions of the stone placements, you can simulate the end and deduce the final stone positions.  Start with the lead stones (Frog and Haigha).  We know from Fawn that Haigha's first stone (Yellow 1) hit the T line (horizontal center line running across the house), and was an in-turn (clockwise spin; curls to the right) and so sits on the right side of the button.  Frog's first stone (Red 1) hit T line weight (i.e. sat centered on the T line, the horizontal line crossing through the middle of the house).  It was thrown with an out turn, meaning it was thrown with a counter-clockwise spin, which curls to the left.  We don't yet know how far to the left, but we are told it winds up counting, so it ends up closer to the button (center) than any other stone.  Haigha's second stone (Yellow 2) also hit the T line, but with an out-turn handle, so it wound up on the left side with Frog's stone.  Since Frog's stone was counting, it must have been on the outside of that stone.  Frog's second stone (Red 2) went through the house.  We don't care about stones that are out of play.  After all four lead stones, the house looked something like:</p>
+
+<center><img src="./LeadStones.png"></center>
+
+<p>The seconds stones (confusingly the third and fourth stone for each team) werethrown by Rose (yellow) and Hatta (red).  Rose's first shot (Yellow 3) curled directly behind an opponent's stone.  There's only one opponent's stone in play (Red 1), so this must be the one it sits directly behind.  At its closest point, Y3 is 3.5 feet from the button.  Since the stones are 1 ft in diameter, this means the center of the stone is exactly on the 8 ft circle (4 ft from the button).  Using some basic geometry, if Y3 is 1.828 ft behind R1, the center of Y3 is 2.828 ft behind the center of R2.  We know that Y3-R2-button is a right angle, and simple trig (or knowledge of 45 degree triangles) tells us that R2-button-Y3 is approximately a 45 degree angle.</p>
+
+<p>Hatta's stones were both take out attempts.  In order to determine which is which, you have to listen to the sweep calls.  Hatta threw the 6th (R3) and 8th (R4) stones, which were called as "Whoa! Whoa! Whoa! Whoa!" and "Whoa! Hard! Whoa!"  R3 never has an on sweep call, so it is the stone that successfully makes the take out.  The only even opponent's stone to replace at this point is Y2, sitting on the T line.</p>
+
+<p>Rose's second shot (Y4) is 180 degrees across the button from Rose's first shot (Y3).  Hatta's other take out attempt (R4) misses and goes out of play.  After the seconds throw, the house looks like:</p>
+<center><img src="./SecondStones.png"></center>
+
+<p>The vices, Oyster (Yellow) and Lily (Red), throw next.  Oyster's first stone (Yellow 5) freezes to the stone furthest to the back of the house.  This is Yellow 3.  (Note that R1 is oh, so, just barely still counting.)  Lily's first stone (Red 5) is a center guard.  Oyster's second stone (Yellow 6) freezes to the stone closest to the hogline, which is the Red 5 that was just thrown.  Lily's second stone is another center guard, this one further in front.  After the vices throw, the house looks like:</p>
+<center><img src="./ViceStones.png"></center>
+
+<p>The final stones are thrown by the skips, Fawn (Yellow) and Tiger-Lily (Red).  Fawn's first shot is "the mirror reflection across the center line of the stone furthest in the front of the house."  This is Y4 (guards are not in the house).  To determine which of Tiger-Lily's shots was which, you again have to listen to the sweep calls.  Tiger-Lily threw 14th (R7; "Hard! Whoa! Whoa!") and 16th (R8; "Whoa! Whoa! Whoa!").  The last stone was never called on to sweep, and therefore this is the stone that hogs (i.e. does not go far enough to be in play).  Thus, Tiger-Lily's first stone is the biter that hugs the back line.  The only place a biter (a stone that is partially on the rings and partially off) can also straddle the back line is in the back center of the house, so this is where R7 must have wound up.  Fawn's second shot (Y8) curled to the opposing side of the house as Y7 and froze to the stone up front (Y4).  As mentioned, the final shot of the game hogged.  After all stones were thrown, the house looks like:</p>
+<center><img src="./SkipsStones.png"></center>
+
+<p>Listening to the sweep calls, they can be be interpretted as Morse code.  If the call is to sweep, that is a dash ("Hard! Hard!" == dash dash) and if the call is to not sweep, that is a dot ("Whoa! Whoa! Whoa!" == dot dot dot).  Using the two distinct skips' voices for where to break the letter, the audio track breaks down to:</p>
+<ul>
+<li>Whoa! Whoa! Whoa! == ... == S
+</li><li>Whoa! == . == E
+</li><li>Hard! Hard! == -- == M
+</li><li>Whoa! Hard! == .- == A
+</li><li>Whoa! Hard! Hard! Whoa! == .--. == P
+</li><li>Whoa! Whoa! Whoa! Whoa! == .... == H
+</li><li>Hard! Hard! Hard! == --- == O
+</li><li>Whoa! Hard! Whoa! == .-. == R
+</li><li>Whoa! == . == E
+</li><li>Whoa! Hard! == .- == A
+</li><li>Whoa! Hard! Whoa! Whoa! == .-.. == L 
+</li><li>Whoa! Hard! Whoa! Whoa! == .-.. == L
+</li><li>Hard! Hard! Hard! == --- == O
+</li><li>Hard! Whoa! Whoa! == -.. == D
+</li><li>Hard! Whoa! Whoa! == -.. == D
+</li><li>Whoa! Whoa! Whoa! == ... == S
+</li></ul>
+<p> or SEMAPHORE ALL ODDS.  Treating the odd stones (1, 3, 5, 7) as semaphore flag markers around the button and reading them gives you:</p>
+<ul>
+<li>1: <img alt="" src="./60px-Semaphore_Romeo.png" height="50" width="60"> == R
+</li><li>3: <img alt="" src="./60px-Semaphore_Oscar.png" height="50" width="60"> == O
+</li><li>5: <img alt="" src="./60px-Semaphore_Charlie.png" height="50" width="60"> == C
+</li><li>7: <img alt="" src="./60px-Semaphore_Kilo.png" height="50" width="60"> == K
+</li></ul>
+<p>... which is the title to this puzzle, <b>ROCK</b>.
+
+</p>
