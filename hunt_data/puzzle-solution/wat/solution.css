@@ -1,0 +1,10 @@
+#mh-outer {
+  width: 950px !important;
+}
+#mh-content {
+  font-size: 17px;
+}
+.t {
+  font-family: monospace;
+  padding: 10px;
+}
