@@ -1,0 +1,84 @@
+
+<h2>The Puzzle with the Answer CRONIN</h2>
+<i>By Quinn Mahoney</i>
+<p>
+
+The puzzle shows the Cheshire Nyan Cat, speeding through a field of stars. The background music, <tt>cronin.mp3</tt>, clues the false answer CRONIN. After you've stared at the Cat for a while, and incorrectly guessed <a href="http://nyan.cat">NYAN</a> as the title, you'll notice that the stars seem to come in groups. An inspection of the source code shows that the stars arrive in groups of 32 and the vertical position of each  is dictated by the contents of the file, <tt>data.txt</tt>.
+</p>
+
+<p>
+<tt>data.txt</tt> contains about 3.3 megabytes of hexadecimal data. It seems random, but once the data is broken up into 32-character pieces, you should notice a particular string repeated a dozen times:
+</p>
+
+<p>
+<pre>
+<b>d41d8cd98f00b204e9800998ecf8427e</b>
+57cec4137b614c87cb4e24a3d003a3e0
+3700f097e741a7702f7e4ac61ed88c1a
+cae8d14edd025e72c59dbab6f378c95a
+7afcfab2abcd37569357fadba77d9e9c
+bb995f813b8c38001fad14e7a3cc528b
+b4bd7238111424a17180fc52c88fed96
+<b>d41d8cd98f00b204e9800998ecf8427e</b>
+03c7c0ace395d80182db07ae2c30f034
+0b180078d994cb2b5ed89d7ce8e7eea2
+a587b16e0a2c4a9c61feee6486c3a6c5
+d5e1f5a7f2fe3dab21da19f1c04fbd2b
+<b>d41d8cd98f00b204e9800998ecf8427e</b>
+e358efa489f58062f10dd7316b65649e
+01b6e20344b68835c5ed1ddedf20d531
+&hellip;
+</pre>
+</p>
+
+<p>
+The repeated string is: <tt>d41d8cd98f00b204e9800998ecf8427e</tt>. You might recognize it anyway, but copy it into Google and you'll find that it is the MD5 hash of the empty string, represented in hexadecimal. It seems the contents of <tt>data.txt</tt> is a series of MD5 hashes. Also notice that the 'empty' hashes are spaced anywhere from two to ten hashes apart; this is a hint that the hashes are divided up by words. You wouldn't ordinarily try to brute-force cryptographic hashes, but it's Mystery Hunt, so it's worth a shot. You'll find that each hash builds on the hash before it, adding one character each time, and resetting every time there's an empty hash. That looks like the following:
+</p>
+
+<p>
+<pre>
+<b>d41d8cd98f00b204e9800998ecf8427e</b>
+57cec4137b614c87cb4e24a3d003a3e0  Y
+3700f097e741a7702f7e4ac61ed88c1a  Yo
+cae8d14edd025e72c59dbab6f378c95a  You
+7afcfab2abcd37569357fadba77d9e9c  You'
+bb995f813b8c38001fad14e7a3cc528b  You'r
+b4bd7238111424a17180fc52c88fed96  You're
+<b>d41d8cd98f00b204e9800998ecf8427e</b>
+03c7c0ace395d80182db07ae2c30f034  s
+0b180078d994cb2b5ed89d7ce8e7eea2  su
+a587b16e0a2c4a9c61feee6486c3a6c5  sur
+d5e1f5a7f2fe3dab21da19f1c04fbd2b  sure
+<b>d41d8cd98f00b204e9800998ecf8427e</b>
+e358efa489f58062f10dd7316b65649e  t
+01b6e20344b68835c5ed1ddedf20d531  to
+&hellip;
+</pre>
+</p>
+
+<p>
+Once you've decoded the entire <tt>cronin.txt</tt>, you get a quotation from the Cheshire Cat, followed by a second stream of data:
+</p>
+<p><tt>
+You're sure to get somewhere, if you only walk long enough. da39a3ee5e6b4b0d3255bfef95601890afd8070908a914cde05039694ef0194d9ee79ff9a79dde330d94103eaba0e8fcbb475d8c9ebcf4752ef898edda39a3ee5e6b4b0d325&hellip;
+</tt></p>
+
+<p>
+The repeated string in this stream of data is the SHA-1 hash of the empty string, <tt>da39a3ee5e6b4b0d3255bfef95601890afd80709</tt>. Follow the steps above to decode again. You'll get another quotation from the Cheshire Cat, followed by a third stream of data:
+</p>
+<p><tt>Oh you can't help that. We're all mad here. I'm mad. You're mad. c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a47003783fac2efed8fbc9ad443e592ee30e61d65f471140c10ca155e937b435b7608c7303&hellip;
+</tt></p>
+
+<p>
+The hash function used on this level is a bit more obscure, but if you copy the repeated string <tt>c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470</tt> into Google, you'll find that the function is Keccak-256, one variant of the newly-chosen SHA-3 standard. Decode the third stream of data to get the sentence:
+</p>
+
+<p><tt>
+Alice thought the whole thing very SILLY
+</tt></p>
+
+<p>The title of this silly puzzle is the word, <b>SILLY</b>.</p>
+
+<p>
+A Python script to generate the puzzle data is here: <tt><a href="puzzle.py">puzzle.py</a></tt> and a script to solve the puzzle is here: <tt><a href="solution.py">solution.py</a></tt>. They both require <tt>pysha3</tt>; instructions are in the source files.
+</p>
