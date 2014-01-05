@@ -59,15 +59,27 @@ e358efa489f58062f10dd7316b65649e  t
 <p>
 Once you've decoded the entire <tt>cronin.txt</tt>, you get a quotation from the Cheshire Cat, followed by a second stream of data:
 </p>
-<p><tt>
-You're sure to get somewhere, if you only walk long enough. da39a3ee5e6b4b0d3255bfef95601890afd8070908a914cde05039694ef0194d9ee79ff9a79dde330d94103eaba0e8fcbb475d8c9ebcf4752ef898edda39a3ee5e6b4b0d325&hellip;
-</tt></p>
+<p>
+<pre>
+You're sure to get somewhere, if you only walk long enough.
+da39a3ee5e6b4b0d3255bfef95601890afd80709
+08a914cde05039694ef0194d9ee79ff9a79dde33
+0d94103eaba0e8fcbb475d8c9ebcf4752ef898ed
+da39a3ee5e6b4b0d325&hellip;
+</pre>
+</p>
 
 <p>
 The repeated string in this stream of data is the SHA-1 hash of the empty string, <tt>da39a3ee5e6b4b0d3255bfef95601890afd80709</tt>. Follow the steps above to decode again. You'll get another quotation from the Cheshire Cat, followed by a third stream of data:
 </p>
-<p><tt>Oh you can't help that. We're all mad here. I'm mad. You're mad. c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a47003783fac2efed8fbc9ad443e592ee30e61d65f471140c10ca155e937b435b7608c7303&hellip;
-</tt></p>
+
+<p>
+<pre>Oh you can't help that. We're all mad here. I'm mad. You're mad.
+c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470
+03783fac2efed8fbc9ad443e592ee30e61d65f471140c10ca155e937b435b760
+8c7303&hellip;
+</pre>
+</p>
 
 <p>
 The hash function used on this level is a bit more obscure, but if you copy the repeated string <tt>c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470</tt> into Google, you'll find that the function is Keccak-256, one variant of the newly-chosen SHA-3 standard. Decode the third stream of data to get the sentence:
