@@ -3,3 +3,5 @@ dormouse	Meet the Dormouse	100
 caterpillar	Meet the Caterpillar	200
 tweedles	Meet Tweedledee and Tweedledum	300
 white_queen_gift	Give the White Queen a Gift	500
+pwa_garciaparra_url	Submit a URL for A Puzzle with the Answer GARCIAPARRA	1010
+pwa_garciaparra_food	Bring us food for A Puzzle with the Answer GARCIAPARRA	1020

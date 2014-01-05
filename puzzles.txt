@@ -53,7 +53,9 @@ white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	
 white_queen	MIAMI	puzzle_with_answer_youkilis	A Puzzle with the Answer YOUKILIS	3040
 white_queen	WATCHING	puzzle_with_answer_sullivan	A Puzzle with the Answer SULLIVAN	3050
 white_queen	SILLY	puzzle_with_answer_cronin	A Puzzle with the Answer CRONIN	3060
+white_queen	BACON	puzzle_with_answer_garciaparra	A Puzzle with the Answer GARCIAPARRA	3070
 white_queen	CONSTITUTION	another_puzzle_with_answer_sullivan	Another Puzzle with the Answer SULLIVAN	3080
+white_queen	ROAD	puzzle_with_answer_rice	A Puzzle with the Answer RICE	3090
 white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3100
 white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer EIGHT DAYS A WEEK	3110
 white_queen	BRAVO	puzzle_with_answer_norwegian_wood	A Puzzle with the Answer NORWEGIAN WOOD	3120
@@ -63,7 +65,6 @@ white_queen	ROCK	puzzle_with_answer_a_hard_days_night	A Puzzle with the Answer A
 white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3160
 white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180
-white_queen	ROAD	puzzle_with_answer_rice	A Puzzle with the Answer RICE	3190
 caucus_race	ECHO	crossed_wires	Crossed Wires	5010
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020
 caucus_race	MILLSTONE	sat_iii	SAT III	5030
