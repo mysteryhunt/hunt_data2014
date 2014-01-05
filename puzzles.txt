@@ -73,6 +73,7 @@ caucus_race	SPUR	venntersections	Venntersections	5110
 caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120
 caucus_race	DERRICK	crosswalks	Crosswalks	5130
 caucus_race	CONFRONT	wat	WAT?	5140
+caucus_race	ENGULF	gone_with_the_wind	Gone with the Wind	5150
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	6030
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
@@ -98,3 +99,4 @@ humpty_dumpty	PENSIVENESS	eggsam	Eggsam	4110
 humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
 humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
 humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	4140
+humpty_dumpty	SQUIGGLES	the_circle_of_life	The Circle of Life	4150

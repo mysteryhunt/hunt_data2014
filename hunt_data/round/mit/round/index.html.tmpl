@@ -49,6 +49,63 @@
       {% for puzzle in puzzles %}
       <div class="mh-map-location" style=
 	   {% if puzzle.card.name == "J_diamonds" %}
+	   "top: 65px; left: 154px;"
+	   {% elif puzzle.card.name == "5_spades" %}
+	   "top: 39px; left: 154px;"
+	   {% elif puzzle.card.name == "Q_clubs" %}
+	   "top: 27px; left: 271px;"
+	   {% elif puzzle.card.name == "4_diamonds" %}
+	   "top: 27px; left: 364px;"
+	   {% elif puzzle.card.name == "4_clubs" %}
+	   "top: 27px; left: 387px;"
+	   {% elif puzzle.card.name == "9_diamonds" %}
+	   "top: 24px; left: 493px;"
+	   {% elif puzzle.card.name == "7_spades" %}
+	   "top: 24px; left: 589px;"
+	   {% elif puzzle.card.name == "9_spades" %}
+	   "top: 39px; left: 154px;"
+	   {% elif puzzle.card.name == "7_clubs" %}
+	   "top: 27px; left: 271px;"
+	   {% elif puzzle.card.name == "10_diamonds" %}
+	   "top: 27px; left: 387px;"
+	   {% elif puzzle.card.name == "4_spades" %}
+	   "top: 28px; left: 485px;"
+	   {% elif puzzle.card.name == "2_diamonds" %}
+	   "top: 69px; left: 387px;"
+	   {% elif puzzle.card.name == "2_clubs" %}
+	   "top: 69px; left: 426px;"
+	   {% elif puzzle.card.name == "8_spades" %}
+	   "top: 108px; left: 588px;"
+	   {% elif puzzle.card.name == "5_clubs" %}
+	   "top: 24px; left: 553px;"
+	   {% elif puzzle.card.name == "3_spades" %}
+	   "top: 116px; left: 154px;"
+	   {% elif puzzle.card.name == "9_clubs" %}
+	   "top: 144px; left: 249px;"
+	   {% elif puzzle.card.name == "A_diamonds" %}
+	   "top: 69px; left: 249px;"
+	   {% elif puzzle.card.name == "8_diamonds" %}
+	   "top: 92px; left: 249px;"
+	   {% elif puzzle.card.name == "3_diamonds" %}
+	   "top: 138px; left: 426px;"
+	   {% elif puzzle.card.name == "6_spades" %}
+	   "top: 158px; left: 592px;"
+	   {% elif puzzle.card.name == "K_clubs" %}
+	   "top: 108px; left: 588px;"
+	   {% elif puzzle.card.name == "2_spades" %}
+	   "top: 158px; left: 311px;"
+	   {% elif puzzle.card.name == "J_clubs" %}
+	   "top: 203px; left: 426px;"
+	   {% else %}
+	   "{{ puzzle.card }}"
+	   {% endif %}
+	   >
+	<img src="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/paths.png" />
+      </div>
+      {% endfor %}
+      {% for puzzle in puzzles %}
+      <div class="mh-map-location" style=
+	   {% if puzzle.card.name == "J_diamonds" %}
 	   "top: 116px; left: 152px;"
 	   {% elif puzzle.card.name == "5_spades" %}
 	   "top: 65px; left: 289px;"
