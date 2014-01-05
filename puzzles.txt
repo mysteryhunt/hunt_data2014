@@ -35,6 +35,7 @@ tea_party	COQ AU VIN	obsessive_compulsive_dickishness	Obsessive-Compulsive Dicki
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1130
 tea_party	NOREASTER BLIZZARD	guess_what_im_thinking	Guess What I'm Thinking	1150
 tea_party	RHINOCEROS VIPER	the_most_dangerous_night	The Most Dangerous Night	1160
+mock_turtle	WARDLEY	nothing_but_a_pack_of_cards	Nothing but a Pack of Cards	2010
 mock_turtle	LOCKS	common_bonds	Common Bonds	2020
 mock_turtle	TI85	assemble_me	Assemble Me	2050
 mock_turtle	TORAH	safer_sephiroth	Safer Sephiroth	2060
@@ -45,11 +46,12 @@ mock_turtle	LEVAR BURTON	introduction_to_collegiate_notetaking	Introduction to C
 mock_turtle	DOWNFALL	please_remain_seated	Please Remain Seated	2110
 mock_turtle	WORMTONGUE	stronghold_fire	Stronghold Fire	2120
 mock_turtle	NUMBER THEORY	cross_pollination	Cross-Pollination	2130
-mock_turtle	WARDLEY	nothing_but_a_pack_of_cards	Nothing but a Pack of Cards	2140
 white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	3010
 white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
 white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
 white_queen	MIAMI	puzzle_with_answer_youkilis	A Puzzle with the Answer YOUKILIS	3040
+white_queen	WATCHING	puzzle_with_answer_sullivan	A Puzzle with the Answer SULLIVAN	3050
+white_queen	SILLY	puzzle_with_answer_cronin	A Puzzle with the Answer CRONIN	3060
 white_queen	CONSTITUTION	another_puzzle_with_answer_sullivan	Another Puzzle with the Answer SULLIVAN	3080
 white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3100
 white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer EIGHT DAYS A WEEK	3110
@@ -60,12 +62,11 @@ white_queen	ROCK	puzzle_with_answer_a_hard_days_night	A Puzzle with the Answer A
 white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3160
 white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180
-white_queen	SILLY	puzzle_with_answer_cronin	A Puzzle with the Answer CRONIN	3190
-white_queen	WATCHING	puzzle_with_answer_sullivan	A Puzzle with the Answer SULLIVAN	3200
 caucus_race	ECHO	crossed_wires	Crossed Wires	5010
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020
 caucus_race	MILLSTONE	sat_iii	SAT III	5030
 caucus_race	SMASH HIT	1_2_3_4_4649	1! 2! 3! 4! 4649!	5040
+caucus_race	ENGULF	gone_with_the_wind	Gone with the Wind	5050
 caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5060
 caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5070
 caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5090
@@ -74,7 +75,6 @@ caucus_race	SPUR	venntersections	Venntersections	5110
 caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120
 caucus_race	DERRICK	crosswalks	Crosswalks	5130
 caucus_race	CONFRONT	wat	WAT?	5140
-caucus_race	ENGULF	gone_with_the_wind	Gone with the Wind	5150
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	6030
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
