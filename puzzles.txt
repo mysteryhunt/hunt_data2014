@@ -73,6 +73,7 @@ caucus_race	SPUR	venntersections	Venntersections	5110
 caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120
 caucus_race	DERRICK	crosswalks	Crosswalks	5130
 caucus_race	CONFRONT	wat	WAT?	5140
+caucus_race	ENGULF	gone_with_the_wind	Gone with the Wind	5150
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	6030
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
