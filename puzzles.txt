@@ -61,6 +61,7 @@ white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIV
 white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180
 white_queen	SILLY	puzzle_with_answer_cronin	A Puzzle with the Answer CRONIN	3190
+white_queen	WATCHING	puzzle_with_answer_sullivan	A Puzzle with the Answer SULLIVAN	3200
 caucus_race	ECHO	crossed_wires	Crossed Wires	5010
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020
 caucus_race	MILLSTONE	sat_iii	SAT III	5030
