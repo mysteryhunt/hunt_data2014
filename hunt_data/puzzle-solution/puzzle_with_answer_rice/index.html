@@ -1,0 +1,1362 @@
+<h2>Solution to A Puzzle with the Answer RICE</h2>
+
+<p>
+<i>Author: Chieu Nguyen</i>
+</p>
+
+<br/>
+
+    <h3>Initial observations</h3>
+
+    <p>This is a straightforward puzzle. Simply follow the steps in order and you'll get to a step that tells you to submit an answer. And you're done!</p>
+
+    <p>At first glance, it looks like you'll be done when you get to step 46 and that the answer is RICE. While this is indeed the answer, you already know it is! It's the <i>title</i> you're looking for! Also, it's suspicious that there are a few more steps after this.</p>
+
+    <p>The catch is that some of the previous steps modify the content of other steps, so that by the time you get to step 46, it no longer looks the way it did when you started.</p>
+
+    <p>Still, if you follow the steps in order (that is, start with step 1; then do the new version of step 2, which will have changed because of what step 1 said to do; then do step 3; and so on), you will eventually get to a final step that tells you to do something to submit a title for the puzzle, though it is not immediately clear at first glance when you'll get to this step or even what it'll look like when you get to it.</p>
+
+    <p>Following the steps the naive way will take a very very very long time and you will not finish by the time Hunt is over, or even anywhere close to that, not even if you simulate it on today's state-of-the-art supercomputers. This fact is suggested by the initial content of step 4, which is a hint that the process will terminate on step 5,885,684,381,522,422,090,573.</p>
+
+    <p>So how do we efficiently solve this puzzle?</p>
+
+
+    <h3>Part 1: Expanding the initial set of steps (steps 1 to 39)</h3>
+
+    <p>We can try evaluating the first few steps and see what happens. The first step says to swap the next step (step 2) with the step 170 steps below the current step (step 171). Step 171 is a "<tt>Continue.</tt>" step, as are all steps after step 56. So the result of swapping these two steps looks like this:</p>
+
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 1.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 170 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 2.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>(Steps 3-170 omitted.)</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 171.</tt></td>
+        <td style=";"><tt><b>Replace each of the previous 115 steps with a copy of the step after this one.</b></tt></td>
+      </tr>
+    </table>
+
+   <p>As a result of this, the step to perform next (step 2) has changed. It now simply says "<tt>Continue.</tt>", so we move on to step 3.</p>
+
+   <p>The next series of steps are similar. The odd-numbered steps in the first 39 steps all swap the positions of the next step and some "<tt>Continue.</tt>" step further down. The even-numbered steps follow this swapping, so they'll all say "<tt>Continue.</tt>" and don't ask you to perform any modifications. So after evaluating the first 39 steps, the rest of the steps will look like this:</p>
+
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 40.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 41.</tt></td>
+        <td style=";"><tt>Swap the previous step and the step 3 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 42.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 2 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 43.</tt></td>
+        <td style=";"><tt>Copy the previous 3 steps and move all of them 5,885,684,381,522,422,090,308 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 44.</tt></td>
+        <td style=";"><tt><b>Swap the next step and the step 224 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 45.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 220 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 46.</tt></td>
+        <td style=";"><tt>Call in RICE to solve this puzzle.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 47.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 218 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 48.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 27 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 49.</tt></td>
+        <td style=";"><tt>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 50.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 25 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 51.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 52.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 53.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 54.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 55.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step 5,885,684,381,522,422,090,518 step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 56 to 170.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 171.</tt></td>
+        <td style=";"><tt><b>Replace each of the previous 115 steps with a copy of the step after this one.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 172.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 173.</tt></td>
+        <td style=";"><tt><b>Convince yourself that you have enough patience to perform 5,885,684,381,522,422,090,573 steps.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 174 to 178.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 179.</tt></td>
+        <td style=";"><tt><b>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by 25.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 180 to 184.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 185.</tt></td>
+        <td style=";"><tt><b>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by 25.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 186 to 190.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 191.</tt></td>
+        <td style=";"><tt><b>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by 17.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 192 to 196.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 197.</tt></td>
+        <td style=";"><tt><b>In the third word of the step 68 steps below this step, Caesar-shift the first letter forward by 24.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 198 to 202.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 203.</tt></td>
+        <td style=";"><tt><b>In the fifth word of the step 62 steps below this step, Caesar-shift the fifth letter forward by 6.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 204 to 208.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 209.</tt></td>
+        <td style=";"><tt><b>In the fifth word of the step 56 steps below this step, Caesar-shift the fourth letter forward by 7.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 210 to 214.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 215.</tt></td>
+        <td style=";"><tt><b>In the fifth word of the step 50 steps below this step, Caesar-shift the third letter forward by 15.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 216 to 220.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 221.</tt></td>
+        <td style=";"><tt><b>In the fifth word of the step 44 steps below this step, Caesar-shift the second letter forward by 3.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 222 to 226.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 227.</tt></td>
+        <td style=";"><tt><b>In the fifth word of the step 38 steps below this step, Caesar-shift the first letter forward by 10.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 228 to 232.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 233.</tt></td>
+        <td style=";"><tt><b>In the second word of the step 32 steps below this step, Caesar-shift the second letter forward by 0.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 234 to 238.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 239.</tt></td>
+        <td style=";"><tt><b>In the second word of the step 26 steps below this step, Caesar-shift the first letter forward by 6.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 240 to 244.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 245.</tt></td>
+        <td style=";"><tt><b>In the first word of the step 20 steps below this step, Caesar-shift the fourth letter forward by 13.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 246 to 250.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 251.</tt></td>
+        <td style=";"><tt><b>In the first word of the step 14 steps below this step, Caesar-shift the third letter forward by 15.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 252 to 256.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 257.</tt></td>
+        <td style=";"><tt><b>In the first word of the step 8 steps below this step, Caesar-shift the second letter forward by 19.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 258 to 262.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 263.</tt></td>
+        <td style=";"><tt><b>In the first word of the step 2 steps below this step, Caesar-shift the first letter forward by 16.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 264.</tt></td>
+        <td style=";"><tt><b>Replace the next step with a copy of the step after it.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 265 to 266.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 267.</tt></td>
+        <td style=";"><tt><b>Copy the previous 223 steps as well as this step and move all of them 228 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 268 and up.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+    </table>
+
+    <p>At this point, we have steps that don't involve just swapping subsequent steps into the future. The previous part was really just to condense the initial set of steps into something more compact than the set we have now, which is mostly filled with <tt>Continue.</tt> steps.</p>
+
+
+    <h3>Part 2: A long-distance displacement (steps 40 to 44)</h3>
+    
+    <p>Let us evaluate the next few steps. After evaluating steps 40 through 44, those steps now look like this:</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 40.</tt></td>
+        <td style=";"><tt><b>Swap the next step and the step 224 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 41.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 42.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 2 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 43.</tt></td>
+        <td style=";"><tt>Copy the previous 3 steps and move all of them 5,885,684,381,522,422,090,308 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 44.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+    </table>
+
+    <p>Note that what is now step 40 has never been evaluated since it was moved around twice. Steps 40 through 42 are now copied 5,885,684,381,522,422,090,308 steps into the future. Since this is a really huge number, we don't have to worry about this yet. We'll get back to it later.</p>
+
+
+    <h3>Part 3: Delaying the end, and setting up for what's next (steps 45 to 50)</h3>
+
+    <p>Let's see what happens with the remaining steps. Just when it looks like you'll get to a submission step, step 46, it gets swapped with step 265, a "<tt>Continue.</tt>" step, then copied back up without being evaluated. After evaluating steps 45 through 47, the result is the following, with unaffected steps omitted:</p>
+ 
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 45.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 220 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 46.</tt></td>
+        <td style=";"><tt><b>Call in RICE to solve this puzzle.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 47.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 218 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>...</tt></td>
+        <td style=";"><tt></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 265.</tt></td>
+        <td style=";"><tt><b>Call in RICE to solve this puzzle.</b></tt></td>
+      </tr>
+    </table>
+
+    <p>The next few steps do something similar: swapping step 49 with a "<tt>Continue.</tt>" step to avoid evaluating it and then copying it back up. After evaluating steps 48 through 50, steps 48 through 75 now look like this:</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 48.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 27 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 49.</tt></td>
+        <td style=";"><tt><b>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 50.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 25 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 51.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 52.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 53.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 54.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 55.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step 5,885,684,381,522,422,090,518 step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 56 to 74.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 75.</tt></td>
+        <td style=";"><tt><b>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+    </table>
+
+
+    <h3>Part 4: Incrementing a counter (steps 51 to 67)</h3>
+
+    <p>This next part is the core of the puzzle. Let's evaluate steps 51 through 55 and see what happens. After evaluating step 55, steps 51 through 191 look as follows:</p>
+
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 51.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 52.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 53.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 54.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 55.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step <b>26</b> step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 56.</tt></td>
+        <td style=";"><tt><b>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 57 to 80.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 81.</tt></td>
+        <td style=";"><tt><b>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 82 to 170.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 171.</tt></td>
+        <td style=";"><tt>Replace each of the previous 115 steps with a copy of the step after this one.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 172.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 173.</tt></td>
+        <td style=";"><tt>Convince yourself that you have enough patience to perform <b>0</b> steps.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 174 to 178.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 179.</tt></td>
+        <td style=";"><tt>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by <b>26</b>.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 180 to 184.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 185.</tt></td>
+        <td style=";"><tt>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by 25.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 186 to 190.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 191.</tt></td>
+        <td style=";"><tt>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by 17.</tt></td>
+      </tr>
+    </table>
+
+    <p>A few changes have happened here. First, step 51 does a swap that has the effect of moving step 75 down 6 steps to become step 81.</p>
+    
+    <p>Second, due to step 52, the gigantic number in step 173 has been replaced by 0. Since the huge number was never used, it was just a hint that the process would take that many steps. In fact, this step doesn't actually do anything. It's just there as a placeholder.</p>
+
+    <p>Third, step 53 increments the last number in the first of the Caesar-shift steps, step 179, from 25 to 26. Looking ahead, you can see that all the Caesar-shift steps make changes to the wording of the submission step, so this is basically the mechanism that will eventually give us the title.</p>
+
+    <p>At this point, step 54 copies the new value, 26, and puts it in step 55, overwriting another huge number. Since this huge number was never used, this was also just a hint that the final step will be that far down from step 55, which is the same number hinted in step 173.</p>
+
+    <p>Now we follow step 55, which with the 26 in it now copies step 81 into step 56.</p>
+
+    <p>OK, let's do the new step 56. When we do so, steps 51 through 191 now look like this:</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 51.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 52.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 53.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 54.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 55.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step 26 step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 56.</tt></td>
+        <td style=";"><tt>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 57.</tt></td>
+        <td style=";"><tt><b>Swap the step 24 steps below this step and the step 30 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 58.</tt></td>
+        <td style=";"><tt><b>Replace the last number in the step 121 steps below this step with 0.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 59.</tt></td>
+        <td style=";"><tt><b>Add 1 to the last number in the step 126 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 60.</tt></td>
+        <td style=";"><tt><b>Replace the number in the next step with the last number in the step 125 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 61.</tt></td>
+        <td style=";"><tt><b>Replace the next step with a copy of the step 26 step(s) below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 62 to 80.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 81.</tt></td>
+        <td style=";"><tt>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 82 to 170.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 171.</tt></td>
+        <td style=";"><tt>Replace each of the previous 115 steps with a copy of the step after this one.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 172.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 173.</tt></td>
+        <td style=";"><tt>Convince yourself that you have enough patience to perform 0 steps.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 174 to 178.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 179.</tt></td>
+        <td style=";"><tt>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by 26.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 180 to 184.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 185.</tt></td>
+        <td style=";"><tt>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by 25.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 186 to 190.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 191.</tt></td>
+        <td style=";"><tt>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by 17.</tt></td>
+      </tr>
+    </table>
+
+    <p>This should look pretty similar to how the steps looked before we did step 51, just with steps 51 through 55 shifted down to become steps 57 through 61. If we do steps 57 through 61, they perform a similar set of changes, but to a different set of steps. After finishing step 61, we have this:</p>
+ 
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 51.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 52.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 53.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 54.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 55.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step 26 step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 56.</tt></td>
+        <td style=";"><tt>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 57.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 58.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 59.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 60.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 61.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step <b>26</b> step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 62.</tt></td>
+        <td style=";"><tt><b>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 63 to 86.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 87.</tt></td>
+        <td style=";"><tt><b>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 88 to 170.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 171.</tt></td>
+        <td style=";"><tt>Replace each of the previous 115 steps with a copy of the step after this one.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 172.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 173.</tt></td>
+        <td style=";"><tt>Convince yourself that you have enough patience to perform 0 steps.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 174 to 178.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 179.</tt></td>
+        <td style=";"><tt>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by <b>0</b>.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 180 to 184.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 185.</tt></td>
+        <td style=";"><tt>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by <b>26</b>.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 186 to 190.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 191.</tt></td>
+        <td style=";"><tt>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by 17.</tt></td>
+      </tr>
+    </table>
+
+    <p>This time, it's not the placeholder step that has its last number reset to 0, but the first Caesar-shift step (step 179). In addition, the second Caesar-shift step (step 185) has now had its last number incremented, again from 25 to 26. This means that once again have a non-trivial step as the next step (step 62), which is the same step that caused the last five steps to repeat.</p>
+
+    <p>After we perform step 62, steps 57 through 61 are copied down to become steps 63 through 67. After finishing step 67, we now have this:</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 51.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 52.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 53.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 54.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 55.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step 26 step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 56.</tt></td>
+        <td style=";"><tt>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 57.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 58.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 59.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 60.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 61.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step 26 step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 62.</tt></td>
+        <td style=";"><tt>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 63.</tt></td>
+        <td style=";"><tt><b>Swap the step 24 steps below this step and the step 30 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 64.</tt></td>
+        <td style=";"><tt><b>Replace the last number in the step 121 steps below this step with 0.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 65.</tt></td>
+        <td style=";"><tt><b>Add 1 to the last number in the step 126 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 66.</tt></td>
+        <td style=";"><tt><b>Replace the number in the next step with the last number in the step 125 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 67.</tt></td>
+        <td style=";"><tt><b>Replace the next step with a copy of the step 18 step(s) below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 68.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 69 to 92.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 93.</tt></td>
+        <td style=";"><tt><b>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 94 to 170.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 171.</tt></td>
+        <td style=";"><tt>Replace each of the previous 115 steps with a copy of the step after this one.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 172.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 173.</tt></td>
+        <td style=";"><tt>Convince yourself that you have enough patience to perform 0 steps.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 174 to 178.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 179.</tt></td>
+        <td style=";"><tt>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 180 to 184.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 185.</tt></td>
+        <td style=";"><tt>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by <b>0</b>.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 186 to 190.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 191.</tt></td>
+        <td style=";"><tt>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by <b>18</b>.</tt></td>
+      </tr>
+    </table>
+
+    
+
+    <p>The result is that in the third Caesar-shift step (step 191), the 17 is incremented to 18. This does <i>not</i> trigger a repeat of the process because going down 18 steps from step 67 gets you to a <tt>Continue.</tt> step. In fact, anything between 1 and 25 (which are the only possible values for the last number in a Caesar-shift step) means this process terminates.</p>
+
+    <p>If you've been following along, you'll have observed that this section performs the action of incrementing a base-26 counter, represented by the last digits in the Caesar-shift steps. The first two iterations of the subroutine caused a value of 25 to go to 26, which resulted in the 26 being reset to 0, followed by a repeat of the subroutine for the next digit. This is analogous to what happens when you add 1 to a number like 3999 in base 10: the trailing 9's become 0's and the digit right before the 9's goes up by 1. So ultimately, every time we run through this section, the counter is incremented by 1.</p>
+
+
+    <h3>Part 5: Cleaning up (steps 68 to 178)</h3>
+
+    <p>After continuing down through the <tt>Continue.</tt> steps, we get to step 93, which has no effect since it replaces a block of <tt>Continue.</tt> steps with <tt>Continue.</tt> steps.</p>
+
+    <p>Continuing on, we get to step 171, which erases steps 56 through 170, thus resetting the counter-incrementation subroutine to what it looked like before we went through it.</p>
+
+    <p>Step 173 does not do anything (though convincing yourself that you can do 0 steps is pretty trivial ... too bad this puzzle takes a lot more steps than that to finish!), so let's move on to the next part.</p>
+
+ 
+    <h3>Part 6: Transforming the answer step (steps 179 to 263)</h3>
+    
+    <p>At this point, we now have a series of steps that tell you to Caesar-shift individual letters in step 265, the answer step. Doing all of these up through step 263, we have now this:</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 179.</tt></td>
+        <td style=";"><tt>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 180 to 184.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 185.</tt></td>
+        <td style=";"><tt>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 186 to 190.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 191.</tt></td>
+        <td style=";"><tt>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by 18.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 192 to 196.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 197.</tt></td>
+        <td style=";"><tt>In the third word of the step 68 steps below this step, Caesar-shift the first letter forward by 24.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 198 to 202.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 203.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 62 steps below this step, Caesar-shift the fifth letter forward by 6.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 204 to 208.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 209.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 56 steps below this step, Caesar-shift the fourth letter forward by 7.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 210 to 214.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 215.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 50 steps below this step, Caesar-shift the third letter forward by 15.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 216 to 220.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 221.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 44 steps below this step, Caesar-shift the second letter forward by 3.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 222 to 226.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 227.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 38 steps below this step, Caesar-shift the first letter forward by 10.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 228 to 232.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 233.</tt></td>
+        <td style=";"><tt>In the second word of the step 32 steps below this step, Caesar-shift the second letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 234 to 238.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 239.</tt></td>
+        <td style=";"><tt>In the second word of the step 26 steps below this step, Caesar-shift the first letter forward by 6.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 240 to 244.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 245.</tt></td>
+        <td style=";"><tt>In the first word of the step 20 steps below this step, Caesar-shift the fourth letter forward by 13.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 246 to 250.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 251.</tt></td>
+        <td style=";"><tt>In the first word of the step 14 steps below this step, Caesar-shift the third letter forward by 15.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 252 to 256.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 257.</tt></td>
+        <td style=";"><tt>In the first word of the step 8 steps below this step, Caesar-shift the second letter forward by 19.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 258 to 262.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 263.</tt></td>
+        <td style=";"><tt>In the first word of the step 2 steps below this step, Caesar-shift the first letter forward by 16.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 264.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step after it.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 265.</tt></td>
+        <td style=";"><tt><b>Stay</b> <b>on</b> <b>PACE</b> to <b>crack</b> this puzzle.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 266.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 267.</tt></td>
+        <td style=";"><tt>Copy the previous 223 steps as well as this step and move all of them 228 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+    </table>
+
+    <p>The answer step (step 265) is now transformed to give you a message! But <tt>PACE</tt> is not the title of the puzzle. This is just a message to be taken literally, to confirm that you're on the right track. If you messed up during the counter incrementation section, this message would look like it had a few typos in it.</p>
+
+
+    <h3>Part 7: We're not done yet (steps 264 to 267)</h3>
+
+    <p>But it doesn't end here, because the next step (step 264) deletes this message.</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Step 264.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step after it.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 265.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 266.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 267.</tt></td>
+        <td style=";"><tt>Copy the previous 223 steps as well as this step and move all of them 228 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+    </table>
+
+    <p>We are now left with step 267, which copies steps 44 through 267 and moves them forward to become steps 273 through 495.</p>
+ 
+    <table style="width:95%;">
+      <tr>
+        <td style="width:200px;"><tt>Steps 268 to 272.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 273.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 220 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 274.</tt></td>
+        <td style=";"><tt>Call in RICE to solve this puzzle.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 275.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 218 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 276.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 27 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 277.</tt></td>
+        <td style=";"><tt>Copy the previous 5 steps and move all of them 6 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 278.</tt></td>
+        <td style=";"><tt>Replace the previous step with a copy of the step 25 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 279.</tt></td>
+        <td style=";"><tt>Swap the step 24 steps below this step and the step 30 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 280.</tt></td>
+        <td style=";"><tt>Replace the last number in the step 121 steps below this step with 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 281.</tt></td>
+        <td style=";"><tt>Add 1 to the last number in the step 126 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 282.</tt></td>
+        <td style=";"><tt>Replace the number in the next step with the last number in the step 125 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 283.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step 26 step(s) below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 284 to 398.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 399.</tt></td>
+        <td style=";"><tt>Replace each of the previous 115 steps with a copy of the step after this one.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 400.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 401.</tt></td>
+        <td style=";"><tt>Convince yourself that you have enough patience to perform 0 steps.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 402 to 406.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 407.</tt></td>
+        <td style=";"><tt>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 408 to 412.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 413.</tt></td>
+        <td style=";"><tt>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 414 to 418.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 419.</tt></td>
+        <td style=";"><tt>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by 18.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 420 to 424.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 425.</tt></td>
+        <td style=";"><tt>In the third word of the step 68 steps below this step, Caesar-shift the first letter forward by 24.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 426 to 430.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 431.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 62 steps below this step, Caesar-shift the fifth letter forward by 6.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 432 to 436.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 437.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 56 steps below this step, Caesar-shift the fourth letter forward by 7.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 438 to 442.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 443.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 50 steps below this step, Caesar-shift the third letter forward by 15.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 444 to 448.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 449.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 44 steps below this step, Caesar-shift the second letter forward by 3.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 450 to 454.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 455.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 38 steps below this step, Caesar-shift the first letter forward by 10.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 456 to 460.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 461.</tt></td>
+        <td style=";"><tt>In the second word of the step 32 steps below this step, Caesar-shift the second letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 462 to 466.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 467.</tt></td>
+        <td style=";"><tt>In the second word of the step 26 steps below this step, Caesar-shift the first letter forward by 6.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 468 to 472.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 473.</tt></td>
+        <td style=";"><tt>In the first word of the step 20 steps below this step, Caesar-shift the fourth letter forward by 13.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 474 to 478.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 479.</tt></td>
+        <td style=";"><tt>In the first word of the step 14 steps below this step, Caesar-shift the third letter forward by 15.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 480 to 484.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 485.</tt></td>
+        <td style=";"><tt>In the first word of the step 8 steps below this step, Caesar-shift the second letter forward by 19.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 486 to 490.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 491.</tt></td>
+        <td style=";"><tt>In the first word of the step 2 steps below this step, Caesar-shift the first letter forward by 16.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 492.</tt></td>
+        <td style=";"><tt>Replace the next step with a copy of the step after it.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Steps 493 to 494.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:200px;"><tt>Step 495.</tt></td>
+        <td style=";"><tt>Copy the previous 223 steps as well as this step and move all of them 228 steps forward, overwriting any steps at those locations.</tt></td>
+      </tr>
+    </table>
+
+    <p>This is not much different from what steps 44 through 267 looked like before we started on step 44. The only significant difference is that the counter in the Caesar-shift steps has been incremented by 1. The two numbers that get replaced before ever being used have changed, but this does not matter. So doing these steps again will increment by 1 again, and we'll have a repeat of this process.</p>
+
+
+    <h3>Part 8: Now let's do it all over again (steps 268 to 5,885,684,381,522,422,090,347)</h3>
+
+    <p>Or not. It's probably best to just skip this part, since we've figured out what it does.</p>
+
+
+    <h3>Part 9: Termination (steps 5,885,684,381,522,422,090,348 to 5,885,684,381,522,422,090,573)</h3>
+
+    <p>All right! We're almost at the end! Looking back at Part 2, which shifted a few steps really far down, we see that those steps end up here:</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,348.</tt></td>
+        <td style=";"><tt><b>Swap the next step and the step 224 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,349.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,350.</tt></td>
+        <td style=";"><tt><b>Replace the previous step with a copy of the step 2 steps below this step.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,351.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+    </table>
+
+    <p>In fact, none of the previous steps have modified these steps! This is because step 267 and its future iterations each copied a block of 224 steps forward by 228 steps, so whatever is in that gap of 4 steps would not be overwritten. We can verify that indeed the copied block of 224 steps will eventually end up right beneath the four steps given above. The first step to be shifted forward is step 44. With a period of 228, it will eventually end up as step 5,885,684,381,522,422,090,352. Subtract 44 from this and divide the result by 228 and you get 25,814,405,182,115,886,361: this is the total number of times the block of steps has been shifted forward.</p>
+
+    <p>This time, however, we have a few extra steps to work with. Step 5,885,684,381,522,422,090,348 finally gets rid of the new iteration of the step that kept deleting the answer step every time we went through this process: that step (step 5,885,684,381,522,422,090,572) is now moved up to step 5,885,684,381,522,422,090,349, where it performs the harmless action of deleting the next step. After doing these steps, we get this:</p>
+
+    <table style="width:95%;">
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,348.</tt></td>
+        <td style=";"><tt>Swap the next step and the step 224 steps below this step.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,349.</tt></td>
+        <td style=";"><tt><b>Replace the next step with a copy of the step after it.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,350.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,351.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+    </table>
+
+    <p>Now we can increment the counter one last time and get the final modification of the answer step. After incrementing the counter 25,814,405,182,115,886,361 times beyond the first time (which got us the <tt>Stay on PACE</tt> message), the final steps now look like this, once you apply the Caesar shifts:</p>
+
+   <table style="width:95%;">
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,487.</tt></td>
+        <td style=";"><tt>In the third word of the step 86 steps below this step, Caesar-shift the fourth letter forward by 25.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,488 to 5,885,684,381,522,422,090,492.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,493.</tt></td>
+        <td style=";"><tt>In the third word of the step 80 steps below this step, Caesar-shift the third letter forward by 24.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,494 to 5,885,684,381,522,422,090,498.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,499.</tt></td>
+        <td style=";"><tt>In the third word of the step 74 steps below this step, Caesar-shift the second letter forward by 6.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,500 to 5,885,684,381,522,422,090,504.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,505.</tt></td>
+        <td style=";"><tt>In the third word of the step 68 steps below this step, Caesar-shift the first letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,506 to 5,885,684,381,522,422,090,510.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,511.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 62 steps below this step, Caesar-shift the fifth letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,512 to 5,885,684,381,522,422,090,516.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,517.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 56 steps below this step, Caesar-shift the fourth letter forward by 16.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,518 to 5,885,684,381,522,422,090,522.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,523.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 50 steps below this step, Caesar-shift the third letter forward by 8.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,524 to 5,885,684,381,522,422,090,528.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,529.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 44 steps below this step, Caesar-shift the second letter forward by 20.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,530 to 5,885,684,381,522,422,090,534.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,535.</tt></td>
+        <td style=";"><tt>In the fifth word of the step 38 steps below this step, Caesar-shift the first letter forward by 1.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,536 to 5,885,684,381,522,422,090,540.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,541.</tt></td>
+        <td style=";"><tt>In the second word of the step 32 steps below this step, Caesar-shift the second letter forward by 5.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,542 to 5,885,684,381,522,422,090,546.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,547.</tt></td>
+        <td style=";"><tt>In the second word of the step 26 steps below this step, Caesar-shift the first letter forward by 12.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,548 to 5,885,684,381,522,422,090,552.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,553.</tt></td>
+        <td style=";"><tt>In the first word of the step 20 steps below this step, Caesar-shift the fourth letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,554 to 5,885,684,381,522,422,090,558.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,559.</tt></td>
+        <td style=";"><tt>In the first word of the step 14 steps below this step, Caesar-shift the third letter forward by 0.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,560 to 5,885,684,381,522,422,090,564.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,565.</tt></td>
+        <td style=";"><tt>In the first word of the step 8 steps below this step, Caesar-shift the second letter forward by 4.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Steps 5,885,684,381,522,422,090,566 to 5,885,684,381,522,422,090,570.</tt></td>
+        <td style=";"><tt>Continue.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,571.</tt></td>
+        <td style=";"><tt>In the first word of the step 2 steps below this step, Caesar-shift the first letter forward by 17.</tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,572.</tt></td>
+        <td style=";"><tt><b>Continue.</b></tt></td>
+      </tr>
+      <tr>
+        <td style="width:300px;"><tt>Step 5,885,684,381,522,422,090,573.</tt></td>
+        <td style=";"><tt><b>Tell us ROAD</b> to <b>title</b> this puzzle.</tt></td>
+      </tr>
+    </table>
+
+    <p>And we're done! The title is <b>ROAD</b>. And what a long road it is, if it takes that many steps to get to the end of it!</p>
+
+    <p>By the way, you should stop here. Well, you could keep going, but you'll just get a lot of garbage for the answer step and eventually you'll hit a buffer overflow and crazy things will happen.</p>
+
+
+
