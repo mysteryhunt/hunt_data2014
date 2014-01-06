@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ round.round.name }}</title>
+    <link rel="stylesheet" type="text/css" href="story.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/wonderland/">
+	Back to Wonderland
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-surface">
+      <div id="mh-book">
+	<div id="mh-col1">
+	  <div id="mh-title">{{ round.round.name }}</div>
+	  <div style="position: relative;">
+	    <img id="mh-image" src="image.jpg" />
+	    <a id="mh-lantern" href=".">
+	      <img title="{{ round.round.name }}" src="lantern.png" />
+	    </a>
+	  </div>
+	  <p>
+	    You tumble through the rabbit hole for all of five feet before you strike soft, silty earth and are compelled to continue on hand and knee.  The hole forks and twists upways and downways and sideways across roots, pipes and the occasional steam gasket or discarded rubbish.  You strangely feel somehow that you know the right way (perhaps it is all the mushrooms softly lighting the path).  When you finally emerge and dust yourself off, the cloud of lingering dirt traces the shape of a crescent grin before your eyes.  Moments later, the full outline of a familiar feline appears, and the Cheshire Cat fades into view.
+    
+	</div>
+	<div id="mh-col2">
+	    <p>
+	      "*cough*cough*hairball*cough*  Do tell the caterpillar that secondhand smoke is nasty business.  But I see he led you here and didn't follow himself, so no matter.  You're too late to catch the beast here, of course.  But the Mock Turtle is sitting over there and he may be able to lead you closer.  Or perhaps he'll want to keep you here.  He's rather lonely, you know; the beast stole all his friends.  Or that's what he says.  If you're clever, you may be able to help him once he tells you his story.   And then, perhaps he will help you with a gift of thanks.  If not, well, it's not a bad little spot to be in if you have nowhere else to go."
+
+	      <p>
+		And the cat, not wanting to be helpful himself (because cats never are) vanishes into thin air, leaving you alone with the Mock Turtle.
+	    
+	  <p>
+	    <a href=".">To {{ round.round.name }}</a>
+	</div>
+      </div>
+    </div>
+{% include "nav.html" %}
+    <script src="story.js"></script>
+  </body>
+</html>

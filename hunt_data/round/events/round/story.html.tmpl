@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Events</title>
+    <title>{{ round.round.name }}</title>
     <link rel="stylesheet" type="text/css" href="story.css">
     <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -18,11 +18,11 @@
     <div id="mh-surface">
       <div id="mh-book">
 	<div id="mh-col1">
-	  <div id="mh-title">Events</div>
+	  <div id="mh-title">{{ round.round.name }}</div>
 	  <div style="position: relative;">
 	    <img id="mh-image" src="stata.jpg" />
 	    <a id="mh-windows" href=".">
-	      <img title="Events" src="windows.gif" />
+	      <img title="{{ round.round.name }}" src="windows.gif" />
 	    </a>
 	  </div>
 	  <p>
@@ -55,7 +55,7 @@
 	    The voice ceases abruptly.  You wait, but hear no more.  Somehow it managed to slip a schedule into your hands without you realizing.
 	    
 	  <p>
-	    <a href=".">To Events</a>
+	    <a href=".">To {{ round.round.name }}</a>
 	</div>
       </div>
     </div>
