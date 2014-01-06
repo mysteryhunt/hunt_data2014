@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ round.round.name }}</title>
+    <link rel="stylesheet" type="text/css" href="story.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/">
+	Back to Lobby 7
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-surface">
+      <div id="mh-book">
+	<div id="mh-col1">
+	  <div id="mh-title">{{ round.round.name }}</div>
+	  <div style="position: relative;">
+	    <img id="mh-image" src="stata.jpg" />
+	    <a id="mh-windows" href=".">
+	      <img title="{{ round.round.name }}" src="windows.gif" />
+	    </a>
+	  </div>
+	  <p>
+	    Without seeing anything, you hear the ever-present voice of the cat, first on one side, then on the other.
+	    
+	  <p>
+	    "Yes, the rabbit holes need to be closed.  I'm glad we agree."
+	    
+	  <p>
+	    The voice now appears on the other side.
+	    
+	  <p>
+	    "There are ways to close them; I might know some of them."
+	    
+	  <p>
+	    The voice is now behind you.  You spin around but still see nothing.
+    
+	</div>
+	<div id="mh-col2">
+	  <p>
+	    "I think other people know, too, but in order to get them to tell you, you might have to do something for them in return."
+	    
+	  <p>
+	    The voice is now in front of you.  Or what was in front of you before you turned around.  You thought you caught the outline of a smile, but it vanished quickly.
+	    
+	  <p>
+	    "The people who know how to close the rabbit holes are hosting four events at MIT this weekend.  If you go to these events, it's possible that you might learn how to close the holes."
+	    
+	  <p>
+	    The voice ceases abruptly.  You wait, but hear no more.  Somehow it managed to slip a schedule into your hands without you realizing.
+	    
+	  <p>
+	    <a href=".">To {{ round.round.name }}</a>
+	</div>
+      </div>
+    </div>
+{% include "nav.html" %}
+    <script src="story.js"></script>
+  </body>
+</html>

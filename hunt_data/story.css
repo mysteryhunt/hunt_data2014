@@ -48,6 +48,10 @@ body {
     font-size: 50px;
 }
 
+#mh-image {
+    border: 2px solid #222;
+}
+
 #mh-controls {
     position: relative;
     padding-bottom: 5px;

@@ -21,4 +21,4 @@ mock_turtle	The Mock Turtle	600	MAKE EDITS TO YOUR TABLE SCHEMA
 caucus_race	The Caucus Race	700	ALLERGIC TO DOWN
 knights	The Red and White Knights	800	BORED TO PIECES BY GAMES
 humpty_dumpty	Humpty Dumpty	900	EISOPTROPHOBIC
-events	Events	1000	SOMETHING
+events	Events	1000	WHITE RABBIT HAS A WATCH THAT CONTROLS RABBIT HOLES

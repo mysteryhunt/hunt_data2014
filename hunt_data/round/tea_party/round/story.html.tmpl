@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ round.round.name }}</title>
+    <link rel="stylesheet" type="text/css" href="story.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/wonderland/">
+	Back to Wonderland
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-surface">
+      <div id="mh-book">
+	<div id="mh-col1">
+	  <div id="mh-title">{{ round.round.name }}</div>
+	  <div style="position: relative;">
+	    <img id="mh-image" src="party.jpg" />
+	    <a id="mh-windows" href=".">
+	      <img title="{{ round.round.name }}" src="windows.gif" />
+	    </a>
+	  </div>
+	  <p>
+	    After falling through the rabbit hole, you find yourself at the gate of a house where you see signs of a party taking place.  Sitting on a fence post is a familiar, smug, smirking cat... 
+
+	  <p>
+	    "Ah, so the cheese caught the Dormouse, I see.  I must remember that for my own purposes later.  Well, you've managed to come through that rabbit hole just in time for tea.  Or perhaps you are just out of time for tea.  It's difficult to say ever since the beast came through and broke the Mad Hatter's clock.  Now we never know if it's tea time or not-tea time or half past three lumps.  If you can figure out how to fix it, do let the Mad Hatter know.  He might
+
+	</div>
+	<div id="mh-col2">
+	  <p>
+	    even reward you with something that will come in handy later.  Or sooner!
+
+	  <p>
+	    "And if you see the Dormouse again, do butter him up for me."
+
+	  <p>
+	    And with that, the Cat licks his lips hungrily until all that is left are his anticipatory whiskers.  
+	    
+	  <p>
+	    <a href=".">To {{ round.round.name }}</a>
+	</div>
+      </div>
+    </div>
+{% include "nav.html" %}
+    <script src="story.js"></script>
+  </body>
+</html>
