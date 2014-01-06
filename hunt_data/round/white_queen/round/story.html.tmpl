@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ round.round.name }}</title>
+    <link rel="stylesheet" type="text/css" href="story.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/wonderland/">
+	Back to Wonderland
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-surface">
+      <div id="mh-book">
+	<div id="mh-col1">
+	  <div id="mh-title">{{ round.round.name }}</div>
+	  <div style="position: relative;">
+	    <img id="mh-image" src="queen.jpg" />
+	    <a id="mh-chair" href=".">
+	      <img title="{{ round.round.name }}" src="chair.gif" />
+	    </a>
+	  </div>
+	  <p>
+	    After falling down a rabbit hole (which felt remarkably like falling up), you find yourself in Wonderland in the presence of the Cheshire Cat.  Wherever you are is rather festive and colorful, although in the distance, you see what appears to be a queen who doesn't seem to be enjoying herself.
+
+	  <p>
+	    "I see the double trouble didn't trouble you.  Now you've fit through a hole and found yourself here... where here is far from there.  And here is very strange indeed.  Or perhaps I should say: indeed strange very is here.
+
+	</div>
+	<div id="mh-col2">
+	  <p>
+	    "The White Queen is over thataway.  She will explain or she won't.  She's seen you leave, you see, but she hasn't seen you arrive yet.  It's all very simple except when it's not.  But one word of advice: cardinal might be one of your school colors, but I wouldn't wear it around her.  But if you can break her solution, she might be willing to overlook it.  She might even give you an object of thanks which you can use to fight the beast... or perhaps some catnip for me."
+
+	  <p>
+	    The cat then stood on his head, his mysterious smile looking suspiciously like a frown, and vanished as he is wont to do.  You decide to go address the queen.
+	    
+	  <p>
+	    <a href=".">To {{ round.round.name }}</a>
+	</div>
+      </div>
+    </div>
+{% include "nav.html" %}
+    <script src="story.js"></script>
+  </body>
+</html>
