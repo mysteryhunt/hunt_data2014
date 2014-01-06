@@ -48,9 +48,8 @@ body {
     font-size: 50px;
 }
 
-#mh-image img {
+#mh-image {
     border: 2px solid #222;
-    margin: 3px;
 }
 
 #mh-controls {

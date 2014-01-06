@@ -27,7 +27,18 @@
       <div id="mh-book">
 	<div id="mh-col1">
 	  <div id="mh-title">Lobby 7</div>
-	  <div id="mh-image"><img src="lobby.jpg" /></div>
+	  <div style="position: relative;">
+	    <img id="mh-image" src="lobby.jpg" />
+	    <a id="mh-door" href="{{ root }}/round/mit/" style="opacity: 0;">
+	      <img title="MIT" src="door.png" />
+	    </a>
+	    <a id="mh-mushroom" href="{{ root }}/round/events/">
+	      <img title="Events" src="mushroom.gif" />
+	    </a>{% if has_wl_access %}
+	    <a id="mh-rabbit-hole" href="{{ root }}/wonderland/">
+	      <img title="Wonderland" src="rabbit-hole.gif" />
+	    </a>{% endif %}
+	  </div>
 	  <p>
 	    A large grin fades into existence, followed by the rest of a lavender smiling cat.  "Why, hello there!" the cat purrs.  "I'm the Cheshire Cat.  I know a few things about what's been going on here.  Maybe I'll tell them to you..."
 	    
