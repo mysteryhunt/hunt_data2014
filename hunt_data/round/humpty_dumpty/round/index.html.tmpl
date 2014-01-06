@@ -7,6 +7,11 @@
   <a id="mh-elsewhere" href="javascript:mh.nav();">
     Elsewhere
   </a>
+  {% if team.url == 'spoiler_alert' %}
+  <a id="mh-answer" href="{{ root }}/round-solution/{{ round.round.url }}/">
+    Solution
+  </a>
+  {% else %}
   <a id="mh-answer" href="javascript:mh.submit_answer();">
     {% if round.solved %}
     Weakness Of The Beast Found!
@@ -14,6 +19,7 @@
     Submit Weakness Of The Beast
     {% endif %}
   </a>
+  {% endif %}
 </div>
 
 <div id="mh-page">
