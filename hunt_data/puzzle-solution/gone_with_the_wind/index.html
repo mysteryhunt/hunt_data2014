@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Gone with the Wind (Solution)</title>
+</head>
+<body>
+<h1>Gone with the Wind (Solution)</h1>
+
+<p>Upon unlocking this puzzle, solvers are presented with a message saying the pieces of the puzzle have been carried off by the wind. There are 6 clues pointing to where they might have ended up. Each one clues another puzzle in the Hunt that has almost certainly already been opened by the team, so solvers may recognize these from their descriptions. Upon revisiting the puzzle page for each of the 6 puzzles, solvers will find that a new section has appeared and attached itself to the bottom of the page. Each new section contains an image of a weather map.</p>
+
+<p>Each map is zoomed in on an area bounded by 30 and 45 degrees N or S in latitude and consecutive multiples of 30 degrees in longitude. The maps show unlabeled isobars as well as selected points showing wind direction (cloud coverage and wind speed are kept constant, as they are irrelevant).</p>
+
+<p>There are five clear pressure centers surrounded by at least one closed-loop isobar. Each center can be identified as a high-pressure center or a low-pressure center by looking at the direction of wind flow around it. In the northern hemisphere, wind flows clockwise around high-pressure centers and counterclockwise around low-pressure centers; in the southern hemisphere, wind flows counterclockwise around high-pressure centers and clockwise around low-pressure centers. This is due to the Coriolis effect. Wind also flows from high-pressure areas to low-pressure areas, but the directions shown are parallel to the surrounding isobars so this information is not available.</p>
+
+<p>Each map can thus be transformed into a 5-bit integer. Treat each pressure center as a bit, with a high being 1 and a low being 0. The bits are ordered by the number of concentric closed-loop isobars surrounding each one, which ranges from 1 to 5. The integers can be mapped onto letters (A=00001, B=00010, etc.). Order the letters geographically and they spell out <b>ENG</b> in the northern hemisphere and <b>ULF</b> in the southern hemisphere, yielding the answer <b>ENGULF</b>.</p>
+
+<p>
+<table>
+<tr>
+<td><b>Clue</b></td>
+<td><b>Host Puzzle</b></td>
+<td><b>Image</b></td>
+<td><b>Region</b></td>
+<td><b>Pressure centers</b></td>
+<td><b>Letter</b></td>
+</tr>
+<tr>
+<td>One piece is fleeing from a bunch of villains wearing monster costumes.</td>
+<td>Zoinks! (MIT)</td>
+<td><img src="x1.png" /></td>
+<td>30&ndash;45 N, 120&ndash;90 W</td>
+<td>LLHLH</td>
+<td>E</td>
+</tr>
+<tr>
+<td>One piece is irresistibly attracted to a certain handsome towel-clad gentleman.</td>
+<td>The Puzzle Your Puzzle Could Smell Like (Tea Party)</td>
+<td><img src="x2.png" /></td>
+<td>30&ndash;45 N, 30&ndash;60 E</td>
+<td>LHHHL</td>
+<td>N</td>
+</tr>
+<tr>
+<td>One piece is showing off after being folded into a beautiful flower.</td>
+<td>Cross-Pollination (Mock Turtle)</td>
+<td><img src="x3.png" /></td>
+<td>30&ndash;45 N, 90&ndash;120 E</td>
+<td>LLHHH</td>
+<td>G</td>
+</tr>
+<tr>
+<td>One piece is futilely trying to hide behind a stack of transparencies.</td>
+<td>A Puzzle with the Answer WILLIAMS (White Queen)</td>
+<td><img src="x4.png" /></td>
+<td>45&ndash;30 S, 90&ndash;60 W</td>
+<td>HLHLH</td>
+<td>U</td>
+</tr>
+<tr>
+<td>One piece is having fun learning how to buzz buzz buzz buzz in harmony.</td>
+<td>Bumblebee Tune-a (MIT)</td>
+<td><img src="x5.png" /></td>
+<td>45&ndash;30 S, 0&ndash;30 E</td>
+<td>LHHLL</td>
+<td>L</td>
+</tr>
+<tr>
+<td>One piece is simply mesmerized by the performance of a blue organist.</td>
+<td>I Stumbled Across a Recording (MIT)</td>
+<td><img src="x6.png" /></td>
+<td>45&ndash;30 S, 120&ndash;150 E</td>
+<td>LLHHL</td>
+<td>F</td>
+</tr>
+</table>
+</p>
+</body>
+</html>
