@@ -105,3 +105,7 @@ humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	4120
 humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	4130
 humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	4140
 humpty_dumpty	SQUIGGLES	the_circle_of_life	The Circle of Life	4150
+events	A NOTES STAFF POSITION CONTROLS ITS STEM DIRECTION	auditions_for_the_wondermusical	Auditions for the WonderMusical	5010
+events	WATCH OUT FOR THE WHITE WINE SAUCE	lobster_quadrille	Lobster Quadrille	5020
+events	IF YOUR LETTUCE HAS HOLES, CHASE DOWN THE RABBIT	cards_against_wonderland	Cards Against Wonderland	5030
+events	A GAME THAT HAS NO RULES IS NO FUN	wonderwang	Wonderwang	5040
