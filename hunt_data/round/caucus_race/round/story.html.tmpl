@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ round.round.name }}</title>
+    <link rel="stylesheet" type="text/css" href="story.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/wonderland/">
+	Back to Wonderland
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-surface">
+      <div id="mh-book">
+	<div id="mh-col1">
+	  <div id="mh-title">{{ round.round.name }}</div>
+	  <div style="position: relative;">
+	    <img id="mh-image" src="race.jpg" />
+	    <a id="mh-windows" href=".">
+	      <img title="{{ round.round.name }}" src="windows.gif" />
+	    </a>
+	  </div>
+	  <p>
+	    After a ride on the Wonderland Express, you are dropped off at a large tree, which seems to serve as a train station of sorts.  There are many exotic looking birds running around, and one smiling cat looking lustily after them, as if he hasn't had lunch in a while.  His tail swishes as he sees you arrive.
+
+	  <p>
+	    "Well, you made it.  The race has just begun.  Of course, it never really ends... just goes round and round and round, like one of those sushi buffets," he says licking his lips.
+
+	  <p>
+	    "You might be looking for the beast, who was here... but of course it didn't stay very long.  You see, the beast, like all beings, has a few weaknesses.  And these birds know what one of them is.  If you look around, you may be able to learn what it is, which will certainly come in handy if you ever find the beast yourself.
+
+	  <p>
+	    "Oh, and if you do happen to catch one of them, I have a recipe I've been meaning to try.  What I mean is..." 
+
+	  <p>
+	    At that moment, one of the larger birds gives the cat a look and he quickly vanishes into thin air.  The Cheshire Cat never seems to hang around very long.
+	</div>
+	<div id="mh-col2">
+	    
+	  <p>
+	    <a href=".">To {{ round.round.name }}</a>
+	</div>
+      </div>
+    </div>
+{% include "nav.html" %}
+    <script src="story.js"></script>
+  </body>
+</html>
