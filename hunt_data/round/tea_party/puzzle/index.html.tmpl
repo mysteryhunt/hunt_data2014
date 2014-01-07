@@ -1,7 +1,11 @@
 {% include "puzzle-head.html" %}
 
 <div id="mh-banner">
+  {% if cup %}
   <img id="mh-teacup" src="{{ root }}/round/{{ round.round.url }}/cup_{{ puzzle.cup }}.png">
+  {% else %}
+  <img id="mh-teacup" src="{{ root }}/round/{{ round.round.url }}/chair_{{ puzzle.chair }}.png">
+  {% endif %}
   <div id="mh-title">
     {{ puzzle.puzzle.name }}
   </div>
