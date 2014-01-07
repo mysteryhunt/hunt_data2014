@@ -55,33 +55,27 @@
       
       You're not sure how you can help, but then you see what appear to be puzzles written on the backs of all the cardboard pieces, as well as on the backs of the two dueling knights.<br>
     </div>
-    
-    <p>
-      <table class="mh-center">
-	<tr><td>
-	    <img src="chessboard.jpg"><br>
-	    <div style="position: relative; top: -60px; left: 60px;">
-	      The chessboard upon arriving at the clearing.
-	    </div>
-      </table>
-      {% for piece in pieces %}
-      <table class="mh-knights-pieces">
-	<tr>
-	  {% for puzzle in piece %}
-	  <td>
-	    <table class="mh-knights-puzzle">
-	      <tr>
-		<td class="mh-knights-piece"><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/"><img src="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/piece.png"></a></td>
-	      </tr>
-	      <tr>
-		<td class="mh-knights-caption"><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a></td>
-	      </tr>
-	    </table>
-	    {% endfor %}
-	  </td>
-	</tr>
-      </table>
+
+    <table class="mh-center">
+      <tr><td>
+	  <img src="chessboard.jpg"><br>
+	  <div style="position: relative; top: -60px; left: 60px;">
+	    The chessboard upon arriving at the clearing.
+	  </div>
+    </table>
+    <table id="mh-knights-puzzle-table">
+      {% for puzzle in puzzles %}
+      <tr><td>
+	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
+	    <img class="mh-knights-piece" src="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/piece.png" />
+	  </a>
+	</td><td class="mh-knights-puzzle-name">
+	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
+	    {{ puzzle.puzzle.name }}
+	  </a>
+      </td></tr>
       {% endfor %}
+    </table>
   </div>
 
 </div>
