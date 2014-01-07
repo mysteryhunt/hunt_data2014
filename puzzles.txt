@@ -5,7 +5,6 @@ mit	MALPRACTICE	safety_first	Safety First	30
 mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	60
 mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	70
 mit	MISCHIEF	zoinks	Zoinks!	80
-mit	ARRAY	the_despair_of_cooking	The Despair of Cooking	90
 mit	SHREWDNESS	sneaky_fox	Sneaky Fox	100
 mit	WOBBLE	feed_your_head	Feed Your Head	110
 mit	TOYOTAS	i_came_across_a_japanese_rose_garden	I Came Across a Japanese Rose Garden	120
