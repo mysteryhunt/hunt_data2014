@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ round.round.name }}</title>
+    <link rel="stylesheet" type="text/css" href="story.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/wonderland/">
+	Back to Wonderland
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-surface">
+      <div id="mh-book">
+	<div id="mh-col1">
+	  <div id="mh-title">{{ round.round.name }}</div>
+	  <div style="position: relative;">
+	    <img id="mh-image" src="field.jpg" />
+	    <a id="mh-face" href=".">
+	      <img title="{{ round.round.name }}" src="face.gif" />
+	    </a>
+	  </div>
+	  <p>
+	    The train drops you off at a station by a pleasant stream.  On a nearby hill you see a giant checkerboard and what looks like an array of chessmen arranged on it.  The Cheshire Cat appears suddenly, chewing a recently caught fish from the brook.  He gives you the following words of advice after spitting out the bones:
+
+	  <p>
+	    "It may not look like it, but the beast was just here, you see.  Once again you're too slow, of course.  Amazingly, it didn't destroy anything.  The two knights you see sparring on the hill are good enough
+	</div>
+	<div id="mh-col2">
+	  <p>
+	    at bumbling around themselves.  Somehow those knights managed to keep the beast away, but I'm sure they don't remember how.  You'll probably get just as much information out of the rest of the chessmen.  Maybe you can help those knights remember, and then you too can drive it off.  As for me, I must go," he says, while indicating the fish, "I have a guest for dinner."
+
+	  <p>
+	    The Cat grins, in a manner that's just a bit unsettling, then vanishes, fish bones and all, with the toothy smile lingering just a little longer than the rest.
+	    
+	  <p>
+	    <a href=".">To {{ round.round.name }}</a>
+	</div>
+      </div>
+    </div>
+{% include "nav.html" %}
+    <script src="story.js"></script>
+  </body>
+</html>
