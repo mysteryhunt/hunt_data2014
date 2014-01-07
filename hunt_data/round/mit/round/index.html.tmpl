@@ -171,15 +171,15 @@
 	</a>
       </div>
       {% endfor %}
-      {% if portal1 == "open" %}
-      {% elif portal1 == "visible" %}
+      <center>
+      {% for round in rounds %}
+      {% if round.round.url == 'tea_party' or round.round.url == 'mock_turtle' or round.round.url == 'white_queen' %}
+      <a href="{{ root }}/round/{{ round.round.url }}/" style="text-decoration: none;">
+	<img title="{{ round.round.url }}" src="{{ root }}/round/{{ round.round.url }}/rabbit-hole.gif" />
+      </a>
       {% endif %}
-      {% if portal2 == "open" %}
-      {% elif portal2 == "visible" %}
-      {% endif %}
-      {% if portal3 == "open" %}
-      {% elif portal3 == "visible" %}
-      {% endif %}
+      {% endfor %}
+      </center>
     </div>
   
     {% for puzzle in puzzles %}
