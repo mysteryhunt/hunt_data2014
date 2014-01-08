@@ -32,11 +32,11 @@ tea_party	SUZANNE CROUGH	monster_potatoes	Monster Potatoes	1080
 tea_party	PEARL HOMINY	oyster_card	Oyster Card	1090
 tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1100
 tea_party	COQ AU VIN	obsessive_compulsive_dickishness	Obsessive-Compulsive Dickishness	1110
+tea_party	ALECIA MOORE	one_tequila_two_tequila_three_tequila_floor	One Tequila, Two Tequila, Three Tequila, Floor	1120
 tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1130
+tea_party	NATALIE PORTMAN	a_rose_by_any_other	A Rose by Any Other	1140
 tea_party	NOREASTER BLIZZARD	guess_what_im_thinking	Guess What I'm Thinking	1150
 tea_party	RHINOCEROS VIPER	the_most_dangerous_night	The Most Dangerous Night	1160
-tea_party	ALECIA MOORE	one_tequila_two_tequila_three_tequila_floor	One Tequila, Two Tequila, Three Tequila, Floor	1170
-tea_party	NATALIE PORTMAN	a_rose_by_any_other	A Rose by Any Other	1180
 mock_turtle	WARDLEY	nothing_but_a_pack_of_cards	Nothing but a Pack of Cards	2010
 mock_turtle	LOCKS	common_bonds	Common Bonds	2020
 mock_turtle	TI85	assemble_me	Assemble Me	2050
@@ -109,5 +109,5 @@ humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	4140
 humpty_dumpty	SQUIGGLES	the_circle_of_life	The Circle of Life	4150
 events	A NOTES STAFF POSITION CONTROLS ITS STEM DIRECTION	auditions_for_the_wondermusical	Auditions for the WonderMusical	5010
 events	WATCH OUT FOR THE WHITE WINE SAUCE	lobster_quadrille	Lobster Quadrille	5020
-events	IF YOUR LETTUCE HAS HOLES CHASE DOWN THE RABBIT	cards_against_wonderland	Cards Against Wonderland	5030
-events	A GAME THAT HAS NO RULES IS NO FUN	wonderwang	Wonderwang	5040
+events	A MOLE GOPHER OR RABBIT MAY DIG GARDEN HOLES	cards_against_wonderland	Cards Against Wonderland	5030
+events	ANY TRIP THAT HAS NO VACATIONS BLOWS	wonderwang	Wonderwang	5040
