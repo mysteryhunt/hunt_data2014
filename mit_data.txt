@@ -6,7 +6,6 @@ opposites_are_not_downbeats	J_diamonds
 bumblebee_tune_a	5_clubs
 upstairs_downstairs	9_diamonds
 zoinks	2_spades
-the_despair_of_cooking	6_spades
 sneaky_fox	3_spades
 feed_your_head	9_spades
 i_came_across_a_japanese_rose_garden	4_diamonds
