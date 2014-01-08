@@ -1,37 +1,31 @@
-.c {
-  width: 1020px;
-  text-align: center;
+#mh-outer {
+  width: 970px !important;
 }
-.a {
+.c {
+  margin: 0px auto;
+  text-align: center;
 }
 ._ {
   position: relative;
-  width: 1020px;
+  width: 940px;
   height: 310px;
   border: 2px solid black;
   background: #444;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin: 0px auto 5px auto;
 }
 .l {
   border: 0px;
   position: absolute;
   left: 5px;
   top: 5px;
-  width: 500px;
+  width: 460px;
   height: 300px;
 }
 .r {
   position: absolute;
   right: 5px;
-  top: 5px;
-  width: 500px;
+  top: 4px;
+  width: 460px;
   height: 300px;
-}
-.x {
-  width: 500px;
-  height: 275px;
-}
-.y {
-  text-align: center;
 }
