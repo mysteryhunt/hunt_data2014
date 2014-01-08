@@ -1,7 +1,7 @@
 url	name	order	answer
-dormouse	The Dormouse	100	MANCHEGO
-caterpillar	The Caterpillar	200	TOBACCO
-tweedles	Tweedledee and Tweedledum	300	TWIN POPS
+spades	Spades	100	MANCHEGO
+clubs	Clubs	200	TOBACCO
+diamonds	Diamonds	300	TWIN POPS
 tea_party	The Tea Party	400	GIVE HIM A HAND
 white_queen_a02	The White Queen (Answer 2)	502	NOWHERE MAN
 white_queen_a04	The White Queen (Answer 4)	504	EIGHT DAYS A WEEK
