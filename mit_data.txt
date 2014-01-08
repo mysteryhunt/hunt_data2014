@@ -2,8 +2,9 @@ url	card
 build_your_own_sudoku	5_spades
 intersecting_personalities	7_spades
 safety_first	J_clubs
-bumblebee_tune_a	5_clubs
 opposites_are_not_downbeats	J_diamonds
+bumblebee_tune_a	5_clubs
+upstairs_downstairs	9_diamonds
 zoinks	2_spades
 the_despair_of_cooking	6_spades
 sneaky_fox	3_spades

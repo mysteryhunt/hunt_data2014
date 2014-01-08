@@ -2,8 +2,9 @@ round	answer	url	name	order
 mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	10
 mit	MEMORY	intersecting_personalities	Intersecting Personalities	20
 mit	MALPRACTICE	safety_first	Safety First	30
+mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	40
 mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	60
-mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	70
+mit	DOORWAY	upstairs_downstairs	Upstairs, Downstairs	70
 mit	MISCHIEF	zoinks	Zoinks!	80
 mit	SHREWDNESS	sneaky_fox	Sneaky Fox	100
 mit	WOBBLE	feed_your_head	Feed Your Head	110
@@ -20,7 +21,6 @@ mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai R
 mit	ROOMING	across_the_hall	Across the Hall	220
 mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	230
 mit	PERIDOT	dressing_down	Dressing Down	240
-mit	DOORWAY	upstairs_downstairs	Upstairs, Downstairs	250
 tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1010
 tea_party	STRAIGHT SETS	best_of_five	Best of Five	1020
 tea_party	OPERATOR TEST	operator_test	Operator Test	1030
