@@ -1,0 +1,189 @@
+<h2>Solution to One Tequila, Two Tequila, Three Tequila, Floor</h2>
+
+<p>
+<i>Author: Brandy Buckingham</i>
+</p>
+
+<p>Solvers are given a video containing eleven segments from the YouTube show My Drunk Kitchen, but each segment has audio from a different cooking show overlaid.</p>
+
+<p>Solvers will need to identify the cooking show in the audio, the dish they are cooking, and the dish made in the My Drunk Kitchen episode in each video. Segments are given in the order of the "original posting date" of the MDK episode in the video. Solvers also need to pay attention to how many times Hannah takes a drink during the video, which is clued by the fact that in all videos with more than one drink, all the drinks are actually the same clip edited into the video multiple times.</p>
+
+<table class="t">
+  <tbody>
+    <tr>
+      <td><b>Segment</b></td>
+      <td><b>MDK (video) Dish</b></td>
+      <td><b>Cooking Show (audio)</b></td>
+      <td><b>Cooking Show Dish</b></td>
+      <td><b># of Drinks</b></td>
+      <td><b>Approx. Times of Drinks</b></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Mac &amp; Cheese</td>
+      <td>The Chew</td>
+      <td>Caramel Apples</td>
+      <td>3</td>
+      <td>:20 :29 :49</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Omelette</td>
+      <td>30 Minute Meals</td>
+      <td>Quesadilla</td>
+      <td>4</td>
+      <td>:04 :09 :20 :54</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Cookies</td>
+      <td>My Drunk Kitchen</td>
+      <td>Grilled Cheese</td>
+      <td>1</td>
+      <td>:08</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Ice Cream</td>
+      <td>Good Eats</td>
+      <td>Cookies</td>
+      <td>2</td>
+      <td>:43 :54</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Latkes</td>
+      <td>Down Home with the Neelys</td>
+      <td>Ice Cream</td>
+      <td>6</td>
+      <td>:04 :12 :19 :24 :27 :40</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Poutine</td>
+      <td>Barefoot Contessa</td>
+      <td>Latkes</td>
+      <td>3</td>
+      <td>:08 :25 :41</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Chocolate Souffle</td>
+      <td>Giada at Home</td>
+      <td>Fish Sticks (Fingers)</td>
+      <td>5</td>
+      <td>:02 :07 :10 :24 :48</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Grilled Cheese</td>
+      <td>Jamie at Home</td>
+      <td>Omelette</td>
+      <td>2</td>
+      <td>:16 :34</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Quesadilla</td>
+      <td>Chopped</td>
+      <td>Mac &amp; Cheese</td>
+      <td>1</td>
+      <td>:12</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Caramel Apples</td>
+      <td>Hell's Kitchen</td>
+      <td>Chocolate Souffle</td>
+      <td>4</td>
+      <td>:11 :22 :32 :41</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Fish Fingers</td>
+      <td>Emeril Live</td>
+      <td>Poutine</td>
+      <td>1</td>
+      <td>:34</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Solvers then need to match up the audio with the video that is cooking the same dish. This will form a chain which gives the order, though because it really makes a circle the beginning/end may be unclear - this is resolved by noting that one of the video segments (Fish Fingers) includes the end credits for My Drunk Kitchen; this segment is the last one in the final ordering. In this order, using the number of drinks in the video as an index into the name of the audio show gives the answer ALECIA MOORE.</p>
+
+<table class="t">
+  <tbody>
+    <tr>
+      <td><b>Video Dish</b></td>
+      <td><b>Audio Show Title</b></td>
+      <td><b># of Drinks</b></td>
+      <td><b>Indexed letter</b></td>
+    </tr>
+    <tr>
+      <td>Chocolate Souffle</td>
+      <td>Giada at Home</td>
+      <td>5</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Caramel Apples</td>
+      <td>Hell's Kitchen</td>
+      <td>4</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Mac &amp; Cheese</td>
+      <td>The Chew</td>
+      <td>3</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>Quesadilla</td>
+      <td>Chopped</td>
+      <td>1</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Omelette</td>
+      <td>30 Minute Meals</td>
+      <td>4</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>Grilled Cheese</td>
+      <td>Jamie at Home</td>
+      <td>2</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Cookies</td>
+      <td>My Drunk Kitchen</td>
+      <td>1</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Ice Cream</td>
+      <td>Good Eats</td>
+      <td>2</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>Latkes</td>
+      <td>Down Home with the Neelys</td>
+      <td>6</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>Poutine</td>
+      <td>Barefoot Contessa</td>
+      <td>3</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>Fish Fingers</td>
+      <td>Emeril Live</td>
+      <td>1</td>
+      <td>E</td>
+    </tr>
+  </tbody>
+</table>

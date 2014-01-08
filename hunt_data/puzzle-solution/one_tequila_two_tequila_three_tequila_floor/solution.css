@@ -1,0 +1,6 @@
+.t {
+  border-collapse: collapse;
+}
+.t TD {
+  border: 1px solid black;
+}
