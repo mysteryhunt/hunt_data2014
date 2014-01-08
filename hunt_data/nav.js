@@ -7,7 +7,7 @@ mh.nav = function() {
     $('#mh-nav-inner').html($('#mh-nav-iframe').contents().find('body').html());
     $('#mh-nav-inner a').each(function() {
 	var href = $(this).attr('href');
-	if (href.indexOf('http://') != 0)
+	if (href.indexOf('http://') != 0 && href.indexOf('javascript:') != 0)
 	    $(this).attr('href', '{{ root }}/' + href);
     });
     bg.stop(true, true);
@@ -23,3 +23,4 @@ mh.nav = function() {
     }
 };
 $('#mh-nav-bg').click(mh.nav);
+{% include "contact.js" %}

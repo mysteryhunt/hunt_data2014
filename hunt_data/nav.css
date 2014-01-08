@@ -19,3 +19,4 @@
 #mh-nav a {
     text-decoration: none;
 }
+{% include "contact.css" %}
