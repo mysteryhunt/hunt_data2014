@@ -1,6 +1,6 @@
 .t {
   border-collapse: collapse;
 }
-.t TD {
+.t TD, .t TH {
   border: 1px solid black;
 }
