@@ -20,6 +20,7 @@ mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai R
 mit	ROOMING	across_the_hall	Across the Hall	220
 mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	230
 mit	PERIDOT	dressing_down	Dressing Down	240
+mit	DOORWAY	upstairs_downstairs	Upstairs, Downstairs	250
 tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1010
 tea_party	STRAIGHT SETS	best_of_five	Best of Five	1020
 tea_party	OPERATOR TEST	operator_test	Operator Test	1030
