@@ -80,6 +80,7 @@ caucus_race	SPUR	venntersections	Venntersections	5110
 caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120
 caucus_race	DERRICK	crosswalks	Crosswalks	5130
 caucus_race	CONFRONT	wat	WAT?	5140
+knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	6010
 knights	HOBO BOBO	kroskuro	Kroskuro	6020
 knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	6030
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	6040
@@ -93,7 +94,6 @@ knights	FLU SHOT	some_nutty_lines	Some Nutty Lines	6130
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6140
 knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	6150
 knights	FIRE HOSE	stalk_us_maybe	Stalk Us Maybe	6160
-knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	6170
 humpty_dumpty	FELINE	compose_yourself	Compose Yourself	4010
 humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	4020
 humpty_dumpty	HAND TOOL	sledgehammered	Sledgehammered	4030

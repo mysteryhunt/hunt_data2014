@@ -2,11 +2,17 @@
 "I thought a good way to pass the time might be building a house of cards, but I can't seem to find any cards," sighed the Mock Turtle. "You'd think they'd be easy to find in Wonderland!"
 </div>
 
+
 <br/>
 
-<p>The Mock Turtle needs your help in finding cards for his card house ... and then building it, too (turtles lack the opposable thumbs necessary for proper card placement).
+<p>The Mock Turtle needs your help in finding cards for his card house....and then building it, too (turtles lack the opposable thumbs necessary for proper card placement).
 
-<p>You must build a card house of the following height: [insert height requirements dependent on team size that we haven't figured out yet]
+<p>You must make a free-standing card house of at least <tt>N</tt> levels using at least <tt>M</tt> cards. If <tt>x</tt> is your team size, then:<br />
+
+<center><tt>N = ceiling(1/2 * log_2(x))<br />
+M = floor(4 * sqrt(x)) + 20</tt></center>
+
+<p>Note that your team ({{ team.name }}) registered as having {{ team.size_desc }} members.</p>
 
 <p>There are 104 cards available. In order to obtain these cards, you must bring us the matching item as listed below. For every item you bring that successfully matches an item listed, we will give you the matching card. This is the only way cards can be obtained. Do not bring your own cards for use in the card house.
 
@@ -16,7 +22,8 @@
 
 <p>Once you think you've acquired the necessary materials to build an acceptable card house, please call HQ.
 
-<p>
+
+
 <h3>MIT Deck</h3>
 
 <p>
@@ -28,102 +35,102 @@
   <col width="200">
 
 <tr>
-  <td>  
-  <td><b>CLUBS</b>
-  <td><b>DIAMONDS</b>
-  <td><b>HEARTS</b>
-  <td><b>SPADES</b>
+  <td></td>
+  <td><b>CLUBS</b></td>
+  <td><b>DIAMONDS</b></td>
+  <td><b>HEARTS</b></td>
+  <td><b>SPADES</b></td>
 </tr>
 <tr>
-  <td><b>2: scavenging</b>
-  <td>something from <tt>reuse@</tt>
-  <td>something from <tt>free-food@</tt>
-  <td>an ethernet cable
-  <td>a 2&times;4
+  <td><b>2: scavenging</b></td>
+  <td>something from <tt>reuse@</tt></td>
+  <td>something from <tt>free-food@</tt></td>
+  <td>an ethernet cable</td>
+  <td>a 2&times;4</td>
 </tr>
 <tr>
-  <td><b>3: news</b>
-  <td>a copy of <i>The Tech</i>
-  <td>a copy of <i>Technique</i>
-  <td>a copy of <i>How to GAMIT</i>
-  <td>a copy of <i>Voodoo</i>
+  <td><b>3: news</b></td>
+  <td>a copy of <i>The Tech</i></td>
+  <td>a copy of <i>Technique</i></td>
+  <td>a copy of <i>How to GAMIT</i></td>
+  <td>a copy of <i>Voodoo</i></td>
 </tr>
 <tr>
-  <td><b>4: years</b>
-  <td>an undergraduate
-  <td>a graduate student
-  <td>a postdoc
-  <td>a professor
+  <td><b>4: years</b></td>
+  <td>an undergraduate</td>
+  <td>a graduate student</td>
+  <td>a postdoc</td>
+  <td>a professor</td>
 </tr>
 <tr>
-  <td><b>5: Brass Rats</b>
-  <td>a Brass Rat from before 2000
-  <td>a Brass Rat from after 2010
-  <td>something brass
-  <td>a rat
+  <td><b>5: Brass Rats</b></td>
+  <td>a Brass Rat from before 2000</td>
+  <td>a Brass Rat from after 2010</td>
+  <td>something brass</td>
+  <td>a rat</td>
 </tr>
 <tr>
-  <td><b>6: progression</b>
-  <td>a "101 Things To Do Before You Graduate" poster
-  <td>an MIT rejection letter
-  <td>an MIT diploma
-  <td>MIT academic regalia
+  <td><b>6: progression</b></td>
+  <td>an MIT admissions tube</td>
+  <td>a "101 Things To Do Before You Graduate" poster</td>
+  <td>an MIT diploma</td>
+  <td>MIT academic regalia</td>
 </tr>
 <tr>
-  <td><b>7: old school</b>
-  <td>a scantron
-  <td>an overhead projector
-  <td>a 5 1/4" floppy disk
-  <td>a PalmPilot
+  <td><b>7: old school</b></td>
+  <td>a scantron</td>
+  <td>an overhead projector</td>
+  <td>a 5 1/4" floppy disk</td>
+  <td>a PalmPilot</td>
 </tr>
 <tr>
-  <td><b>8: new school</b>
-  <td>a certificate of completion from edX
-  <td>an iPod, iPhone, iPad, and Macbook Air belonging to the same person
-  <td>10 terabytes of storage
-  <td>a clicker
+  <td><b>8: new school</b></td>
+  <td>a certificate of completion from edX</td>
+  <td>an iPod, iPhone, iPad, and Macbook Air belonging to the same person</td>
+  <td>10 terabytes of storage</td>
+  <td>a clicker</td>
 </tr>
 <tr>
-  <td><b>9: codes</b>
-  <td>a pair of semaphore flags
-  <td>a book written in Braille
-  <td>a telegraph key
-  <td>a Dvorak keyboard
+  <td><b>9: codes</b></td>
+  <td>a pair of semaphore flags</td>
+  <td>a book written in Braille</td>
+  <td>a telegraph key</td>
+  <td>a Dvorak keyboard</td>
 </tr>
 <tr>
-  <td><b>10: Hunt history</b>
-  <td>a physical invitation to a previous Hunt
-  <td>a past Mystery Hunt coin
-  <td>an Indian Head penny
-  <td>a summary progress report of a team from a previous Hunt (given to you at the wrapup of a previous hunt)
+  <td><b>10: Hunt history</b></td>
+  <td>a physical invitation to a previous Hunt</td>
+  <td>a past Mystery Hunt coin</td>
+  <td>an Indian Head penny</td>
+  <td>a summary progress report of a team from a previous Hunt (given to you at the wrapup of a previous hunt)</td>
 </tr>
 <tr>
-  <td><b>JACK: hacks</b>
-  <td>R2D2
-  <td>a police car
-  <td>a cow
-  <td>an Apollo Lunar Lander
+  <td><b>JACK: hacks</b></td>
+  <td>R2D2</td>
+  <td>a police car</td>
+  <td>a cow</td>
+  <td>an Apollo Lunar Lander</td>
 </tr>
 <tr>
-  <td><b>QUEEN: self-indulgence</b>
-  <td>a copy of <i>Atlas Shrugged</i>
-  <td>Old Spice
-  <td>something made by SC Johnson: A Family Company
-  <td>a Kappa Sig(!) jersey
+  <td><b>QUEEN: self-indulgence</b></td>
+  <td>a copy of <i>Atlas Shrugged</i></td>
+  <td>Old Spice</td>
+  <td>something made by SC Johnson: A Family Company</td>
+  <td>a Kappa Sig(!) jersey</td>
 </tr>
 <tr>
-  <td><b>KING: people</b>
-  <td>a HASS major
-  <td>someone with unnaturally-colored hair
-  <td>someone in a fraternity
-  <td>someone from another team
+  <td><b>KING: people</b></td>
+  <td>a HASS major</td>
+  <td>someone with unnaturally-colored hair</td>
+  <td>someone in a fraternity</td>
+  <td>someone from another team</td>
 </tr>
 <tr>
-  <td><b>ACE: skills</b>
-  <td>someone who can do a split
-  <td>someone who speaks four+ languages
-  <td>someone who can solve a Rubik's Cube in less than one minute
-  <td>someone who can do 100 pushups
+  <td><b>ACE: skills</b></td>
+  <td>someone who can do a split</td>
+  <td>someone who speaks four+ languages</td>
+  <td>someone who can solve a Rubik's Cube in less than one minute</td>
+  <td>someone who can do 100 pushups</td>
 </tr>
 
 </table>
