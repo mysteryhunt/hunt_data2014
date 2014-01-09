@@ -8,10 +8,7 @@ var mh = {};
                  .on('selectstart', false);
     };
 })(jQuery);
-$('#mh-controls > *').css('opacity',0).css('top',20).animate({
-    opacity: 1,
-    top: 0
-}, 1000).mouseenter(function(e) {
+$('#mh-controls > *').mouseenter(function(e) {
     $(e.target).animate({ top: -2 }, 100, 'linear').animate({ top: 0 }, 100, 'linear');
 });
 $('#mh-controls, #mh-controls > *').disableSelection();
