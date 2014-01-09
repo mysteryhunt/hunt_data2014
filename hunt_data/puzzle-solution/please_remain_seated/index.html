@@ -1,0 +1,99 @@
+<h2>Solution to Please Remain Seated</h2>
+
+<p><i>Author: James Clark</i></p>
+
+<p>
+Twenty city names are listed, followed by twenty image/video pairs.  The image in each pair is of a (real) roller coaster, and the video is of a ride on a roller coaster designed in the game <a href="http://www.rollercoastertycoon.com‎">Roller Coaster Tycoon 3</a> (RCT3).
+
+<p>
+The first step is to identify all of the real roller coasters.  Each one can be found in an amusement park in one of the cities (and each city is represented).
+<p>
+The real roller coasters are as follows:
+<table>
+<tr><th>Order<th>Coaster Name<th>Park<th>City
+<tr><td>1<td>Cyclone<td>Luna Park<td>Brooklyn, NY
+<tr><td>2<td>Rock 'n' Roller Coaster Starring Aerosmith<td>Walt Disney World - Hollywood Studios<td>Lake Buena Vista, FL
+<tr><td>3<td>Outlaw Run<td>Silver Dollar City<td>Branson, MO
+<tr><td>4<td>Steel Dragon 2000<td>Nagashima Spa Land<td>Kuwana, Mie, Japan
+<tr><td>5<td>SheiKra<td>Busch Gardens Tampa<td>Tampa, FL
+<tr><td>6<td>Ice Mountain Bobsleds<td>Enchanted Forest<td>Turner, OR
+<tr><td>7<td>Ninja<td>Six Flags Magic Mountain<td>Valencia, CA
+<tr><td>8<td>GateKeeper<td>Cedar Point<td>Sandusky, OH
+<tr><td>9<td>Nighthawk<td>Carowinds<td>Charlotte, NC
+<tr><td>10<td>Untamed<td>Canobie Lake Park<td>Salem, NH
+<tr><td>11<td>Mystery Mine<td>Dollywood<td>Pigeon Forge, TN
+<tr><td>12<td>Bizarro<td>Six Flags New England<td>Agawam, MA
+<tr><td>13<td>Explorer<td>Mirabilandia<td>Savio, Italy
+<tr><td>14<td>Rebel Yell<td>Kings Dominion<td>Doswell, VA
+<tr><td>15<td>Space Mountain<td>Disneyland<td>Anaheim, CA
+<tr><td>16<td>Iron Rattler<td>Six Flags Fiesta Texas<td>San Antonio, TX
+<tr><td>17<td>Nemesis<td>Alton Towers<td>Alton, Staffordshire, England
+<tr><td>18<td>Dahlonega Mine Train<td>Six Flags Over Georgia<td>Austell, GA
+<tr><td>19<td>El Toro<td>Six Flags Great Adventure<td>Jackson, NJ
+<tr><td>20<td>X Coaster<td>Magic Springs and Crystal Falls<td>Hot Springs, AR
+</table>
+
+<p>
+The RCT3 roller coasters don't match up with the real roller coasters, since their tracks are not similar to the real roller coasters, and the roller coaster types are in some cases wildly different.  However, it can be noticed that some of the RCT3 roller coasters have unusual track layouts, with lots of over/under crossings.
+
+<p>
+In fact, all of the track layouts are knots (in the <a href="https://en.wikipedia.org/wiki/Knot_theory">knot theory</a> sense).  None can be unravelled to form the "unknot", and all are in minimal form with respect to their <a href="http://en.wikipedia.org/wiki/Crossing_number_(knot_theory)">crossing numbers</a>.
+
+<p>
+In case solvers do not discover this, reading down the first letters of the real coaster names in the order given gives the clue 'CROSSING NUMBERS INDEX'.
+
+<p>
+Solvers must now analyze the videos and determine the shape of the knot made by that roller coaster.  Here are top-down images of the RCT3 roller coasters, with the crossings marked:
+
+<table>
+<tr><th>Order<th>Layout<th>Crossing Number
+<tr><td>1<td><a href="01c6.jpg">layout</a><td>6
+<tr><td>2<td><a href="02c7.jpg">layout</a><td>7
+<tr><td>3<td><a href="03c8.jpg">layout</a><td>8
+<tr><td>4<td><a href="04c7.jpg">layout</a><td>7
+<tr><td>5<td><a href="05c4.jpg">layout</a><td>4
+<tr><td>6<td><a href="06c7.jpg">layout</a><td>7
+<tr><td>7<td><a href="07c5.jpg">layout</a><td>5
+<tr><td>8<td><a href="08c4.jpg">layout</a><td>4
+<tr><td>9<td><a href="09c5.jpg">layout</a><td>5
+<tr><td>10<td><a href="10c5.jpg">layout</a><td>5
+<tr><td>11<td><a href="11c7.jpg">layout</a><td>7
+<tr><td>12<td><a href="12c4.jpg">layout</a><td>4
+<tr><td>13<td><a href="13c3.jpg">layout</a><td>3
+<tr><td>14<td><a href="14c3.jpg">layout</a><td>3
+<tr><td>15<td><a href="15c3.jpg">layout</a><td>3
+<tr><td>16<td><a href="16c4.jpg">layout</a><td>4
+<tr><td>17<td><a href="17c5.jpg">layout</a><td>5
+<tr><td>18<td><a href="18c4.jpg">layout</a><td>4
+<tr><td>19<td><a href="19c4.jpg">layout</a><td>4
+<tr><td>20<td><a href="20c5.jpg">layout</a><td>5
+</table>
+
+<p>
+Finally, order the data by the city list given at the top of the puzzle, indexing the crossing number into the real roller coaster name:
+<table>
+<tr><th>City<th>Original Order<th>Roller Coaster Name<th>Crossing Number<th>Letter
+<tr><td>Branson, MO<td>3<td>Outlaw Run<td>8<td>U
+<tr><td>Savio, Italy<td>13<td>Explorer<td>3<td>P
+<tr><td>Valencia, CA<td>7<td>Ninja<td>5<td>A
+<tr><td>New York, NY<td>1<td>Cyclone<td>6<td>N
+<tr><td>Charlotte, NC<td>9<td>Nighthawk<td>5<td>T
+<tr><td>Jackson, NJ<td>19<td>El Toro<td>4<td>O
+<tr><td>Turner, OR<td>6<td>Ice Mountain Bobsleds<td>7<td>N
+<tr><td>Pigeon Forge, TN<td>11<td>Mystery Mine<td>7<td>Y
+<tr><td>Salem, NH<td>10<td>Untamed<td>5<td>M
+<tr><td>Austell, GA<td>18<td>Dahlonega Mine Train<td>4<td>L
+<tr><td>Tampa, FL<td>5<td>Sheikra<td>4<td>I
+<tr><td>Myrtle Beach, SC<td>14<td>Rebel Yell<td>3<td>B
+<tr><td>Kuwana, Mie, Japan<td>4<td>Steel Dragon 2000<td>7<td>R
+<tr><td>Anaheim, CA<td>15<td>Space Mountain<td>3<td>A
+<tr><td>Hot Springs, AR<td>20<td>X Coaster<td>5<td>S
+<tr><td>Sandusky, OH<td>8<td>GateKeeper<td>4<td>E
+<tr><td>Agawam, MA<td>12<td>Bizarro<td>4<td>A
+<tr><td>Alton, Staffordshire, England<td>17<td>Nemesis<td>5<td>S
+<tr><td>Lake Buena Vista, FL<td>2<td>Rock 'n' Roller Coaster Starring Aerosmith<td>7<td>O
+<tr><td>San Antonio, TX<td>16<td>Iron Rattler<td>4<td>N
+</table>
+
+<p>
+This produces the phrase 'UP ANTONYM LIBRA SEASON', which clues the answer <b>DOWNFALL</b>.
