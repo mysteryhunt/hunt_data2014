@@ -8,9 +8,6 @@ var mh = {};
                  .on('selectstart', false);
     };
 })(jQuery);
-$('#mh-controls > *').mouseenter(function(e) {
-    $(e.target).animate({ top: -2 }, 100, 'linear').animate({ top: 0 }, 100, 'linear');
-});
 $('#mh-controls, #mh-controls > *').disableSelection();
 mh.set_iframe_location = function(id, location) {
     var iframe = $('#'+id)[0];
