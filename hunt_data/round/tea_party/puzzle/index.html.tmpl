@@ -3,7 +3,7 @@
 <div id="mh-banner">
   {% if puzzle.cup %}
   <img id="mh-teacup" src="{{ root }}/round/{{ round.round.url }}/cup_{{ puzzle.cup }}.png">
-  {% else %}
+  {% elif puzzle.chair %}
   <img id="mh-teacup" src="{{ root }}/round/{{ round.round.url }}/chair_{{ puzzle.chair }}.png">
   {% endif %}
   <div id="mh-title">
