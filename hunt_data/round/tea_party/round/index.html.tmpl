@@ -71,32 +71,26 @@
     </div>
 
     <table id="mh-party-puzzle-table">
-      {% for chair in chairs %}
-      {% if chair %}
-      <tr><td>
-	  <a href="{{ root }}/puzzle/{{ chair.puzzle.url }}/">
-	    <img class="mh-party-chair" src="chair_{{ chair.direction }}.png" />
-	  </a>
-	</td><td class="mh-party-puzzle-name">
-	  <a href="{{ root }}/puzzle/{{ chair.puzzle.url }}/">
-	    {{ chair.puzzle.name }}
-	  </a>
-      </td></tr>
-      {% endif %}
-      {% endfor %}
       {% for puzzle in puzzles %}
-      {% if puzzle.cup %}
       <tr><td>
-	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
-	    <img class="mh-party-cup" src="cup_{{ puzzle.cup }}.png" />
-	  </a>
+	  <div style="position: relative;">
+	    <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
+	      {% if puzzle.chair %}
+	      <img class="mh-party-chair" src="chair_{{ puzzle.chair }}.png" />
+	      {% elif puzzle.cup %}
+	      <img class="mh-party-cup" src="cup_{{ puzzle.cup }}.png" />
+	      {% endif %}
+	    </a>
+	    {% if puzzle.solved %}
+	    <img class="mh-party-solved" src="solved.png" />
+	    {% endif %}
+	  </div>
 	</td><td class="mh-party-puzzle-name">
 	  <a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">
 	    {{ puzzle.puzzle.name }}
 	  </a>
       </td></tr>
-    {% endif %}
-    {% endfor %}
+      {% endfor %}
     </table>
   </div>
 

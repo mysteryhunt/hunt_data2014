@@ -47,6 +47,7 @@
 		    {% elif round.round.url == "events" %}
 		    {% else %}
 		    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
+		      {% if round.solved %}[SOLVED]{% endif %}
 		      <ul>
 			{% for puzzle in round.puzzles %}
 			<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>

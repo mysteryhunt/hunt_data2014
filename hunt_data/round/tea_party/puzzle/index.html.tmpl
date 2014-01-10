@@ -2,9 +2,15 @@
 
 <div id="mh-banner">
   {% if puzzle.cup %}
-  <img id="mh-teacup" src="{{ root }}/round/{{ round.round.url }}/cup_{{ puzzle.cup }}.png">
+  <div id="mh-teacup">
+    <img src="{{ root }}/round/{{ round.round.url }}/cup_{{ puzzle.cup }}.png" />
+    {% if puzzle.solved %}<img class="mh-solved" src="{{ root }}/round/{{ round.round.url }}/solved.png" />{% endif %}
+  </div>
   {% elif puzzle.chair %}
-  <img id="mh-teacup" src="{{ root }}/round/{{ round.round.url }}/chair_{{ puzzle.chair }}.png">
+  <div id="mh-teacup">
+    <img src="{{ root }}/round/{{ round.round.url }}/chair_{{ puzzle.chair }}.png" />
+    {% if puzzle.solved %}<img class="mh-solved" src="{{ root }}/round/{{ round.round.url }}/solved.png" />{% endif %}
+  </div>
   {% endif %}
   <div id="mh-title">
     {{ puzzle.puzzle.name }}
