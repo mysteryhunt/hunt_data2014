@@ -90,7 +90,7 @@ knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	6060
 knights	HOSPITAL BEDS	marking_territory	Marking Territory	6070
 knights	CAPS LOCK	filed_erector	Filed Erector	6080
 knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	6090
-knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Too Much Pepper	6100
+knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	6100
 knights	G RING	wandering_stars	Wandering Stars	6120
 knights	FLU SHOT	some_nutty_lines	Some Nutty Lines	6130
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	6140
