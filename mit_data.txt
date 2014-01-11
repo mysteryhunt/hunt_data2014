@@ -3,6 +3,7 @@ build_your_own_sudoku	5_spades
 intersecting_personalities	7_spades
 safety_first	J_clubs
 opposites_are_not_downbeats	J_diamonds
+technical_program_committee_report	Q_clubs
 bumblebee_tune_a	5_clubs
 upstairs_downstairs	9_diamonds
 zoinks	2_spades
