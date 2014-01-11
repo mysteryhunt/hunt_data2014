@@ -1,0 +1,291 @@
+html {
+
+    min-height: 100%
+
+}
+
+body, td, input {
+
+    font-family: 'Alice', sans-serif;
+
+    font-size: 18px;
+
+}
+
+table {
+
+    text-align: left;
+
+}
+
+td {
+
+    padding: 2px 4px;
+
+}
+
+#mh-title {
+
+    font-family: 'Alice', sans-serif;
+
+    font-size: 50px;
+
+}
+
+.mh-flavortext {
+
+    font-style: italic;
+
+    text-align: center;
+
+    margin: 0px 50px;
+
+}
+
+#mh-content {
+
+    padding: 10px;
+
+    text-align: justify;
+
+    clear: both;
+
+}
+
+#mh-outer {
+
+    width: 900px;
+
+}
+
+#mh-controls {
+
+    position: relative;
+
+}
+
+table.mh-center {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+
+@media screen {
+
+    body {
+
+	width: 100%;
+
+	margin: 0px;
+
+	text-align: center;
+
+    }
+
+    .mh-fancy #mh-outer {
+
+	padding-top: 10px;
+
+	display: inline-block;
+
+	text-align: left;
+
+        position: relative;
+
+    }
+
+    .mh-fancy #mh-controls {
+
+	padding-bottom: 5px;
+
+	overflow: hidden;
+
+    }
+
+    .mh-fancy #mh-controls a, .mh-fancy #mh-controls span {
+
+	color: #fff;
+
+	text-shadow: 0px 0px 4px #000, 0px 2px 4px #000;
+
+	font-size: 90%;
+
+	text-decoration: none;
+
+    }
+
+    .mh-fancy #mh-back {
+
+	position: relative;
+
+	left: 20px;
+
+    }
+
+    .mh-fancy #mh-elsewhere {
+
+	position: relative;
+
+	left: 40px;
+
+    }
+
+    .mh-fancy #mh-plain-toggle {
+
+	position: absolute;
+
+	right: 160px;
+
+    }
+
+    .mh-fancy #mh-answer, .mh-fancy #mh-contact {
+
+	position: absolute;
+
+	right: 20px;
+
+    }
+
+    .mh-fancy #mh-page {
+
+	background: #fff;
+
+	box-shadow: 0px 0px 8px #000;
+
+	border-radius: 15px;
+
+	overflow: hidden;
+
+	margin-bottom: 20px;
+
+    }
+
+    .mh-fancy #mh-banner {
+
+	border-top-left-radius: 15px;
+
+	border-top-right-radius: 15px;
+
+    }
+
+    .mh-fancy #mh-title {
+
+	padding: 40px 20px;
+
+	text-shadow: 0px 0px 4px #eee;
+
+	color: #000;
+
+    }
+
+    .mh-fancy #mh-content {
+
+	color: #000;
+
+	border-top: 1px solid #aaa;
+
+	border-bottom-left-radius: 15px;
+
+	border-bottom-right-radius: 15px;
+
+    }
+
+
+
+    .mh-plain #mh-controls {
+
+	text-align: center;
+
+    }
+
+    .mh-plain #mh-back {
+
+	display: none;
+
+    }
+
+    .mh-plain #mh-plain-toggle {
+
+	position: absolute;
+
+	right: 0px;
+
+    }
+
+    .mh-plain #mh-answer, .mh-plain #mh-contact {
+
+	display: none;
+
+    }
+
+    .mh-plain #mh-title {
+
+	text-align: center;
+
+	padding: 10px 0px;
+
+    }
+
+    .mh-plain a {
+
+	color: #520;
+
+    }
+
+}
+
+
+
+@media print {
+
+    #mh-controls {
+
+	text-align: center;
+
+    }
+
+    #mh-back {
+
+	display: none;
+
+    }
+
+    #mh-elsewhere {
+
+	display: none;
+
+    }
+
+    #mh-answer, #mh-plain-toggle, #mh-contact {
+
+	display: none;
+
+    }
+
+    #mh-title {
+
+	text-align: center;
+
+    }
+
+    a {
+
+	color: #520;
+
+    }
+
+}
+
+
+
+
+@media screen {
+    body.mh-fancy {
+	background: #d0ceca url('../../round/mit/background.jpg') no-repeat top center;
+    }
+}
+
