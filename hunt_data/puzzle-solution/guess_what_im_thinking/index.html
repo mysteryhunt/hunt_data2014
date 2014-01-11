@@ -1,0 +1,74 @@
+<h2>Solution to Guess What I'm Thinking</h2>
+
+<p><i>Authors: Chieu Nguyen and Aaron Bader</i></p>
+
+<p>This puzzle is a parody of the puzzle authoring no-no of writing a puzzle
+  that is essentially "guess what the author is thinking."  As such, the
+  puzzle appears to be nothing but a line with 20 blank squares.  However, in order to
+  assist the solver, the puzzle itself interacts with your guesses to guide
+  you towards the correct answer.</p>
+
+<p>In order to solve the puzzle you must attempt to submit an answer that is
+  20 letters long.  Yes, you actually have to
+  submit an answer.  Provided that your
+  answer guess is 20 letters long (after excluding non-alphabetical characters),
+  you will receive a response that shows you how to proceed.
+  And no, this answer is not counted against you.
+</p>
+
+<p>Once you make a guess, you are presented with a response that indicates the
+  difference between your guess and the string of letters we had in mind.
+  You are also given four more rows of blanks ranging from 21 blanks to 24
+  blanks, as well as an input box to use so that you don't accidentally call
+  in guesses as answer attempts and make things a logistical nightmare for us.
+  Any guess from 20 to 24 letters long will receive a response, and each length
+  corresponds to a different guessing game.
+   </p>
+
+<p>The four correct solutions are:</p>
+<ol>
+<li><tt>WORDOFTENWITHNEITHER</tt> = NOR</li>
+<li><tt>DIRECTIONOPPOSITEWEST</tt> = EAST</li>
+<li><tt>CLOONEYHOSPITALNBCSHOW</tt> = ER</li>
+<li><tt>JETSTARPACIFICSIATACODE</tt> = BL</li>
+<li><tt>COMEDIANEDDIEOFTHERICHES</tt> = IZZARD</li>
+</ol>
+
+<p>The answers to the phrase combine to form the answer, <b>NOR'EASTER BLIZZARD</b>. Now, we know that you can probably guess the answer with 4 or maybe even 3 
+  of the pieces.  But you guys were having so much fun with this puzzle, that
+  you probably solved them all anyway.</p>
+
+<p>Here's how all the different guessing games work:</p>
+
+<p>For the 20-letter phrase, WORDOFTENWITHNEITHER, you are given the
+  standard Mastermind readout.  Black means that you have a letter in the
+  correct place.  White means you have a letter, but not in the correct
+  place.</p>
+
+<p>For the 21-letter phrase, DIRECTIONOPPOSITEWEST, the answer first compares
+  the length of the Morse code strings.  If they are different lengths, it lets
+  you know that your guess is not the correct length, and gives you a decimal
+  value of how much longer or shorter you are.  If it is the same length, it
+  tells you the binary difference between the answer you "tapped out" and the
+  actual answer, treating dits as 0 and dahs as 1.  The "tapped out" is
+  supposed to clue you towards Morse.  Eventually you get a solution that is
+  the same length letterwise, and the same number of Morse characters, but
+  this is still not enough for a unique phrase.  So in the case that the
+  Morse strings are the same, it will tell you where your first error is.</p>
+
+<p>For the 22-letter phrase, CLOONEYHOSPITALNBCSHOW, you are given 22 symbols.
+  The symbol is red if your guess letter is earlier in the alphabet than the
+  correct letter and blue if it is later in the alphabet than your guess
+  letter.  It is green if it is correct.  This one is trivial to do with 26
+  guesses, so feel free to thank us.</p>
+
+<p>For the 23-letter phrase, JETSTARPACIFICSIATACODE, convert both the guess and
+  the phrase into a 23-dimensional vector using standard alphanumeric
+  substitution.  Then take the Euclidean 2-norm of the difference of the
+  vectors.  This yields how far "off" you are from the answer phrase.</p>
+
+<p>For the 24-letter phrase, COMEDIANEDDIEOFTHERICHES, you are given a set of
+  slashes lines and dots in two sets.  The top set are the pigpen strokes that
+  appear in your letter but not in the corresponding answer letter.  The
+  bottom set are the ones that appear in the answer letter but not in your
+  letter.</p>
