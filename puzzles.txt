@@ -3,6 +3,7 @@ mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	10
 mit	MEMORY	intersecting_personalities	Intersecting Personalities	20
 mit	MALPRACTICE	safety_first	Safety First	30
 mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	40
+mit	MANIFESTO	technical_program_committee_report	Technical Program Committee Report	50
 mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	60
 mit	DOORWAY	upstairs_downstairs	Upstairs, Downstairs	70
 mit	MISCHIEF	zoinks	Zoinks!	80
