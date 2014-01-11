@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upstairs, Downstairs (MIT)</title>
+    <link rel="stylesheet" type="text/css" href="solution.css">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne|Alice" rel="stylesheet" type="text/css">
+  </head>
+  <body class="mh-fancy">
+    <div id="mh-outer">
+      <div id="mh-controls">
+	<a id="mh-back" href="../../puzzle/upstairs_downstairs/">
+	  Back
+	</a>
+      </div>
+      <div id="mh-page">
+
+
+<div id="mh-content">
+
+
+
+
+<h2>BLAST from the Past</h2>
+
+<p>
+<i>Authors: Susan Byrne, Thomas Mack</i>
+</p>
+
+<p>The solver is presented with a series of 14 DNA sequences. &nbsp;Each
+sequence begins with a clue in the usual amino acid translation alphabet,
+followed by a stop codon, and then a sequence from <i>Anolis caroliensis</i>
+(North American green anole lizard), the first lizard genome sequenced
+(Alf&ouml;di J., et al. Nature 2011).</p>
+
+<p>The answer to each clue is a dinosaur root word followed by "lizard". For
+example, RECEIVEDAURALLYAFTERLIGHTNING clues "thunder";" thunder-lizard" is
+brontosaurus; and so the first letter "B" is used.  &nbsp;When arranged in the
+proper order, the letters spell AMBER, OCHRE, OPAL, which clue the final answer
+<b>STOP&nbsp;CODON</b>.</p>
+
+<p>
+1A = duck (Anatosaurus) = TEAMSKATERNHLANAHEIM<br>
+2M = vicious (Masiakasaurus) = LATEGUITARISTSID<br>
+3B = thunder (Brontosaurus) = RECEIVEDAURALLYAFTERLIGHTNING<br>
+4E = light-weight (Elaphrosaurus) = ITISTHECLASSHEAVIERTHANFEATHERWEIGHT<br>
+5R = Sussex (Regnosaurus) = RIGHTNEARHAMPSHIREANDKENTWITHCHICHESTERANDLEWES
+</p>
+
+<p>
+6O = weapon (Oplosaurus) = INFINALFANTASYSEVENEMERALDEG<br>
+7C = helmet (Corythosaurus) = RIDINGSAFETYHEADSHIELD<br>
+8H = western (Hesperosaurus) = LAWLESSFILMGENRESPAGHETTI<br>
+9R = thornbush (Rubeosaurus) = DETERRENTPRICKLYHEDGEPLANT<br>
+10E = riddle (Enigmosaurus) = (B) NRAVEHARRYSMAGICALNEMESISREALLASTNAME
+</p>
+
+<p>
+11O = eye (Opthalmosaurus) = (Z) QEKEKATRINAANDIKEHADTHISATTHEIRCENTERS<br>
+12P = parrot (Psittacosaurus) = AVIANTHATCANMIMICTALKING<br>
+13A = silver (Argyrosaurus) = ERIKVENDTRECEIVEDTHISMEDALATATHENS<br>
+14L = mud (Limusaurus) = EARTHYWETDIRT
+</p>
+
+<p>In the amino acid alphabet, U codes for selenocysteine, which is coded by TGA
+under certain circumstances. B codes for either asparagine (N) or aspartic acid
+(D). Z codes for either glutamic acid (E) or glutamine (Q).</p>
+
+<p>The 14 sequences are presented to the solver in alphabetical dinosaur
+order: 1A, 13A, 3B, 7C, 4E, 10E, 8H, 14L, 2M, 6O, 11O, 12P, 5R, 9R.</p>
+
+<p>In this order, the first letter of each clue phrase spells down
+TERRINLELIQARD, or "terrible lizard", cluing dinosaur.</p>
+
+<p>Appended to the clue phrase sequences is another DNA sequence, which a BLAST
+search should identify as <i>Anolis caroliensis</i> (anole lizard). This lizard
+DNA clues that these are dinosaur root words ("thunder-lizard").</p>
+
+<p>Three genes from the lizard are used, which specify the grouping for the
+words (amber, ochre, and opal, respectively). In addition, the stop codon
+between the clue phrase and the lizard DNA matches that of the word: TAG (amber)
+for 1A, 2M, 3B, 4E, and 5R; TAA (ochre) for 6O, 7C, 8H, 9R, and 10E; TAG (opal)
+for 11O, 12P, 13A, and 14L.</p>
+
+<p>The ordering of the letters within each word can be specified by either: the
+position of the sequence; the length of the appended lizard sequence
+(shortest-longest); or the total length of the sequence.</p>
+
+<table class="t">
+ <tr>
+  <th></th>
+  <th>clue len.</th>
+  <th>mRNA seq. location</th>
+  <th>lizard gene len.</th>
+  <th>total seq. len.</th>
+  <th>genome DNA location</th>
+  <th>gene name</th>
+ </tr>
+ <tr>
+  <td>1A</td>
+  <td>63</td>
+  <td>43-133</td>
+  <td>91</td>
+  <td>154</td>
+  <td>GL343369.1: 679050 - 679140</td>
+  <td>keratin-associated beta protein 37</td>
+ </tr>
+ <tr>
+  <td>2M</td>
+  <td>51</td>
+  <td>134-373</td>
+  <td>240</td>
+  <td>291</td>
+  <td>GL343369.1: 678810 - 679049</td>
+  <td>LI-AC-37</td>
+ </tr>
+ <tr>
+  <td>3B</td>
+  <td>90</td>
+  <td>374-648</td>
+  <td>275</td>
+  <td>365</td>
+  <td>GL343369.1: 677658 - 677932</td>
+  <td>ENSACAG00000027550</td>
+ </tr>
+ <tr>
+  <td>4E</td>
+  <td>111</td>
+  <td>649-948</td>
+  <td>300</td>
+  <td>411</td>
+  <td>GL343369.1: 677358 - 677657</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr class="endsec">
+  <td>5R</td>
+  <td>144</td>
+  <td>949-1260</td>
+  <td>312</td>
+  <td>456</td>
+  <td>GL343369.1: 677046 - 677357</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>6O</td>
+  <td>87</td>
+  <td>166-255</td>
+  <td>90</td>
+  <td>177</td>
+  <td>GL343221.1: 826076 - 826165</td>
+  <td>zinc finger protein 804A</td>
+ </tr>
+ <tr>
+  <td>7C</td>
+  <td>69</td>
+  <td>256-386</td>
+  <td>131</td>
+  <td>200</td>
+  <td>GL343221.1: 774136 - 774266</td>
+  <td>ZNF804A</td>
+ </tr>
+ <tr>
+  <td>8H</td>
+  <td>78</td>
+  <td>387-952</td>
+  <td>566</td>
+  <td>644</td>
+  <td>GL343221.1: 764609 - 765174</td>
+  <td>ENSACAG00000003720</td>
+ </tr>
+ <tr>
+  <td>9R</td>
+  <td>81</td>
+  <td>953-2041</td>
+  <td>1089</td>
+  <td>1170</td>
+  <td>GL343221.1: 763520 - 764608</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr class="endsec">
+  <td>10E</td>
+  <td>114</td>
+  <td>2042-3651</td>
+  <td>1610</td>
+  <td>1724</td>
+  <td>GL343221.1: 761910 - 763519</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>11O</td>
+  <td>117</td>
+  <td>19-105</td>
+  <td>84</td>
+  <td>201</td>
+  <td>6: 35096247 - 35096330</td>
+  <td>Vitelline Membrane Outer layer protein 1</td>
+ </tr>
+ <tr>
+  <td>12P</td>
+  <td>75</td>
+  <td>106-234</td>
+  <td>129</td>
+  <td>204</td>
+  <td>6: 35096331 - 35096459</td>
+  <td>VMO1</td>
+ </tr>
+ <tr>
+  <td>13A</td>
+  <td>105</td>
+  <td>235-366</td>
+  <td>132</td>
+  <td>237</td>
+  <td>6: 35098151 - 35098282</td>
+  <td>ENSACAG00000007746</td>
+ </tr>
+ <tr class="endsec">
+  <td>14L</td>
+  <td>42</td>
+  <td>367-713</td>
+  <td>347</td>
+  <td>389</td>
+  <td>6: 35101248 - 35101594</td>
+  <td></td>
+ </tr>
+</table>
