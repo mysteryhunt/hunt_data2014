@@ -4,12 +4,12 @@
   {% if puzzle.cup %}
   <div id="mh-teacup">
     <img src="{{ root }}/round/{{ round.round.url }}/cup_{{ puzzle.cup }}.png" />
-    {% if puzzle.solved %}<img class="mh-solved" src="{{ root }}/round/{{ round.round.url }}/solved.png" />{% endif %}
+    {% if puzzle.solved %}<img id="mh-solved" src="{{ root }}/round/{{ round.round.url }}/solved.png" />{% endif %}
   </div>
   {% elif puzzle.chair %}
   <div id="mh-teacup">
     <img src="{{ root }}/round/{{ round.round.url }}/chair_{{ puzzle.chair }}.png" />
-    {% if puzzle.solved %}<img class="mh-solved" src="{{ root }}/round/{{ round.round.url }}/solved.png" />{% endif %}
+    {% if puzzle.solved %}<img id="mh-solved" src="{{ root }}/round/{{ round.round.url }}/solved.png" />{% endif %}
   </div>
   {% endif %}
   <div id="mh-title">
