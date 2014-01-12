@@ -12,10 +12,16 @@
   </a>
   {% else %}
   <a id="mh-answer" href="javascript:mh.submit_answer();">
-    {% if bait_ready < 3 %}
-    Submit Bait
+    {% if meta_status == 'solved' %}
+    You Discovered the Identity of the Beast
+    {% elif meta_status == 'solving' %}
+    Submit the Jabberwock's Secret Message
+    {% elif meta_status == 'runaround' %}
+    You're on the MIT Runaround!
+    {% elif meta_status == 'runaround_start' %}
+    All Bait Submitted
     {% else %}
-    Creatures Baited!
+    Submit Bait
     {% endif %}
   </a>
   {% endif %}

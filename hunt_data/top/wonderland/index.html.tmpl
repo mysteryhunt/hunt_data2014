@@ -37,17 +37,17 @@
 	    {% if round.round.order >= 20 %}
 	    <div class="mh-map-location" style=
 		 {% if round.round.url == "mock_turtle" %}
-		 "top: 420px; left: 476px;"
+		 "top: 420px; left: 479px;"
 		 {% elif round.round.url == "tea_party" %}
-		 "top: 352px; left: 620px;"
+		 "top: 350px; left: 617px;"
 		 {% elif round.round.url == "white_queen" %}
 		 "top: 92px; left: 207px;"
-		 {% elif round.round.url == "caucus_race" %}
-		 "top: 188px; left: 341px;"
 		 {% elif round.round.url == "knights" %}
-		 "top: 176px; left: 623px;"
+		 "top: 186px; left: 630px;"
+		 {% elif round.round.url == "caucus_race" %}
+		 "top: 199px; left: 348px;"
 		 {% elif round.round.url == "humpty_dumpty" %}
-		 "top: 167px; left: 19px;"
+		 "top: 170px; left: 26px;"
 		 {% else %}
 		 "{{ puzzle.location }}"
 		 {% endif %}

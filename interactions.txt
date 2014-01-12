@@ -1,7 +1,9 @@
 url	name	order
-dormouse	Meet the Dormouse	100
-caterpillar	Meet the Caterpillar	200
-tweedles	Meet Tweedledee and Tweedledum	300
-white_queen_gift	Give the White Queen a Gift	500
-pwa_garciaparra_url	Submit a URL for A Puzzle with the Answer GARCIAPARRA	1010
-pwa_garciaparra_food	Bring us food for A Puzzle with the Answer GARCIAPARRA	1020
+dormouse	Meet the Dormouse	110
+caterpillar	Meet the Caterpillar	120
+tweedles	Meet Tweedledee and Tweedledum	130
+mit_runaround_start	Start the MIT Runaround	140
+mit_runaround	Hunt the Beast	150
+white_queen_gift	Give the White Queen a Gift	210
+pwa_garciaparra_url	Submit a URL for A Puzzle with the Answer GARCIAPARRA	211
+pwa_garciaparra_food	Bring us food for A Puzzle with the Answer GARCIAPARRA	212
