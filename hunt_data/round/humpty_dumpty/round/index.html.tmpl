@@ -30,11 +30,15 @@
   </div>
 
   <div id="mh-content">
-    <div class="mh-flavortext">
+    <div class="mh-roundtext">
       If Humpty's unbirthday gifts you can find,<br />
+      {% if jigsaw >= 1 %}
       He'll reveal an important aversion;<br />
-      Stare at this picture until you go blind,<br />
+      Stare at these pieces until you go blind,<br />
       (Click for access to a larger version).
+      {% else %}
+      He'll reveal an important aversion.
+      {% endif %}
     </div>
     <div>
       <ul>
