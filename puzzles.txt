@@ -70,20 +70,20 @@ white_queen	ROCK	puzzle_with_answer_a_hard_days_night	A Puzzle with the Answer A
 white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3160
 white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170
 white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180
-knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4010
+knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	4010
 knights	HOBO BOBO	kroskuro	Kroskuro	4020
-knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	4030
-knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	4040
-knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	4060
-knights	HOSPITAL BEDS	marking_territory	Marking Territory	4070
-knights	CAPS LOCK	filed_erector	Filed Erector	4080
+knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	4030
+knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4040
+knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	4060
+knights	G RING	wandering_stars	Wandering Stars	4070
 knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	4090
-knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	4100
-knights	G RING	wandering_stars	Wandering Stars	4120
-knights	FLU SHOT	some_nutty_lines	Some Nutty Lines	4130
-knights	CUTTING EDGE	hole_wizard	Hole Wizard	4140
-knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	4150
-knights	FIRE HOSE	stalk_us_maybe	Stalk Us Maybe	4160
+knights	CAPS LOCK	filed_erector	Filed Erector	4100
+knights	CUTTING EDGE	hole_wizard	Hole Wizard	4110
+knights	FLU SHOT	some_nutty_lines	Some Nutty Lines	4120
+knights	FIRE HOSE	stalk_us_maybe	Stalk Us Maybe	4130
+knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	4140
+knights	HOSPITAL BEDS	marking_territory	Marking Territory	4150
+knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	4160
 caucus_race	ECHO	crossed_wires	Crossed Wires	5010
 caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020
 caucus_race	MILLSTONE	sat_iii	SAT III	5030
