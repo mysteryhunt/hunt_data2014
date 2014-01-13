@@ -29,11 +29,34 @@
     </div>
   </div>
 
-  <div id="mh-content">
-    <ul>
-      {% for puzzle in puzzles %}
-      <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-	{% endfor %}
+  <div id="mh-content" style="padding: 20px 50px;">
+    <ul><li>
+	{% if puzzle_0 %}
+	<a href="{{ root }}/puzzle/{{ puzzle_0.puzzle.url }}/">{{ puzzle_0.puzzle.name }}</a> (Friday 6pm)
+	{% else %}
+	Friday 6pm: Send 1-2 of your most vocal team members to Lobdell (located on the second floor of the Student Center in W20).
+	{% endif %}
+    </ul>
+    <ul><li>
+	{% if puzzle_1 %}
+	<a href="{{ root }}/puzzle/{{ puzzle_1.puzzle.url }}/">{{ puzzle_1.puzzle.name }}</a> (Friday 11pm)
+	{% else %}
+	Friday 11pm: Send 1-2 of [ ] to Lobdell.
+	{% endif %}
+    </ul>
+    <ul><li>
+	{% if puzzle_2 %}
+	<a href="{{ root }}/puzzle/{{ puzzle_2.puzzle.url }}/">{{ puzzle_2.puzzle.name }}</a> (Saturday 8am)
+	{% else %}
+	Saturday 8am: Send 1-2 of your least easily-offendable members to Lobby 13.
+	{% endif %}
+    </ul>
+    <ul><li>
+	{% if puzzle_3 %}
+	<a href="{{ root }}/puzzle/{{ puzzle_3.puzzle.url }}/">{{ puzzle_3.puzzle.name }}</a> (Saturday 1pm)
+	{% else %}
+	Saturday 1pm: Send 1-2 of your best wangers to Lobby 13.
+	{% endif %}
     </ul>
   </div>
 
