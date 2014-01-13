@@ -19,11 +19,11 @@
 	<a id="mh-answer" href="{{ root }}/puzzle-solution/{{ puzzle.puzzle.url }}/">
 	  Solution
 	</a>
-	{% elif puzzle.url == 'puzzle_with_answer_garciaparra' and not stage2 and not stage3 %}
+	{% elif puzzle.puzzle.url == 'puzzle_with_answer_garciaparra' and not stage2 and not stage3 %}
 	<a id="mh-answer" href="javascript:mh.submit_url();">
 	  Submit URL
 	</a>
-	{% elif puzzle.url == 'puzzle_with_answer_garciaparra' and stage2 and not stage3 %}
+	{% elif puzzle.puzzle.url == 'puzzle_with_answer_garciaparra' and stage2 and not stage3 %}
 	{% else %}
 	<a id="mh-answer" href="javascript:mh.submit_answer();">
 	{% if puzzle.solved %}
