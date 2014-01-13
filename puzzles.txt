@@ -76,6 +76,7 @@ knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	4030
 knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4040
 knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	4060
 knights	G RING	wandering_stars	Wandering Stars	4070
+knights	BAD BOYS	campus_art_from_z_to_a	Campus Art from Z to A	4080
 knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	4090
 knights	CAPS LOCK	filed_erector	Filed Erector	4100
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	4110
