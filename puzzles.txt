@@ -93,6 +93,7 @@ caucus_race	SMASH HIT	1_2_3_4_4649	1! 2! 3! 4! 4649!	5040
 caucus_race	ENGULF	gone_with_the_wind	Gone with the Wind	5050
 caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5060
 caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5070
+caucus_race	SECONDARY	growth_and_fixed_costs	Growth and Fixed Costs	5080
 caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5090
 caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5100
 caucus_race	SPUR	venntersections	Venntersections	5110
