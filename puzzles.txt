@@ -74,6 +74,7 @@ knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	4010
 knights	HOBO BOBO	kroskuro	Kroskuro	4020
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	4030
 knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4040
+knights	ED WYNN	a_mad_cocktail_party	A Mad Cocktail Party	4050
 knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	4060
 knights	G RING	wandering_stars	Wandering Stars	4070
 knights	BAD BOYS	campus_art_from_z_to_a	Campus Art from Z to A	4080
