@@ -35,7 +35,7 @@
 		  <ul>
 		    {% for puzzle in round.puzzles %}
 		    <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-		      {% if puzzle.solved %}[SOLVED]{% endif %}
+		      {% if puzzle.solved %}[SOLVED: <a href="{{ root }}/dynamic/submit/survey/{{ puzzle.puzzle.url }}">survey</a>]{% endif %}
 		      {% endfor %}
 		  </ul>
 		  {% endif %}
