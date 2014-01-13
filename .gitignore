@@ -1,5 +1,7 @@
 *.pyc
 *~
 *.sql
+teams.txt
+team_phones.txt
 hunt_data_backup
 htpasswd
