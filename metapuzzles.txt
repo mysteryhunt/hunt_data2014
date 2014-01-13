@@ -2,7 +2,7 @@ url	name	order	answer
 spades	Spades	100	MANCHEGO
 clubs	Clubs	200	TOBACCO
 diamonds	Diamonds	300	TWIN POPS
-jabberwock	The Jabberwock's Secret Message	399	THE BEAST IS MS ALICE LIDDEL
+jabberwock	The Jabberwock's Secret Message	399	THE BEAST IS MS ALICE LIDDELL
 tea_party	The Tea Party	400	GIVE HIM A HAND
 white_queen_a02	The White Queen (Answer 2)	502	NOWHERE MAN
 white_queen_a04	The White Queen (Answer 4)	504	EIGHT DAYS A WEEK
