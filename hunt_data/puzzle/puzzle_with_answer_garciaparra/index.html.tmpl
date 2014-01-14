@@ -38,7 +38,7 @@ Congrats! You've solved this puzzle. The answer is <b>GARCIAPARRA</b>. However, 
 </div>
 
 <script type="text/javascript">
-mh.submit_url = function() {
+function submit_url() {
     var page = $('#mh-page');
     var outer = $('#mh-submit-url');
     outer.css('top', page.offset().top + 20);
@@ -60,7 +60,7 @@ mh.submit_url = function() {
         outer.fadeToggle('slow');
     }
 };
-$('#mh-submit-url-bg').click(mh.submit_url);
+$('#mh-submit-url-bg').click(submit_url);
 </script>
 
 {% if stage2 %}<div style="opacity: 0.6;">{% endif %}
@@ -83,6 +83,7 @@ $('#mh-submit-url-bg').click(mh.submit_url);
 
 <p>One more round of GeoGuessing!  But this time, to make it more challenging, the static image is all you get!</p>
 
+<div style="text-align: center;">
 <img src="stage3/01.jpg">
 <img src="stage3/02.jpg">
 <img src="stage3/03.jpg">
@@ -92,6 +93,7 @@ $('#mh-submit-url-bg').click(mh.submit_url);
 <img src="stage3/07.jpg">
 <img src="stage3/08.jpg">
 <img src="stage3/09.jpg">
+</div>
 
 {% endif %}
 {% endif %}
