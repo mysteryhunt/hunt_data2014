@@ -181,7 +181,7 @@
       {% for round in rounds %}
       {% if round.round.url == 'tea_party' or round.round.url == 'mock_turtle' or round.round.url == 'white_queen' %}
       <a href="{{ root }}/round/{{ round.round.url }}/" style="text-decoration: none;">
-	<img title="{{ round.round.url }}" src="{{ root }}/round/{{ round.round.url }}/rabbit-hole.gif" />
+	<img title="{{ round.round.name }}" src="{{ root }}/round/{{ round.round.url }}/rabbit-hole.gif" />
       </a>
       {% endif %}
       {% endfor %}
