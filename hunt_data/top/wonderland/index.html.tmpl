@@ -9,7 +9,7 @@
   <body class="mh-fancy">
     <div id="mh-outer">
       <div id="mh-controls">
-	<a id="mh-back" href="{{ root }}">
+	<a id="mh-back" href="{{ root }}/lobby.html">
 	  Back to Lobby 7
 	</a>
 	<a id="mh-elsewhere" href="javascript:mh.nav();">
@@ -52,7 +52,7 @@
 		 "{{ puzzle.location }}"
 		 {% endif %}
 		 >
-	      <a href="{{ root }}/round/{{ round.round.url }}/">
+	      <a href="{{ root }}/round/{{ round.round.url }}/story.html">
 		<img class="mh-map-piece" title="{{ round.round.name }}" src="{{ root }}/round/{{ round.round.url }}/map_piece.png" />
 	      </a>
 	    </div>
@@ -62,7 +62,7 @@
 	  <ul>
 	    {% for round in rounds %}
 	    {% if round.round.order >= 20 %}
-	    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a></li>
+	    <li><a href="{{ root }}/round/{{ round.round.url }}/story.html">{{ round.round.name }}</a></li>
 	    {% endif %}
 	    {% endfor %}
 	  </ul>

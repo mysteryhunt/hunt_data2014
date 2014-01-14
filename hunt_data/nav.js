@@ -1,5 +1,5 @@
 mh.nav = function() {
-    var page = $('#mh-page, #mh-surface');
+    var page = $('#mh-page, #mh-book');
     var outer = $('#mh-nav');
     outer.css('top', page.offset().top + 20);
     outer.css('left', page.offset().left + 20);
@@ -24,7 +24,7 @@ mh.nav = function() {
 };
 $('#mh-nav-bg').click(mh.nav);
 mh.submit_contact = function() {
-    var page = $('#mh-page, #mh-surface');
+    var page = $('#mh-page, #mh-book');
     var outer = $('#mh-submit-contact');
     outer.css('top', page.offset().top + 20);
     outer.css('left', page.offset().left + page.innerWidth() - 20 - outer.outerWidth());

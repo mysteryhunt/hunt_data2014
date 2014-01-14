@@ -15,32 +15,31 @@
 	Elsewhere
       </a>
     </div>
-    <div id="mh-surface">
-      <div id="mh-book">
-	<div id="mh-col1">
-	  <div id="mh-title">{{ round.round.name }}</div>
-	  <div style="position: relative;">
-	    <img id="mh-image" src="image.jpg" />
-	    <a id="mh-lantern" href=".">
-	      <img title="{{ round.round.name }}" src="lantern.png" />
-	    </a>
-	  </div>
-	  <p>
-	    After falling down a rabbit hole for what seems like all of five feet, you strike soft earth and are forced to continue on your hands and knees. The hole twists and turns upways and downways and sideways across roots, pipes, steam gaskets, and discarded rubbish. The crawling is strangely reminiscent of some of your activities back at MIT, and you seem certain that you know the right way to go. When you finally emerge from the tunnel and brush yourself off, the resulting cloud of dust surrounds you. 
-	  <p>
-	    Slowly, a grin begins to appear in the dust. The grin begins to cough, breaking up the cloud of dust, and the Cat fades into view.
+    <div id="mh-book">
+      <div id="mh-col1">
+	<div id="mh-title">{{ round.round.name }}</div>
+	<div style="position: relative;">
+	  <img id="mh-image" src="image.jpg" />
+	  <a id="mh-lantern" href=".">
+	    <img title="{{ round.round.name }}" src="lantern.png" />
+	  </a>
 	</div>
-	<div id="mh-col2">
-	  <p>
-	    "That Caterpillar needs to learn the negative effects of secondhand smoke. But, I see he led you here and didn't follow along himself, so no matter. The Beast isn't here either, of course. But the Mock Turtle is sitting over there by the river, and he may be able to lead you closer. Or perhaps he'll want to keep you here. He's rather lonely, you know. The Beast stole all his friends. Or that's what he says, at least. If you're clever, you may be able to help him once he tells you his story. Perhaps then he'll give you a gift of thanks. If not, well, it's not a bad place to be in if you have nowhere else to go."
-	  <p>
-	    And the Cat, not wanting to be any more helpful, vanishes into thin air. Left alone, you walk down towards the river to see the Mock Turtle.
-	  <p>
-	    <a href=".">To {{ round.round.name }}</a>
+	<p>
+	  After falling down a rabbit hole for what seems like all of five feet, you strike soft earth and are forced to continue on your hands and knees. The hole twists and turns upways and downways and sideways across roots, pipes, steam gaskets, and discarded rubbish. The crawling is strangely reminiscent of some of your activities back at MIT, and you seem certain that you know the right way to go. When you finally emerge from the tunnel and brush yourself off, the resulting cloud of dust surrounds you. 
+	<p>
+	  Slowly, a grin begins to appear in the dust. The grin begins to cough, breaking up the cloud of dust, and the Cat fades into view.
+      </div>
+      <div id="mh-col2">
+	<p>
+	  "That Caterpillar needs to learn the negative effects of secondhand smoke. But, I see he led you here and didn't follow along himself, so no matter. The Beast isn't here either, of course. But the Mock Turtle is sitting over there by the river, and he may be able to lead you closer. Or perhaps he'll want to keep you here. He's rather lonely, you know. The Beast stole all his friends. Or that's what he says, at least. If you're clever, you may be able to help him once he tells you his story. Perhaps then he'll give you a gift of thanks. If not, well, it's not a bad place to be if you have nowhere else to go."
+	<p>
+	  And the Cat, not wanting to be any more helpful, vanishes into thin air. Left alone, you walk down towards the river to see the Mock Turtle.
+	<div class="mh-enter">
+	  <a href=".">ENTER</a>
 	</div>
       </div>
     </div>
-{% include "nav.html" %}
+    {% include "nav.html" %}
     <script src="story.js"></script>
   </body>
 </html>

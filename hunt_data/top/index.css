@@ -1,0 +1,9 @@
+body {
+    background: #3b4b69 url('background_book.jpg') no-repeat top center;
+}
+
+#mh-link {
+    margin: 124px auto 124px auto;
+    width: 397px;
+    height: 583px;
+}
