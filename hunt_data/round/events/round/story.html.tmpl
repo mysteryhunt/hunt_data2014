@@ -8,49 +8,48 @@
   </head>
   <body> 
     <div id="mh-controls">
-      <a href="{{ root }}/">
+      <a href="{{ root }}/lobby.html">
 	Back to Lobby 7
       </a>
       <a href="javascript:mh.nav();">
 	Elsewhere
       </a>
     </div>
-    <div id="mh-surface">
-      <div id="mh-book">
-	<div id="mh-col1">
-	  <div id="mh-title">{{ round.round.name }}</div>
-	  <div style="position: relative;">
-	    <img id="mh-image" src="stata.jpg" />
-	    <a id="mh-windows" href=".">
-	      <img title="{{ round.round.name }}" src="windows.gif" />
-	    </a>
-	  </div>
-	  <p>
-	    Standing alone outside Stata, you hear the voice of the Cat. First on one side, then on the other. 
-	  <p>
-	    "Yes, those rabbit holes that lead from Wonderland to MIT do need to be closed. I'm glad we agree. Otherwise someone might fall in accidentally and find themselves somewhere entirely unexpected."
-	  <p>
-	    The voice moves and now seems to be coming from above you. 
-	  <p>
-	    "There are ways to close them, of course. I might know one that could help you."
+    <div id="mh-book">
+      <div id="mh-col1">
+	<div id="mh-title">{{ round.round.name }}</div>
+	<div style="position: relative;">
+	  <img id="mh-image" src="stata.jpg" />
+	  <a id="mh-windows" href=".">
+	    <img title="{{ round.round.name }}" src="windows.gif" />
+	  </a>
 	</div>
-	<div id="mh-col2">
-	  <p>
-	    You hear the voice again behind you. You spin around but still see nothing.
-	  <p>
-	    "I think other people know, too, but I'm not sure their advice will be all that coherent. If you want, though, I can set up a schedule for you to meet with some of them and see what they have to offer."
-	  <p>
-	    The voice appears in front of you now, along with the bright outline of a smile. 
-	  <p>
-	    "I strongly request you go to all four of these events at MIT this weekend to learn what you can about the rabbit holes.  And if you're given anything, I'd recommend not toying with it until you know the time is right. We wouldn't want you to break anything out of curiosity..."
-	  <p>
-	    The voice and smile both fade out gradually, leaving you alone. You look down and notice that somehow she managed to slip a schedule into your hands without you realizing it.
-	  <p>
-	    <a href=".">To {{ round.round.name }}</a>
+	<p>
+	  Standing alone outside Stata, you hear the voice of the Cat. First on one side, then on the other. 
+	<p>
+	  "Yes, those rabbit holes that lead from Wonderland to MIT do need to be closed. I'm glad we agree. Otherwise someone might fall in accidentally and find themselves somewhere entirely unexpected."
+	<p>
+	  The voice moves and now seems to be coming from above you. 
+	<p>
+	  "There are ways to close them, of course. I might know one that could help you."
+      </div>
+      <div id="mh-col2">
+	<p>
+	  You hear the voice again behind you. You spin around but still see nothing.
+	<p>
+	  "I think other people know, too, but I'm not sure their advice will be all that coherent. If you want, though, I can set up a schedule for you to meet with some of them and see what they have to offer."
+	<p>
+	  The voice appears in front of you now, along with the bright outline of a smile. 
+	<p>
+	  "If I were you, I would be sure to attend all of these events at MIT this weekend.  Do try to learn what you can do about the rabbit holes.  It just may be useful later."
+	<p>
+	  The Cat's voice and smile both fade out gradually, leaving you alone. You look down and notice that she somehow managed to slip a schedule into your hands without you realizing it.
+	<div class="mh-enter">
+	  <a href=".">ENTER</a>
 	</div>
       </div>
     </div>
-{% include "nav.html" %}
+    {% include "nav.html" %}
     <script src="story.js"></script>
   </body>
 </html>

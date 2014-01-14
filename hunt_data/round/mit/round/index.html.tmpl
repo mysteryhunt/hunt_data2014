@@ -1,6 +1,6 @@
 {% include "round-head.html" %}
 <div id="mh-controls">
-  <a id="mh-back" href="{{ root }}/">
+  <a id="mh-back" href="{{ root }}/lobby.html">
     Back to Lobby 7
   </a>
   <a id="mh-elsewhere" href="javascript:mh.nav();">
@@ -180,8 +180,8 @@
       <center>
       {% for round in rounds %}
       {% if round.round.url == 'tea_party' or round.round.url == 'mock_turtle' or round.round.url == 'white_queen' %}
-      <a href="{{ root }}/round/{{ round.round.url }}/" style="text-decoration: none;">
-	<img title="{{ round.round.url }}" src="{{ root }}/round/{{ round.round.url }}/rabbit-hole.gif" />
+      <a href="{{ root }}/round/{{ round.round.url }}/story.html" style="text-decoration: none;">
+	<img title="{{ round.round.name }}" src="{{ root }}/round/{{ round.round.url }}/rabbit-hole.gif" />
       </a>
       {% endif %}
       {% endfor %}

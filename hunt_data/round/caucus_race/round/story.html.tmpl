@@ -15,34 +15,33 @@
 	Elsewhere
       </a>
     </div>
-    <div id="mh-surface">
-      <div id="mh-book">
-	<div id="mh-col1">
-	  <div id="mh-title">{{ round.round.name }}</div>
-	  <div style="position: relative;">
-	    <img id="mh-image" src="race.jpg" />
-	    <a id="mh-windows" href=".">
-	      <img title="{{ round.round.name }}" src="windows.gif" />
-	    </a>
-	  </div>
-	  <p>
-	    This time, the Wonderland Express drops you off at a large tree, which seems to be serving as a train station of sorts. You find yourself surrounded by exotic-looking birds running around, with a Cat smiling down at them from a tree. Her tail swishes as she sees you arrive.
-	  <p>
-	    "Well, I see you made it! You haven't missed much, the race has just begun. Of course, it never really ends. Just goes around and around and around."
-	  <p>
-	    "You must be looking for the Beast, who was here...but of course didn't stay very long. Like I told you earlier, all beasts have weakness. And these birds know one for your Beast.
+    <div id="mh-book">
+      <div id="mh-col1">
+	<div id="mh-title">{{ round.round.name }}</div>
+	<div style="position: relative;">
+	  <img id="mh-image" src="race.jpg" />
+	  <a id="mh-windows" href=".">
+	    <img title="{{ round.round.name }}" src="windows.gif" />
+	  </a>
 	</div>
-	<div id="mh-col2">
-	  <p>
-	    "If you look around, you may be able to learn what it is. If you ever do happen to find the Beast yourself, this information will certainly come in handy. Oh, and if you do ever happen to catch one of these birds, let me know. I have a recipe I've been meaning to try. I mean, what I meant to say is..."
-	  <p>
-	    At that moment, one of the larger birds gives the Cat a look, and the Cat quickly vanishes into thin air. Left alone, you walk closer to the birds.
-	  <p>
-	    <a href=".">To {{ round.round.name }}</a>
+	<p>
+	  This time, the Wonderland Express drops you off at a large tree, which seems to be serving as a train station of sorts. You find yourself surrounded by exotic-looking birds running around, with a Cat smiling down at them from a tree. Her tail swishes as she sees you arrive.
+	<p>
+	  "Well, I see you made it! You haven't missed much, the race has just begun. Of course, it never really ends. Just goes around and around and around."
+	<p>
+	  "You must be looking for the Beast, who was here...but of course didn't stay very long. Like I told you earlier, all beasts have weakness. And these birds know one for your Beast.
+      </div>
+      <div id="mh-col2">
+	<p>
+	  "If you look around, you may be able to learn what it is. If you ever do happen to find the Beast yourself, this information will certainly come in handy. Oh, and if you do ever happen to catch one of these birds, let me know. I have a recipe I've been meaning to try. I mean, what I meant to say is..."
+	<p>
+	  At that moment, one of the larger birds gives the Cat a look, and the Cat quickly vanishes into thin air. Left alone, you walk closer to the birds.
+	<div class="mh-enter">
+	  <a href=".">ENTER</a>
 	</div>
       </div>
     </div>
-{% include "nav.html" %}
+    {% include "nav.html" %}
     <script src="story.js"></script>
   </body>
 </html>

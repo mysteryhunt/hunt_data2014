@@ -9,7 +9,7 @@
   <body class="mh-fancy">
     <div id="mh-outer">
       <div id="mh-controls">
-	<a id="mh-back" href="{{ root }}">
+	<a id="mh-back" href="{{ root }}/lobby.html">
 	  Back to Lobby 7
 	</a>
 	<a id="mh-elsewhere" href="javascript:mh.nav();">
@@ -27,7 +27,7 @@
 	  team: {{ team.name }}<br>
 	  <div class="mh-log">
 	    {% for entry in log_entries %}
-	    {{ entry.entry.timestamp|date:'Y-m-d H:i:s' }}
+	    {{ entry.entry.timestamp|date:'D H:i:s' }}
 	    {% if entry.protected_message %}
 	    <span id="protected-{{ entry.entry.id }}">
 	      {% if entry.entry.link %}

@@ -15,34 +15,33 @@
 	Elsewhere
       </a>
     </div>
-    <div id="mh-surface">
-      <div id="mh-book">
-	<div id="mh-col1">
-	  <div id="mh-title">{{ round.round.name }}</div>
-	  <div style="position: relative;">
-	    <img id="mh-image" src="party.jpg" />
-	    <a id="mh-chair" href=".">
-	      <img title="{{ round.round.name }}" src="chair.gif" />
-	    </a>
-	  </div>
-	  <p>
-	    After falling down the rabbit hole and brushing yourself off, you find yourself in the middle of an unusually colored forest which seems like it could only be in Wonderland. Ahead of you, you see a clearing where some sort of a party seems to be taking place. Sitting on a tree branch above you is a familiar, smug, smirking Cat.
-	  <p>
-	    "Ah, so the cheese caught the Dormouse, I see. I must remember that for my own...purposes later. Well, you've managed to come through that rabbit hole just in time for tea.  Or perhaps you're just out of time for tea. It's been hard to say ever since the Beast came through and broke the Mad Hatter's clock. They never seem to know if it's tea time or not-tea time or half past three lumps!
+    <div id="mh-book">
+      <div id="mh-col1">
+	<div id="mh-title">{{ round.round.name }}</div>
+	<div style="position: relative;">
+	  <img id="mh-image" src="party.jpg" />
+	  <a id="mh-chair" href=".">
+	    <img title="{{ round.round.name }}" src="chair.gif" />
+	  </a>
 	</div>
-	<div id="mh-col2">
-	  <p>
-	    "If you can figure out how to fix it, do let the Mad Hatter know. He might even reward you with something that will come in handy later. Or sooner!"
-	  <p>
-	    "And if you see the Dormouse again, do butter him up for me."
-	  <p>
-	    With that, the Cat licks hers lips hungrily and slowly vanishes into thin air, until all that is left are her anticipatory whiskers. Left alone, you walk towards the party.
-	  <p>
-	    <a href=".">To {{ round.round.name }}</a>
+	<p>
+	  After falling down the rabbit hole and brushing yourself off, you find yourself in the middle of an unusually colored forest which seems like it could only be in Wonderland. Ahead of you, you see a clearing where some sort of a party seems to be taking place. Sitting on a tree branch above you is a familiar, smug, smirking Cat.
+	<p>
+	  "Ah, so the cheese caught the Dormouse, I see. I must remember that for my own...purposes later. Well, you've managed to come through that rabbit hole just in time for tea.  Or perhaps you're just out of time for tea. It's been hard to say ever since the Beast came through and broke the Mad Hatter's clock. They never seem to know if it's tea time or not tea time or half past three lumps!
+      </div>
+      <div id="mh-col2">
+	<p>
+	  "If you can figure out how to fix it, do let the Mad Hatter know. He might even reward you with something that will come in handy later. Or sooner!"
+	<p>
+	  "And if you see the Dormouse again, do butter him up for me."
+	<p>
+	  With that, the Cat licks hers lips hungrily and slowly vanishes into thin air, until all that is left are her anticipatory whiskers. Left alone, you walk towards the party.
+	<div class="mh-enter">
+	  <a href=".">ENTER</a>
 	</div>
       </div>
     </div>
-{% include "nav.html" %}
+    {% include "nav.html" %}
     <script src="story.js"></script>
   </body>
 </html>

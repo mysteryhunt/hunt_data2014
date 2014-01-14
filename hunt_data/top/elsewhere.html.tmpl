@@ -1,5 +1,5 @@
 Places:<br>
-&nbsp;&nbsp;<a href="">Lobby 7</a><br>
+&nbsp;&nbsp;<a href="lobby.html">Lobby 7</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="round/mit/">MIT</a><br>
 {% if has_wl_access %}
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="wonderland/">Wonderland</a><br>
@@ -7,11 +7,11 @@ Places:<br>
 {% if round.round.url == "mit" %}
 {% elif round.round.url == "events" %}
 {% else %}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="round/{{ round.round.url }}/">{{ round.round.name }}</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="round/{{ round.round.url }}/story.html">{{ round.round.name }}</a><br>
 {% endif %}
 {% endfor %}
 {% endif %}
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="round/events/">Events</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="round/events/story.html">Events</a><br>
 <br>
 Utilities:<br>
 &nbsp;&nbsp;<a href="overview.html">Team Overview</a><br>

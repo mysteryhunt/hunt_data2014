@@ -9,7 +9,7 @@
   <body class="mh-fancy">
     <div id="mh-outer">
       <div id="mh-controls">
-	<a id="mh-back" href="{{ root }}">
+	<a id="mh-back" href="{{ root }}/lobby.html">
 	  Back to Lobby 7
 	</a>
 	<a id="mh-elsewhere" href="javascript:mh.nav();">
@@ -35,7 +35,7 @@
 		  <ul>
 		    {% for puzzle in round.puzzles %}
 		    <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-		      {% if puzzle.solved %}[SOLVED]{% endif %}
+		      {% if puzzle.solved %}[SOLVED; <a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]{% endif %}
 		      {% endfor %}
 		  </ul>
 		  {% endif %}
@@ -52,7 +52,7 @@
 		      <ul>
 			{% for puzzle in round.puzzles %}
 			<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-			  {% if puzzle.solved %}[SOLVED]{% endif %}
+			  {% if puzzle.solved %}[SOLVED; <a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]{% endif %}
 			  {% endfor %}
 		      </ul>
 		      {% endif %}
@@ -66,7 +66,7 @@
 		  <ul>
 		    {% for puzzle in round.puzzles %}
 		    <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-		      {% if puzzle.solved %}[SOLVED]{% endif %}
+		      {% if puzzle.solved %}[SOLVED; <a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]{% endif %}
 		      {% endfor %}
 		  </ul>
 		  {% endif %}
