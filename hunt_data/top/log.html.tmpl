@@ -27,7 +27,7 @@
 	  team: {{ team.name }}<br>
 	  <div class="mh-log">
 	    {% for entry in log_entries %}
-	    {{ entry.entry.timestamp|date:'Y-m-d H:i:s' }}
+	    {{ entry.entry.timestamp|date:'D H:i:s' }}
 	    {% if entry.protected_message %}
 	    <span id="protected-{{ entry.entry.id }}">
 	      {% if entry.entry.link %}
