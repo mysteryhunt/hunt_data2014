@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: #334d7e url('background.jpg') no-repeat top center;
+    background: #334d7e url('{{ root }}/background.jpg') no-repeat top center;
     font-family: 'Alice', sans-serif;
     font-size: 18px;
 }
