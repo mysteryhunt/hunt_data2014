@@ -15,32 +15,30 @@
 	Elsewhere
       </a>
     </div>
-    <div id="mh-surface">
-      <div id="mh-book">
-	<div id="mh-col1">
-	  <div id="mh-title">{{ round.round.name }}</div>
-	  <div style="position: relative;">
-	    <img id="mh-image" src="field.jpg" />
-	    <a id="mh-face" href=".">
-	      <img title="{{ round.round.name }}" src="face.gif" />
-	    </a>
-	  </div>
-	  <p>
-	    After a scenic ride on the Wonderland Express, you arrive at a station by a pleasant stream.  On a nearby hill, you see a giant chessboard and what looks like an array of chessmen arranged on it. The Cat appears suddenly on the other side of the stream, eyeing the fish swimming in the brook.  She takes her eyes away for long enough to notice you.
-	  <p>
-	    "It may not look like it, but the Beast was just here. Amazingly, nothing was destroyed. The two knights sparring on the hill over there are good enough at bumbling around themselves, though.
+    <div id="mh-book">
+      <div id="mh-col1">
+	<div id="mh-title">{{ round.round.name }}</div>
+	<div style="position: relative;">
+	  <img id="mh-image" src="field.jpg" />
+	  <a id="mh-face" href=".">
+	    <img title="{{ round.round.name }}" src="face.gif" />
+	  </a>
 	</div>
-	<div id="mh-col2">
-	  <p>
-	    "Somehow, these knights managed to keep the beast away, but I'm sure they don't remember how. You'll probably get just as much information out of the rest of the chessmen. Maybe you can help those knights remember, and you'll know the weakness to drive the Beast away, too. I'd offer to help, but..."
-	  <p>
-	    At this moment, the Cat looked down at a fish swimming past, grinned, and vanished into thin air, with the toothy smile lingering just a little longer than the rest. Left alone, you walk towards the knights on the chessboard.
-	  <p>
-	    <a href=".">To {{ round.round.name }}</a>
-	</div>
+	<p>
+	  After a scenic ride on the Wonderland Express, you arrive at a station by a pleasant stream.  On a nearby hill, you see a giant chessboard and what looks like an array of chessmen arranged on it. The Cat appears suddenly on the other side of the stream, eyeing the fish swimming in the brook.  She takes her eyes away for long enough to notice you.
+	<p>
+	  "It may not look like it, but the Beast was just here. Amazingly, nothing was destroyed. The two knights sparring on the hill over there are good enough at bumbling around themselves, though.
+      </div>
+      <div id="mh-col2">
+	<p>
+	  "Somehow, these knights managed to keep the beast away, but I'm sure they don't remember how. You'll probably get just as much information out of the rest of the chessmen. Maybe you can help those knights remember, and you'll know the weakness to drive the Beast away, too. I'd offer to help, but..."
+	<p>
+	  At this moment, the Cat looked down at a fish swimming past, grinned, and vanished into thin air, with the toothy smile lingering just a little longer than the rest. Left alone, you walk towards the knights on the chessboard.
+	<p>
+	  <a href=".">To {{ round.round.name }}</a>
       </div>
     </div>
-{% include "nav.html" %}
+    {% include "nav.html" %}
     <script src="story.js"></script>
   </body>
 </html>
