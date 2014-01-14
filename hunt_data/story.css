@@ -16,6 +16,10 @@ body {
     height: 716px;
 }
 
+#mh-enter {
+    text-align: center;
+}
+
 #mh-col1 {
     position: absolute;
     left: 31px;
