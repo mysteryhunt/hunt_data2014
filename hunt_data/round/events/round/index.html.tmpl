@@ -1,8 +1,8 @@
 {% include "round-head.html" %}
 
 <div id="mh-controls">
-  <a id="mh-back" href="{{ root }}">
-    Back to Lobby
+  <a id="mh-back" href="{{ root }}/lobby.html">
+    Back to Lobby 7
   </a>
   <a id="mh-elsewhere" href="javascript:mh.nav();">
     Elsewhere
@@ -11,12 +11,12 @@
   <a id="mh-answer" href="{{ root }}/round-solution/{{ round.round.url }}/">
     Solution
   </a>
-  {% else %}
+  {% elif meta_ready %}
   <a id="mh-answer" href="javascript:mh.submit_answer();">
     {% if round.solved %}
     Solved!
     {% else %}
-    Submit Answer
+    Submit Useful Advice
     {% endif %}
   </a>
   {% endif %}
@@ -32,30 +32,37 @@
   <div id="mh-content" style="padding: 20px 50px;">
     <ul><li>
 	{% if puzzle_0 %}
-	<a href="{{ root }}/puzzle/{{ puzzle_0.puzzle.url }}/">{{ puzzle_0.puzzle.name }}</a> (Friday 6pm)
+	<a href="{{ root }}/puzzle/{{ puzzle_0.puzzle.url }}/">{{ puzzle_0.puzzle.name }}</a> (Friday 6pm) {% if puzzle_0.solved %}[SOLVED]{% endif %}
 	{% else %}
 	Friday 6pm: Send 1-2 of your most musical team members to Lobdell.
 	{% endif %}
     </ul>
     <ul><li>
 	{% if puzzle_1 %}
-	<a href="{{ root }}/puzzle/{{ puzzle_1.puzzle.url }}/">{{ puzzle_1.puzzle.name }}</a> (Friday 11pm)
+	<a href="{{ root }}/puzzle/{{ puzzle_1.puzzle.url }}/">{{ puzzle_1.puzzle.name }}</a> (Friday 11pm) {% if puzzle_1.solved %}[SOLVED]{% endif %}
 	{% else %}
 	Friday 11pm: Send 1-2 of your most energetic team members to Lobdell.
 	{% endif %}
     </ul>
     <ul><li>
 	{% if puzzle_2 %}
-	<a href="{{ root }}/puzzle/{{ puzzle_2.puzzle.url }}/">{{ puzzle_2.puzzle.name }}</a> (Saturday 8am)
+	<a href="{{ root }}/puzzle/{{ puzzle_2.puzzle.url }}/">{{ puzzle_2.puzzle.name }}</a> (Saturday 8am) {% if puzzle_2.solved %}[SOLVED]{% endif %}
 	{% else %}
 	Saturday 8am: Send 1-2 of your least easily-offendable members to Lobby 13.
 	{% endif %}
     </ul>
     <ul><li>
 	{% if puzzle_3 %}
-	<a href="{{ root }}/puzzle/{{ puzzle_3.puzzle.url }}/">{{ puzzle_3.puzzle.name }}</a> (Saturday 1pm)
+	<a href="{{ root }}/puzzle/{{ puzzle_3.puzzle.url }}/">{{ puzzle_3.puzzle.name }}</a> (Saturday 1pm) {% if puzzle_3.solved %}[SOLVED]{% endif %}
 	{% else %}
 	Saturday 1pm: Send 1-2 of your best wangers to Lobby 13.
+	{% endif %}
+    </ul>
+    <ul><li>
+	{% if meta_ready %}
+	The Cheshire Cat has designed a contraption she believes can transform all this useless information you've been given into useful advice to aid you against the beast, but needs your help to make it work! Please send 1-2 of your best contraption-makers with a pair of sturdy scissors to Lobby 13. 
+	{% else %}
+	The events meta will take place on Saturday evening. The exact time and location can be unlocked by submitting four correct event answers. 
 	{% endif %}
     </ul>
   </div>

@@ -41,7 +41,9 @@ table.mh-center {
     margin-right: auto;
 }
 
+{% if puzzle.puzzle.url != 'falling_into_place' %}
 @media screen {
+{% endif %}
     body {
 	width: 100%;
 	margin: 0px;
@@ -122,8 +124,11 @@ table.mh-center {
     .mh-plain a {
 	color: #520;
     }
+{% if puzzle.puzzle.url != 'falling_into_place' %}
 }
+{% endif %}
 
+{% if puzzle.puzzle.url != 'falling_into_place' %}
 @media print {
     #mh-controls {
 	text-align: center;
@@ -144,3 +149,4 @@ table.mh-center {
 	color: #520;
     }
 }
+{% endif %}
