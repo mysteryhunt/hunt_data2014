@@ -124,6 +124,7 @@ table.mh-center {
     }
 }
 
+{% if puzzle.puzzle.url != 'falling_into_place' %}
 @media print {
     #mh-controls {
 	text-align: center;
@@ -144,3 +145,4 @@ table.mh-center {
 	color: #520;
     }
 }
+{% endif %}
