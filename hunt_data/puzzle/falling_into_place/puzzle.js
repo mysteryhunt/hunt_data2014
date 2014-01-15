@@ -378,6 +378,8 @@ function doFocus()
         updateStatus(message_event.data);
     }
     function updateStatus(opt_message) {
+	if (opt_message === null)
+	    return;
        if (opt_message.startsWith("HIST:"))
        {
           logHist(opt_message);
