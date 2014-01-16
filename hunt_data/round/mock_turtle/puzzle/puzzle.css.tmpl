@@ -1,11 +1,15 @@
 {% include "common.css" %}
 {% include "puzzle.css" %}
 
+{% if puzzle.puzzle.url != 'falling_into_place' %}
 @media screen {
+{% endif %}
     body.mh-fancy {
 	background: #7ceeff url('{{ root }}/round/{{ round.round.url }}/background.jpg') no-repeat top center;
     }
+{% if puzzle.puzzle.url != 'falling_into_place' %}
 }
+{% endif %}
 
 #mh-turtle {
     float: left;

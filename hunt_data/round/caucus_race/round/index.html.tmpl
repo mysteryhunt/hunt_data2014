@@ -39,22 +39,22 @@
           <img class="mh-caucusrace-bird-image" src="bird.png" />
           <img class="mh-caucusrace-points" src="points.png" />
           <div class="mh-caucusrace-yes">
-	    {% if bird.yes_solved %}
-            <img class="mh-caucusrace-yes-solved" src="solved.png" />
-	    {% endif %}
+            <img class="mh-caucusrace-solvedness" src="{% if bird.yes_solved %}solved{% else %}unsolved{% endif %}.png" />
+	    <span class="mh-caucusrace-text">
             YES!
 	    {% if bird.yes %}
 	    <a href="{{ root }}/puzzle/{{ bird.yes.url }}/">{{ bird.yes.name }}</a>!
 	    {% endif %}
+	    </span>
 	  </div>
           <div class="mh-caucusrace-no">
-	    {% if bird.no_solved %}
-            <img class="mh-caucusrace-no-solved" src="solved.png" />
-	    {% endif %}
+            <img class="mh-caucusrace-solvedness" src="{% if bird.no_solved %}solved{% else %}unsolved{% endif %}.png" />
+	    <span class="mh-caucusrace-text">
             NO!
 	    {% if bird.no %}
 	    <a href="{{ root }}/puzzle/{{ bird.no.url }}/">{{ bird.no.name }}</a>!
 	    {% endif %}
+	    </span>
 	  </div>
         </div>
 	{% endfor %}

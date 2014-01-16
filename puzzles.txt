@@ -115,6 +115,6 @@ humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	6130
 humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	6140
 humpty_dumpty	SQUIGGLES	the_circle_of_life	The Circle of Life	6150
 events	A NOTES STAFF POSITION CONTROLS ITS STEM DIRECTION	auditions_for_the_wondermusical	Auditions for the WonderMusical	5010
-events	WATCH OUT FOR THE WHITE WINE SAUCE	lobster_quadrille	Lobster Quadrille	5020
-events	A MOLE GOPHER OR RABBIT MAY DIG GARDEN HOLES	cards_against_wonderland	Cards Against Wonderland	5030
+events	WATCH OUT FOR THE WHITE KNIGHTS BLADE	lobster_quadrille	Lobster Quadrille	5020
+events	A DORMOUSE CATERPILLAR OR RABBIT MAY DIG GARDEN HOLES	cards_against_wonderland	Cards Against Wonderland	5030
 events	ANY TRIP THAT HAS NO VACATIONS BLOWS	wonderwang	Wonderwang	5040
