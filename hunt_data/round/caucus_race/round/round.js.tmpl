@@ -3,10 +3,10 @@
 
 (function() {
     $('.mh-caucusrace-yes a, .mh-caucusrace-no a').mouseenter(function(e) {
-	$(e.target).parent().toggleClass('mh-caucusrace-hover');
+	$(e.target).closest('div').toggleClass('mh-caucusrace-hover');
     });
     $('.mh-caucusrace-yes a, .mh-caucusrace-no a').mouseleave(function(e) {
-	$(e.target).parent().toggleClass('mh-caucusrace-hover');
+	$(e.target).closest('div').toggleClass('mh-caucusrace-hover');
     });
 })();
 
