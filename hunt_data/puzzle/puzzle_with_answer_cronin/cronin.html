@@ -6,8 +6,7 @@
 <script type="text/javascript">
 function start()
 {
-	initialize(32); // Initialize 32 stars
-	$.ajax({url: "data.txt", success: begin_animation}); // Load the data file, begin animation
+	initialize(32, "data.txt"); // Initialize 32 stars, load data file
 }
 </script>
 <link rel="stylesheet" type="text/css" href="style.css" />

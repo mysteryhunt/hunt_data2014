@@ -1,8 +1,14 @@
 
 // Constants and global variables
 
-var global_data;
+var data_url;
+
+var global_data = [];
 var data_index = 0;
+var data_loaded_index = 0;
+var data_chunk_size = 10000;
+
+var animation_started = false;
 
 var star_size = 10; // In pixels
 var number_of_stars = 0;
@@ -14,8 +20,35 @@ var star_delay = 5; // How many frames to wait for next star
 var star_duration = 60; // How many frames each star lasts
 var star_translation = 15; // How far each star moves per frame
 
+function load_one_chunk()
+{
+	// Retrieve one chunk of data, with store_one_chunk() as the callback
+	$.ajax({url: data_url, headers: { "Range": 'bytes=' + (data_loaded_index) + '-' + (data_loaded_index + data_chunk_size - 1) }, success: store_one_chunk}); 
+}
+
+function store_one_chunk(data)
+{
+	// Save this data
+	global_data += data;
+	data_loaded_index += data_chunk_size;
+	
+	// Start the animation
+	if (!animation_started)
+	{
+		animation_started = true;
+		animate();
+	}
+}
+
 function animate()
 {
+
+	// Check that we have enough data
+	if (data_index >= data_loaded_index - data_chunk_size)
+	{
+		load_one_chunk();
+	}
+
 	// Check for end of the group
 	if (frame > star_delay * (number_of_stars-1) + star_duration)
 	{
@@ -71,18 +104,16 @@ function animate()
 	
 }
 
-function initialize(count)
+function initialize(count, url)
 {
+	// Save these to global variables
 	number_of_stars = count;
+	data_url = url;
 
 	// Add stars to the body element
 	for (var id = 0; id < number_of_stars; id++)
 		$('body').append('<div class="star" id="star_' + id + '"></div>');
-}
-
-function begin_animation(data)
-{
-	// When the file is opened, start to animate
-	global_data = data;
-	animate();
+		
+	// Load one chunk of data
+	load_one_chunk();
 }
