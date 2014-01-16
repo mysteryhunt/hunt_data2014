@@ -39,22 +39,28 @@
           <img class="mh-caucusrace-bird-image" src="bird.png" />
           <img class="mh-caucusrace-points" src="points.png" />
           <div class="mh-caucusrace-yes">
-            <img class="mh-caucusrace-solvedness" src="{% if bird.yes_solved %}solved{% else %}unsolved{% endif %}.png" />
-	    <span class="mh-caucusrace-text">
-            YES!
 	    {% if bird.yes %}
-	    <a href="{{ root }}/puzzle/{{ bird.yes.url }}/">{{ bird.yes.name }}</a>!
+	    <a href="{{ root }}/puzzle/{{ bird.yes.url }}/">
+	      {% endif %}
+              <img class="mh-caucusrace-solvedness" src="{% if bird.yes_solved %}solved{% else %}unsolved{% endif %}.png" />
+	      <span class="mh-caucusrace-text">
+		YES! {% if bird.yes %}<span class="mh-caucusrace-pname">{{ bird.yes.name }}</a>!{% endif %}
+	      </span>
+	      {% if bird.yes %}
+	    </a>
 	    {% endif %}
-	    </span>
 	  </div>
           <div class="mh-caucusrace-no">
-            <img class="mh-caucusrace-solvedness" src="{% if bird.no_solved %}solved{% else %}unsolved{% endif %}.png" />
-	    <span class="mh-caucusrace-text">
-            NO!
 	    {% if bird.no %}
-	    <a href="{{ root }}/puzzle/{{ bird.no.url }}/">{{ bird.no.name }}</a>!
+	    <a href="{{ root }}/puzzle/{{ bird.no.url }}/">
+	      {% endif %}
+              <img class="mh-caucusrace-solvedness" src="{% if bird.no_solved %}solved{% else %}unsolved{% endif %}.png" />
+	      <span class="mh-caucusrace-text">
+		NO! {% if bird.no %}<span class="mh-caucusrace-pname">{{ bird.no.name }}</a>!{% endif %}
+	      </span>
+	      {% if bird.no %}
+	    </a>
 	    {% endif %}
-	    </span>
 	  </div>
         </div>
 	{% endfor %}
