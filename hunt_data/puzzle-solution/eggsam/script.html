@@ -5,9 +5,10 @@
 <body>
 <h2>Eggsam - Script for Eggsaminers</h2>
 <p>
-<i>Before administering the Eggsam, you should know the name of the team that has made an appointment,
-and how many times they have previously taken the eggsam (if at all). You should also have a copy of
-the eggsam answer key, which you will give to the test-taker if they succeed.</i>
+<i>Before administering the Eggsam, you should know the name of the team that has made 
+an appointment. You should also have a copy of
+the eggsam answer key handout, which you will give to the test-taker if they succeed,
+and a certificate of failure, which you will give them if they fail.</i>
 </p>
 
 <p>
@@ -24,18 +25,26 @@ during this eggsam.</b>
 I'm afraid all but one of you will have to leave the room before we begin.</b>
 </p>
 
-<p><b>Am I correct in my belief that you are a member of the team [TEAM NAME], and this is your
-[Nth] time taking the exam?</b><br>
+<p><b>Am I correct in my belief that you are a member of the team [TEAM NAME]?</b><br>
 <i>(If they disagree with this, contact HQ and resolve the discrepancy.)</i></p>
 
-<p><b>Very good! You will be permitted [N] mistakes. If you make an [(N+1)th] mistake, the eggsam
+<p><b>Is this your team's first time taking the eggsam?</b><br>
+<i>(If they say yes, let N=0; if they say no:)</i><br>
+<b>Do you have any certificates of failure to prove this?</b><br>
+<i>(If they do, let N be the number of certificates they show you.)</i>
+
+<p><b>Very good! You will be permitted [N+1] mistakes. If you make an [(N+2)th] mistake, the eggsam
 will immediately end. Are you ready?</b></p> 
 
 <p><i>Ask each question in the order below (be sure to give the question numbers, even though these numbers
 are out of order). If they answer correctly, tell them they are correct and continue. If they give an incorrect
-answer, tell them the correct answer and continue. If they make [N+1] mistakes, say:</i>
-<br><b>I'm afraid you have failed in what I eggspected to be an eggsceedingly simple task. Please return to your homebase,
-review your notes, and make an appointment to attempt the eggsam again later.</b></p>
+answer, tell them the correct answer and continue. If they make [N+3] mistakes, say:</i>
+<br><b>I'm afraid you have failed in what I eggspected to be an eggsceedingly simple task. 
+Here is a certificate of failure to commemorate your lack of achievement.
+Please return to your homebase, review your notes, and make an appointment to attempt the eggsam again later.
+When you return, bring any certificates of failure you have accumulated, as we
+will allow you to make more mistakes next time.
+</b></p>
 <hr>
 <p>Question 3: What is a large piece of frozen water that breaks off a glacier and floats in the ocean, causing a hazard for ocean liners?
 <p>Answer: KERFUFFLE
