@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/home/djangoapps/spoilr-env/bin/python /home/djangoapps/spoilr/manage.py $* --traceback
