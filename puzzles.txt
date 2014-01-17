@@ -1,120 +1,120 @@
-round	answer	url	name	order
-mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	10
-mit	MEMORY	intersecting_personalities	Intersecting Personalities	20
-mit	MALPRACTICE	safety_first	Safety First	30
-mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	40
-mit	MANIFESTO	technical_program_committee_report	Technical Program Committee Report	50
-mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	60
-mit	DOORWAY	upstairs_downstairs	Upstairs, Downstairs	70
-mit	MISCHIEF	zoinks	Zoinks!	80
-mit	ARRAY	apocalypse	Apocalypse	90
-mit	SHREWDNESS	sneaky_fox	Sneaky Fox	100
-mit	WOBBLE	feed_your_head	Feed Your Head	110
-mit	TOYOTAS	i_came_across_a_japanese_rose_garden	I Came Across a Japanese Rose Garden	120
-mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	130
-mit	TROUBLING	ring_around_the_music	Ring Around the Music	140
-mit	BODY SIZE	black_and_white	Black and White	150
-mit	DOWN PAT	find_your_way_across	Find Your Way Across	160
-mit	ICHABOD	local_shorts	Local Shorts	170
-mit	STOP CODON	blast_from_the_past	BLAST from the Past	180
-mit	PADAWAN	i_stumbled_across_a_recording	I Stumbled Across a Recording	190
-mit	ICE CREAM SANDWICH	stage_select	Stage Select	200
-mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	210
-mit	ROOMING	across_the_hall	Across the Hall	220
-mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	230
-mit	PERIDOT	dressing_down	Dressing Down	240
-tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1010
-tea_party	STRAIGHT SETS	best_of_five	Best of Five	1020
-tea_party	OPERATOR TEST	operator_test	Operator Test	1030
-tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1040
-tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1050
-tea_party	CHRYSANTHEMUM	hedgehogs_and_flamingos	Hedgehogs and Flamingos	1060
-tea_party	BELGIAN FAWN	can_tab_rig_ian	Can + Tab + Rig + Ian	1070
-tea_party	SUZANNE CROUGH	monster_potatoes	Monster Potatoes	1080
-tea_party	PEARL HOMINY	oyster_card	Oyster Card	1090
-tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1100
-tea_party	COQ AU VIN	obsessive_compulsive_dickishness	Obsessive-Compulsive Dickishness	1110
-tea_party	ALECIA MOORE	one_tequila_two_tequila_three_tequila_floor	One Tequila, Two Tequila, Three Tequila, Floor	1120
-tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1130
-tea_party	NATALIE PORTMAN	a_rose_by_any_other	A Rose by Any Other	1140
-tea_party	NOREASTER BLIZZARD	guess_what_im_thinking	Guess What I'm Thinking	1150
-tea_party	RHINOCEROS VIPER	the_most_dangerous_night	The Most Dangerous Night	1160
-mock_turtle	WARDLEY	nothing_but_a_pack_of_cards	Nothing but a Pack of Cards	2010
-mock_turtle	LOCKS	common_bonds	Common Bonds	2020
-mock_turtle	NUMBER THEORY	cross_pollination	Cross-Pollination	2030
-mock_turtle	SNOOPY	cut_and_tape	Cut and Tape	2040
-mock_turtle	TI85	assemble_me	Assemble Me	2050
-mock_turtle	TORAH	safer_sephiroth	Safer Sephiroth	2060
-mock_turtle	JAMES BOND	falling_into_place	Falling into Place	2070
-mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2080
-mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2090
-mock_turtle	LEVAR BURTON	introduction_to_collegiate_notetaking	Introduction to Collegiate Notetaking	2100
-mock_turtle	DOWNFALL	please_remain_seated	Please Remain Seated	2110
-mock_turtle	WORMTONGUE	stronghold_fire	Stronghold Fire	2120
-mock_turtle	CORNWALL	only_carmen_sandiego_explores_nigh_unstoppably	Only Carmen Sandiego Explores Nigh Unstoppably	2130
-white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	3010
-white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020
-white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030
-white_queen	MIAMI	puzzle_with_answer_youkilis	A Puzzle with the Answer YOUKILIS	3040
-white_queen	WATCHING	puzzle_with_answer_sullivan	A Puzzle with the Answer SULLIVAN	3050
-white_queen	SILLY	puzzle_with_answer_cronin	A Puzzle with the Answer CRONIN	3060
-white_queen	BACON	puzzle_with_answer_garciaparra	A Puzzle with the Answer GARCIAPARRA	3070
-white_queen	CONSTITUTION	another_puzzle_with_answer_sullivan	Another Puzzle with the Answer SULLIVAN	3080
-white_queen	ROAD	puzzle_with_answer_rice	A Puzzle with the Answer RICE	3090
-white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3100
-white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer EIGHT DAYS A WEEK	3110
-white_queen	BRAVO	puzzle_with_answer_norwegian_wood	A Puzzle with the Answer NORWEGIAN WOOD	3120
-white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE ME DO	3130
-white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the Answer I WANT TO HOLD YOUR HAND	3140
-white_queen	ROCK	puzzle_with_answer_a_hard_days_night	A Puzzle with the Answer A HARD DAYS NIGHT	3150
-white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3160
-white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170
-white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180
-knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	4010
-knights	HOBO BOBO	kroskuro	Kroskuro	4020
-knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	4030
-knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4040
-knights	ED WYNN	a_mad_cocktail_party	A Mad Cocktail Party	4050
-knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	4060
-knights	G RING	wandering_stars	Wandering Stars	4070
-knights	BAD BOYS	campus_art_from_z_to_a	Campus Art from Z to A	4080
-knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	4090
-knights	CAPS LOCK	filed_erector	Filed Erector	4100
-knights	CUTTING EDGE	hole_wizard	Hole Wizard	4110
-knights	FLU SHOT	some_nutty_lines	Some Nutty Lines	4120
-knights	FIRE HOSE	stalk_us_maybe	Stalk Us Maybe	4130
-knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	4140
-knights	HOSPITAL BEDS	marking_territory	Marking Territory	4150
-knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	4160
-caucus_race	ECHO	crossed_wires	Crossed Wires	5010
-caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020
-caucus_race	MILLSTONE	sat_iii	SAT III	5030
-caucus_race	SMASH HIT	1_2_3_4_4649	1! 2! 3! 4! 4649!	5040
-caucus_race	ENGULF	gone_with_the_wind	Gone with the Wind	5050
-caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5060
-caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5070
-caucus_race	SECONDARY	growth_and_fixed_costs	Growth and Fixed Costs	5080
-caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5090
-caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5100
-caucus_race	SPUR	venntersections	Venntersections	5110
-caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120
-caucus_race	DERRICK	crosswalks	Crosswalks	5130
-caucus_race	CONFRONT	wat	WAT?	5140
-humpty_dumpty	FELINE	compose_yourself	Compose Yourself	6010
-humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	6020
-humpty_dumpty	HAND TOOL	sledgehammered	Sledgehammered	6030
-humpty_dumpty	CERAMICS	glazing_over	Glazing Over	6040
-humpty_dumpty	AZIMUTH	directions_in_writing	Directions in Writing	6050
-humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	6060
-humpty_dumpty	APPLE	time_flies	Time Flies	6070
-humpty_dumpty	OVOID	the_great_collapse	The Great Collapse	6090
-humpty_dumpty	MOUNTAINEER	ski_trees	SKI Trees	6100
-humpty_dumpty	PENSIVENESS	eggsam	Eggsam	6110
-humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	6120
-humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	6130
-humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	6140
-humpty_dumpty	SQUIGGLES	the_circle_of_life	The Circle of Life	6150
-events	A NOTES STAFF POSITION CONTROLS ITS STEM DIRECTION	auditions_for_the_wondermusical	Auditions for the WonderMusical	5010
-events	WATCH OUT FOR THE WHITE KNIGHTS BLADE	lobster_quadrille	Lobster Quadrille	5020
-events	A DORMOUSE CATERPILLAR OR RABBIT MAY DIG GARDEN HOLES	cards_against_wonderland	Cards Against Wonderland	5030
-events	ANY TRIP THAT HAS NO VACATIONS BLOWS	wonderwang	Wonderwang	5040
+round	answer	url	name	order	handler_info
+mit	INTRUSION	build_your_own_sudoku	Build Your Own Sudoku	10	
+mit	MEMORY	intersecting_personalities	Intersecting Personalities	20	
+mit	MALPRACTICE	safety_first	Safety First	30	
+mit	NEGATES	opposites_are_not_downbeats	Opposites Are Not Downbeats	40	
+mit	MANIFESTO	technical_program_committee_report	Technical Program Committee Report	50	
+mit	DONT WORRY BABY	bumblebee_tune_a	Bumblebee Tune-a	60	
+mit	DOORWAY	upstairs_downstairs	Upstairs, Downstairs	70	
+mit	MISCHIEF	zoinks	Zoinks!	80	
+mit	ARRAY	apocalypse	Apocalypse	90	
+mit	SHREWDNESS	sneaky_fox	Sneaky Fox	100	
+mit	WOBBLE	feed_your_head	Feed Your Head	110	
+mit	TOYOTAS	i_came_across_a_japanese_rose_garden	I Came Across a Japanese Rose Garden	120	
+mit	WATCH	how_puzzling_all_these_changes_are	How Puzzling All These Changes Are!	130	
+mit	TROUBLING	ring_around_the_music	Ring Around the Music	140	
+mit	BODY SIZE	black_and_white	Black and White	150	
+mit	DOWN PAT	find_your_way_across	Find Your Way Across	160	
+mit	ICHABOD	local_shorts	Local Shorts	170	
+mit	STOP CODON	blast_from_the_past	BLAST from the Past	180	
+mit	PADAWAN	i_stumbled_across_a_recording	I Stumbled Across a Recording	190	
+mit	ICE CREAM SANDWICH	stage_select	Stage Select	200	
+mit	WHIPPET	down_the_rabbit_hole_2	Down the Rabbit Hole 2: Super Magic Samurai Robot Ninja Police Force: Electric Boogaloo	210	
+mit	ROOMING	across_the_hall	Across the Hall	220	
+mit	ABYSMAL	a_meta_puzzle	A Meta Puzzle	230	
+mit	PERIDOT	dressing_down	Dressing Down	240	
+tea_party	TESTOSTERONE	the_puzzle_your_puzzle_could_smell_like	The Puzzle Your Puzzle Could Smell Like	1010	
+tea_party	STRAIGHT SETS	best_of_five	Best of Five	1020	
+tea_party	OPERATOR TEST	operator_test	Operator Test	1030	
+tea_party	POTATO BEETLE	disemvoweled	Disemvoweled	1040	
+tea_party	BUDDY RICH	now_lets_create_melodies	Now Let's Create Melodies	1050	
+tea_party	CHRYSANTHEMUM	hedgehogs_and_flamingos	Hedgehogs and Flamingos	1060	
+tea_party	BELGIAN FAWN	can_tab_rig_ian	Can + Tab + Rig + Ian	1070	
+tea_party	SUZANNE CROUGH	monster_potatoes	Monster Potatoes	1080	
+tea_party	PEARL HOMINY	oyster_card	Oyster Card	1090	
+tea_party	CHANTICLEER	the_spy_who_read_me	The Spy Who Read Me	1100	
+tea_party	COQ AU VIN	obsessive_compulsive_dickishness	Obsessive-Compulsive Dickishness	1110	
+tea_party	ALECIA MOORE	one_tequila_two_tequila_three_tequila_floor	One Tequila, Two Tequila, Three Tequila, Floor	1120	
+tea_party	GERMAN SHEPHERD	uncommon_nonsense	Uncommon Nonsense	1130	
+tea_party	NATALIE PORTMAN	a_rose_by_any_other	A Rose by Any Other	1140	
+tea_party	NOREASTER BLIZZARD	guess_what_im_thinking	Guess What I'm Thinking	1150	
+tea_party	RHINOCEROS VIPER	the_most_dangerous_night	The Most Dangerous Night	1160	
+mock_turtle	WARDLEY	nothing_but_a_pack_of_cards	Nothing but a Pack of Cards	2010	
+mock_turtle	LOCKS	common_bonds	Common Bonds	2020	
+mock_turtle	NUMBER THEORY	cross_pollination	Cross-Pollination	2030	
+mock_turtle	SNOOPY	cut_and_tape	Cut and Tape	2040	
+mock_turtle	TI85	assemble_me	Assemble Me	2050	
+mock_turtle	TORAH	safer_sephiroth	Safer Sephiroth	2060	
+mock_turtle	JAMES BOND	falling_into_place	Falling into Place	2070	
+mock_turtle	TED WILLIAMS	round_tripper	Round Tripper	2080	
+mock_turtle	AA MILNE	initial_impressions	Initial Impressions	2090	
+mock_turtle	LEVAR BURTON	introduction_to_collegiate_notetaking	Introduction to Collegiate Notetaking	2100	
+mock_turtle	DOWNFALL	please_remain_seated	Please Remain Seated	2110	
+mock_turtle	WORMTONGUE	stronghold_fire	Stronghold Fire	2120	
+mock_turtle	CORNWALL	only_carmen_sandiego_explores_nigh_unstoppably	Only Carmen Sandiego Explores Nigh Unstoppably	2130	
+white_queen	SLIDE	puzzle_with_answer_williams	A Puzzle with the Answer WILLIAMS	3010	
+white_queen	LIFETIME	puzzle_with_answer_lynn	A Puzzle with the Answer LYNN	3020	
+white_queen	DAISIES	puzzle_with_answer_clemens	A Puzzle with the Answer CLEMENS	3030	
+white_queen	MIAMI	puzzle_with_answer_youkilis	A Puzzle with the Answer YOUKILIS	3040	
+white_queen	WATCHING	puzzle_with_answer_sullivan	A Puzzle with the Answer SULLIVAN	3050	
+white_queen	SILLY	puzzle_with_answer_cronin	A Puzzle with the Answer CRONIN	3060	
+white_queen	BACON	puzzle_with_answer_garciaparra	A Puzzle with the Answer GARCIAPARRA	3070	
+white_queen	CONSTITUTION	another_puzzle_with_answer_sullivan	Another Puzzle with the Answer SULLIVAN	3080	
+white_queen	ROAD	puzzle_with_answer_rice	A Puzzle with the Answer RICE	3090	
+white_queen	CATER	puzzle_with_answer_nowhere_man	A Puzzle with the Answer NOWHERE MAN	3100	
+white_queen	FRANCO	puzzle_with_answer_eight_days_a_week	A Puzzle with the Answer EIGHT DAYS A WEEK	3110	
+white_queen	BRAVO	puzzle_with_answer_norwegian_wood	A Puzzle with the Answer NORWEGIAN WOOD	3120	
+white_queen	BOSTON	puzzle_with_answer_love_me_do	A Puzzle with the Answer LOVE ME DO	3130	
+white_queen	SHARP	puzzle_with_answer_i_want_to_hold_your_hand	A Puzzle with the Answer I WANT TO HOLD YOUR HAND	3140	
+white_queen	ROCK	puzzle_with_answer_a_hard_days_night	A Puzzle with the Answer A HARD DAYS NIGHT	3150	
+white_queen	FARMER	puzzle_with_answer_drive_my_car	A Puzzle with the Answer DRIVE MY CAR	3160	
+white_queen	YORK	puzzle_with_answer_and_i_love_her	A Puzzle with the Answer AND I LOVE HER	3170	
+white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer CANT BUY ME LOVE	3180	
+knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	4010	
+knights	HOBO BOBO	kroskuro	Kroskuro	4020	
+knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	4030	
+knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4040	
+knights	ED WYNN	a_mad_cocktail_party	A Mad Cocktail Party	4050	
+knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	4060	
+knights	G RING	wandering_stars	Wandering Stars	4070	
+knights	BAD BOYS	campus_art_from_z_to_a	Campus Art from Z to A	4080	
+knights	BABY WIPE	thank_heaven_for_little_girls	Thank Heaven for Little Girls	4090	
+knights	CAPS LOCK	filed_erector	Filed Erector	4100	
+knights	CUTTING EDGE	hole_wizard	Hole Wizard	4110	
+knights	FLU SHOT	some_nutty_lines	Some Nutty Lines	4120	
+knights	FIRE HOSE	stalk_us_maybe	Stalk Us Maybe	4130	
+knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	4140	
+knights	HOSPITAL BEDS	marking_territory	Marking Territory	4150	
+knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	4160	
+caucus_race	ECHO	crossed_wires	Crossed Wires	5010	
+caucus_race	GENIUS	modern_cubism_artist	Modern Cubism Artist	5020	
+caucus_race	MILLSTONE	sat_iii	SAT III	5030	
+caucus_race	SMASH HIT	1_2_3_4_4649	1! 2! 3! 4! 4649!	5040	
+caucus_race	ENGULF	gone_with_the_wind	Gone with the Wind	5050	
+caucus_race	SANE	youve_got_some_nerve	You've Got Some Nerve	5060	
+caucus_race	TRAIN TRACK	cruciform_heraldry	Cruciform Heraldry	5070	
+caucus_race	SECONDARY	growth_and_fixed_costs	Growth and Fixed Costs	5080	
+caucus_race	JINGOIST	lets_meet_in_the_middle	Let's Meet in the Middle	5090	
+caucus_race	VALIANT	saturdy_sundy	Saturdy & Sundy	5100	
+caucus_race	SPUR	venntersections	Venntersections	5110	
+caucus_race	SLUGGISH	magic_mushrooms	Magic Mushrooms	5120	
+caucus_race	DERRICK	crosswalks	Crosswalks	5130	
+caucus_race	CONFRONT	wat	WAT?	5140	
+humpty_dumpty	FELINE	compose_yourself	Compose Yourself	6010	
+humpty_dumpty	BIRD OF PREY	crow_facts	Crow Facts	6020	
+humpty_dumpty	HAND TOOL	sledgehammered	Sledgehammered	6030	
+humpty_dumpty	CERAMICS	glazing_over	Glazing Over	6040	
+humpty_dumpty	AZIMUTH	directions_in_writing	Directions in Writing	6050	
+humpty_dumpty	TEETOTUM	covert_tops	Covert Tops	6060	
+humpty_dumpty	APPLE	time_flies	Time Flies	6070	
+humpty_dumpty	OVOID	the_great_collapse	The Great Collapse	6090	
+humpty_dumpty	MOUNTAINEER	ski_trees	SKI Trees	6100	
+humpty_dumpty	PENSIVENESS	eggsam	Eggsam	6110	
+humpty_dumpty	UTENSIL	a_curious_incidence	A Curious Incidence	6120	
+humpty_dumpty	CLEAN SWEEP	family_ties	Family Ties	6130	
+humpty_dumpty	REPUBLICAN	top_shelf	Top Shelf	6140	
+humpty_dumpty	SQUIGGLES	the_circle_of_life	The Circle of Life	6150	
+events	A NOTES STAFF POSITION CONTROLS ITS STEM DIRECTION	auditions_for_the_wondermusical	Auditions for the WonderMusical	5010	
+events	WATCH OUT FOR THE WHITE KNIGHTS BLADE	lobster_quadrille	Lobster Quadrille	5020	
+events	A DORMOUSE CATERPILLAR OR RABBIT MAY DIG GARDEN HOLES	cards_against_wonderland	Cards Against Wonderland	5030	
+events	ANY TRIP THAT HAS NO VACATIONS BLOWS	wonderwang	Wonderwang	5040	

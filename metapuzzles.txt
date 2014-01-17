@@ -1,25 +1,25 @@
-url	name	order	answer
-spades	Spades	100	MANCHEGO
-clubs	Clubs	200	TOBACCO
-diamonds	Diamonds	300	TWIN POPS
-jabberwock	The Jabberwock's Secret Message	399	THE BEAST IS MS ALICE LIDDELL
-tea_party	The Tea Party	400	GIVE HIM A HAND
-white_queen_a02	The White Queen (Answer 2)	502	NOWHERE MAN
-white_queen_a04	The White Queen (Answer 4)	504	EIGHT DAYS A WEEK
-white_queen_a05	The White Queen (Answer 5)	505	CLEMENS
-white_queen_a06	The White Queen (Answer 6)	506	NORWEGIAN WOOD
-white_queen_a07	The White Queen (Answer 7)	507	YOUKILIS
-white_queen_a08	The White Queen (Answer 8)	508	LOVE ME DO
-white_queen_a10	The White Queen (Answer 10)	510	I WANT TO HOLD YOUR HAND
-white_queen_a11	The White Queen (Answer 11)	511	CRONIN
-white_queen_a12	The White Queen (Answer 12)	512	A HARD DAYS NIGHT
-white_queen_a13	The White Queen (Answer 13)	513	GARCIAPARRA
-white_queen_a14	The White Queen (Answer 14)	514	DRIVE MY CAR
-white_queen_a16	The White Queen (Answer 16)	516	AND I LOVE HER
-white_queen_a18	The White Queen (Answer 18)	518	CANT BUY ME LOVE
-white_queen	The White Queen	599	CLEAN WITH IVORY SOAP
-mock_turtle	The Mock Turtle	600	MAKE EDITS TO YOUR TABLE SCHEMA
-caucus_race	The Caucus Race	700	ALLERGIC TO DOWN
-knights	The Red and White Knights	800	BORED TO PIECES BY GAMES
-humpty_dumpty	Humpty Dumpty	900	EISOPTROPHOBIC
-events	Events	1000	WHITE RABBIT HAS A WATCH THAT CONTROLS RABBIT HOLES
+url	name	order	answer	handlr_info
+spades	Spades	100	MANCHEGO	
+clubs	Clubs	200	TOBACCO	
+diamonds	Diamonds	300	TWIN POPS	
+jabberwock	The Jabberwock's Secret Message	399	THE BEAST IS MS ALICE LIDDELL	
+tea_party	The Tea Party	400	GIVE HIM A HAND	
+white_queen_a02	The White Queen (Answer 2)	502	NOWHERE MAN	
+white_queen_a04	The White Queen (Answer 4)	504	EIGHT DAYS A WEEK	
+white_queen_a05	The White Queen (Answer 5)	505	CLEMENS	
+white_queen_a06	The White Queen (Answer 6)	506	NORWEGIAN WOOD	
+white_queen_a07	The White Queen (Answer 7)	507	YOUKILIS	
+white_queen_a08	The White Queen (Answer 8)	508	LOVE ME DO	
+white_queen_a10	The White Queen (Answer 10)	510	I WANT TO HOLD YOUR HAND	
+white_queen_a11	The White Queen (Answer 11)	511	CRONIN	
+white_queen_a12	The White Queen (Answer 12)	512	A HARD DAYS NIGHT	
+white_queen_a13	The White Queen (Answer 13)	513	GARCIAPARRA	
+white_queen_a14	The White Queen (Answer 14)	514	DRIVE MY CAR	
+white_queen_a16	The White Queen (Answer 16)	516	AND I LOVE HER	
+white_queen_a18	The White Queen (Answer 18)	518	CANT BUY ME LOVE	
+white_queen	The White Queen	599	CLEAN WITH IVORY SOAP	
+mock_turtle	The Mock Turtle	600	MAKE EDITS TO YOUR TABLE SCHEMA	
+caucus_race	The Caucus Race	700	ALLERGIC TO DOWN	
+knights	The Red and White Knights	800	BORED TO PIECES BY GAMES	
+humpty_dumpty	Humpty Dumpty	900	EISOPTROPHOBIC	
+events	Events	1000	WHITE RABBIT HAS A WATCH THAT CONTROLS RABBIT HOLES	
