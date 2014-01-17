@@ -1,0 +1,12 @@
+{% include "common.js" %}
+{% include "nav.js" %}
+
+function r() {
+    $('#mh-grin').animate({opacity: 0.5}, 2000);
+    setTimeout(function() {
+        $('#mh-grin').animate({opacity: 0}, 2000);
+	setTimeout(r, 8000);
+    }, 2500);
+}
+
+setTimeout(r, 5000);

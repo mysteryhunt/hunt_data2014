@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wonderland</title>
+    <link rel="stylesheet" type="text/css" href="story.css">
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body> 
+    <div id="mh-controls">
+      <a href="{{ root }}/">
+	Back to Lobby 7
+      </a>
+      <a href="javascript:mh.nav();">
+	Elsewhere
+      </a>
+    </div>
+    <div id="mh-book">
+      <div id="mh-col1">
+	<div id="mh-title">Wonderland</div>
+	<div style="position: relative;">
+	  <a title="Wonderland" href=".">
+	    <img id="mh-image" src="bookmap.jpg" />
+	    <div id="mh-grin">
+	      <img src="grin.png" />
+	    </div>
+	  </a>
+	</div>
+	<p>
+	  Walking along, you come to a sign that reads "Welcome to Wonderland". On top of the sign sits the Cat, grinning her now-familiar smile at you. 
+	<p>
+	  "Ah, I'm glad you finally made it," the Cat murmurs to you. "You may have noticed by now that things in Wonderland are not exactly....well, wondrous. The Beast has been here, as you've undoubtedly been told, and its presence is changing our strange home to be even stranger. I hate to have to ask, but we could use your help." 
+      </div>
+      <div id="mh-col2">
+	<p>
+	  "Some of the places you'll see have been ruined by the Beast. When you reach them, you'll meet a Wonderlandian who needs your help fixing whatever the Beast has ruined. Once you help them, they might be able to help you out in return."
+	<p>
+	  The Cat vanishes suddenly and reappears behind you. "But, you see, other Wonderlandians' lives have not been wrecked by the Beast, which naturally is only because they somehow have managed to find a weakness (even if they can't quite remember what it is). If I were you, I'd be sure to find out what those weaknesses are and keep them in mind for later."
+	<p>
+	  She once again disappears and reappears again on the sign post, causing you to spin around yet again. "I know you enjoyed your travel through the rabbit hole, but unfortunately that won't help you to get around here. The Wonderland Express is our favorite form of transportation. You can't get on quite yet, but perhaps solving some of these puzzling occurrences will lead you to a train ticket. After all, anything might be possible here in Wonderland..."
+	<p>
+	  With that, the Cat vanishes yet again, leaving you alone in Wonderland.
+	<div class="mh-enter">
+	  <a href=".">ENTER</a>
+	</div>
+      </div>
+    </div>
+    {% include "nav.html" %}
+    <script src="story.js"></script>
+  </body>
+</html>
