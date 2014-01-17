@@ -1,5 +1,5 @@
 AuthUserFile /home/hunt/htpasswd/htpasswd
 AuthName "Identify Yourself"
 AuthType Basic
-Require user bigjimmy
 Require user hunthq
+Require user rtb
