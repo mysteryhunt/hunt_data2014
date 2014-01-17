@@ -1,4 +1,4 @@
-url	name	order	answer	handlr_info
+url	name	order	answer	handler_info
 spades	Spades	100	MANCHEGO	
 clubs	Clubs	200	TOBACCO	
 diamonds	Diamonds	300	TWIN POPS	
