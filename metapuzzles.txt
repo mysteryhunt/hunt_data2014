@@ -17,7 +17,7 @@ white_queen_a13	The White Queen (Answer 13)	513	GARCIAPARRA
 white_queen_a14	The White Queen (Answer 14)	514	DRIVE MY CAR	
 white_queen_a16	The White Queen (Answer 16)	516	AND I LOVE HER	
 white_queen_a18	The White Queen (Answer 18)	518	CANT BUY ME LOVE	
-white_queen	The White Queen	599	CLEAN WITH IVORY SOAP	
+white_queen	The White Queen	599	CLEAN WITH IVORY SOAP	(check runtime playbook)
 mock_turtle	The Mock Turtle	600	MAKE EDITS TO YOUR TABLE SCHEMA	
 caucus_race	The Caucus Race	700	ALLERGIC TO DOWN	
 knights	The Red and White Knights	800	BORED TO PIECES BY GAMES	

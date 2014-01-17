@@ -73,7 +73,7 @@ white_queen	SCORE	puzzle_with_answer_cant_buy_me_love	A Puzzle with the Answer C
 knights	ACTIVE USER	callooh_callay_world	Callooh Callay, World!	4010	
 knights	HOBO BOBO	kroskuro	Kroskuro	4020	
 knights	DEN CHAI	walk_across_some_dungeons	Walk Across Some Dungeons	4030	
-knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4040	
+knights	DARK OMEN	indie_audio_productions	Indie Audio Productions	4040	(check runtime playbook)
 knights	ED WYNN	a_mad_cocktail_party	A Mad Cocktail Party	4050	
 knights	GLUTEN FREE	the_duck_konundrum_vi	The Duck Konundrum VI: Now with Way Way Way Way Way Too Much Pepper	4060	
 knights	G RING	wandering_stars	Wandering Stars	4070	
@@ -83,7 +83,7 @@ knights	CAPS LOCK	filed_erector	Filed Erector	4100
 knights	CUTTING EDGE	hole_wizard	Hole Wizard	4110	
 knights	FLU SHOT	some_nutty_lines	Some Nutty Lines	4120	
 knights	FIRE HOSE	stalk_us_maybe	Stalk Us Maybe	4130	
-knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	4140	
+knights	ENERGY BEAM	the_revenge_of_yuki_nagato_episode_00	The Revenge of Yuki Nagato Episode 00	4140	(check runtime playbook)
 knights	HOSPITAL BEDS	marking_territory	Marking Territory	4150	
 knights	ARCHDUKE OTTO	diplomatic_victory	Diplomatic Victory	4160	
 caucus_race	ECHO	crossed_wires	Crossed Wires	5010	
