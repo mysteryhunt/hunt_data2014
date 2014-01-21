@@ -26,7 +26,10 @@ def eval(env, path, prog):
             n = stack.pop()
             if type(n) != str:
                 raise Exception("invalid argument to "+t+": "+str(n))
-            evalfile(env, os.path.join(path, n+".wl"))
+            pfile = os.path.join(path, n+".wl")
+            if not os.path.exists(pfile):
+                pfile = pfile + '.html'
+            evalfile(env, pfile)
         elif t == "callay": # declare variable
             env[stack.pop()] = 0
         elif t == "uff": # assign variable
