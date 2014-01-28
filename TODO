@@ -1,0 +1,9 @@
+For those running hunt next year:
+
+*Make some sort of way for teams to edit/remove/add their own phone numbers from the system. Trust me you don't want to be dicking around in the database everytime a team calls to change their answer-verification number (which they will do about 1000 times during hunt)
+
+*Add more info to the team overview (vials/points, how many points until next unlock, maybe present the puzzles in a directed graph and/or explain unlocking paths)
+
+*Include incorrect answer submissions and text in the team log
+
+
