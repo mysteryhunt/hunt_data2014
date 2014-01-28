@@ -1,0 +1,10 @@
+HUNT DATA DIRECTORY
+
+There is some directory structure in here
+where puzzles and solutions and rounds have to go.
+
+There is a teams.txt file which is a tab-separated table of team info
+There is a team_phones.txt file which is a tab-separated table of team phone numbers
+
+the htpasswd directory needs to be created in here with privileges
+to the webserver user so that spoilr can create the auth data for teams/users
