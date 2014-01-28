@@ -35,7 +35,7 @@
 		  <ul>
 		    {% for puzzle in round.puzzles %}
 		    <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-		      {% if puzzle.solved %}[SOLVED; <a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]{% endif %}
+		      {% if puzzle.solved %}[SOLVED]{% endif %} [<a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]
 		      {% endfor %}
 		  </ul>
 		  {% endif %}
@@ -48,11 +48,11 @@
 		    {% elif round.round.url == "events" %}
 		    {% else %}
 		    <li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
-		      {% if round.solved %}[SOLVED]{% endif %}
+		      {% if round.solved %}[SOLVED]{% endif %} [<a href="/dynamic/submit/meta_survey/{{ round.round.url }}/">survey</a>]
 		      <ul>
 			{% for puzzle in round.puzzles %}
 			<li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-			  {% if puzzle.solved %}[SOLVED; <a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]{% endif %}
+			  {% if puzzle.solved %}[SOLVED]{% endif %} [<a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]
 			  {% endfor %}
 		      </ul>
 		      {% endif %}
@@ -62,11 +62,11 @@
 		  {% for round in rounds %}
 		  {% if round.round.url == "events" %}
 		<li><a href="{{ root }}/round/{{ round.round.url }}/">{{ round.round.name }}</a>
-		  {% if round.solved %}[SOLVED]{% endif %}
+		  {% if round.solved %}[SOLVED]{% endif %} [<a href="/dynamic/submit/meta_survey/{{ round.round.url }}/">survey</a>]
 		  <ul>
 		    {% for puzzle in round.puzzles %}
 		    <li><a href="{{ root }}/puzzle/{{ puzzle.puzzle.url }}/">{{ puzzle.puzzle.name }}</a>
-		      {% if puzzle.solved %}[SOLVED; <a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]{% endif %}
+		      {% if puzzle.solved %}[SOLVED]{% endif %} [<a href="/dynamic/submit/survey/{{ puzzle.puzzle.url }}/">survey</a>]
 		      {% endfor %}
 		  </ul>
 		  {% endif %}

@@ -1,6 +1,7 @@
 *.pyc
 *~
 *.sql
+*.svg
 teams.txt
 team_phones.txt
 hunt_data_backup
