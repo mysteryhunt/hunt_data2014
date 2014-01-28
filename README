@@ -8,3 +8,5 @@ There is a team_phones.txt file which is a tab-separated table of team phone num
 
 the htpasswd directory needs to be created in here with privileges
 to the webserver user so that spoilr can create the auth data for teams/users
+
+This should be checked out in /home/hunt for use by spoilr
