@@ -4,5 +4,9 @@
 *.svg
 teams.txt
 team_phones.txt
+team_phones.txt.real
+teams.txt.real
 hunt_data_backup
 htpasswd
+spoilrdocroot/static/2014
+spoilrdocroot/static/rounds.tar
